@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende y practica el Present Simple en inglés. Teoría completa y ejercicios prácticos interactivos con corrector para exámenes A1.">
+  <title>Mastering Present Simple - Curso de Inglés A1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">PS</div>
+      <div class="logo-text">Present Simple</div>
+    </div>
+    
+    <nav class="nav-links">
+      <li class="nav-item active" data-target="dashboard-page" id="nav-dashboard">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+        <span>Dashboard</span>
+      </li>
+      <li class="nav-item" data-target="theory-page" id="nav-theory">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+        <span>Teoría Completa</span>
+      </li>
+      <li class="nav-item" data-target="practice-page" id="nav-practice">
+        <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>Ejercicios Prácticos</span>
+      </li>
+      <li class="nav-item" data-target="flashcards-page" id="nav-flashcards">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+        <span>Tarjetas de Memoria</span>
+      </li>
+      <li class="nav-item" data-target="certificate-page" id="nav-certificate">
+        <svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+        <span>Certificado Final</span>
+      </li>
+    </nav>
+    
+    <div class="sidebar-footer">
+      <div class="progress-header">
+        <span>Progreso General</span>
+        <span id="progress-percentage">0%</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="overall-progress-bar"></div>
+      </div>
+      <div class="progress-header" style="margin-top: 0.5rem; font-size: 0.75rem;">
+        <span>Puntos: <strong id="user-total-score">0</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    
+    <!-- 1. DASHBOARD PAGE -->
+    <section id="dashboard-page" class="page active">
+      <header>
+        <h1 class="page-title" id="main-h1">Preparación Examen Inglés A1: Present Simple</h1>
+        <button class="btn btn-primary" onclick="app.navigateTo('theory-page')">Comenzar a Estudiar</button>
+      </header>
+      
+      <div class="card theory-intro">
+        <div class="intro-text">
+          <h2>¡Prepárate para aprobar! 🚀</h2>
+          <p>Esta aplicación interactiva te proporcionará todas las herramientas necesarias para dominar el **Present Simple** a nivel A1. Estudia la teoría detallada, practica con los ejercicios clasificados, repasa con las tarjetas interactivas y obtén tu certificado oficial de módulo al completarlos con éxito.</p>
+        </div>
+      </div>
+      
+      <div class="grid-3">
+        <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <div class="category-icon" style="background:rgba(99, 102, 241, 0.15); color:var(--color-primary); width:60px; height:60px; border-radius:50%; margin-bottom:1rem;">
+            <svg viewBox="0 0 24 24" style="width:30px; height:30px;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg>
+          </div>
+          <h3 font-family="var(--font-title)" style="margin-bottom:0.5rem;">1. Teoría Detallada</h3>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem; flex-grow:1;">Repasa las reglas de la 3ra persona (He/She/It), verbos regulares, el auxiliar Do/Does, el verbo To Be y los adverbios de frecuencia.</p>
+          <button class="btn" style="width:100%;" onclick="app.navigateTo('theory-page')">Ver Teoría</button>
+        </div>
+        
+        <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <div class="category-icon" style="background:rgba(168, 85, 247, 0.15); color:var(--color-secondary); width:60px; height:60px; border-radius:50%; margin-bottom:1rem;">
+            <svg viewBox="0 0 24 24" style="width:30px; height:30px;"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3 font-family="var(--font-title)" style="margin-bottom:0.5rem;">2. 6 Tipos de Ejercicios</h3>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem; flex-grow:1;">Ejercicios de opción múltiple, conjugación, completar espacios, reordenar oraciones, discriminación de verbos y detector de errores.</p>
+          <button class="btn" style="width:100%;" onclick="app.navigateTo('practice-page')">Practicar Ahora</button>
+        </div>
+
+        <div class="card" style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <div class="category-icon" style="background:rgba(16, 185, 129, 0.15); color:var(--color-success); width:60px; height:60px; border-radius:50%; margin-bottom:1rem;">
+            <svg viewBox="0 0 24 24" style="width:30px; height:30px;"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33a1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+          </div>
+          <h3 font-family="var(--font-title)" style="margin-bottom:0.5rem;">3. Certificación</h3>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem; flex-grow:1;">Consigue al menos el 80% del progreso de ejercicios para desbloquear y descargar tu diploma acreditativo de Present Simple.</p>
+          <button class="btn" style="width:100%;" onclick="app.navigateTo('certificate-page')">Obtener Certificado</button>
+        </div>
+      </div>
+      
+      <!-- Stats / Summary -->
+      <div class="card" style="margin-top: 2rem;">
+        <h3 font-family="var(--font-title)" style="margin-bottom: 1.5rem;">Estado de tu Preparación</h3>
+        <div class="grid-3" style="gap: 1.5rem;">
+          <div style="background:rgba(255,255,255,0.02); padding:1.25rem; border-radius:var(--radius-md); border:1px solid var(--glass-border); text-align:center;">
+            <div style="font-size:2rem; font-weight:700; color:var(--color-primary);" id="stat-exercises-done">0/6</div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">Módulos Completados</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.02); padding:1.25rem; border-radius:var(--radius-md); border:1px solid var(--glass-border); text-align:center;">
+            <div style="font-size:2rem; font-weight:700; color:var(--color-success);" id="stat-success-rate">0%</div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">Tasa de Aciertos</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.02); padding:1.25rem; border-radius:var(--radius-md); border:1px solid var(--glass-border); text-align:center;">
+            <div style="font-size:2rem; font-weight:700; color:var(--color-secondary);" id="stat-points">0</div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">Puntos Totales</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. THEORY PAGE -->
+    <section id="theory-page" class="page">
+      <header>
+        <h1 class="page-title">Teoría Completa del Present Simple</h1>
+        <button class="btn btn-primary" onclick="app.navigateTo('practice-page')">Ir a los Ejercicios</button>
+      </header>
+      
+      <!-- Theory Content Cards -->
+      <div class="card">
+        <h2 class="theory-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          1. ¿Cuándo se utiliza el Present Simple?
+        </h2>
+        <p style="color:var(--text-secondary); line-height:1.6; margin-bottom:1rem;">
+          El **Present Simple** (Presente Simple) es uno de los tiempos verbales más importantes en inglés. Se usa principalmente para:
+        </p>
+        <ul style="color:var(--text-secondary); line-height:1.6; margin-left:1.5rem; margin-bottom:1rem; display:flex; flex-direction:column; gap:0.5rem;">
+          <li>📌 **Hábitos y Rutinas:** Cosas que hacemos regularmente. <br><em>Example: I <strong>wake up</strong> at 7 AM every day. (Me despierto a las 7 AM todos los días)</em></li>
+          <li>📌 **Verdades Generales / Hechos Científicos:** Cosas que siempre son verdad. <br><em>Example: The sun <strong>rises</strong> in the east. (El sol sale por el este)</em></li>
+          <li>📌 **Estados Permanentes:** Situaciones estables a largo plazo. <br><em>Example: She <strong>lives</strong> in London. (Ella vive en Londres)</em></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="theory-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          2. Regla de Oro: La Tercera Persona Singular (He / She / It)
+        </h2>
+        <p style="color:var(--text-secondary); line-height:1.6; margin-bottom:1rem;">
+          En oraciones **afirmativas**, cuando el sujeto es <strong>He</strong> (Él), <strong>She</strong> (Ella) o <strong>It</strong> (Eso/Objeto/Animal), debemos modificar el verbo agregando una terminación.
+        </p>
+        
+        <div class="spelling-grid">
+          <div class="spelling-card">
+            <h4>Regla General (+S)</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">A la mayoría de los verbos simplemente se les añade una <strong>-s</strong> al final.</p>
+            <ul>
+              <li>• Play → Play<strong class="highlight-verb">s</strong></li>
+              <li>• Work → Work<strong class="highlight-verb">s</strong></li>
+              <li>• Read → Read<strong class="highlight-verb">s</strong></li>
+            </ul>
+          </div>
+          <div class="spelling-card">
+            <h4>Terminación (-CH, -SH, -SS, -X, -Z, -O)</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">Si el verbo termina en estos sonidos, se añade <strong>-es</strong>.</p>
+            <ul>
+              <li>• Watch → Watch<strong class="highlight-verb">es</strong></li>
+              <li>• Wash → Wash<strong class="highlight-verb">es</strong></li>
+              <li>• Kiss → Kiss<strong class="highlight-verb">es</strong></li>
+              <li>• Go → Go<strong class="highlight-verb">es</strong></li>
+            </ul>
+          </div>
+          <div class="spelling-card">
+            <h4>Consonante + Y (-IES)</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">Si termina en consonante seguida de "y", cambiamos la "y" por <strong>-ies</strong>.</p>
+            <ul>
+              <li>• Study → Stud<strong class="highlight-verb">ies</strong></li>
+              <li>• Cry → Cr<strong class="highlight-verb">ies</strong></li>
+              <li>• Fly → Fl<strong class="highlight-verb">ies</strong></li>
+            </ul>
+          </div>
+          <div class="spelling-card">
+            <h4>Vocal + Y (Solo +S)</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">Si la letra antes de la "y" es una vocal, solo añadimos <strong>-s</strong>.</p>
+            <ul>
+              <li>• Buy → Buy<strong class="highlight-verb">s</strong></li>
+              <li>• Say → Say<strong class="highlight-verb">s</strong></li>
+              <li>• Enjoy → Enjoy<strong class="highlight-verb">s</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="theory-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+          3. Estructuras Gramaticales de las Oraciones
+        </h2>
+        
+        <h3 style="margin-bottom: 0.5rem; font-size:1.1rem; color:var(--color-primary);">A. Oración Afirmativa (Affirmative)</h3>
+        <div class="formula">Sujeto + Verbo (infinito o con -s/-es) + Complemento</div>
+        <div class="struct-table-wrapper">
+          <table class="struct-table">
+            <thead>
+              <tr>
+                <th>Sujeto</th>
+                <th>Verbo principal</th>
+                <th>Complemento / Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I / You / We / They</td>
+                <td><span class="highlight-verb">work</span></td>
+                <td>in an office. <em>(Yo trabajo en una oficina)</em></td>
+              </tr>
+              <tr>
+                <td>He / She / It</td>
+                <td><span class="highlight-verb">works</span> <small>(con -s)</small></td>
+                <td>in an office. <em>(Ella trabaja en una oficina)</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-bottom: 0.5rem; font-size:1.1rem; color:var(--color-primary);">B. Oración Negativa (Negative)</h3>
+        <div class="formula">Sujeto + Auxiliar Negativo (Don't / Doesn't) + Verbo (¡Base!) + Complemento</div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+          ⚠️ <strong>IMPORTANTE:</strong> En la negación, al usar el auxiliar <span class="highlight-aux">doesn't</span>, el verbo principal vuelve a su forma base (se le quita la -s/-es).
+        </p>
+        <div class="struct-table-wrapper">
+          <table class="struct-table">
+            <thead>
+              <tr>
+                <th>Sujeto</th>
+                <th>Auxiliar Negativo</th>
+                <th>Verbo (Base)</th>
+                <th>Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I / You / We / They</td>
+                <td><span class="highlight-aux">don't</span> <small>(do not)</small></td>
+                <td><span class="highlight-verb">like</span></td>
+                <td>apples. <em>(A mí no me gustan las manzanas)</em></td>
+              </tr>
+              <tr>
+                <td>He / She / It</td>
+                <td><span class="highlight-aux">doesn't</span> <small>(does not)</small></td>
+                <td><span class="highlight-verb">like</span> <small>(sin -s)</small></td>
+                <td>apples. <em>(A él no le gustan las manzanas)</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-bottom: 0.5rem; font-size:1.1rem; color:var(--color-primary);">C. Oración Interrogativa (Questions)</h3>
+        <div class="formula">Auxiliar (Do / Does) + Sujeto + Verbo (¡Base!) + Complemento + ?</div>
+        <div class="struct-table-wrapper">
+          <table class="struct-table">
+            <thead>
+              <tr>
+                <th>Auxiliar</th>
+                <th>Sujeto</th>
+                <th>Verbo (Base)</th>
+                <th>Complemento + ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="highlight-aux">Do</span></td>
+                <td>you / they</td>
+                <td><span class="highlight-verb">speak</span></td>
+                <td>English? <em>(¿Hablas inglés?)</em></td>
+              </tr>
+              <tr>
+                <td><span class="highlight-aux">Does</span></td>
+                <td>he / she / it</td>
+                <td><span class="highlight-verb">speak</span> <small>(sin -s)</small></td>
+                <td>English? <em>(¿Ella habla inglés?)</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="theory-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          4. Adverbios de Frecuencia y Expresiones de Tiempo
+        </h2>
+        <p style="color:var(--text-secondary); line-height:1.6; margin-bottom:1rem;">
+          Se usan frecuentemente para indicar con qué frecuencia ocurre la acción.
+        </p>
+        
+        <h3 style="font-size:1.1rem; margin-bottom:0.75rem;">Adverbios de Frecuencia (Adverbs of Frequency)</h3>
+        <ul style="color:var(--text-secondary); line-height:1.6; margin-left:1.5rem; margin-bottom:1rem; display:flex; flex-direction:column; gap:0.4rem;">
+          <li>• <strong>Always</strong> (100% - Siempre)</li>
+          <li>• <strong>Usually</strong> (90% - Normalmente)</li>
+          <li>• <strong>Often</strong> (70% - A menudo)</li>
+          <li>• <strong>Sometimes</strong> (50% - A veces)</li>
+          <li>• <strong>Rarely / Seldom</strong> (10% - Rara vez)</li>
+          <li>• <strong>Never</strong> (0% - Nunca)</li>
+        </ul>
+        <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem; border-left: 2px solid var(--color-secondary); padding-left:0.75rem;">
+          👉 <strong>Regla de posición:</strong> Los adverbios de frecuencia van **antes** del verbo principal, pero **después** del verbo *To Be*. <br>
+          <em>Examples: <br>
+          - I <strong>always</strong> study at night. (Antes del verbo 'study')<br>
+          - He is <strong>never</strong> late. (Después del verbo 'is')</em>
+        </p>
+
+        <h3 style="font-size:1.1rem; margin-bottom:0.75rem;">Expresiones de tiempo (Time Expressions)</h3>
+        <p style="color:var(--text-secondary); line-height:1.6; margin-bottom:1rem;">
+          Suelen ir al final de la oración:
+        </p>
+        <ul style="color:var(--text-secondary); line-height:1.6; margin-left:1.5rem; margin-bottom:1rem; display:flex; flex-direction:column; gap:0.4rem;">
+          <li>• <strong>Every day / week / month:</strong> Todos los días / semanas / meses.</li>
+          <li>• <strong>Once / Twice a week:</strong> Una / Dos veces por semana.</li>
+          <li>• <strong>On Mondays / On weekends:</strong> Los lunes / los fines de semana.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="theory-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 10 10h-10V2z"/></svg>
+          5. El Verbo Especial: Verb "To Be"
+        </h2>
+        <p style="color:var(--text-secondary); line-height:1.6; margin-bottom:1rem;">
+          El verbo <strong>To Be</strong> (Ser/Estar) no sigue las mismas reglas que los demás verbos. **No utiliza los auxiliares do/does** para negar ni para preguntar. Tiene sus propias conjugaciones:
+        </p>
+        
+        <div class="struct-table-wrapper">
+          <table class="struct-table">
+            <thead>
+              <tr>
+                <th>Sujeto</th>
+                <th>Afirmativo</th>
+                <th>Negativo</th>
+                <th>Pregunta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I</td>
+                <td>am <small>(I'm)</small></td>
+                <td>am not <small>(I'm not)</small></td>
+                <td>Am I...?</td>
+              </tr>
+              <tr>
+                <td>He / She / It</td>
+                <td>is <small>(He's)</small></td>
+                <td>is not <small>(isn't)</small></td>
+                <td>Is he/she/it...?</td>
+              </tr>
+              <tr>
+                <td>You / We / They</td>
+                <td>are <small>(We're)</small></td>
+                <td>are not <small>(aren't)</small></td>
+                <td>Are you/we/they...?</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PRACTICE PAGE (EXERCISES SELECTION & ACTIVE SESSION) -->
+    <section id="practice-page" class="page">
+      <!-- Exercise Selection Screen -->
+      <div id="exercise-selection">
+        <header>
+          <h1 class="page-title">Ejercicios Prácticos de Present Simple</h1>
+        </header>
+        
+        <p style="color:var(--text-secondary); margin-bottom:2rem;">Selecciona una categoría de ejercicio para comenzar a practicar. Cada categoría tiene 10 preguntas. Necesitas un 80% de aciertos para marcar una sección como completada.</p>
+        
+        <div class="categories-grid">
+          <div class="category-card" onclick="app.startQuiz(0)">
+            <div class="category-icon">✏️</div>
+            <div class="category-title">1. Tercera Persona Singular</div>
+            <div class="category-desc">Escribe el verbo de forma correcta añadiendo -s, -es o -ies según las reglas para He/She/It.</div>
+            <div class="category-meta">
+              <span>10 Preguntas</span>
+              <span class="badge-status status-unlocked" id="badge-cat-0">Disponible</span>
+            </div>
+          </div>
+          
+          <div class="category-card" onclick="app.startQuiz(1)">
+            <div class="category-icon">📝</div>
+            <div class="category-title">2. Completar Espacios</div>
+            <div class="category-desc">Conjuga el verbo entre paréntesis en oraciones afirmativas, negativas e interrogativas.</div>
+            <div class="category-meta">
+              <span>10 Preguntas</span>
+              <span class="badge-status status-unlocked" id="badge-cat-1">Disponible</span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="app.startQuiz(2)">
+            <div class="category-icon">❓</div>
+            <div class="category-title">3. Auxiliares (Do / Does)</div>
+            <div class="category-desc">Elige el auxiliar correcto (do, does, don't, doesn't) para completar preguntas y negaciones.</div>
+            <div class="category-meta">
+              <span>10 Preguntas</span>
+              <span class="badge-status status-unlocked" id="badge-cat-2">Disponible</span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="app.startQuiz(3)">
+            <div class="category-icon">🧩</div>
+            <div class="category-title">4. Ordenar Palabras</div>
+            <div class="category-desc">Reordena las palabras sueltas para formar una oración correcta en Present Simple.</div>
+            <div class="category-meta">
+              <span>10 Preguntas</span>
+              <span class="badge-status status-unlocked" id="badge-cat-3">Disponible</span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="app.startQuiz(4)">
+            <div class="category-icon">🔄</div>
+            <div class="category-title">5. Verbo "To Be" vs. Acción</div>
+            <div class="category-desc">Identifica cuándo usar am/is/are y cuándo usar verbos normales con auxiliares.</div>
+            <div class="category-meta">
+              <span>10 Preguntas</span>
+              <span class="badge-status status-unlocked" id="badge-cat-4">Disponible</span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="app.startQuiz(5)">
+            <div class="category-icon">🔍</div>
+            <div class="category-title">6. Corrector de Errores</div>
+            <div class="category-desc">Encuentra y corrige el error gramatical de la oración propuesta (ortografía, auxiliar incorrecto, etc.).</div>
+            <div class="category-meta">
+              <span>10 Preguntas</span>
+              <span class="badge-status status-unlocked" id="badge-cat-5">Disponible</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Active Quiz Interface -->
+      <div id="active-quiz" style="display: none;">
+        <header>
+          <h1 class="page-title" id="active-quiz-title">Ejercicio</h1>
+          <button class="btn" onclick="app.exitQuiz()">
+            <svg viewBox="0 0 24 24" style="width:16px; height:16px; stroke:currentColor; stroke-width:2; fill:none; transform:rotate(180deg);"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Volver a categorías
+          </button>
+        </header>
+        
+        <div class="card">
+          <div class="quiz-header">
+            <div class="quiz-info">
+              <span class="quiz-progress-num" id="quiz-progress-text">Pregunta 1 de 10</span>
+              <div class="quiz-score-badge" id="quiz-score-badge">Aciertos: 0</div>
+            </div>
+            <div style="font-size: 0.85rem; color:var(--text-muted);">
+              Progreso actual del examen
+            </div>
+          </div>
+          
+          <div class="quiz-body">
+            <div class="question-text" id="question-text">
+              <!-- Question content injected by JS -->
+            </div>
+            
+            <!-- Type 1/2/3/5: Text Input or Options area -->
+            <div id="quiz-interaction-container">
+              <!-- JS will inject options, input fields, or word chips here -->
+            </div>
+            
+            <!-- Feedback box -->
+            <div class="feedback-box" id="feedback-box">
+              <div class="feedback-header" id="feedback-title">¡Correcto!</div>
+              <div class="feedback-explanation" id="feedback-desc">Explicación.</div>
+            </div>
+          </div>
+          
+          <div class="quiz-footer" style="display: flex; justify-content: flex-end; gap: 1rem;">
+            <button class="btn btn-primary" id="btn-submit-answer" onclick="app.submitAnswer()">Comprobar</button>
+            <button class="btn btn-success" id="btn-next-question" style="display: none;" onclick="app.nextQuestion()">Siguiente Pregunta</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz Results Screen -->
+      <div id="quiz-results" style="display: none; text-align: center;">
+        <header>
+          <h1 class="page-title">Resultados de Práctica</h1>
+        </header>
+        <div class="card" style="max-width: 600px; margin: 0 auto; padding: 3rem 2rem;">
+          <div style="font-size: 5rem; margin-bottom:1.5rem;" id="results-icon">🏆</div>
+          <h2 font-family="var(--font-title)" style="font-size: 2rem; margin-bottom: 0.5rem;" id="results-headline">¡Felicidades!</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height:1.6;" id="results-message">Completaste la sección con una puntuación destacable.</p>
+          
+          <div style="display: flex; justify-content: space-around; background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: var(--radius-md); border:1px solid var(--glass-border); margin-bottom: 2.5rem;">
+            <div>
+              <div style="font-size:1.75rem; font-weight:700; color:var(--color-primary);" id="results-score-num">0/10</div>
+              <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">Aciertos</div>
+            </div>
+            <div>
+              <div style="font-size:1.75rem; font-weight:700; color:var(--color-success);" id="results-percentage">0%</div>
+              <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">Porcentaje</div>
+            </div>
+            <div>
+              <div style="font-size:1.75rem; font-weight:700; color:var(--color-secondary);" id="results-points-gained">+0</div>
+              <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.25rem;">Puntos</div>
+            </div>
+          </div>
+          
+          <div style="display:flex; justify-content:center; gap:1rem;">
+            <button class="btn" onclick="app.exitQuiz()">Volver a Categorías</button>
+            <button class="btn btn-primary" id="btn-results-action" onclick="app.retryQuiz()">Reintentar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FLASHCARDS PAGE -->
+    <section id="flashcards-page" class="page">
+      <header>
+        <h1 class="page-title">Tarjetas de Memoria: Present Simple</h1>
+      </header>
+      
+      <p style="color:var(--text-secondary); margin-bottom:2rem; text-align:center;">Usa estas tarjetas interactivas para practicar tu pronunciación y retención. Haz clic en la tarjeta para voltearla y ver la respuesta o traducción.</p>
+      
+      <div class="flashcards-container">
+        <div class="flashcard-wrapper" onclick="app.flipCard()">
+          <div class="flashcard" id="flashcard-element">
+            <div class="card-face card-front">
+              <span class="flash-hint">Oración Afirmativa (Conjugada)</span>
+              <div class="flash-content" id="flash-front-text">She speaks English.</div>
+              <button class="speaker-btn" id="flash-speech-btn" onclick="event.stopPropagation(); app.speakFlashcard()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              </button>
+            </div>
+            <div class="card-face card-back">
+              <span class="flash-hint">Traducción & Detalle</span>
+              <div class="flash-content flash-translation" id="flash-back-text">Ella habla inglés.</div>
+              <p style="font-size:0.8rem; color:var(--text-secondary); margin-top:1rem;" id="flash-back-grammar">Verbo terminado en -s por la tercera persona (She).</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-controls">
+          <button class="btn" onclick="app.prevCard()">
+            <svg viewBox="0 0 24 24" style="width:16px; height:16px; stroke:currentColor; stroke-width:2; fill:none; transform:rotate(180deg);"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Anterior
+          </button>
+          <span style="font-size:0.9rem; color:var(--text-secondary);" id="flashcard-counter">1 de 12</span>
+          <button class="btn" onclick="app.nextCard()">
+            Siguiente
+            <svg viewBox="0 0 24 24" style="width:16px; height:16px; stroke:currentColor; stroke-width:2; fill:none;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CERTIFICATE PAGE -->
+    <section id="certificate-page" class="page">
+      <header>
+        <h1 class="page-title">Certificado de Módulo</h1>
+      </header>
+      
+      <div id="cert-locked-state" style="display: block; text-align: center;">
+        <div class="card" style="max-width:600px; margin: 0 auto; padding: 3rem 2rem;">
+          <div style="font-size: 4.5rem; margin-bottom: 1.5rem;">🔒</div>
+          <h2 font-family="var(--font-title)" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Certificado Bloqueado</h2>
+          <p style="color:var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">Debes alcanzar al menos el <strong>80% del progreso general</strong> de los ejercicios para desbloquear este certificado acreditativo del Present Simple de tu instituto.</p>
+          <div class="progress-bar-container" style="max-width: 400px; margin: 0 auto 1.5rem auto; height: 10px;">
+            <div class="progress-bar-fill" id="cert-progress-fill" style="width: 0%;"></div>
+          </div>
+          <span style="font-size: 0.9rem; color: var(--text-muted);" id="cert-progress-text">Progreso: 0% / 80%</span>
+          <br><br>
+          <button class="btn btn-primary" onclick="app.navigateTo('practice-page')">Practicar para Desbloquear</button>
+        </div>
+      </div>
+      
+      <div id="cert-unlocked-state" style="display: none;">
+        <div class="card" style="margin-bottom: 2rem;">
+          <h3 font-family="var(--font-title)" style="margin-bottom: 1rem;">¡Enhorabuena, has desbloqueado tu certificado! 🎉</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size:0.95rem;">Escribe tu nombre completo a continuación para personalizar el certificado de finalización de módulo. Luego, puedes imprimirlo o guardarlo como PDF usando el botón de impresión.</p>
+          
+          <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:flex-end;">
+            <div style="flex-grow:1; min-width:260px;">
+              <label for="student-name-input" style="display:block; font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.5rem; font-weight:600; text-transform:uppercase;">Nombre del Alumno</label>
+              <input type="text" id="student-name-input" class="blank-input" style="width:100%; text-align:left; font-size:1rem; height:45px;" placeholder="Ej. Juan Pérez" value="Estudiante de Inglés">
+            </div>
+            <button class="btn btn-success" style="height:45px;" onclick="app.printCertificate()">Imprimir Certificado</button>
+          </div>
+        </div>
+        
+        <div class="certificate-preview-container">
+          <div class="certificate-card">
+            <!-- Frame corners -->
+            <div class="cert-border-corner cert-corner-tl"></div>
+            <div class="cert-border-corner cert-corner-tr"></div>
+            <div class="cert-border-corner cert-corner-bl"></div>
+            <div class="cert-border-corner cert-corner-br"></div>
+            
+            <div class="cert-header">Certificado de Acreditación</div>
+            <h2 class="cert-title">Present Simple Mastery</h2>
+            <div class="cert-presented">Certificamos solemnemente que</div>
+            <div class="cert-name" id="cert-student-name">Estudiante de Inglés</div>
+            <p class="cert-text">Ha demostrado un dominio teórico y práctico sobresaliente en el tema **Present Simple**, superando con éxito todas las evaluaciones interactivas del primer módulo de inglés con nivel A1.</p>
+            
+            <div class="cert-footer">
+              <div class="cert-info-col">
+                <div>Fecha de Acreditación:</div>
+                <div id="cert-date" style="font-weight:600; color:#fff; margin-top:0.25rem;">15-Junio-2026</div>
+              </div>
+              
+              <div class="cert-badge-gold">
+                Nivel A1
+              </div>
+              
+              <div class="cert-info-col" style="text-align:right;">
+                <div>Código de Verificación:</div>
+                <div style="font-weight:600; color:#fff; margin-top:0.25rem; font-family:monospace;">PS-A1-VERIFIED</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
