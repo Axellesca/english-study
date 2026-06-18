@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal interactivo de estudio para English File Elementary A1 (unidades 1A-2C). Incluye teoría, vocabulario, audios interactivos y Grammar Banks 1, 2 y 3.">
+  <title>English File Elementary Study Portal - Units 1A to 2C</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Sidebar -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">EF</div>
+      <div class="logo-text">
+        <span class="logo-title">English File</span>
+        <span class="logo-subtitle">Elementary 4th Ed</span>
+      </div>
+    </div>
+
+    <!-- Quick Stats in Sidebar -->
+    <div class="sidebar-stats">
+      <div class="stat-header">
+        <span>Progreso Total</span>
+        <span id="overall-progress-text">0%</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="overall-progress-fill" style="width: 0%;"></div>
+      </div>
+      <div class="stat-score">
+        <span>Puntos: <strong id="score-counter">0</strong></span>
+        <span>Aciertos: <strong id="accuracy-counter">0%</strong></span>
+      </div>
+    </div>
+    
+    <nav class="nav-links">
+      <ul>
+        <li class="nav-item active" data-target="dashboard-page" id="nav-dashboard">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          <span>Dashboard</span>
+        </li>
+        <li class="nav-item" data-target="lessons-page" id="nav-lessons">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+          <span>Lecciones (1A - 2C)</span>
+        </li>
+        <li class="nav-item" data-target="grammar-page" id="nav-grammar">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Grammar Bank (1-3)</span>
+        </li>
+        <li class="nav-item" data-target="vocabulary-page" id="nav-vocabulary">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          <span>Vocabulary Bank</span>
+        </li>
+        <li class="nav-item" data-target="pronunciation-page" id="nav-pronunciation">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          <span>Pronunciación y Sonidos</span>
+        </li>
+        <li class="nav-item" data-target="certificate-page" id="nav-certificate">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <span>Certificado Final</span>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Accent control settings -->
+    <div class="sidebar-settings">
+      <div class="settings-title">Ajustes de Audio</div>
+      <div class="setting-row">
+        <span>Acento de Voz:</span>
+        <select id="voice-accent-selector" class="custom-select">
+          <option value="en-GB" selected>British (UK)</option>
+          <option value="en-US">American (US)</option>
+        </select>
+      </div>
+      <div class="setting-row">
+        <span>Velocidad:</span>
+        <input type="range" id="voice-speed-slider" min="0.5" max="1.2" step="0.1" value="0.9">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Viewports -->
+  <main class="main-content">
+
+    <!-- 1. DASHBOARD PAGE -->
+    <section id="dashboard-page" class="page-section active">
+      <header class="section-header">
+        <h1 class="page-title">Bienvenido a English File A1 Study Portal</h1>
+        <p class="page-subtitle">Domina las bases del inglés con la teoría, ejercicios interactivos y práctica auditiva oficial.</p>
+      </header>
+
+      <div class="card intro-card">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <h2>¡Tu viaje de inglés empieza aquí! 📚🚀</h2>
+            <p>Este portal contiene todo el contenido académico desde el módulo **1A hasta el 2C**, incluyendo los repasos, audios de pronunciación del abecedario, la tabla completa de sonidos de vocales y consonantes, y los bancos de gramática y vocabulario oficiales de English File.</p>
+            <div class="intro-buttons">
+              <button class="btn btn-primary" onclick="app.loadLesson('1A')">Comenzar Lección 1A</button>
+              <button class="btn btn-outline" onclick="app.navigateTo('pronunciation-page')">Practicar Fonética</button>
+            </div>
+          </div>
+          <div class="intro-visual">
+            <!-- Dynamic stats circle -->
+            <div class="progress-circle-widget">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path class="circle" id="circle-progress" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <text x="18" y="20.35" class="percentage" id="dashboard-percentage">0%</text>
+              </svg>
+              <span class="circle-label">Progreso Completado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Syllabus Units Roadmap -->
+      <h2 class="sub-section-title">Mapa de Aprendizaje A1</h2>
+      <div class="roadmap-grid">
+        <div class="card roadmap-card" data-lesson="1A">
+          <div class="card-tag">File 1A</div>
+          <h3>Hello</h3>
+          <p>Conjugación del verbo *be* (+), pronombres sujeto, números del 0 al 20 y días de la semana.</p>
+          <div class="roadmap-footer">
+            <span class="status-indicator icon-locked">Bloqueado</span>
+            <button class="btn btn-sm" onclick="app.loadLesson('1A')">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="1B">
+          <div class="card-tag">File 1B</div>
+          <h3>One World</h3>
+          <p>Verbo *be* (-) y (?), países y nacionalidades, números del 21 al 100 y fonemas /ə/, /ʃ/, /tʃ/, /dʒ/.</p>
+          <div class="roadmap-footer">
+            <span class="status-indicator icon-locked">Bloqueado</span>
+            <button class="btn btn-sm" onclick="app.loadLesson('1B')">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="1C">
+          <div class="card-tag">File 1C</div>
+          <h3>What's Your Email?</h3>
+          <p>Adjetivos posesivos, lenguaje del salón de clases y deletreo interactivo con el abecedario.</p>
+          <div class="roadmap-footer">
+            <span class="status-indicator icon-locked">Bloqueado</span>
+            <button class="btn btn-sm" onclick="app.loadLesson('1C')">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="2A">
+          <div class="card-tag">File 2A</div>
+          <h3>Are You Tidy?</h3>
+          <p>Sustantivos singulares y plurales, uso de a/an, artículos definidos/indefinidos y cosas comunes.</p>
+          <div class="roadmap-footer">
+            <span class="status-indicator icon-locked">Bloqueado</span>
+            <button class="btn btn-sm" onclick="app.loadLesson('2A')">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="2B">
+          <div class="card-tag">File 2B</div>
+          <h3>Made in the UK</h3>
+          <p>Uso de adjetivos, modificadores (quite, very), colores y descripción de objetos comunes.</p>
+          <div class="roadmap-footer">
+            <span class="status-indicator icon-locked">Bloqueado</span>
+            <button class="btn btn-sm" onclick="app.loadLesson('2B')">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="2C">
+          <div class="card-tag">File 2C</div>
+          <h3>Slow Down!</h3>
+          <p>Imperativos, oraciones con let's, vocabulario de sentimientos y entonación de oraciones.</p>
+          <div class="roadmap-footer">
+            <span class="status-indicator icon-locked">Bloqueado</span>
+            <button class="btn btn-sm" onclick="app.loadLesson('2C')">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="RC12">
+          <div class="card-tag highlight-tag">Review</div>
+          <h3>1 & 2 Revise and Check</h3>
+          <p>Examen de repaso de gramática, vocabulario y pronunciación acumulada de los archivos 1 y 2.</p>
+          <div class="roadmap-footer">
+            <span class="status-indicator icon-locked">Bloqueado</span>
+            <button class="btn btn-sm btn-accent" onclick="app.loadLesson('RC12')">Hacer Test</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. LESSONS VIEW -->
+    <section id="lessons-page" class="page-section">
+      <header class="lesson-view-header">
+        <div class="back-nav" onclick="app.navigateTo('dashboard-page')">
+          <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span>Volver al Dashboard</span>
+        </div>
+        <h1 class="page-title" id="active-lesson-title">Cargando Lección...</h1>
+      </header>
+
+      <!-- Sub-tabs within lessons (Teoría / Ejercicios / Práctica de Vocab) -->
+      <div class="tab-navigation">
+        <button class="tab-btn active" data-tab="lesson-theory" onclick="app.switchLessonTab('lesson-theory')">Teoría y Explicaciones</button>
+        <button class="tab-btn" data-tab="lesson-vocab" onclick="app.switchLessonTab('lesson-vocab')">Vocabulario y Audios</button>
+        <button class="tab-btn" data-tab="lesson-exercises" onclick="app.switchLessonTab('lesson-exercises')">Ejercicios de la Lección</button>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="tab-content" id="lesson-theory">
+        <!-- Injected dynamically by app.js -->
+      </div>
+      
+      <div class="tab-content" id="lesson-vocab" style="display:none;">
+        <!-- Injected dynamically by app.js -->
+      </div>
+
+      <div class="tab-content" id="lesson-exercises" style="display:none;">
+        <div class="card">
+          <div class="quiz-info-container">
+            <span class="quiz-progress-indicator" id="lesson-quiz-indicator">Pregunta 1 de 5</span>
+            <span class="score-badge" id="lesson-quiz-score">Puntos: 0</span>
+          </div>
+          <div class="quiz-content-area" id="lesson-quiz-area">
+            <!-- Interactive Quiz Content injected by JS -->
+          </div>
+          <div class="quiz-feedback" id="lesson-quiz-feedback" style="display: none;">
+            <h4 id="lesson-feedback-title">¡Correcto!</h4>
+            <p id="lesson-feedback-text">Explicación gramatical del ejercicio.</p>
+          </div>
+          <div class="quiz-actions">
+            <button class="btn btn-primary" id="btn-submit-lesson-quiz" onclick="app.submitLessonQuiz()">Comprobar</button>
+            <button class="btn btn-success" id="btn-next-lesson-quiz" style="display:none;" onclick="app.nextLessonQuiz()">Siguiente</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GRAMMAR BANK PAGE -->
+    <section id="grammar-page" class="page-section">
+      <header class="section-header">
+        <h1 class="page-title">Grammar Bank</h1>
+        <p class="page-subtitle">Acceso directo a la teoría gramatical profunda y los ejercicios de práctica de los módulos 1, 2 y 3.</p>
+      </header>
+
+      <div class="grammar-bank-selector">
+        <select id="grammar-bank-unit-selector" class="custom-select-large" onchange="app.loadGrammarBank(this.value)">
+          <option value="1">Grammar Bank 1 (be +, be -/?, possessive adjectives)</option>
+          <option value="2" selected>Grammar Bank 2 (singular/plural, adjectives, imperatives)</option>
+          <option value="3">Grammar Bank 3 (Present Simple, do/does, question word order)</option>
+        </select>
+      </div>
+
+      <div class="grammar-split-container">
+        <!-- Left Column: Detailed theory explanations -->
+        <div class="card grammar-theory-card">
+          <h2>Teoría Oficial</h2>
+          <div id="grammar-bank-theory-content">
+            <!-- Injected by app.js -->
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive exercises -->
+        <div class="card grammar-practice-card">
+          <h2>Práctica Interactiva</h2>
+          <div class="quiz-info-container">
+            <span class="quiz-progress-indicator" id="grammar-bank-indicator">Pregunta 1 de 10</span>
+            <span class="score-badge" id="grammar-bank-score">Aciertos: 0</span>
+          </div>
+          <div class="quiz-content-area" id="grammar-bank-exercise-area">
+            <!-- Injected by app.js -->
+          </div>
+          <div class="quiz-feedback" id="grammar-bank-feedback" style="display: none;">
+            <h4 id="grammar-feedback-title">¡Bien hecho!</h4>
+            <p id="grammar-feedback-text">Detalle gramatical de la estructura.</p>
+          </div>
+          <div class="quiz-actions" style="margin-top: 1.5rem;">
+            <button class="btn btn-primary" id="btn-submit-grammar-bank" onclick="app.submitGrammarBankAnswer()">Comprobar</button>
+            <button class="btn btn-success" id="btn-next-grammar-bank" style="display:none;" onclick="app.nextGrammarBankQuestion()">Siguiente Pregunta</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. VOCABULARY BANK PAGE -->
+    <section id="vocabulary-page" class="page-section">
+      <header class="section-header">
+        <h1 class="page-title">Vocabulary Bank</h1>
+        <p class="page-subtitle">Aprende y practica vocabulario temático con pronunciación de voz interactiva y juegos de memoria.</p>
+      </header>
+
+      <!-- Vocabulary Categories Selector -->
+      <div class="vocabulary-categories">
+        <button class="vocab-cat-btn active" data-vocab="days" onclick="app.selectVocabularyBank('days')">Days & Numbers</button>
+        <button class="vocab-cat-btn" data-vocab="countries" onclick="app.selectVocabularyBank('countries')">Countries & Nationalities</button>
+        <button class="vocab-cat-btn" data-vocab="classroom" onclick="app.selectVocabularyBank('classroom')">Classroom Language</button>
+        <button class="vocab-cat-btn" data-vocab="things" onclick="app.selectVocabularyBank('things')">Things (Objects)</button>
+        <button class="vocab-cat-btn" data-vocab="adjectives" onclick="app.selectVocabularyBank('adjectives')">Adjectives</button>
+        <button class="vocab-cat-btn" data-vocab="verbs" onclick="app.selectVocabularyBank('verbs')">Verb Phrases</button>
+        <button class="vocab-cat-btn" data-vocab="jobs" onclick="app.selectVocabularyBank('jobs')">Jobs</button>
+        <button class="vocab-cat-btn" data-vocab="family" onclick="app.selectVocabularyBank('family')">The Family</button>
+      </div>
+
+      <!-- Mode Selector: List / Flashcards / Matching Game -->
+      <div class="vocab-mode-selector">
+        <button class="mode-btn active" id="btn-vocab-mode-list" onclick="app.switchVocabMode('list')">Lista y Pronunciación</button>
+        <button class="mode-btn" id="btn-vocab-mode-flashcards" onclick="app.switchVocabMode('flashcards')">Tarjetas de Memoria</button>
+        <button class="mode-btn" id="btn-vocab-mode-game" onclick="app.switchVocabMode('game')">Juego de Emparejar</button>
+      </div>
+
+      <!-- Vocabulary Content containers -->
+      <div id="vocab-content-list" class="vocab-mode-content">
+        <!-- List layout injected by app.js -->
+      </div>
+
+      <div id="vocab-content-flashcards" class="vocab-mode-content" style="display:none;">
+        <div class="flashcard-deck-container">
+          <div class="flashcard-card-wrapper" onclick="app.flipVocabCard()">
+            <div class="vocab-flashcard" id="vocab-flashcard-element">
+              <div class="vcard-face vcard-front">
+                <span class="card-hint">Expresión en Inglés</span>
+                <div class="card-content" id="vcard-front-text">Good morning</div>
+                <button class="speaker-btn card-speaker" onclick="event.stopPropagation(); app.speakVocabCard()">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px; height:24px;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                </button>
+              </div>
+              <div class="vcard-face vcard-back">
+                <span class="card-hint">Significado y Detalle</span>
+                <div class="card-content" id="vcard-back-text">Buenos días</div>
+                <div class="card-phonetic" id="vcard-back-phonetic">/ɡʊd ˈmɔː.nɪŋ/</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard-controls">
+            <button class="btn" onclick="app.prevVocabCard()">Anterior</button>
+            <span id="vocab-card-counter">1 de 20</span>
+            <button class="btn" onclick="app.nextVocabCard()">Siguiente</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="vocab-content-game" class="vocab-mode-content" style="display:none;">
+        <div class="card vocab-matching-card">
+          <h2>Juego de Emparejar Vocabulario</h2>
+          <p class="game-instruction">Haz clic en una palabra en inglés y luego en su correspondiente traducción al español. ¡Consigue emparejar todos los elementos!</p>
+          <div class="matching-grid" id="vocab-matching-grid-container">
+            <!-- Grid of buttons dynamically shuffled and rendered -->
+          </div>
+          <div class="game-score-row">
+            <span>Intentos: <strong id="game-attempts-val">0</strong></span>
+            <span>Errores: <strong id="game-errors-val">0</strong></span>
+            <button class="btn btn-sm" onclick="app.resetVocabMatchingGame()">Reiniciar Juego</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRONUNCIATION PAGE -->
+    <section id="pronunciation-page" class="page-section">
+      <header class="section-header">
+        <h1 class="page-title">Pronunciación y Sonidos</h1>
+        <p class="page-subtitle">Practica los sonidos oficiales de vocales y consonantes en inglés, y domina el abecedario interactivo.</p>
+      </header>
+
+      <!-- Subsections Selector: Alphabet / Vowel Sounds / Consonant Sounds -->
+      <div class="tab-navigation">
+        <button class="tab-btn active" data-ptab="tab-alphabet" onclick="app.switchPronTab('tab-alphabet')">El Abecedario (Spelling)</button>
+        <button class="tab-btn" data-ptab="tab-vowels" onclick="app.switchPronTab('tab-vowels')">Sonidos Vocálicos (Vowels)</button>
+        <button class="tab-btn" data-ptab="tab-consonants" onclick="app.switchPronTab('tab-consonants')">Sonidos Consonánticos (Consonants)</button>
+      </div>
+
+      <!-- Tab: Alphabet -->
+      <div id="tab-alphabet" class="pron-tab-content">
+        <div class="card intro-pron-card">
+          <h3>Interactive Alphabet (A - Z)</h3>
+          <p>Haz clic en cualquier letra para escuchar su pronunciación correcta según la fonética inglesa.</p>
+        </div>
+
+        <div class="alphabet-grid" id="alphabet-grid-container">
+          <!-- Injected by app.js (A to Z) -->
+        </div>
+
+        <!-- Spelling Practice Module (Listening) -->
+        <div class="card spelling-test-card" style="margin-top: 2rem;">
+          <h3>Spelling Dictation Test 🎧</h3>
+          <p>Escucha cómo se deletrea un nombre o dirección de correo electrónico y escríbelo correctamente en la caja de abajo.</p>
+          <div class="spelling-game-interface">
+            <button class="btn btn-primary btn-icon" onclick="app.playSpellingTarget()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              Escuchar Deletreo (Play)
+            </button>
+            <div class="spelling-input-row">
+              <input type="text" id="spelling-test-input" placeholder="Escribe lo deletreado..." autocomplete="off">
+              <button class="btn btn-success" onclick="app.checkSpellingTest()">Validar</button>
+            </div>
+            <div class="spelling-feedback" id="spelling-test-feedback" style="display: none;">
+              <!-- Feedback injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Vowels -->
+      <div id="tab-vowels" class="pron-tab-content" style="display:none;">
+        <div class="card">
+          <h3>Vowel Sounds Chart (20 Sounds)</h3>
+          <p>Haz clic en los símbolos del Alfabeto Fonético Internacional (IPA) para escuchar su articulación y palabra de ejemplo.</p>
+          
+          <h4 class="phoneme-section-title">Vocales Cortas (Short Vowels)</h4>
+          <div class="phoneme-grid" id="short-vowels-grid">
+            <!-- Injected by app.js -->
+          </div>
+
+          <h4 class="phoneme-section-title" style="margin-top:2rem;">Vocales Largas (Long Vowels)</h4>
+          <div class="phoneme-grid" id="long-vowels-grid">
+            <!-- Injected by app.js -->
+          </div>
+
+          <h4 class="phoneme-section-title" style="margin-top:2rem;">Diptongos (Diphthongs)</h4>
+          <div class="phoneme-grid" id="diphthongs-grid">
+            <!-- Injected by app.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Consonants -->
+      <div id="tab-consonants" class="pron-tab-content" style="display:none;">
+        <div class="card">
+          <h3>Consonant Sounds Chart (24 Sounds)</h3>
+          <p>Haz clic en los símbolos para escuchar el sonido consonántico y su ejemplo.</p>
+
+          <h4 class="phoneme-section-title">Consonantes Sordas (Unvoiced Consonants)</h4>
+          <div class="phoneme-grid" id="unvoiced-consonants-grid">
+            <!-- Injected by app.js -->
+          </div>
+
+          <h4 class="phoneme-section-title" style="margin-top:2rem;">Consonantes Sonoras (Voiced Consonants)</h4>
+          <div class="phoneme-grid" id="voiced-consonants-grid">
+            <!-- Injected by app.js -->
+          </div>
+
+          <h4 class="phoneme-section-title" style="margin-top:2rem;">Otras Consonantes (Nasales, Líquidas, Semivocales)</h4>
+          <div class="phoneme-grid" id="other-consonants-grid">
+            <!-- Injected by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CERTIFICATE PAGE -->
+    <section id="certificate-page" class="page-section">
+      <header class="section-header">
+        <h1 class="page-title">Certificado Oficial de Módulo</h1>
+        <p class="page-subtitle">Acredita tu progreso de estudio de English File Elementary A1 en este portal interactivo.</p>
+      </header>
+
+      <!-- Locked view -->
+      <div class="card status-card" id="cert-locked-panel">
+        <div class="locked-icon">🔒</div>
+        <h2>Certificado Bloqueado</h2>
+        <p>Debes alcanzar al menos el **80% del progreso general** en las lecciones y los bancos de gramática para desbloquear tu diploma acreditativo de File 1A a 2C.</p>
+        <div class="progress-bar-container" style="max-width: 400px; margin: 1.5rem auto; height: 12px;">
+          <div class="progress-bar-fill" id="cert-progress-fill-bar" style="width: 0%;"></div>
+        </div>
+        <p class="progress-status-text" id="cert-progress-status-val">Progreso actual: 0% / 80%</p>
+        <button class="btn btn-primary" onclick="app.navigateTo('lessons-page')" style="margin-top: 1rem;">Estudiar para Desbloquear</button>
+      </div>
+
+      <!-- Unlocked view -->
+      <div id="cert-unlocked-panel" style="display:none;">
+        <div class="card customization-card">
+          <h2>¡Enhorabuena, has desbloqueado tu certificado! 🏆🎉</h2>
+          <p>Escribe tu nombre a continuación para personalizar el diploma acreditativo. Puedes imprimirlo o guardarlo como archivo PDF.</p>
+          <div class="customization-row">
+            <input type="text" id="cert-name-input" placeholder="Escribe tu nombre completo..." value="Estudiante de Inglés">
+            <button class="btn btn-success" onclick="app.printCertificate()">Imprimir o Guardar PDF</button>
+          </div>
+        </div>
+
+        <div class="certificate-printable-area">
+          <div class="certificate-frame">
+            <div class="cert-corner tl"></div>
+            <div class="cert-corner tr"></div>
+            <div class="cert-corner bl"></div>
+            <div class="cert-corner br"></div>
+
+            <div class="cert-watermark">EF</div>
+            
+            <div class="cert-header">DIPLOMA DE FINALIZACIÓN</div>
+            <div class="cert-badge">Nivel A1</div>
+            
+            <p class="cert-intro">Se certifica solemnemente que el alumno(a)</p>
+            <h1 class="cert-student-name" id="cert-display-name">Estudiante de Inglés</h1>
+            
+            <p class="cert-description">Ha completado con éxito todas las unidades correspondientes desde el **File 1A hasta el File 2C** del syllabus **English File Elementary 4th Edition**, demostrando un entendimiento riguroso de la teoría, vocabulario especializado, pronunciación de fonemas, y habiendo aprobado los Grammar Banks 1, 2 y 3 con un rendimiento del 80% o superior.</p>
+
+            <div class="cert-details">
+              <div class="cert-col">
+                <span class="detail-label">Fecha de Emisión</span>
+                <strong class="detail-val" id="cert-issue-date">18 de Junio, 2026</strong>
+              </div>
+              <div class="cert-col cert-sign">
+                <span class="detail-label">Firma Autorizada</span>
+                <span class="signature-line">English File Study Engine</span>
+              </div>
+              <div class="cert-col">
+                <span class="detail-label">Código de Verificación</span>
+                <strong class="detail-val" style="font-family: monospace;">EF-ELEM-1A2C-OK</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
