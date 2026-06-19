@@ -194,6 +194,35 @@ body {
   height: 18px;
 }
 
+/* Sidebar Home button */
+.sidebar-home {
+  padding: 0.75rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.btn-home {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--glass-border);
+  background: rgba(255,255,255,0.02);
+  transition: var(--transition-smooth);
+  width: 100%;
+}
+
+.btn-home:hover {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-primary);
+  border-color: var(--text-muted);
+  transform: translateX(2px);
+}
+
 /* Sidebar Settings (Audio) */
 .sidebar-settings {
   border-top: 1px solid var(--glass-border);
