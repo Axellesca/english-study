@@ -1528,6 +1528,111 @@ input[type="range"] {
 }
 
 /* ==========================================================================
+   Exercises Page Styling
+   ========================================================================== */
+.exercises-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.scrollable-tabs {
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollable-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+.scrollable-tabs::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 4px;
+}
+
+.exercise-intro-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+}
+
+.exercise-intro-row h2 {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exercises-dynamic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.exercise-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--bg-input);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition-smooth);
+}
+
+.exercise-item-row:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+.exercise-question-wrapper {
+  font-size: 1rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 90%;
+}
+
+.exercise-input-blank {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-bottom: 2px solid var(--color-primary);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  outline: none;
+  width: 140px;
+  text-align: center;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  transition: var(--transition-smooth);
+}
+
+.exercise-input-blank:focus {
+  background: rgba(99, 102, 241, 0.1);
+  border-bottom-color: var(--color-secondary);
+}
+
+.exercise-feedback-icon {
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-weight: 700;
+}
+
+/* ==========================================================================
    Print Styles for Certificate
    ========================================================================== */
 @media print {

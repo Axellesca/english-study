@@ -474,6 +474,2051 @@ const grammarBankDatabase = {
   }
 };
 
+// INTERACTIVE EXERCISES DATABASE (AgendaWeb & PDF content)
+const exercisesDatabase = {
+  "be": [
+    {
+      "question": "I ___ (be) a student.",
+      "answer": "am"
+    },
+    {
+      "question": "He ___ (be) my brother.",
+      "answer": "is"
+    },
+    {
+      "question": "They ___ (be) from Spain.",
+      "answer": "are"
+    },
+    {
+      "question": "We ___ (be) very happy today.",
+      "answer": "are"
+    },
+    {
+      "question": "She ___ (be, negative) at home right now.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "___ (be) you from Argentina?",
+      "answer": "are"
+    },
+    {
+      "question": "It ___ (be) a beautiful day.",
+      "answer": "is"
+    },
+    {
+      "question": "You ___ (be, negative) late for class.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "___ (be) he your English teacher?",
+      "answer": "is"
+    },
+    {
+      "question": "I ___ (be, negative) tired.",
+      "answer": [
+        "am not",
+        "i'm not"
+      ]
+    },
+    {
+      "question": "We ___ (be, negative) ready yet.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "Where ___ (be) the keys of the classroom?",
+      "answer": "are"
+    },
+    {
+      "question": "This dictionary ___ (be) very heavy.",
+      "answer": "is"
+    },
+    {
+      "question": "Mary and Paul ___ (be) married.",
+      "answer": "are"
+    },
+    {
+      "question": "How old ___ (be) Sofia?",
+      "answer": "is"
+    },
+    {
+      "question": "John ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "John ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "My father ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "My father ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "My sister ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "My sister ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "The dog ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "The dog ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "London ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "London ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "The car ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "The car ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "The teacher ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "The teacher ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "Peter ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "Peter ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "Laura ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "Laura ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "Mr. Green ___ (be) in the garden.",
+      "answer": "is"
+    },
+    {
+      "question": "Mr. Green ___ (be, negative) tired today.",
+      "answer": [
+        "isn't",
+        "is not"
+      ]
+    },
+    {
+      "question": "My parents ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "My parents ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "My brothers ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "My brothers ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "The children ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "The children ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "The windows ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "The windows ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "Mary and I ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "Mary and I ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "These books ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "These books ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "The keys ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "The keys ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "The dogs ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "The dogs ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "The students ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "The students ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "Those cars ___ (be) from London.",
+      "answer": "are"
+    },
+    {
+      "question": "Those cars ___ (be, negative) ready.",
+      "answer": [
+        "aren't",
+        "are not"
+      ]
+    },
+    {
+      "question": "___ (be) john at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) my father at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) my sister at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) the dog at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) london at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) the car at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) the teacher at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) peter at work?",
+      "answer": "is"
+    },
+    {
+      "question": "___ (be) my parents open?",
+      "answer": "are"
+    },
+    {
+      "question": "___ (be) my brothers open?",
+      "answer": "are"
+    },
+    {
+      "question": "___ (be) the children open?",
+      "answer": "are"
+    },
+    {
+      "question": "___ (be) the windows open?",
+      "answer": "are"
+    },
+    {
+      "question": "___ (be) mary and i open?",
+      "answer": "are"
+    },
+    {
+      "question": "___ (be) these books open?",
+      "answer": "are"
+    },
+    {
+      "question": "___ (be) the keys open?",
+      "answer": "are"
+    }
+  ],
+  "pronouns": [
+    {
+      "question": "Lucas is from Brazil. ___ (pronoun) speaks Portuguese.",
+      "answer": "he"
+    },
+    {
+      "question": "The keys are on the table. ___ (pronoun) are gold.",
+      "answer": "they"
+    },
+    {
+      "question": "Anna and I are friends. ___ (pronoun) study English together.",
+      "answer": "we"
+    },
+    {
+      "question": "Where is the dictionary? ___ (pronoun) is in the school bag.",
+      "answer": "it"
+    },
+    {
+      "question": "Are ___ (pronoun) ready, Peter?",
+      "answer": "you"
+    },
+    {
+      "question": "My sisters are teachers. ___ (pronoun) work in Madrid.",
+      "answer": "they"
+    },
+    {
+      "question": "Hello, I am John. ___ (pronoun) am from New York.",
+      "answer": "i"
+    },
+    {
+      "question": "This cat is very cute. ___ (pronoun) is sleeping on the chair.",
+      "answer": "it"
+    },
+    {
+      "question": "Sofia is very tidy. ___ (pronoun) has a clean room.",
+      "answer": "she"
+    },
+    {
+      "question": "Tom and Mike, can ___ (pronoun) help me with these boxes?",
+      "answer": "you"
+    },
+    {
+      "question": "My parents are at home. ___ (pronoun) are watching television.",
+      "answer": "they"
+    },
+    {
+      "question": "We are late! ___ (pronoun) need to run.",
+      "answer": "we"
+    },
+    {
+      "question": "Excuse me, are ___ (pronoun) the new teacher?",
+      "answer": "you"
+    },
+    {
+      "question": "The dog wants food. ___ (pronoun) is hungry.",
+      "answer": "it"
+    },
+    {
+      "question": "Elena is happy because ___ (pronoun) passed the test.",
+      "answer": "she"
+    },
+    {
+      "question": "David is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "My father is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "My brother is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "The doctor is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "The waiter is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "The actor is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "Mr. Green is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "Tom is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "Peter is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "The boy is happy. ___ (pronoun) is smiling.",
+      "answer": "he"
+    },
+    {
+      "question": "Maria is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "Laura is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "My mother is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "My sister is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "The nurse is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "The waitress is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "The actress is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "Mrs. Smith is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "Sarah is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "The girl is at home. ___ (pronoun) is reading a book.",
+      "answer": "she"
+    },
+    {
+      "question": "The book is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The dog is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The cat is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The key is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The car is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The table is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "London is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The school is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The dictionary is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The computer is here. ___ (pronoun) is very useful.",
+      "answer": "it"
+    },
+    {
+      "question": "The books are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "The dogs are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "The keys are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "My parents are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "My brothers are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "Sofia and Maria are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "The students are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "The teachers are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "The cars are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "The houses are old. ___ (pronoun) are from England.",
+      "answer": "they"
+    },
+    {
+      "question": "John and I are students. ___ (pronoun) study in Oxford.",
+      "answer": "we"
+    },
+    {
+      "question": "My brother and I are students. ___ (pronoun) study in Oxford.",
+      "answer": "we"
+    },
+    {
+      "question": "My sister and I are students. ___ (pronoun) study in Oxford.",
+      "answer": "we"
+    },
+    {
+      "question": "My friends and I are students. ___ (pronoun) study in Oxford.",
+      "answer": "we"
+    },
+    {
+      "question": "My family and I are students. ___ (pronoun) study in Oxford.",
+      "answer": "we"
+    }
+  ],
+  "possessive": [
+    {
+      "question": "I have a car. ___ (possessive) car is blue.",
+      "answer": "my"
+    },
+    {
+      "question": "He has a sister. ___ (possessive) name is Laura.",
+      "answer": "his"
+    },
+    {
+      "question": "She lives with ___ (possessive) husband in London.",
+      "answer": "her"
+    },
+    {
+      "question": "We study in London. ___ (possessive) school is very big.",
+      "answer": "our"
+    },
+    {
+      "question": "They have two children. ___ (possessive) school is near here.",
+      "answer": "their"
+    },
+    {
+      "question": "The dog is playing with ___ (possessive) ball.",
+      "answer": "its"
+    },
+    {
+      "question": "What is ___ (possessive) name? (informal your)",
+      "answer": "your"
+    },
+    {
+      "question": "I want to clean ___ (possessive) bedroom today.",
+      "answer": "my"
+    },
+    {
+      "question": "John is reading ___ (possessive) favorite book.",
+      "answer": "his"
+    },
+    {
+      "question": "They forgot ___ (possessive) keys in the classroom.",
+      "answer": "their"
+    },
+    {
+      "question": "Oxford is famous for ___ (possessive) ancient university.",
+      "answer": "its"
+    },
+    {
+      "question": "We love ___ (possessive) English classes.",
+      "answer": "our"
+    },
+    {
+      "question": "She needs ___ (possessive) glasses to read the board.",
+      "answer": "her"
+    },
+    {
+      "question": "Do you like ___ (possessive) new job?",
+      "answer": "your"
+    },
+    {
+      "question": "The boys are washing ___ (possessive) dirty hands.",
+      "answer": "their"
+    },
+    {
+      "question": "I have a laptop. ___ (possessive) laptop is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "I have a watch. ___ (possessive) watch is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "I have a key. ___ (possessive) key is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "I have a bag. ___ (possessive) bag is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "I have a dog. ___ (possessive) dog is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "I have a cat. ___ (possessive) cat is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "I have a house. ___ (possessive) house is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "I have a room. ___ (possessive) room is very nice.",
+      "answer": "my"
+    },
+    {
+      "question": "He has a laptop. ___ (possessive) laptop is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "He has a watch. ___ (possessive) watch is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "He has a key. ___ (possessive) key is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "He has a bag. ___ (possessive) bag is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "He has a dog. ___ (possessive) dog is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "He has a cat. ___ (possessive) cat is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "He has a house. ___ (possessive) house is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "He has a room. ___ (possessive) room is very nice.",
+      "answer": "his"
+    },
+    {
+      "question": "She has a laptop. ___ (possessive) laptop is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "She has a watch. ___ (possessive) watch is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "She has a key. ___ (possessive) key is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "She has a bag. ___ (possessive) bag is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "She has a dog. ___ (possessive) dog is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "She has a cat. ___ (possessive) cat is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "She has a house. ___ (possessive) house is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "She has a room. ___ (possessive) room is very nice.",
+      "answer": "her"
+    },
+    {
+      "question": "It has a laptop. ___ (possessive) laptop is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "It has a watch. ___ (possessive) watch is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "It has a key. ___ (possessive) key is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "It has a bag. ___ (possessive) bag is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "It has a dog. ___ (possessive) dog is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "It has a cat. ___ (possessive) cat is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "It has a house. ___ (possessive) house is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "It has a room. ___ (possessive) room is very nice.",
+      "answer": "its"
+    },
+    {
+      "question": "We have a laptop. ___ (possessive) laptop is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "We have a watch. ___ (possessive) watch is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "We have a key. ___ (possessive) key is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "We have a bag. ___ (possessive) bag is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "We have a dog. ___ (possessive) dog is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "We have a cat. ___ (possessive) cat is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "We have a house. ___ (possessive) house is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "We have a room. ___ (possessive) room is very nice.",
+      "answer": "our"
+    },
+    {
+      "question": "They have a laptop. ___ (possessive) laptop is very nice.",
+      "answer": "their"
+    },
+    {
+      "question": "They have a watch. ___ (possessive) watch is very nice.",
+      "answer": "their"
+    },
+    {
+      "question": "They have a key. ___ (possessive) key is very nice.",
+      "answer": "their"
+    },
+    {
+      "question": "They have a bag. ___ (possessive) bag is very nice.",
+      "answer": "their"
+    },
+    {
+      "question": "They have a dog. ___ (possessive) dog is very nice.",
+      "answer": "their"
+    }
+  ],
+  "plurals": [
+    {
+      "question": "I have ___ (a/an) orange on the table.",
+      "answer": "an"
+    },
+    {
+      "question": "We need ___ (a/an) key to open the main door.",
+      "answer": "a"
+    },
+    {
+      "question": "Can you see ___ (a/an) umbrella over there?",
+      "answer": "an"
+    },
+    {
+      "question": "What is the plural of 'class'? ___",
+      "answer": "classes"
+    },
+    {
+      "question": "What is the plural of 'country'? ___",
+      "answer": "countries"
+    },
+    {
+      "question": "What is the plural of 'watch'? ___",
+      "answer": "watches"
+    },
+    {
+      "question": "What is the plural of 'man'? ___",
+      "answer": "men"
+    },
+    {
+      "question": "What is the plural of 'child'? ___",
+      "answer": "children"
+    },
+    {
+      "question": "What is the plural of 'woman'? ___",
+      "answer": "women"
+    },
+    {
+      "question": "What is the plural of 'person'? ___",
+      "answer": "people"
+    },
+    {
+      "question": "What is the plural of 'dictionary'? ___",
+      "answer": "dictionaries"
+    },
+    {
+      "question": "He has ___ (a/an) identity card in his pocket.",
+      "answer": "an"
+    },
+    {
+      "question": "Look at ___ (the) sky, it is blue.",
+      "answer": "the"
+    },
+    {
+      "question": "What is the plural of 'city'? ___",
+      "answer": "cities"
+    },
+    {
+      "question": "What is the plural of 'box'? ___",
+      "answer": "boxes"
+    },
+    {
+      "question": "What is the plural of 'pen'? ___",
+      "answer": "pens"
+    },
+    {
+      "question": "What is the plural of 'phone'? ___",
+      "answer": "phones"
+    },
+    {
+      "question": "What is the plural of 'desk'? ___",
+      "answer": "desks"
+    },
+    {
+      "question": "What is the plural of 'bag'? ___",
+      "answer": "bags"
+    },
+    {
+      "question": "What is the plural of 'coin'? ___",
+      "answer": "coins"
+    },
+    {
+      "question": "What is the plural of 'photo'? ___",
+      "answer": "photos"
+    },
+    {
+      "question": "What is the plural of 'key'? ___",
+      "answer": "keys"
+    },
+    {
+      "question": "What is the plural of 'book'? ___",
+      "answer": "books"
+    },
+    {
+      "question": "What is the plural of 'file'? ___",
+      "answer": "files"
+    },
+    {
+      "question": "What is the plural of 'boy'? ___",
+      "answer": "boys"
+    },
+    {
+      "question": "What is the plural of 'glass'? ___",
+      "answer": "glasses"
+    },
+    {
+      "question": "What is the plural of 'brush'? ___",
+      "answer": "brushes"
+    },
+    {
+      "question": "What is the plural of 'sandwich'? ___",
+      "answer": "sandwiches"
+    },
+    {
+      "question": "What is the plural of 'match'? ___",
+      "answer": "matches"
+    },
+    {
+      "question": "What is the plural of 'baby'? ___",
+      "answer": "babies"
+    },
+    {
+      "question": "What is the plural of 'family'? ___",
+      "answer": "families"
+    },
+    {
+      "question": "What is the plural of 'activity'? ___",
+      "answer": "activities"
+    },
+    {
+      "question": "What is the plural of 'party'? ___",
+      "answer": "parties"
+    },
+    {
+      "question": "What is the plural of 'day'? ___",
+      "answer": "days"
+    },
+    {
+      "question": "What is the plural of 'way'? ___",
+      "answer": "ways"
+    },
+    {
+      "question": "What is the plural of 'toy'? ___",
+      "answer": "toys"
+    },
+    {
+      "question": "What is the plural of 'play'? ___",
+      "answer": "plays"
+    },
+    {
+      "question": "Complete with a/an: I have ___ apple.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ elephant.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ email.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ office.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ actor.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ actress.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ engineer.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ easy exercise.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ old watch.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: I have ___ expensive key.",
+      "answer": "an"
+    },
+    {
+      "question": "Complete with a/an: She is ___ car.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ house.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ teacher.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ student.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ doctor.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ lawyer.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ nurse.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ cheap car.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ big house.",
+      "answer": "a"
+    },
+    {
+      "question": "Complete with a/an: She is ___ nice dog.",
+      "answer": "a"
+    }
+  ],
+  "adjectives": [
+    {
+      "question": "The opposite of 'cheap' is ___ (adjective).",
+      "answer": "expensive"
+    },
+    {
+      "question": "The opposite of 'easy' is ___ (adjective).",
+      "answer": "difficult"
+    },
+    {
+      "question": "The opposite of 'dirty' is ___ (adjective).",
+      "answer": "clean"
+    },
+    {
+      "question": "The opposite of 'fast' is ___ (adjective).",
+      "answer": "slow"
+    },
+    {
+      "question": "The opposite of 'beautiful' is ___ (adjective).",
+      "answer": "ugly"
+    },
+    {
+      "question": "The opposite of 'big' is ___ (adjective).",
+      "answer": "small"
+    },
+    {
+      "question": "It is an ___ ___ (expensive / car) -> 'auto caro' (two words).",
+      "answer": "expensive car"
+    },
+    {
+      "question": "They are ___ ___ (dirty / keys) -> 'llaves sucias' (two words).",
+      "answer": "dirty keys"
+    },
+    {
+      "question": "The exam is ___ ___ (quite / difficult) -> 'bastante difícil' (two words).",
+      "answer": "quite difficult"
+    },
+    {
+      "question": "He is a ___ ___ (very / good) teacher -> 'muy buen' (two words).",
+      "answer": "very good"
+    },
+    {
+      "question": "The opposite of 'good' is ___.",
+      "answer": "bad"
+    },
+    {
+      "question": "The opposite of 'safe' is ___.",
+      "answer": "dangerous"
+    },
+    {
+      "question": "The opposite of 'cold' is ___.",
+      "answer": [
+        "hot",
+        "warm"
+      ]
+    },
+    {
+      "question": "An elephant is a ___ ___ (big / animal) -> 'animal grande' (two words).",
+      "answer": "big animal"
+    },
+    {
+      "question": "A Ferrari is a ___ ___ ___ (very / fast / car) -> 'auto muy rápido' (three words).",
+      "answer": "very fast car"
+    },
+    {
+      "question": "The opposite of 'expensive' is ___ (adjective).",
+      "answer": "cheap"
+    },
+    {
+      "question": "The opposite of 'cheap' is ___ (adjective).",
+      "answer": "expensive"
+    },
+    {
+      "question": "The opposite of 'difficult' is ___ (adjective).",
+      "answer": "easy"
+    },
+    {
+      "question": "The opposite of 'easy' is ___ (adjective).",
+      "answer": "difficult"
+    },
+    {
+      "question": "The opposite of 'clean' is ___ (adjective).",
+      "answer": "dirty"
+    },
+    {
+      "question": "The opposite of 'dirty' is ___ (adjective).",
+      "answer": "clean"
+    },
+    {
+      "question": "The opposite of 'slow' is ___ (adjective).",
+      "answer": "fast"
+    },
+    {
+      "question": "The opposite of 'fast' is ___ (adjective).",
+      "answer": "slow"
+    },
+    {
+      "question": "The opposite of 'ugly' is ___ (adjective).",
+      "answer": "beautiful"
+    },
+    {
+      "question": "The opposite of 'beautiful' is ___ (adjective).",
+      "answer": "ugly"
+    },
+    {
+      "question": "The opposite of 'small' is ___ (adjective).",
+      "answer": "big"
+    },
+    {
+      "question": "The opposite of 'big' is ___ (adjective).",
+      "answer": "small"
+    },
+    {
+      "question": "The opposite of 'bad' is ___ (adjective).",
+      "answer": "good"
+    },
+    {
+      "question": "The opposite of 'good' is ___ (adjective).",
+      "answer": "bad"
+    },
+    {
+      "question": "The opposite of 'dangerous' is ___ (adjective).",
+      "answer": "safe"
+    },
+    {
+      "question": "The opposite of 'safe' is ___ (adjective).",
+      "answer": "dangerous"
+    },
+    {
+      "question": "The opposite of 'hot' is ___ (adjective).",
+      "answer": "cold"
+    },
+    {
+      "question": "The opposite of 'cold' is ___ (adjective).",
+      "answer": "hot"
+    },
+    {
+      "question": "The opposite of 'old' is ___ (adjective).",
+      "answer": "new"
+    },
+    {
+      "question": "The opposite of 'new' is ___ (adjective).",
+      "answer": "old"
+    },
+    {
+      "question": "The opposite of 'poor' is ___ (adjective).",
+      "answer": "rich"
+    },
+    {
+      "question": "The opposite of 'rich' is ___ (adjective).",
+      "answer": "poor"
+    },
+    {
+      "question": "The opposite of 'dry' is ___ (adjective).",
+      "answer": "wet"
+    },
+    {
+      "question": "The opposite of 'wet' is ___ (adjective).",
+      "answer": "dry"
+    },
+    {
+      "question": "The opposite of 'dark' is ___ (adjective).",
+      "answer": "light"
+    },
+    {
+      "question": "The opposite of 'light' is ___ (adjective).",
+      "answer": "dark"
+    },
+    {
+      "question": "The opposite of 'sad' is ___ (adjective).",
+      "answer": "happy"
+    },
+    {
+      "question": "The opposite of 'happy' is ___ (adjective).",
+      "answer": "sad"
+    },
+    {
+      "question": "The opposite of 'wrong' is ___ (adjective).",
+      "answer": "right"
+    },
+    {
+      "question": "The opposite of 'right' is ___ (adjective).",
+      "answer": "wrong"
+    },
+    {
+      "question": "The opposite of 'tidy' is ___ (adjective).",
+      "answer": "untidy"
+    },
+    {
+      "question": "The opposite of 'untidy' is ___ (adjective).",
+      "answer": "tidy"
+    }
+  ],
+  "present-simple": [
+    {
+      "question": "She ___ (live) in a big flat in London.",
+      "answer": "lives"
+    },
+    {
+      "question": "They ___ (not / study) Spanish on Sundays.",
+      "answer": [
+        "don't study",
+        "do not study"
+      ]
+    },
+    {
+      "question": "He ___ (watch) television in the evening.",
+      "answer": "watches"
+    },
+    {
+      "question": "We ___ (have) lunch together at 1:00.",
+      "answer": "have"
+    },
+    {
+      "question": "___ (do/does) you play the guitar?",
+      "answer": "do"
+    },
+    {
+      "question": "___ (do/does) she speak English with her friends?",
+      "answer": "does"
+    },
+    {
+      "question": "Where ___ (do/does) they live?",
+      "answer": "do"
+    },
+    {
+      "question": "What time ___ (do/does) he go to bed?",
+      "answer": "does"
+    },
+    {
+      "question": "My brother ___ (not / like) cats.",
+      "answer": [
+        "doesn't like",
+        "does not like"
+      ]
+    },
+    {
+      "question": "I ___ (study) English every day at school.",
+      "answer": "study"
+    },
+    {
+      "question": "My parents ___ (work) in a big hospital.",
+      "answer": "work"
+    },
+    {
+      "question": "She ___ (not / read) books or newspapers.",
+      "answer": [
+        "doesn't read",
+        "does not read"
+      ]
+    },
+    {
+      "question": "Does your mother ___ (have) a car?",
+      "answer": "have"
+    },
+    {
+      "question": "Do they ___ (want) a coffee?",
+      "answer": "want"
+    },
+    {
+      "question": "John ___ (do) his homework after dinner.",
+      "answer": "does"
+    },
+    {
+      "question": "The class ___ (finish) at 5:00 PM.",
+      "answer": "finishes"
+    },
+    {
+      "question": "We ___ (not / eat) fast food often.",
+      "answer": [
+        "don't eat",
+        "do not eat"
+      ]
+    },
+    {
+      "question": "She ___ (wear) glasses to read.",
+      "answer": "wears"
+    },
+    {
+      "question": "What ___ (do/does) you want for breakfast?",
+      "answer": "do"
+    },
+    {
+      "question": "He ___ (go) to the cinema on Saturdays.",
+      "answer": "goes"
+    },
+    {
+      "question": "She ___ (live) English at home.",
+      "answer": "lives"
+    },
+    {
+      "question": "They ___ (live) in Manchester.",
+      "answer": "live"
+    },
+    {
+      "question": "He ___ (not / live) very often.",
+      "answer": [
+        "doesn't live",
+        "does not live"
+      ]
+    },
+    {
+      "question": "We ___ (not / live) on weekends.",
+      "answer": [
+        "don't live",
+        "do not live"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father live here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they live a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (study) English at home.",
+      "answer": "studies"
+    },
+    {
+      "question": "They ___ (study) in Manchester.",
+      "answer": "study"
+    },
+    {
+      "question": "He ___ (not / study) very often.",
+      "answer": [
+        "doesn't study",
+        "does not study"
+      ]
+    },
+    {
+      "question": "We ___ (not / study) on weekends.",
+      "answer": [
+        "don't study",
+        "do not study"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father study here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they study a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (work) English at home.",
+      "answer": "works"
+    },
+    {
+      "question": "They ___ (work) in Manchester.",
+      "answer": "work"
+    },
+    {
+      "question": "He ___ (not / work) very often.",
+      "answer": [
+        "doesn't work",
+        "does not work"
+      ]
+    },
+    {
+      "question": "We ___ (not / work) on weekends.",
+      "answer": [
+        "don't work",
+        "do not work"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father work here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they work a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (watch) English at home.",
+      "answer": "watches"
+    },
+    {
+      "question": "They ___ (watch) in Manchester.",
+      "answer": "watch"
+    },
+    {
+      "question": "He ___ (not / watch) very often.",
+      "answer": [
+        "doesn't watch",
+        "does not watch"
+      ]
+    },
+    {
+      "question": "We ___ (not / watch) on weekends.",
+      "answer": [
+        "don't watch",
+        "do not watch"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father watch here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they watch a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (have) English at home.",
+      "answer": "has"
+    },
+    {
+      "question": "They ___ (have) in Manchester.",
+      "answer": "have"
+    },
+    {
+      "question": "He ___ (not / have) very often.",
+      "answer": [
+        "doesn't have",
+        "does not have"
+      ]
+    },
+    {
+      "question": "We ___ (not / have) on weekends.",
+      "answer": [
+        "don't have",
+        "do not have"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father have here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they have a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (play) English at home.",
+      "answer": "plays"
+    },
+    {
+      "question": "They ___ (play) in Manchester.",
+      "answer": "play"
+    },
+    {
+      "question": "He ___ (not / play) very often.",
+      "answer": [
+        "doesn't play",
+        "does not play"
+      ]
+    },
+    {
+      "question": "We ___ (not / play) on weekends.",
+      "answer": [
+        "don't play",
+        "do not play"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father play here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they play a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (want) English at home.",
+      "answer": "wants"
+    },
+    {
+      "question": "They ___ (want) in Manchester.",
+      "answer": "want"
+    },
+    {
+      "question": "He ___ (not / want) very often.",
+      "answer": [
+        "doesn't want",
+        "does not want"
+      ]
+    },
+    {
+      "question": "We ___ (not / want) on weekends.",
+      "answer": [
+        "don't want",
+        "do not want"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father want here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they want a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (like) English at home.",
+      "answer": "likes"
+    },
+    {
+      "question": "They ___ (like) in Manchester.",
+      "answer": "like"
+    },
+    {
+      "question": "He ___ (not / like) very often.",
+      "answer": [
+        "doesn't like",
+        "does not like"
+      ]
+    },
+    {
+      "question": "We ___ (not / like) on weekends.",
+      "answer": [
+        "don't like",
+        "do not like"
+      ]
+    },
+    {
+      "question": "___ (do/does) your father like here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ (do/does) they like a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (speak) English at home.",
+      "answer": "speaks"
+    },
+    {
+      "question": "They ___ (speak) in Manchester.",
+      "answer": "speak"
+    }
+  ],
+  "reading": [
+    {
+      "question": "What is Felix Nuttel's profession? He is a ___.",
+      "answer": "pilot"
+    },
+    {
+      "question": "Felix crashes his plane in ___ (country).",
+      "answer": "france"
+    },
+    {
+      "question": "The plane crashed into a large ___.",
+      "answer": "tree"
+    },
+    {
+      "question": "Who is the girl who finds Felix? Her name is ___.",
+      "answer": "monica"
+    },
+    {
+      "question": "Monica's family lives on a ___.",
+      "answer": "farm"
+    },
+    {
+      "question": "Felix wants to fly home to ___ (country).",
+      "answer": "england"
+    },
+    {
+      "question": "Does Felix die in the crash? ___ (yes/no).",
+      "answer": "no"
+    },
+    {
+      "question": "What stopped working in Felix's plane? The ___.",
+      "answer": "engine"
+    },
+    {
+      "question": "Felix was flying home from ___ (country in Africa).",
+      "answer": "egypt"
+    },
+    {
+      "question": "Monica and Felix speak ___ (language) together.",
+      "answer": "english"
+    },
+    {
+      "question": "Monica's family are ___ (farmers/doctors).",
+      "answer": "farmers"
+    },
+    {
+      "question": "Felix returns to England by ___ (train/plane).",
+      "answer": "train"
+    },
+    {
+      "question": "Felix Nuttel's plane is ___ (small/large).",
+      "answer": "small"
+    },
+    {
+      "question": "Is Felix's head hurting after the crash? ___ (yes/no).",
+      "answer": "yes"
+    },
+    {
+      "question": "Who is Monica's father? He is ___.",
+      "answer": "hector"
+    },
+    {
+      "question": "Monica is ___ (French/English).",
+      "answer": "french"
+    },
+    {
+      "question": "Felix stays at Monica's house for a few ___.",
+      "answer": "days"
+    },
+    {
+      "question": "Monica's father, Hector, takes Felix to the ___ (train station).",
+      "answer": "station"
+    },
+    {
+      "question": "Is Flying Home an A1 reader? ___ (yes/no).",
+      "answer": "yes"
+    },
+    {
+      "question": "Felix is a young man. ___ (true/false)",
+      "answer": "true"
+    },
+    {
+      "question": "Text: 'My name is Sarah. I am 25. I live in London and I work in a bank.' -> Where does Sarah live? ___",
+      "answer": "london"
+    },
+    {
+      "question": "Text: 'My name is Sarah. I am 25. I live in London and I work in a bank.' -> What is Sarah's job? She works in a ___.",
+      "answer": "bank"
+    },
+    {
+      "question": "Text: 'My name is Sarah. I am 25. I live in London and I work in a bank.' -> How old is Sarah? ___",
+      "answer": "25"
+    },
+    {
+      "question": "Text: 'Mike has a busy routine. He gets up at 6:30, has breakfast, and goes to work by train.' -> What time does Mike get up? ___",
+      "answer": "6:30"
+    },
+    {
+      "question": "Text: 'Mike has a busy routine. He gets up at 6:30, has breakfast, and goes to work by train.' -> How does Mike go to work? By ___.",
+      "answer": "train"
+    },
+    {
+      "question": "Text: 'Mr. and Mrs. Smith live in a large house in Manchester. They have three children and a dog.' -> Where do the Smiths live? ___",
+      "answer": "manchester"
+    },
+    {
+      "question": "Text: 'Mr. and Mrs. Smith live in a large house in Manchester. They have three children and a dog.' -> How many children do they have? ___",
+      "answer": "three"
+    },
+    {
+      "question": "Text: 'Mr. and Mrs. Smith live in a large house in Manchester. They have three children and a dog.' -> What animal do they have? A ___.",
+      "answer": "dog"
+    },
+    {
+      "question": "Text: 'On Saturdays, Helen plays tennis with her sister and reads books.' -> Who does Helen play tennis with? Her ___.",
+      "answer": "sister"
+    },
+    {
+      "question": "Text: 'On Saturdays, Helen plays tennis with her sister and reads books.' -> What does Helen do besides tennis? She reads ___.",
+      "answer": "books"
+    },
+    {
+      "question": "Text: 'David is from Canada, but he lives in Paris. He speaks English and French.' -> Where is David from? ___",
+      "answer": "canada"
+    },
+    {
+      "question": "Text: 'David is from Canada, but he lives in Paris. He speaks English and French.' -> Where does David live now? ___",
+      "answer": "paris"
+    },
+    {
+      "question": "Text: 'David is from Canada, but he lives in Paris. He speaks English and French.' -> What languages does David speak? English and ___.",
+      "answer": "french"
+    },
+    {
+      "question": "Text: 'My school is very old. It has 20 classrooms, a library, and a beautiful garden.' -> How many classrooms are there? ___",
+      "answer": "20"
+    },
+    {
+      "question": "Text: 'My school is very old. It has 20 classrooms, a library, and a beautiful garden.' -> What is outside? A beautiful ___.",
+      "answer": "garden"
+    },
+    {
+      "question": "Text: 'Julia gets up early. She goes for a run, has breakfast, and then studies French at 9:00.' -> What language does Julia study? ___",
+      "answer": "french"
+    },
+    {
+      "question": "Text: 'Julia gets up early. She goes for a run, has breakfast, and then studies French at 9:00.' -> What time does she study? At ___.",
+      "answer": "9:00"
+    },
+    {
+      "question": "Text: 'We have a nice flat in Rome. It is quite small, but very clean.' -> Where is the flat? In ___.",
+      "answer": "rome"
+    },
+    {
+      "question": "Text: 'We have a nice flat in Rome. It is quite small, but very clean.' -> Is the flat large or small? It is ___.",
+      "answer": "small"
+    },
+    {
+      "question": "Text: 'We have a nice flat in Rome. It is quite small, but very clean.' -> Is the flat clean? ___ (yes/no).",
+      "answer": "yes"
+    }
+  ],
+  "listening-ex": [
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "fifteen",
+      "answer": [
+        "15",
+        "fifteen"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "fifty",
+      "answer": [
+        "50",
+        "fifty"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "eighty-two",
+      "answer": [
+        "82",
+        "eighty-two"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "thirty-three",
+      "answer": [
+        "33",
+        "thirty-three"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "a hundred",
+      "answer": [
+        "100",
+        "a hundred",
+        "one hundred"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "twelve",
+      "answer": [
+        "12",
+        "twelve"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "seventy-four",
+      "answer": [
+        "74",
+        "seventy-four"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "nineteen",
+      "answer": [
+        "19",
+        "nineteen"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "ninety",
+      "answer": [
+        "90",
+        "ninety"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el número y escríbelo: ___",
+      "speakText": "forty-eight",
+      "answer": [
+        "48",
+        "forty-eight"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "h, e, l, l, o",
+      "answer": "hello",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "p, i, l, o, t",
+      "answer": "pilot",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "u, m, b, r, e, l, l, a",
+      "answer": "umbrella",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "c, o, u, n, t, r, y",
+      "answer": "country",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "t, e, a, c, h, e, r",
+      "answer": "teacher",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "f, a, m, i, l, y",
+      "answer": "family",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "a, d, d, r, e, s, s",
+      "answer": "address",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "w, e, d, n, e, s, d, a, y",
+      "answer": "wednesday",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "s, c, h, o, o, l",
+      "answer": "school",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha el deletreo y escribe la palabra: ___",
+      "speakText": "g, l, a, s, s, e, s",
+      "answer": "glasses",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la instrucción y escríbela: ___",
+      "speakText": "Open your books",
+      "answer": "open your books",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la instrucción y escríbela: ___",
+      "speakText": "Close the door",
+      "answer": "close the door",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la instrucción y escríbela: ___",
+      "speakText": "Listen and repeat",
+      "answer": "listen and repeat",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la instrucción y escríbela: ___",
+      "speakText": "Turn off your phone",
+      "answer": "turn off your phone",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la instrucción y escríbela: ___",
+      "speakText": "Stand up",
+      "answer": "stand up",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la instrucción y escríbela: ___",
+      "speakText": "Sit down",
+      "answer": "sit down",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la instrucción y escríbela: ___",
+      "speakText": "Look at the board",
+      "answer": "look at the board",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "I'm from Spain",
+      "answer": [
+        "i'm from spain",
+        "i am from spain"
+      ],
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "She is a doctor",
+      "answer": "she is a doctor",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "He plays the guitar",
+      "answer": "he plays the guitar",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "They live in a flat",
+      "answer": "they live in a flat",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "What's your name?",
+      "answer": "what's your name?",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "Where do you work?",
+      "answer": "where do you work?",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "Have a nice day",
+      "answer": "have a nice day",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "See you tomorrow",
+      "answer": "see you tomorrow",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "Excuse me, please",
+      "answer": "excuse me, please",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "Thank you very much",
+      "answer": "thank you very much",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "Let's go home",
+      "answer": "let's go home",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "Don't drive fast",
+      "answer": "don't drive fast",
+      "type": "listening"
+    },
+    {
+      "question": "Escucha la oración y escríbela: ___",
+      "speakText": "We are very happy",
+      "answer": "we are very happy",
+      "type": "listening"
+    }
+  ]
+};
+
 // VOCABULARY BANK DATA CATEGORIES
 const vocabularyBankDatabase = {
   "days": [
@@ -763,6 +2808,9 @@ const app = {
   // Spelling dictation state
   activeSpellingIndex: 0,
   
+  // Exercises active state
+  activeExerciseCategory: "be",
+  
   // Web Speech controls
   selectedAccent: 'en-GB',
   voiceRate: 0.9,
@@ -857,6 +2905,8 @@ const app = {
     } else if (pageId === 'lessons-page') {
       // Load lesson content via its own dedicated method (non-recursive)
       this.loadLessonContent(this.activeLessonId);
+    } else if (pageId === 'exercises-page') {
+      this.selectExerciseCategory(this.activeExerciseCategory);
     }
   },
   
@@ -1750,7 +3800,7 @@ const app = {
   },
   
   renderPhoneticsChart() {
-    const renderList = (dataList, containerId) => {
+    const renderList = (dataList, containerId, isVowel) => {
       const el = document.getElementById(containerId);
       el.innerHTML = '';
       dataList.forEach(item => {
@@ -1760,20 +3810,20 @@ const app = {
           <div class="phoneme-symbol">/${item.ipa}/</div>
           <div class="phoneme-example">${item.word}</div>
         `;
-        card.onclick = () => this.speakPhoneme(item.ipa, item.word);
+        card.onclick = () => this.speakPhoneme(item.ipa, item.word, isVowel);
         el.appendChild(card);
       });
     };
     
     // Vowels
-    renderList(soundsDatabase.vowels.short, 'short-vowels-grid');
-    renderList(soundsDatabase.vowels.long, 'long-vowels-grid');
-    renderList(soundsDatabase.vowels.diphthongs, 'diphthongs-grid');
+    renderList(soundsDatabase.vowels.short, 'short-vowels-grid', true);
+    renderList(soundsDatabase.vowels.long, 'long-vowels-grid', true);
+    renderList(soundsDatabase.vowels.diphthongs, 'diphthongs-grid', true);
     
     // Consonants
-    renderList(soundsDatabase.consonants.unvoiced, 'unvoiced-consonants-grid');
-    renderList(soundsDatabase.consonants.voiced, 'voiced-consonants-grid');
-    renderList(soundsDatabase.consonants.other, 'other-consonants-grid');
+    renderList(soundsDatabase.consonants.unvoiced, 'unvoiced-consonants-grid', false);
+    renderList(soundsDatabase.consonants.voiced, 'voiced-consonants-grid', false);
+    renderList(soundsDatabase.consonants.other, 'other-consonants-grid', false);
   },
   
   switchPronTab(ptabId) {
@@ -1895,13 +3945,166 @@ const app = {
     this.speak(letter);
   },
   
-  speakPhoneme(ipa, word) {
-    // Speak explaining the phoneme: "The sound /ipa/ as in word"
-    this.speak(`the sound ${word} sound`);
-    // Pronounce the example word
-    setTimeout(() => {
-      this.speak(word);
-    }, 850);
+  speakPhoneme(ipa, word, isVowel) {
+    // Solo pronuncia la palabra directamente
+    this.speak(word);
+  },
+
+  // EXERCISES PAGE LOGIC
+  selectExerciseCategory(category) {
+    this.activeExerciseCategory = category;
+    
+    document.querySelectorAll('#exercises-page .tab-btn').forEach(btn => {
+      if (btn.getAttribute('data-excat') === category) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+    
+    // Set title
+    const titles = {
+      "be": "Ejercicios de Verbo Be (am / is / are)",
+      "pronouns": "Ejercicios de Pronombres Sujeto",
+      "possessive": "Ejercicios de Adjetivos Posesivos",
+      "plurals": "Ejercicios de Plurales y Artículos",
+      "adjectives": "Ejercicios de Adjetivos y Colores",
+      "present-simple": "Ejercicios de Present Simple (Do / Does / -s)",
+      "flying-home": "Comprensión Lectora: Flying Home (PDF Reader)"
+    };
+    document.getElementById('ex-category-title').innerText = titles[category] || "Ejercicios";
+    
+    this.renderExercises();
+  },
+  
+  renderExercises() {
+    const list = exercisesDatabase[this.activeExerciseCategory];
+    const container = document.getElementById('exercises-dynamic-list');
+    container.innerHTML = '';
+    
+    list.forEach((ex, idx) => {
+      const itemRow = document.createElement('div');
+      itemRow.className = "exercise-item-row";
+      
+      // Parse the question, split "___" and insert text input
+      const parts = ex.question.split("___");
+      
+      const questionWrapper = document.createElement('div');
+      questionWrapper.className = "exercise-question-wrapper";
+      
+      if (ex.type === "listening") {
+        // Prepend speaker button for listening exercises
+        const speakBtn = document.createElement('button');
+        speakBtn.className = "speaker-btn";
+        speakBtn.style.marginRight = "0.75rem";
+        speakBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px; height:16px;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>`;
+        speakBtn.onclick = () => this.speak(ex.speakText);
+        questionWrapper.appendChild(speakBtn);
+      }
+
+      if (parts.length > 1) {
+        questionWrapper.appendChild(document.createTextNode(`${idx + 1}. `));
+        parts.forEach((part, pidx) => {
+          questionWrapper.appendChild(document.createTextNode(part));
+          if (pidx < parts.length - 1) {
+            const input = document.createElement('input');
+            input.type = "text";
+            input.className = "exercise-input-blank";
+            input.setAttribute('data-idx', idx);
+            input.setAttribute('autocomplete', 'off');
+            questionWrapper.appendChild(input);
+          }
+        });
+      } else {
+        questionWrapper.appendChild(document.createTextNode(`${idx + 1}. `));
+        questionWrapper.appendChild(document.createTextNode(ex.question));
+        const input = document.createElement('input');
+        input.type = "text";
+        input.className = "exercise-input-blank";
+        input.setAttribute('data-idx', idx);
+        input.setAttribute('autocomplete', 'off');
+        questionWrapper.appendChild(input);
+      }
+      
+      const feedback = document.createElement('span');
+      feedback.className = "exercise-feedback-icon";
+      feedback.id = `ex-feedback-${idx}`;
+      
+      itemRow.appendChild(questionWrapper);
+      itemRow.appendChild(feedback);
+      container.appendChild(itemRow);
+    });
+    
+    // Reset indicators
+    document.getElementById('exercises-score').innerText = `Completados: 0/${list.length}`;
+  },
+  
+  checkAllExercises() {
+    const category = this.activeExerciseCategory;
+    const list = exercisesDatabase[category];
+    let correctCount = 0;
+    
+    list.forEach((ex, idx) => {
+      const inputs = document.querySelectorAll(`#exercises-dynamic-list input[data-idx="${idx}"]`);
+      const feedback = document.getElementById(`ex-feedback-${idx}`);
+      
+      let allInputsCorrect = true;
+      let hasValue = false;
+      
+      inputs.forEach(input => {
+        const val = input.value.trim().toLowerCase();
+        if (val) hasValue = true;
+        
+        const correctAnswers = Array.isArray(ex.answer) 
+          ? ex.answer.map(a => a.toLowerCase()) 
+          : [ex.answer.toLowerCase()];
+          
+        if (correctAnswers.includes(val)) {
+          input.style.borderColor = "var(--color-success-light)";
+        } else {
+          allInputsCorrect = false;
+          input.style.borderColor = "var(--color-error)";
+        }
+      });
+      
+      if (hasValue && allInputsCorrect) {
+        correctCount++;
+        feedback.innerHTML = `✅`;
+        feedback.style.color = "var(--color-success-light)";
+      } else if (hasValue) {
+        feedback.innerHTML = `❌`;
+        feedback.style.color = "var(--color-error)";
+      } else {
+        feedback.innerHTML = ``;
+      }
+    });
+    
+    document.getElementById('exercises-score').innerText = `Aciertos: ${correctCount}/${list.length}`;
+    
+    if (correctCount === list.length) {
+      AudioSynth.playSuccess();
+      alert("¡Felicidades! Todos los ejercicios de esta categoría están correctos. 🌟");
+    } else if (correctCount > 0) {
+      AudioSynth.playCorrect();
+    } else {
+      AudioSynth.playError();
+    }
+  },
+  
+  resetCategoryExercises() {
+    const inputs = document.querySelectorAll('#exercises-dynamic-list input');
+    inputs.forEach(input => {
+      input.value = '';
+      input.style.borderColor = 'var(--glass-border)';
+    });
+    
+    const feedbacks = document.querySelectorAll('#exercises-dynamic-list .exercise-feedback-icon');
+    feedbacks.forEach(fb => {
+      fb.innerHTML = '';
+    });
+    
+    const list = exercisesDatabase[this.activeExerciseCategory];
+    document.getElementById('exercises-score').innerText = `Completados: 0/${list.length}`;
   }
 };
 
