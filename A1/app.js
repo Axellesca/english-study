@@ -460,15 +460,15 @@ const grammarBankDatabase = {
       </ul>
     `,
     questions: [
-      { question: "Complete Present Simple: She ___ (live) in a big flat.", type: "input", answer: "lives", explanation: "En 3ª persona afirmativa agregamos -s: lives." },
-      { question: "Complete negation: He ___ (not / like) football.", type: "input", answer: "doesn't like", explanation: "Tercera persona requiere 'doesn't' y verbo en base." },
+      { question: "Complete Present Simple: She ___ (vivir) in a big flat.", type: "input", answer: "lives", explanation: "En 3ª persona afirmativa agregamos -s: lives." },
+      { question: "Complete negation: He ___ (no gustar) football.", type: "input", answer: "doesn't like", explanation: "Tercera persona requiere 'doesn't' y verbo en base." },
       { question: "Complete: Where ___ you work?", type: "input", answer: "do", explanation: "Auxiliar para you es do." },
       { question: "Complete: ___ your mother speak English?", type: "input", answer: "does", explanation: "Auxiliar para 'your mother' (she) es Does." },
       { question: "Select correct option: What does he want?", options: ["He wants a coffee.", "He want a coffee.", "He does wants a coffee."], type: "choice", correct: 0, explanation: "En afirmativas de tercera persona el verbo lleva -s (wants)." },
-      { question: "Complete: They ___ (not / study) on Sundays.", type: "input", answer: "don't study", explanation: "Negación para 'they' es 'don't' + verbo base." },
-      { question: "Complete: Does he ___ (have) a car?", type: "input", answer: "have", explanation: "En preguntas, el verbo va en forma base (have), no 'has'." },
+      { question: "Complete: They ___ (no estudiar) on Sundays.", type: "input", answer: "don't study", explanation: "Negación para 'they' es 'don't' + verbo base." },
+      { question: "Complete: Does he ___ (tener) a car?", type: "input", answer: "have", explanation: "En preguntas, el verbo va en forma base (have), no 'has'." },
       { question: "Order the words to make a question:", pool: ["she", "Where", "live", "does", "?"], correct: ["Where", "does", "she", "live", "?"], type: "scramble", explanation: "Estructura QUASI: Question word + Auxiliar + Sujeto + Verbo." },
-      { question: "Complete: My brother ___ (watch) television after dinner.", type: "input", answer: "watches", explanation: "Verbo terminado en ch añade -es en tercera persona: watches." },
+      { question: "Complete: My brother ___ (ver) television after dinner.", type: "input", answer: "watches", explanation: "Verbo terminado en ch añade -es en tercera persona: watches." },
       { question: "Select correct sentence:", options: ["What do you do on weekends?", "What does you do on weekends?", "What you do on weekends?"], type: "choice", correct: 0, explanation: "Estructura correcta: Question word + do + you + verb base." }
     ]
   }
@@ -1737,345 +1737,722 @@ const exercisesDatabase = {
       "answer": "tidy"
     }
   ],
-  "present-simple": [
+  "imperatives-lets": [
     {
-      "question": "She ___ (live) in a big flat in London.",
-      "answer": "lives"
+      "question": "___ (abrir) the window, please.",
+      "answer": "open"
     },
     {
-      "question": "They ___ (not / study) Spanish on Sundays.",
-      "answer": [
-        "don't study",
-        "do not study"
-      ]
+      "question": "___ (cerrar) the door.",
+      "answer": "close"
     },
     {
-      "question": "He ___ (watch) television in the evening.",
-      "answer": "watches"
+      "question": "___ (sentarse) down, please.",
+      "answer": "sit"
     },
     {
-      "question": "We ___ (have) lunch together at 1:00.",
+      "question": "___ (levantarse) up.",
+      "answer": "stand"
+    },
+    {
+      "question": "___ (mirar) at the board.",
+      "answer": "look"
+    },
+    {
+      "question": "___ (escuchar) and repeat.",
+      "answer": "listen"
+    },
+    {
+      "question": "___ (apagar) your mobile phone.",
+      "answer": "turn off"
+    },
+    {
+      "question": "___ (ir) to page 15.",
+      "answer": "go"
+    },
+    {
+      "question": "___ (escribir) your name here.",
+      "answer": "write"
+    },
+    {
+      "question": "___ (leer) the text carefully.",
+      "answer": "read"
+    },
+    {
+      "question": "___ (ir más despacio) down! You are driving too fast.",
+      "answer": "slow"
+    },
+    {
+      "question": "___ (hablar) English in class.",
+      "answer": "speak"
+    },
+    {
+      "question": "___ (responder) the questions.",
+      "answer": "answer"
+    },
+    {
+      "question": "___ (tener) a nice weekend.",
       "answer": "have"
     },
     {
-      "question": "___ (do/does) you play the guitar?",
-      "answer": "do"
+      "question": "___ (ser/estar) quiet, please.",
+      "answer": "be"
     },
     {
-      "question": "___ (do/does) she speak English with her friends?",
-      "answer": "does"
-    },
-    {
-      "question": "Where ___ (do/does) they live?",
-      "answer": "do"
-    },
-    {
-      "question": "What time ___ (do/does) he go to bed?",
-      "answer": "does"
-    },
-    {
-      "question": "My brother ___ (not / like) cats.",
+      "question": "___ (no abrir) the window.",
       "answer": [
-        "doesn't like",
-        "does not like"
+        "don't open",
+        "do not open"
       ]
     },
     {
-      "question": "I ___ (study) English every day at school.",
-      "answer": "study"
-    },
-    {
-      "question": "My parents ___ (work) in a big hospital.",
-      "answer": "work"
-    },
-    {
-      "question": "She ___ (not / read) books or newspapers.",
+      "question": "___ (no cerrar) the book.",
       "answer": [
-        "doesn't read",
-        "does not read"
+        "don't close",
+        "do not close"
       ]
     },
     {
-      "question": "Does your mother ___ (have) a car?",
-      "answer": "have"
+      "question": "___ (no hablar) during the exam.",
+      "answer": [
+        "don't talk",
+        "do not talk"
+      ]
     },
     {
-      "question": "Do they ___ (want) a coffee?",
-      "answer": "want"
-    },
-    {
-      "question": "John ___ (do) his homework after dinner.",
-      "answer": "does"
-    },
-    {
-      "question": "The class ___ (finish) at 5:00 PM.",
-      "answer": "finishes"
-    },
-    {
-      "question": "We ___ (not / eat) fast food often.",
+      "question": "___ (no comer) in the classroom.",
       "answer": [
         "don't eat",
         "do not eat"
       ]
     },
     {
-      "question": "She ___ (wear) glasses to read.",
-      "answer": "wears"
+      "question": "___ (no usar) your phone here.",
+      "answer": [
+        "don't use",
+        "do not use"
+      ]
     },
     {
-      "question": "What ___ (do/does) you want for breakfast?",
-      "answer": "do"
+      "question": "___ (no estacionar) your car here.",
+      "answer": [
+        "don't park",
+        "do not park"
+      ]
     },
     {
-      "question": "He ___ (go) to the cinema on Saturdays.",
-      "answer": "goes"
+      "question": "___ (no conducir) fast. The road is wet.",
+      "answer": [
+        "don't drive",
+        "do not drive"
+      ]
     },
     {
-      "question": "She ___ (live) English at home.",
+      "question": "___ (no escribir) on the desk.",
+      "answer": [
+        "don't write",
+        "do not write"
+      ]
+    },
+    {
+      "question": "___ (no hablar) Spanish in the English class.",
+      "answer": [
+        "don't speak",
+        "do not speak"
+      ]
+    },
+    {
+      "question": "___ (no gritar) please.",
+      "answer": [
+        "don't shout",
+        "do not shout"
+      ]
+    },
+    {
+      "question": "___ (no olvidar) your keys.",
+      "answer": [
+        "don't forget",
+        "do not forget"
+      ]
+    },
+    {
+      "question": "___ (no beber) that water.",
+      "answer": [
+        "don't drink",
+        "do not drink"
+      ]
+    },
+    {
+      "question": "___ (no escuchar) to him.",
+      "answer": [
+        "don't listen",
+        "do not listen"
+      ]
+    },
+    {
+      "question": "___ (no tocar) that picture.",
+      "answer": [
+        "don't touch",
+        "do not touch"
+      ]
+    },
+    {
+      "question": "___ (no llegar) late.",
+      "answer": [
+        "don't arrive",
+        "do not arrive"
+      ]
+    },
+    {
+      "question": "It's hot. ___ (vamos a abrir) the window.",
+      "answer": [
+        "let's open",
+        "let us open"
+      ]
+    },
+    {
+      "question": "We are tired. ___ (vamos a sentarnos) down.",
+      "answer": [
+        "let's sit",
+        "let us sit"
+      ]
+    },
+    {
+      "question": "It's late. ___ (vamos a ir) home.",
+      "answer": [
+        "let's go",
+        "let us go"
+      ]
+    },
+    {
+      "question": "We are hungry. ___ (vamos a almorzar) lunch.",
+      "answer": [
+        "let's have",
+        "let us have"
+      ]
+    },
+    {
+      "question": "The weather is nice. ___ (vamos a jugar) tennis.",
+      "answer": [
+        "let's play",
+        "let us play"
+      ]
+    },
+    {
+      "question": "We have an exam tomorrow. ___ (vamos a estudiar) tonight.",
+      "answer": [
+        "let's study",
+        "let us study"
+      ]
+    },
+    {
+      "question": "It's a good movie. ___ (vamos a ver) it.",
+      "answer": [
+        "let's watch",
+        "let us watch"
+      ]
+    },
+    {
+      "question": "We are lost. ___ (vamos a mirar) at the map.",
+      "answer": [
+        "let's look",
+        "let us look"
+      ]
+    },
+    {
+      "question": "It's a beautiful day. ___ (vamos a ir) for a walk.",
+      "answer": [
+        "let's go",
+        "let us go"
+      ]
+    },
+    {
+      "question": "We have some free time. ___ (vamos a escuchar) to music.",
+      "answer": [
+        "let's listen",
+        "let us listen"
+      ]
+    },
+    {
+      "question": "We need a coffee. ___ (vamos a parar) at the café.",
+      "answer": [
+        "let's stop",
+        "let us stop"
+      ]
+    },
+    {
+      "question": "The classroom is dirty. ___ (vamos a limpiar) it.",
+      "answer": [
+        "let's clean",
+        "let us clean"
+      ]
+    },
+    {
+      "question": "It's Robert's birthday. ___ (vamos a comprar) a present.",
+      "answer": [
+        "let's buy",
+        "let us buy"
+      ]
+    },
+    {
+      "question": "We are in London. ___ (vamos a visitar) a museum.",
+      "answer": [
+        "let's visit",
+        "let us visit"
+      ]
+    },
+    {
+      "question": "We don't know the way. ___ (vamos a preguntar) the teacher.",
+      "answer": [
+        "let's ask",
+        "let us ask"
+      ]
+    },
+    {
+      "question": "We don't have much money. ___ (no vamos a ir) to an expensive restaurant.",
+      "answer": [
+        "let's not go",
+        "let us not go"
+      ]
+    },
+    {
+      "question": "The exam is difficult. ___ (no vamos a hablar) during it.",
+      "answer": [
+        "let's not talk",
+        "let us not talk"
+      ]
+    },
+    {
+      "question": "It's raining. ___ (no vamos a jugar) tennis.",
+      "answer": [
+        "let's not play",
+        "let us not play"
+      ]
+    },
+    {
+      "question": "We are tired. ___ (no vamos a ir) to the cinema tonight.",
+      "answer": [
+        "let's not go",
+        "let us not go"
+      ]
+    },
+    {
+      "question": "The coffee is very hot. ___ (no vamos a beber) it yet.",
+      "answer": [
+        "let's not drink",
+        "let us not drink"
+      ]
+    },
+    {
+      "question": "It's late. ___ (no vamos a parar) here.",
+      "answer": [
+        "let's not stop",
+        "let us not stop"
+      ]
+    },
+    {
+      "question": "The baby is sleeping. ___ (no vamos a hacer) noise.",
+      "answer": [
+        "let's not make",
+        "let us not make"
+      ]
+    },
+    {
+      "question": "The water is cold. ___ (no vamos a nadar) today.",
+      "answer": [
+        "let's not swim",
+        "let us not swim"
+      ]
+    },
+    {
+      "question": "He is angry. ___ (no vamos a hablar) to him now.",
+      "answer": [
+        "let's not speak",
+        "let us not speak"
+      ]
+    },
+    {
+      "question": "The car is very old. ___ (no vamos a comprar) it.",
+      "answer": [
+        "let's not buy",
+        "let us not buy"
+      ]
+    },
+    {
+      "question": "It's a secret. ___ (no vamos a contar) anyone.",
+      "answer": [
+        "let's not tell",
+        "let us not tell"
+      ]
+    },
+    {
+      "question": "The street is dangerous. ___ (no vamos a caminar) here.",
+      "answer": [
+        "let's not walk",
+        "let us not walk"
+      ]
+    },
+    {
+      "question": "We are not ready. ___ (no vamos a empezar) the test.",
+      "answer": [
+        "let's not start",
+        "let us not start"
+      ]
+    },
+    {
+      "question": "The lesson is interesting. ___ (no vamos a irnos) early.",
+      "answer": [
+        "let's not leave",
+        "let us not leave"
+      ]
+    },
+    {
+      "question": "The computer is broken. ___ (no vamos a usar) it.",
+      "answer": [
+        "let's not use",
+        "let us not use"
+      ]
+    }
+  ],
+  "present-simple": [
+    {
+      "question": "She ___ (vivir) in a big flat in London.",
       "answer": "lives"
     },
     {
-      "question": "They ___ (live) in Manchester.",
-      "answer": "live"
-    },
-    {
-      "question": "He ___ (not / live) very often.",
-      "answer": [
-        "doesn't live",
-        "does not live"
-      ]
-    },
-    {
-      "question": "We ___ (not / live) on weekends.",
-      "answer": [
-        "don't live",
-        "do not live"
-      ]
-    },
-    {
-      "question": "___ (do/does) your father live here?",
-      "answer": "does"
-    },
-    {
-      "question": "___ (do/does) they live a dog?",
-      "answer": "do"
-    },
-    {
-      "question": "She ___ (study) English at home.",
-      "answer": "studies"
-    },
-    {
-      "question": "They ___ (study) in Manchester.",
-      "answer": "study"
-    },
-    {
-      "question": "He ___ (not / study) very often.",
-      "answer": [
-        "doesn't study",
-        "does not study"
-      ]
-    },
-    {
-      "question": "We ___ (not / study) on weekends.",
+      "question": "They ___ (no estudiar) Spanish on Sundays.",
       "answer": [
         "don't study",
         "do not study"
       ]
     },
     {
-      "question": "___ (do/does) your father study here?",
-      "answer": "does"
-    },
-    {
-      "question": "___ (do/does) they study a dog?",
-      "answer": "do"
-    },
-    {
-      "question": "She ___ (work) English at home.",
-      "answer": "works"
-    },
-    {
-      "question": "They ___ (work) in Manchester.",
-      "answer": "work"
-    },
-    {
-      "question": "He ___ (not / work) very often.",
-      "answer": [
-        "doesn't work",
-        "does not work"
-      ]
-    },
-    {
-      "question": "We ___ (not / work) on weekends.",
-      "answer": [
-        "don't work",
-        "do not work"
-      ]
-    },
-    {
-      "question": "___ (do/does) your father work here?",
-      "answer": "does"
-    },
-    {
-      "question": "___ (do/does) they work a dog?",
-      "answer": "do"
-    },
-    {
-      "question": "She ___ (watch) English at home.",
+      "question": "He ___ (ver) television in the evening.",
       "answer": "watches"
     },
     {
-      "question": "They ___ (watch) in Manchester.",
-      "answer": "watch"
-    },
-    {
-      "question": "He ___ (not / watch) very often.",
-      "answer": [
-        "doesn't watch",
-        "does not watch"
-      ]
-    },
-    {
-      "question": "We ___ (not / watch) on weekends.",
-      "answer": [
-        "don't watch",
-        "do not watch"
-      ]
-    },
-    {
-      "question": "___ (do/does) your father watch here?",
-      "answer": "does"
-    },
-    {
-      "question": "___ (do/does) they watch a dog?",
-      "answer": "do"
-    },
-    {
-      "question": "She ___ (have) English at home.",
-      "answer": "has"
-    },
-    {
-      "question": "They ___ (have) in Manchester.",
+      "question": "We ___ (tener) lunch together at 1:00.",
       "answer": "have"
     },
     {
-      "question": "He ___ (not / have) very often.",
-      "answer": [
-        "doesn't have",
-        "does not have"
-      ]
-    },
-    {
-      "question": "We ___ (not / have) on weekends.",
-      "answer": [
-        "don't have",
-        "do not have"
-      ]
-    },
-    {
-      "question": "___ (do/does) your father have here?",
-      "answer": "does"
-    },
-    {
-      "question": "___ (do/does) they have a dog?",
+      "question": "___ you play the guitar?",
       "answer": "do"
     },
     {
-      "question": "She ___ (play) English at home.",
-      "answer": "plays"
-    },
-    {
-      "question": "They ___ (play) in Manchester.",
-      "answer": "play"
-    },
-    {
-      "question": "He ___ (not / play) very often.",
-      "answer": [
-        "doesn't play",
-        "does not play"
-      ]
-    },
-    {
-      "question": "We ___ (not / play) on weekends.",
-      "answer": [
-        "don't play",
-        "do not play"
-      ]
-    },
-    {
-      "question": "___ (do/does) your father play here?",
+      "question": "___ she speak English with her friends?",
       "answer": "does"
     },
     {
-      "question": "___ (do/does) they play a dog?",
+      "question": "Where ___ they live?",
       "answer": "do"
     },
     {
-      "question": "She ___ (want) English at home.",
-      "answer": "wants"
-    },
-    {
-      "question": "They ___ (want) in Manchester.",
-      "answer": "want"
-    },
-    {
-      "question": "He ___ (not / want) very often.",
-      "answer": [
-        "doesn't want",
-        "does not want"
-      ]
-    },
-    {
-      "question": "We ___ (not / want) on weekends.",
-      "answer": [
-        "don't want",
-        "do not want"
-      ]
-    },
-    {
-      "question": "___ (do/does) your father want here?",
+      "question": "What time ___ he go to bed?",
       "answer": "does"
     },
     {
-      "question": "___ (do/does) they want a dog?",
-      "answer": "do"
-    },
-    {
-      "question": "She ___ (like) English at home.",
-      "answer": "likes"
-    },
-    {
-      "question": "They ___ (like) in Manchester.",
-      "answer": "like"
-    },
-    {
-      "question": "He ___ (not / like) very often.",
+      "question": "My brother ___ (no gustar) cats.",
       "answer": [
         "doesn't like",
         "does not like"
       ]
     },
     {
-      "question": "We ___ (not / like) on weekends.",
+      "question": "I ___ (estudiar) English every day at school.",
+      "answer": "study"
+    },
+    {
+      "question": "My parents ___ (trabajar) in a big hospital.",
+      "answer": "work"
+    },
+    {
+      "question": "She ___ (no leer) books or newspapers.",
+      "answer": [
+        "doesn't read",
+        "does not read"
+      ]
+    },
+    {
+      "question": "Does your mother ___ (tener) a car?",
+      "answer": "have"
+    },
+    {
+      "question": "Do they ___ (querer) a coffee?",
+      "answer": "want"
+    },
+    {
+      "question": "John ___ (hacer) his homework after dinner.",
+      "answer": "does"
+    },
+    {
+      "question": "The class ___ (terminar) at 5:00 PM.",
+      "answer": "finishes"
+    },
+    {
+      "question": "We ___ (no comer) fast food often.",
+      "answer": [
+        "don't eat",
+        "do not eat"
+      ]
+    },
+    {
+      "question": "She ___ (usar) glasses to read.",
+      "answer": "wears"
+    },
+    {
+      "question": "What ___ you want for breakfast?",
+      "answer": "do"
+    },
+    {
+      "question": "He ___ (ir) to the cinema on Saturdays.",
+      "answer": "goes"
+    },
+    {
+      "question": "She ___ (vivir) in a small house.",
+      "answer": "lives"
+    },
+    {
+      "question": "They ___ (vivir) in Manchester.",
+      "answer": "live"
+    },
+    {
+      "question": "He ___ (no vivir) with his parents.",
+      "answer": [
+        "doesn't live",
+        "does not live"
+      ]
+    },
+    {
+      "question": "We ___ (no vivir) in this city.",
+      "answer": [
+        "don't live",
+        "do not live"
+      ]
+    },
+    {
+      "question": "___ your father live here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ they live in a flat?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (estudiar) English at home.",
+      "answer": "studies"
+    },
+    {
+      "question": "They ___ (estudiar) in Manchester.",
+      "answer": "study"
+    },
+    {
+      "question": "He ___ (no estudiar) very often.",
+      "answer": [
+        "doesn't study",
+        "does not study"
+      ]
+    },
+    {
+      "question": "We ___ (no estudiar) on weekends.",
+      "answer": [
+        "don't study",
+        "do not study"
+      ]
+    },
+    {
+      "question": "___ your father study here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ they study for the exam?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (trabajar) in an office.",
+      "answer": "works"
+    },
+    {
+      "question": "They ___ (trabajar) in Manchester.",
+      "answer": "work"
+    },
+    {
+      "question": "He ___ (no trabajar) on Saturdays.",
+      "answer": [
+        "doesn't work",
+        "does not work"
+      ]
+    },
+    {
+      "question": "We ___ (no trabajar) on weekends.",
+      "answer": [
+        "don't work",
+        "do not work"
+      ]
+    },
+    {
+      "question": "___ your father work here?",
+      "answer": "does"
+    },
+    {
+      "question": "___ they work at night?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (ver) TV series at night.",
+      "answer": "watches"
+    },
+    {
+      "question": "They ___ (ver) movies at the cinema.",
+      "answer": "watch"
+    },
+    {
+      "question": "He ___ (no ver) TV very often.",
+      "answer": [
+        "doesn't watch",
+        "does not watch"
+      ]
+    },
+    {
+      "question": "We ___ (no ver) videos on weekends.",
+      "answer": [
+        "don't watch",
+        "do not watch"
+      ]
+    },
+    {
+      "question": "___ your father watch football on TV?",
+      "answer": "does"
+    },
+    {
+      "question": "___ they watch TV?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (tener) a class online.",
+      "answer": "has"
+    },
+    {
+      "question": "They ___ (tener) a house in Manchester.",
+      "answer": "have"
+    },
+    {
+      "question": "He ___ (no tener) breakfast very often.",
+      "answer": [
+        "doesn't have",
+        "does not have"
+      ]
+    },
+    {
+      "question": "We ___ (no tener) lessons on weekends.",
+      "answer": [
+        "don't have",
+        "do not have"
+      ]
+    },
+    {
+      "question": "___ your father have a car?",
+      "answer": "does"
+    },
+    {
+      "question": "___ they have a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (jugar) video games at home.",
+      "answer": "plays"
+    },
+    {
+      "question": "They ___ (jugar) football in Manchester.",
+      "answer": "play"
+    },
+    {
+      "question": "He ___ (no jugar) tennis very often.",
+      "answer": [
+        "doesn't play",
+        "does not play"
+      ]
+    },
+    {
+      "question": "We ___ (no jugar) on weekends.",
+      "answer": [
+        "don't play",
+        "do not play"
+      ]
+    },
+    {
+      "question": "___ your father play video games?",
+      "answer": "does"
+    },
+    {
+      "question": "___ they play chess?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (querer) a new mobile phone.",
+      "answer": "wants"
+    },
+    {
+      "question": "They ___ (querer) to live in Manchester.",
+      "answer": "want"
+    },
+    {
+      "question": "He ___ (no querer) to go out very often.",
+      "answer": [
+        "doesn't want",
+        "does not want"
+      ]
+    },
+    {
+      "question": "We ___ (no querer) to study on weekends.",
+      "answer": [
+        "don't want",
+        "do not want"
+      ]
+    },
+    {
+      "question": "___ your father want a coffee?",
+      "answer": "does"
+    },
+    {
+      "question": "___ they want a dog?",
+      "answer": "do"
+    },
+    {
+      "question": "She ___ (gustar) tea with milk.",
+      "answer": "likes"
+    },
+    {
+      "question": "They ___ (gustar) Chinese food.",
+      "answer": "like"
+    },
+    {
+      "question": "He ___ (no gustar) cold weather.",
+      "answer": [
+        "doesn't like",
+        "does not like"
+      ]
+    },
+    {
+      "question": "We ___ (no gustar) getting up early.",
       "answer": [
         "don't like",
         "do not like"
       ]
     },
     {
-      "question": "___ (do/does) your father like here?",
+      "question": "___ your father like rock music?",
       "answer": "does"
     },
     {
-      "question": "___ (do/does) they like a dog?",
+      "question": "___ they like dogs?",
       "answer": "do"
     },
     {
-      "question": "She ___ (speak) English at home.",
+      "question": "She ___ (hablar) English at home.",
       "answer": "speaks"
     },
     {
-      "question": "They ___ (speak) in Manchester.",
+      "question": "They ___ (hablar) English in Manchester.",
       "answer": "speak"
     }
   ],
@@ -3969,7 +4346,10 @@ const app = {
       "possessive": "Ejercicios de Adjetivos Posesivos",
       "plurals": "Ejercicios de Plurales y Artículos",
       "adjectives": "Ejercicios de Adjetivos y Colores",
+      "imperatives-lets": "Ejercicios de Imperatives and Let's",
       "present-simple": "Ejercicios de Present Simple (Do / Does / -s)",
+      "reading": "Lecturas y PDFs",
+      "listening-ex": "Dictados y Audios",
       "flying-home": "Comprensión Lectora: Flying Home (PDF Reader)"
     };
     document.getElementById('ex-category-title').innerText = titles[category] || "Ejercicios";
