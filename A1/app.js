@@ -2,71 +2,28 @@
  * English File Elementary Study Portal - Core Application Logic
  */
 
-// Audio Synthesis for feedback sounds (Correct, Incorrect, Success)
+// ponytail: minimal Web Audio sound player
 const AudioSynth = {
   ctx: null,
-  init() {
-    if (!this.ctx) {
-      this.ctx = new (window.AudioContext || window.webkitAudioContext)();
-    }
-    if (this.ctx.state === 'suspended') {
-      this.ctx.resume();
-    }
-  },
-  playCorrect() {
+  tone(freqs, type = 'sine', dur = 0.25) {
     try {
-      this.init();
+      this.ctx = this.ctx || new (window.AudioContext || window.webkitAudioContext)();
       const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(523.25, now); // C5
-      osc.frequency.setValueAtTime(659.25, now + 0.08); // E5
-      osc.frequency.setValueAtTime(783.99, now + 0.16); // G5
-      gain.gain.setValueAtTime(0.08, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
-      osc.connect(gain);
-      gain.connect(this.ctx.destination);
-      osc.start(now);
-      osc.stop(now + 0.35);
-    } catch (e) { console.log("Audio Synth error:", e); }
+      freqs.forEach((f, i) => {
+        const osc = this.ctx.createOscillator(), gain = this.ctx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(f, now + i * 0.08);
+        gain.gain.setValueAtTime(0.08, now + i * 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + (i + 1) * 0.08 + dur);
+        osc.connect(gain).connect(this.ctx.destination);
+        osc.start(now + i * 0.08);
+        osc.stop(now + (i + 1) * 0.08 + dur);
+      });
+    } catch (_) {}
   },
-  playError() {
-    try {
-      this.init();
-      const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
-      osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(150, now);
-      osc.frequency.setValueAtTime(120, now + 0.1);
-      gain.gain.setValueAtTime(0.08, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
-      osc.connect(gain);
-      gain.connect(this.ctx.destination);
-      osc.start(now);
-      osc.stop(now + 0.3);
-    } catch (e) { console.log("Audio Synth error:", e); }
-  },
-  playSuccess() {
-    try {
-      this.init();
-      const now = this.ctx.currentTime;
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(523.25, now); // C5
-      osc.frequency.setValueAtTime(659.25, now + 0.1); // E5
-      osc.frequency.setValueAtTime(783.99, now + 0.2); // G5
-      osc.frequency.setValueAtTime(1046.50, now + 0.3); // C6
-      gain.gain.setValueAtTime(0.08, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.65);
-      osc.connect(gain);
-      gain.connect(this.ctx.destination);
-      osc.start(now);
-      osc.stop(now + 0.65);
-    } catch (e) { console.log("Audio Synth error:", e); }
-  }
+  playCorrect() { this.tone([523.25, 659.25, 783.99], 'triangle', 0.15); },
+  playError()   { this.tone([150, 120], 'sawtooth', 0.15); },
+  playSuccess() { this.tone([523.25, 659.25, 783.99, 1046.5], 'sine', 0.25); }
 };
 
 // COURSE DATA REPRESENTING FILES 1A to 2C
@@ -4492,10 +4449,3 @@ const app = {
 window.addEventListener('DOMContentLoaded', () => {
   app.init();
 });
-
-// Safari/Chrome Web speech voice arrays trigger
-if ('speechSynthesis' in window) {
-  window.speechSynthesis.onvoiceschanged = () => {
-    // Triggers browsers to load voices arrays
-  };
-}
