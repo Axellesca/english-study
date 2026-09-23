@@ -416,61 +416,61 @@ const quizDatabase = [
     type: "input",
     questions: [
       {
-        question: "Encuentra el error y escribe el verbo corregido:<br><em>'She **play** tennis every Friday.'</em>",
+        question: "Encuentra el error y escribe el verbo corregido:<br><em>'She <strong>play</strong> tennis every Friday.'</em>",
         placeholder: "plays",
         answer: "plays",
         explanation: "El sujeto es 'She' (tercera persona singular), por lo que el verbo debe llevar '-s': plays."
       },
       {
-        question: "Encuentra el error y escribe el auxiliar corregido:<br><em>'He **don't** like milk.'</em>",
+        question: "Encuentra el error y escribe el auxiliar corregido:<br><em>'He <strong>don't</strong> like milk.'</em>",
         placeholder: "doesn't",
         answer: "doesn't",
         explanation: "La negación para 'He' es 'doesn't' (does not), no 'don't'."
       },
       {
-        question: "Encuentra el error y escribe el auxiliar corregido:<br><em>'**Do** she speak English?'</em>",
+        question: "Encuentra el error y escribe el auxiliar corregido:<br><em>'<strong>Do</strong> she speak English?'</em>",
         placeholder: "Does",
         answer: "does", // lowercase check
         explanation: "Para preguntar en tercera persona ('she'), usamos el auxiliar 'Does'."
       },
       {
-        question: "Encuentra el error y escribe la palabra corregida:<br><em>'My brother **studys** math.'</em>",
+        question: "Encuentra el error y escribe la palabra corregida:<br><em>'My brother <strong>studys</strong> math.'</em>",
         placeholder: "studies",
         answer: "studies",
         explanation: "El verbo 'study' termina en consonante + 'y'. Al conjugarlo con 'My brother' (He), la 'y' cambia a 'i' y se añade 'es': studies."
       },
       {
-        question: "Encuentra el error y escribe el verbo corregido:<br><em>'They **does** their homework.'</em>",
+        question: "Encuentra el error y escribe el verbo corregido:<br><em>'They <strong>does</strong> their homework.'</em>",
         placeholder: "do",
         answer: "do",
         explanation: "El sujeto es 'They' (plural), por lo que el verbo debe ir en su forma base: do."
       },
       {
-        question: "Encuentra el error y escribe el verbo corregido:<br><em>'She doesn't **plays** video games.'</em>",
+        question: "Encuentra el error y escribe el verbo corregido:<br><em>'She doesn't <strong>plays</strong> video games.'</em>",
         placeholder: "play",
         answer: "play",
         explanation: "Cuando usamos el auxiliar negativo 'doesn't', el verbo principal debe ir en su forma base sin la '-s': play."
       },
       {
-        question: "Encuentra el error y escribe la palabra correcta:<br><em>'**Are** you like coffee?'</em>",
+        question: "Encuentra el error y escribe la palabra correcta:<br><em>'<strong>Are</strong> you like coffee?'</em>",
         placeholder: "Do",
         answer: "do",
         explanation: "'Like' es un verbo de acción, por lo que necesita el auxiliar 'Do' para hacer preguntas, no el verbo 'Are'."
       },
       {
-        question: "Encuentra el error y escribe la frase corregida (posición):<br><em>'He **always is** late.'</em>",
+        question: "Encuentra el error y escribe la frase corregida (posición):<br><em>'He <strong>always is</strong> late.'</em>",
         placeholder: "is always",
         answer: "is always",
         explanation: "Los adverbios de frecuencia van *después* del verbo To Be ('is'), por lo tanto, lo correcto es 'is always'."
       },
       {
-        question: "Encuentra el error y escribe el verbo corregido:<br><em>'We **lives** in a small house.'</em>",
+        question: "Encuentra el error y escribe el verbo corregido:<br><em>'We <strong>lives</strong> in a small house.'</em>",
         placeholder: "live",
         answer: "live",
         explanation: "El sujeto es 'We' (Nosotros), por lo que el verbo no lleva la '-s' de la tercera persona singular."
       },
       {
-        question: "Encuentra el error y escribe el verbo corregido:<br><em>'Does he **works** here?'</em>",
+        question: "Encuentra el error y escribe el verbo corregido:<br><em>'Does he <strong>works</strong> here?'</em>",
         placeholder: "work",
         answer: "work",
         explanation: "En la pregunta, el auxiliar 'Does' ya marca la tercera persona, por lo que el verbo debe ir en su forma base 'work'."
@@ -540,9 +540,17 @@ const app = {
     // Nav bar clicks
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(item => {
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('role', 'button');
       item.addEventListener('click', () => {
         const target = item.getAttribute('data-target');
         this.navigateTo(target);
+      });
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          item.click();
+        }
       });
     });
     
@@ -994,7 +1002,7 @@ const app = {
         correctText = question.correct.join(" ");
       }
       
-      feedbackTitle.innerHTML += `<span style="display:block; font-size:0.95rem; font-weight:500; margin-top:0.25rem; color:#fff;">Respuesta correcta: <strong style="color:var(--color-success);">${correctText}</strong></span>`;
+      feedbackTitle.innerHTML += `<span style="display:block; font-size:0.95rem; font-weight:500; margin-top:0.25rem; color:var(--text-primary);">Respuesta correcta: <strong style="color:var(--color-success);">${correctText}</strong></span>`;
     }
     
     // Set explanation
