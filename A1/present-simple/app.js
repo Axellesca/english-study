@@ -461,7 +461,7 @@ const quizDatabase = [
         question: "Encuentra el error y escribe la frase corregida (posición):<br><em>'He <strong>always is</strong> late.'</em>",
         placeholder: "is always",
         answer: "is always",
-        explanation: "Los adverbios de frecuencia van *después* del verbo To Be ('is'), por lo tanto, lo correcto es 'is always'."
+        explanation: "Los adverbios de frecuencia van después del verbo To Be ('is'), por lo tanto, lo correcto es 'is always'."
       },
       {
         question: "Encuentra el error y escribe el verbo corregido:<br><em>'We <strong>lives</strong> in a small house.'</em>",

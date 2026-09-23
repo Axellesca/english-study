@@ -66,6 +66,13 @@ Encontrar y corregir errores del portal estático (HTML/CSS/JS vanilla) y redise
 ## Progreso
 - [x] Auditoría completa
 - [x] T1–T7
+- [x] Smoke visual (browser-automation): 4 vistas, 0 console errors, 0 failed requests
+- [x] Fixes post-smoke:
+  - [x] `A1/modulo2/style.css`: `.page-title` gradiente blanco invisible → gradiente tinta
+  - [x] `A1/index.html`: markdown `*be*` → `<em>be</em>` (roadmap 1A/1B)
+  - [x] `A1/present-simple/index.html`: `*To Be*` → `<em>To Be</em>`
+  - [x] `A1/present-simple/app.js`: explanation `*después*` → `después` (se muestra con innerText)
+- [x] Re-verificación post-fix: título Módulo 2 legible, roadmap con itálicas reales, 4× HTTP 200, 0 console errors
 
 ## Commits (work units en `feat/warm-study-journal-redesign`)
 | Commit | Unidad | Authored lines (+/-) |
@@ -75,14 +82,11 @@ Encontrar y corregir errores del portal estático (HTML/CSS/JS vanilla) y redise
 | `a2d72d3` | feat(a1): Module 1 redesign + voice/markdown/PDF fixes | 260 / 123 |
 | `82ffbaf` | feat(modulo2): Module 2 teal redesign + a11y/list fixes | 151 / 112 |
 | `6b920a8` | feat(present-simple): unit redesign + content fixes | 189 / 158 |
-| (este) | chore: record ODD feature checklist and commit evidence | docs |
+| `59201c3` | chore: record ODD audit and redesign task checklist | docs |
+| `318a96c` | chore: track agent skills and ignore codegraph | docs |
+| (post-smoke) | fix(design): correct invisible module title gradient and residual markdown | ~6 / ~4 |
 
-**Focused test:** `node -e` parse of the 3 `app.js` → OK · greps: 0 residual `**`, 0 `outline:none`, 0 Inter/Outfit/Roboto, 5/5 PDFs linked.
-**Runtime harness:** N/A — static multi-page site; verification is structural greps + JS parse (no server harness in this feature).
-**Rollback boundary:** each commit is self-contained by module (`css/shared-theme.css`, `index.html`, `A1/*`, `A1/modulo2/*`, `A1/present-simple/*`, `odd/*`); reverting one does not require reverting unrelated modules.
-**Delivery:** ~1384 authored changed lines total across the feature (over the ~400 PR heuristic) — if a PR is opened later, split by these work-unit commits (chained/stacked) or record maintainer `size:exception`. Push/PR not performed (user asked commit only).
-
-## Progreso
-- [x] Auditoría completa
-- [x] T1–T7
-- [x] Work-unit commits on feature branch
+**Focused test:** `node -e` parse of the 3 `app.js` → OK · greps: 0 residual `**`/`*word*`, 0 white text gradients, 0 `outline:none`, 0 Inter/Outfit/Roboto, 5/5 PDFs linked.
+**Runtime harness:** static multi-page site; verification = structural greps + JS parse + browser-automation smoke screenshots.
+**Rollback boundary:** each commit is self-contained by module.
+**Delivery:** feature total >400 authored lines — if a PR is opened later, split by work-unit commits (chained/stacked) or record maintainer `size:exception`. Push of the original 7 commits to `origin/main` completed earlier this session; this post-smoke fix commit is local pending user push confirmation.
