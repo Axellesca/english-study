@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portal interactivo de estudio para English File Elementary A1 (unidades 1A-2C). Incluye teoría, vocabulario, audios interactivos y Grammar Banks 1, 2 y 3.">
   <title>English File Elementary Study Portal - Units 1A to 2C</title>
+  <meta property="og:title" content="English File Elementary Study Portal - Units 1A to 2C">
+  <meta property="og:description" content="Portal interactivo de estudio para English File Elementary A1 (unidades 1A-2C). Incluye teoría, vocabulario, audios interactivos y Grammar Banks 1, 2 y 3.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../css/shared-theme.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -76,12 +80,12 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
         <span>Inicio</span>
       </a>
-      <a href="present-simple/index.html" class="btn-home" style="border-color: var(--color-primary-glow);">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0; color: var(--color-secondary);"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <a href="present-simple/index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0; color: var(--color-primary);"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         <span>Present Simple</span>
       </a>
-      <a href="modulo2/index.html" class="btn-home" style="border-color: hsla(217, 91%, 60%, 0.4); background: rgba(59, 130, 246, 0.1);">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0; color: #60a5fa;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+      <a href="modulo2/index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0; color: #0f766e;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
         <span>Módulo 2 (4A-4C)</span>
       </a>
     </div>
@@ -117,7 +121,7 @@
         <div class="intro-grid">
           <div class="intro-text">
             <h2>¡Tu viaje de inglés empieza aquí! 📚🚀</h2>
-            <p>Este portal contiene todo el contenido académico desde el módulo **1A hasta el 2C**, incluyendo los repasos, audios de pronunciación del abecedario, la tabla completa de sonidos de vocales y consonantes, y los bancos de gramática y vocabulario oficiales de English File.</p>
+            <p>Este portal contiene todo el contenido académico desde el módulo <strong>1A hasta el 2C</strong>, incluyendo los repasos, audios de pronunciación del abecedario, la tabla completa de sonidos de vocales y consonantes, y los bancos de gramática y vocabulario oficiales de English File.</p>
             <div class="intro-buttons">
               <button class="btn btn-primary" onclick="app.loadLesson('1A')">Comenzar Lección 1A</button>
               <button class="btn btn-outline" onclick="app.navigateTo('pronunciation-page')">Practicar Fonética</button>
@@ -219,7 +223,7 @@
           <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
           <span>Volver al Dashboard</span>
         </div>
-        <h1 class="page-title" id="active-lesson-title">Cargando Lección...</h1>
+        <h2 class="page-title" id="active-lesson-title">Cargando Lección...</h2>
       </header>
 
       <!-- Sub-tabs within lessons (Teoría / Ejercicios / Práctica de Vocab) -->
@@ -262,7 +266,7 @@
     <!-- 3. GRAMMAR BANK PAGE -->
     <section id="grammar-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Grammar Bank</h1>
+        <h2 class="page-title">Grammar Bank</h2>
         <p class="page-subtitle">Acceso directo a la teoría gramatical profunda y los ejercicios de práctica de los módulos 1, 2 y 3.</p>
       </header>
 
@@ -308,7 +312,7 @@
     <!-- 4. VOCABULARY BANK PAGE -->
     <section id="vocabulary-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Vocabulary Bank</h1>
+        <h2 class="page-title">Vocabulary Bank</h2>
         <p class="page-subtitle">Aprende y practica vocabulario temático con pronunciación de voz interactiva y juegos de memoria.</p>
       </header>
 
@@ -381,7 +385,7 @@
     <!-- 5. PRONUNCIATION PAGE -->
     <section id="pronunciation-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Pronunciación y Sonidos</h1>
+        <h2 class="page-title">Pronunciación y Sonidos</h2>
         <p class="page-subtitle">Practica los sonidos oficiales de vocales y consonantes en inglés, y domina el abecedario interactivo.</p>
       </header>
 
@@ -473,7 +477,7 @@
     <!-- 7. EXERCISES PAGE -->
     <section id="exercises-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Banco de Ejercicios Interactivos</h1>
+        <h2 class="page-title">Banco de Ejercicios Interactivos</h2>
         <p class="page-subtitle">Practica a fondo con cientos de ejercicios interactivos clasificados por temas de AgendaWeb y lecturas del libro.</p>
       </header>
 
@@ -496,6 +500,32 @@
             <h2 id="ex-category-title">Ejercicios de Verbo Be (am / is / are)</h2>
             <span class="score-badge" id="exercises-score">Completados: 0/0</span>
           </div>
+
+          <div id="pdf-library" class="pdf-library" hidden>
+            <p class="page-subtitle" style="margin-bottom:1rem;">Materiales descargables del libro de trabajo y Grammar &amp; Vocabulary.</p>
+            <div class="pdf-grid">
+              <a class="pdf-card" href="pdfs/English_Review_A1_Workbook.pdf" target="_blank" rel="noopener">
+                <strong>English Review A1 Workbook</strong>
+                <span>Libro de ejercicios completo · PDF</span>
+              </a>
+              <a class="pdf-card" href="pdfs/grammar and vocabulary -multiple choice.pdf" target="_blank" rel="noopener">
+                <strong>G&amp;V — Multiple Choice</strong>
+                <span>Grammar &amp; Vocabulary · PDF</span>
+              </a>
+              <a class="pdf-card" href="pdfs/grammar and vocabulary -indefinite article - nationalities.pdf" target="_blank" rel="noopener">
+                <strong>G&amp;V — Articles &amp; Nationalities</strong>
+                <span>Artículos indefinidos y nacionalidades · PDF</span>
+              </a>
+              <a class="pdf-card" href="pdfs/grammar and vocabulary -Articles - subject pronouns and possessive adjectives.pdf" target="_blank" rel="noopener">
+                <strong>G&amp;V — Articles, Pronouns &amp; Possessives</strong>
+                <span>Artículos, pronombres y posesivos · PDF</span>
+              </a>
+              <a class="pdf-card" href="pdfs/grammar and vocabulary - Subject pron and poss adj.pdf" target="_blank" rel="noopener">
+                <strong>G&amp;V — Subject Pronouns &amp; Possessive Adjectives</strong>
+                <span>Pronombres y adjetivos posesivos · PDF</span>
+              </a>
+            </div>
+          </div>
           
           <div id="exercises-dynamic-list" class="exercises-dynamic-list">
             <!-- Dynamically populated exercises list -->
@@ -512,7 +542,7 @@
     <!-- 6. CERTIFICATE PAGE -->
     <section id="certificate-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Certificado Oficial de Módulo</h1>
+        <h2 class="page-title">Certificado Oficial de Módulo</h2>
         <p class="page-subtitle">Acredita tu progreso de estudio de English File Elementary A1 en este portal interactivo.</p>
       </header>
 
@@ -520,7 +550,7 @@
       <div class="card status-card" id="cert-locked-panel">
         <div class="locked-icon">🔒</div>
         <h2>Certificado Bloqueado</h2>
-        <p>Debes alcanzar al menos el **80% del progreso general** en las lecciones y los bancos de gramática para desbloquear tu diploma acreditativo de File 1A a 2C.</p>
+        <p>Debes alcanzar al menos el <strong>80% del progreso general</strong> en las lecciones y los bancos de gramática para desbloquear tu diploma acreditativo de File 1A a 2C.</p>
         <div class="progress-bar-container" style="max-width: 400px; margin: 1.5rem auto; height: 12px;">
           <div class="progress-bar-fill" id="cert-progress-fill-bar" style="width: 0%;"></div>
         </div>
@@ -552,9 +582,9 @@
             <div class="cert-badge">Nivel A1</div>
             
             <p class="cert-intro">Se certifica solemnemente que el alumno(a)</p>
-            <h1 class="cert-student-name" id="cert-display-name">Estudiante de Inglés</h1>
+            <h2 class="cert-student-name" id="cert-display-name">Estudiante de Inglés</h2>
             
-            <p class="cert-description">Ha completado con éxito todas las unidades correspondientes desde el **File 1A hasta el File 2C** del syllabus **English File Elementary 4th Edition**, demostrando un entendimiento riguroso de la teoría, vocabulario especializado, pronunciación de fonemas, y habiendo aprobado los Grammar Banks 1, 2 y 3 con un rendimiento del 80% o superior.</p>
+            <p class="cert-description">Ha completado con éxito todas las unidades correspondientes desde el <strong>File 1A hasta el File 2C</strong> del syllabus <strong>English File Elementary 4th Edition</strong>, demostrando un entendimiento riguroso de la teoría, vocabulario especializado, pronunciación de fonemas, y habiendo aprobado los Grammar Banks 1, 2 y 3 con un rendimiento del 80% o superior.</p>
 
             <div class="cert-details">
               <div class="cert-col">

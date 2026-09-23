@@ -219,7 +219,7 @@ const lessonsDatabase = {
       <div class="theory-block">
         <h3>1. Reglas de los Adjetivos (Adjectives rules)</h3>
         <p>Los adjetivos describen sustantivos. En inglés, siguen dos reglas muy importantes:</p>
-        <p>📌 <strong>Regla 1: Posición.</strong> Los adjetivos van **antes del sustantivo** o **después del verbo be**.</p>
+        <p>📌 <strong>Regla 1: Posición.</strong> Los adjetivos van <strong>antes del sustantivo</strong> o <strong>después del verbo be</strong>.</p>
         <ul>
           <li><em>It's a <strong>red</strong> car. (Antes del sustantivo)</em></li>
           <li><em>The car is <strong>red</strong>. (Después del verbo be)</em></li>
@@ -3172,9 +3172,17 @@ const app = {
     // Nav menu switching
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(item => {
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('role', 'button');
       item.addEventListener('click', () => {
         const target = item.getAttribute('data-target');
         this.navigateTo(target);
+      });
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          item.click();
+        }
       });
     });
     
@@ -3182,8 +3190,8 @@ const app = {
     const voiceSelector = document.getElementById('voice-accent-selector');
     if (voiceSelector) {
       voiceSelector.addEventListener('change', (e) => {
-        // Map option values to valid BCP-47 language tags
-        this.selectedAccent = e.target.value === 'en-UK' ? 'en-GB' : 'en-US';
+        // Map option values to valid BCP-47 language tags (options are already en-GB / en-US)
+        this.selectedAccent = e.target.value === 'en-US' ? 'en-US' : 'en-GB';
       });
     }
     
@@ -4310,6 +4318,12 @@ const app = {
       "flying-home": "Comprensión Lectora: Flying Home (PDF Reader)"
     };
     document.getElementById('ex-category-title').innerText = titles[category] || "Ejercicios";
+    
+    // Show PDF library only for reading category
+    const pdfLib = document.getElementById('pdf-library');
+    if (pdfLib) {
+      pdfLib.hidden = category !== 'reading';
+    }
     
     this.renderExercises();
   },
