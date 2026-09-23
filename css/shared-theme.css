@@ -1,0 +1,150 @@
+/* ==========================================================================
+   English File Study Portal — Warm Study Journal
+   Paper, ink, terracotta & teal. Calm, readable, motivating for study.
+   Typography: Fraunces (display) + Nunito (body)
+   ========================================================================== */
+
+:root {
+  /* Paper foundation */
+  --bg-canvas: #faf6ef;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #fffdf9;
+  --bg-surface-hover: #f5efe6;
+  --bg-surface-subtle: rgba(28, 25, 23, 0.04);
+  --bg-input: #faf7f2;
+
+  /* Borders — warm ink lines */
+  --border-subtle: rgba(28, 25, 23, 0.1);
+  --border-medium: rgba(28, 25, 23, 0.16);
+  --border-hover: rgba(28, 25, 23, 0.3);
+  --border-focus: #c2410c;
+
+  /* Typography — deep warm ink */
+  --text-main: #1c1917;
+  --text-secondary: #57534e;
+  --text-muted: #78716c;
+  --text-inverse: #faf6ef;
+
+  /* Accents — terracotta primary, teal support, amber highlight */
+  --accent-primary: #c2410c;
+  --accent-primary-hover: #9a3412;
+  --accent-primary-subtle: rgba(194, 65, 12, 0.1);
+  --accent-primary-border: rgba(194, 65, 12, 0.28);
+
+  --accent-teal: #0f766e;
+  --accent-teal-subtle: rgba(15, 118, 110, 0.1);
+
+  --color-success: #15803d;
+  --color-success-subtle: rgba(21, 128, 61, 0.1);
+  --color-success-border: rgba(21, 128, 61, 0.28);
+
+  --color-error: #b91c1c;
+  --color-error-subtle: rgba(185, 28, 28, 0.1);
+  --color-error-border: rgba(185, 28, 28, 0.28);
+
+  --color-warning: #b45309;
+  --color-warning-subtle: rgba(180, 83, 9, 0.12);
+
+  /* Geometry & rhythm */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Elevation — soft paper lift */
+  --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.06);
+  --shadow-md: 0 8px 24px rgba(28, 25, 23, 0.08);
+  --shadow-lg: 0 20px 48px rgba(28, 25, 23, 0.12);
+
+  /* Fonts */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+  --font-title: var(--font-display);
+
+  /* Motion */
+  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.15s var(--ease-snappy);
+  --transition-base: 0.22s var(--ease-snappy);
+}
+
+/* Global reset & base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-canvas);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--text-main);
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Warm scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(28, 25, 23, 0.18);
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--bg-canvas);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(28, 25, 23, 0.32);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
+/* Utility animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
