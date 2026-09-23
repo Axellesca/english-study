@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 2 (Unidades 4A, 4B y 4C). Posesivos, preposiciones de tiempo, rutina diaria, adverbios de frecuencia, Grammar Bank 4 y ejercicios.">
-  <title>English File Elementary - Módulo 2 (Units 4A - 4C)</title>
-  <meta property="og:title" content="English File Elementary - Módulo 2 (Units 4A - 4C)">
-  <meta property="og:description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 2 (Unidades 4A, 4B y 4C). Posesivos, preposiciones de tiempo, rutina diaria, adverbios de frecuencia, Grammar Bank 4 y ejercicios.">
+  <meta name="description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 2 (Unidades 4A–4C y 5A–5C). Posesivos, rutinas, comparativos, past simple, going to, Grammar Banks 4 y 5, vocabulario y ejercicios.">
+  <title>English File Elementary - Módulo 2 (Units 4A - 5C)</title>
+  <meta property="og:title" content="English File Elementary - Módulo 2 (Units 4A - 5C)">
+  <meta property="og:description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 2 (Unidades 4A–4C y 5A–5C). Posesivos, rutinas, comparativos, past simple, going to, Grammar Banks 4 y 5, vocabulario y ejercicios.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../../css/shared-theme.css">
   <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
       <div class="logo-icon">M2</div>
       <div class="logo-text">
         <span class="logo-title">English File</span>
-        <span class="logo-subtitle">Módulo 2 (Units 4A-4C)</span>
+        <span class="logo-subtitle">Módulo 2 (Units 4A-5C)</span>
       </div>
     </div>
 
@@ -39,6 +39,16 @@
         <span>Puntos: <strong id="score-counter">0</strong></span>
         <span>Aciertos: <strong id="accuracy-counter">0%</strong></span>
       </div>
+      <div class="progress-groups" aria-label="Progreso por bloque">
+        <div class="progress-group-row"><span>Unidades 4</span><strong id="progress-units4">0%</strong></div>
+        <div class="progress-group-row"><span>Unidades 5</span><strong id="progress-units5">0%</strong></div>
+        <div class="progress-group-row"><span>Total</span><strong id="progress-total">0%</strong></div>
+      </div>
+      <div class="progress-tools">
+        <button type="button" class="btn btn-outline btn-sm" id="btn-export-progress">Exportar progreso</button>
+        <button type="button" class="btn btn-outline btn-sm" id="btn-import-progress">Importar</button>
+        <input type="file" id="import-progress-file" accept="application/json,.json" hidden>
+      </div>
     </div>
     
     <!-- Nav items -->
@@ -50,15 +60,15 @@
       </li>
       <li class="nav-item" data-target="lessons-page" id="nav-lessons">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
-        <span>Lecciones (4A - 4C)</span>
+        <span>Lecciones (4A - 5C)</span>
       </li>
       <li class="nav-item" data-target="grammar-page" id="nav-grammar">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path d="m9 12 2 2 4-4"/></svg>
-        <span>Grammar Bank 4</span>
+        <span>Grammar Banks 4-5</span>
       </li>
       <li class="nav-item" data-target="vocabulary-page" id="nav-vocabulary">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-        <span>Vocabulary Bank 4</span>
+        <span>Vocabulary Banks 4-5</span>
       </li>
       <li class="nav-item" data-target="pronunciation-page" id="nav-pronunciation">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
@@ -111,17 +121,17 @@
     <section id="dashboard-page" class="page-section active">
       <header class="section-header">
         <h1 class="page-title">Módulo 2: English File Elementary</h1>
-        <p class="page-subtitle">Domina las posesiones, rutinas diarias, preposiciones de tiempo y lugar, y adverbios de frecuencia con audio oficial y prácticas interactivas.</p>
+        <p class="page-subtitle">Domina posesivos, rutinas, frecuencia, comparativos, past simple y going to (Units 4A–4C y 5A–5C) con audio y prácticas interactivas.</p>
       </header>
 
       <div class="card intro-card">
         <div class="intro-grid">
           <div class="intro-text">
             <h2>¡Bienvenido al Módulo 2! 📘✨</h2>
-            <p>Este módulo cubre a fondo las unidades <strong>4A, 4B y 4C</strong>, con explicaciones gramaticales, banco de vocabulario con sintetizador de voz (UK/US), fonética y el <strong>Grammar Bank 4</strong> completo.</p>
+            <p>Este módulo cubre las unidades <strong>4A–4C</strong> y <strong>5A–5C</strong>, con teoría, vocabulario con voz (UK/US), fonética y los <strong>Grammar Banks 4 y 5</strong>.</p>
             <div class="intro-buttons">
               <button class="btn btn-primary" onclick="app.loadLesson('4A')">Empezar Unidad 4A</button>
-              <button class="btn btn-outline" onclick="app.navigateTo('grammar-page')">Ver Grammar Bank 4</button>
+              <button class="btn btn-outline" onclick="app.navigateTo('grammar-page')">Ver Grammar Banks</button>
             </div>
           </div>
           <div class="intro-visual">
@@ -138,7 +148,15 @@
       </div>
 
       <!-- Roadmap Grid -->
-      <h2 class="sub-section-title">Mapa de Lecciones (Units 4A - 4C)</h2>
+      <div class="card smart-review-card" id="smart-review-box" style="display:none;">
+        <div class="smart-review-body">
+          <span class="card-tag highlight-tag">Repaso inteligente</span>
+          <p id="smart-review-text"></p>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-smart-review">Repasar ahora</button>
+      </div>
+
+      <h2 class="sub-section-title">Mapa de Lecciones (Units 4A - 5C)</h2>
       <div class="roadmap-grid">
         
         <div class="card roadmap-card" data-lesson="4A" onclick="app.loadLesson('4A')">
@@ -181,7 +199,55 @@
           <div>
             <div class="card-tag highlight-tag">Review</div>
             <h3>4 Revise and Check</h3>
-            <p>Evaluación acumulativa del Módulo 2 integrando gramática, vocabulario y comprensión auditiva.</p>
+            <p>Evaluación acumulativa de las unidades 4A–4C: gramática, vocabulario y listening.</p>
+          </div>
+          <div class="roadmap-footer">
+            <span class="status-indicator">Pendiente</span>
+            <button class="btn btn-sm btn-outline">Hacer Test</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="5A" onclick="app.loadLesson('5A')">
+          <div>
+            <div class="card-tag">Unit 5A</div>
+            <h3>Comparatives & Superlatives</h3>
+            <p>Comparativos y superlativos con <em>-er/-est</em>, <em>more/most</em>, irregulares (<em>better, worse</em>) y <em>than</em>.</p>
+          </div>
+          <div class="roadmap-footer">
+            <span class="status-indicator">Pendiente</span>
+            <button class="btn btn-sm btn-primary">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="5B" onclick="app.loadLesson('5B')">
+          <div>
+            <div class="card-tag">Unit 5B</div>
+            <h3>Past Simple (Regular & Irregular)</h3>
+            <p>Pasado simple regular con <em>-ed</em>, verbos irregulares, negación con <em>didn't</em> y preguntas con <em>did</em>.</p>
+          </div>
+          <div class="roadmap-footer">
+            <span class="status-indicator">Pendiente</span>
+            <button class="btn btn-sm btn-primary">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="5C" onclick="app.loadLesson('5C')">
+          <div>
+            <div class="card-tag">Unit 5C</div>
+            <h3>Future with Going to</h3>
+            <p>Planes e intenciones con <em>am/is/are going to</em>, preguntas con <em>Wh-</em> y contracciones frecuentes.</p>
+          </div>
+          <div class="roadmap-footer">
+            <span class="status-indicator">Pendiente</span>
+            <button class="btn btn-sm btn-primary">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="RC5" onclick="app.loadLesson('RC5')">
+          <div>
+            <div class="card-tag highlight-tag">Review</div>
+            <h3>5 Revise and Check</h3>
+            <p>Evaluación acumulativa de las unidades 5A–5C: comparativos, past simple y going to.</p>
           </div>
           <div class="roadmap-footer">
             <span class="status-indicator">Pendiente</span>
@@ -233,18 +299,23 @@
     <!-- 3. GRAMMAR BANK PAGE -->
     <section id="grammar-page" class="page-section">
       <header class="section-header">
-        <h2 class="page-title">Grammar Bank 4</h2>
-        <p class="page-subtitle">Práctica exhaustiva y reglas oficiales de English File para las unidades 4A, 4B y 4C.</p>
+        <h2 class="page-title" id="grammar-bank-title">Grammar Bank 4</h2>
+        <p class="page-subtitle">Reglas oficiales de English File y práctica para las unidades 4A–4C y 5A–5C.</p>
       </header>
+
+      <div class="module-switch tab-navigation" role="tablist" aria-label="Selector de módulo Grammar Bank">
+        <button type="button" class="tab-btn grammar-mod-btn active" data-gmod="4" onclick="app.loadGrammarBank(4)">Unidades 4</button>
+        <button type="button" class="tab-btn grammar-mod-btn" data-gmod="5" onclick="app.loadGrammarBank(5)">Unidades 5</button>
+      </div>
 
       <div class="grammar-split-container">
         <div class="card">
-          <h2 style="margin-bottom:1.25rem;">Teoría Oficial Grammar Bank 4</h2>
+          <h2 id="grammar-theory-heading" style="margin-bottom:1.25rem;">Teoría Oficial Grammar Bank 4</h2>
           <div id="grammar-bank-theory-content"></div>
         </div>
 
         <div class="card">
-          <h2 style="margin-bottom:1.25rem;">Práctica Grammar Bank 4</h2>
+          <h2 id="grammar-practice-heading" style="margin-bottom:1.25rem;">Práctica Grammar Bank 4</h2>
           <div class="quiz-info-container">
             <span class="quiz-progress-indicator" id="grammar-bank-indicator">Pregunta 1 de 10</span>
             <span class="score-badge" id="grammar-bank-score">Aciertos: 0</span>
@@ -265,15 +336,20 @@
     <!-- 4. VOCABULARY BANK PAGE -->
     <section id="vocabulary-page" class="page-section">
       <header class="section-header">
-        <h2 class="page-title">Vocabulary Bank 4</h2>
-        <p class="page-subtitle">Aprende y practica vocabulario temático con pronunciación de voz interactiva y juegos de memoria.</p>
+        <h2 class="page-title" id="vocab-bank-title">Vocabulary Bank 4</h2>
+        <p class="page-subtitle">Aprende y practica vocabulario temático con voz (UK/US), flashcards y juego de emparejar.</p>
       </header>
 
-      <div class="tab-navigation">
-        <button class="tab-btn vocab-cat-btn active" data-vocab="family" onclick="app.selectVocabularyBank('family')">The Family</button>
-        <button class="tab-btn vocab-cat-btn" data-vocab="routine" onclick="app.selectVocabularyBank('routine')">Daily Routine</button>
-        <button class="tab-btn vocab-cat-btn" data-vocab="frequency" onclick="app.selectVocabularyBank('frequency')">Frequency & Time</button>
-        <button class="tab-btn vocab-cat-btn" data-vocab="prepositions" onclick="app.selectVocabularyBank('prepositions')">Prepositions (Time/Place)</button>
+      <div class="module-switch tab-navigation" role="tablist" aria-label="Selector de módulo Vocabulary Bank">
+        <button type="button" class="tab-btn vocab-mod-btn active" data-vmod="4" onclick="app.selectVocabularyBank(null, 4)">Unidades 4</button>
+        <button type="button" class="tab-btn vocab-mod-btn" data-vmod="5" onclick="app.selectVocabularyBank(null, 5)">Unidades 5</button>
+      </div>
+
+      <div class="tab-navigation" id="vocab-category-tabs">
+        <button class="tab-btn vocab-cat-btn active" data-vocab="family" data-vocab-cat onclick="app.selectVocabularyBank('family', 4)">The Family</button>
+        <button class="tab-btn vocab-cat-btn" data-vocab="routine" data-vocab-cat onclick="app.selectVocabularyBank('routine', 4)">Daily Routine</button>
+        <button class="tab-btn vocab-cat-btn" data-vocab="frequency" data-vocab-cat onclick="app.selectVocabularyBank('frequency', 4)">Frequency & Time</button>
+        <button class="tab-btn vocab-cat-btn" data-vocab="prepositions" data-vocab-cat onclick="app.selectVocabularyBank('prepositions', 4)">Prepositions (Time/Place)</button>
       </div>
 
       <div class="tab-navigation" style="margin-bottom:1.5rem;">
@@ -334,7 +410,7 @@
       </header>
 
       <div class="card">
-        <h3>Sonidos Fonéticos Destacados de las Unidades 4A, 4B y 4C</h3>
+        <h3>Sonidos Fonéticos Destacados del Módulo 2</h3>
         <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Toca cualquier tarjeta fonética para escuchar la articulación de la palabra de ejemplo:</p>
         <div class="phoneme-grid" id="phonemes-module-grid"></div>
       </div>
@@ -343,14 +419,19 @@
     <!-- 6. EXERCISES PAGE -->
     <section id="exercises-page" class="page-section">
       <header class="section-header">
-        <h2 class="page-title">Banco de Ejercicios Temáticos</h2>
-        <p class="page-subtitle">Práctica interactiva clasificada por categorías del Módulo 2.</p>
+        <h2 class="page-title" id="exercises-bank-title">Banco de Ejercicios (Unidades 4)</h2>
+        <p class="page-subtitle">Práctica interactiva clasificada por categorías de las Unidades 4 y 5.</p>
       </header>
 
-      <div class="tab-navigation scrollable-tabs">
-        <button class="tab-btn active" data-excat="possessives" onclick="app.selectExerciseCategory('possessives')">Posesivos & Whose</button>
-        <button class="tab-btn" data-excat="prepositions" onclick="app.selectExerciseCategory('prepositions')">Preposiciones de Tiempo</button>
-        <button class="tab-btn" data-excat="frequency" onclick="app.selectExerciseCategory('frequency')">Adverbios de Frecuencia</button>
+      <div class="module-switch tab-navigation" role="tablist" aria-label="Selector de módulo de ejercicios">
+        <button type="button" class="tab-btn ex-mod-btn active" data-exmod="4" onclick="app.selectExerciseCategory(null, 4)">Unidades 4</button>
+        <button type="button" class="tab-btn ex-mod-btn" data-exmod="5" onclick="app.selectExerciseCategory(null, 5)">Unidades 5</button>
+      </div>
+
+      <div class="tab-navigation scrollable-tabs" id="exercise-category-tabs">
+        <button class="tab-btn active" data-excat="possessives" onclick="app.selectExerciseCategory('possessives', 4)">Posesivos & Whose</button>
+        <button class="tab-btn" data-excat="prepositions" onclick="app.selectExerciseCategory('prepositions', 4)">Preposiciones de Tiempo</button>
+        <button class="tab-btn" data-excat="frequency" onclick="app.selectExerciseCategory('frequency', 4)">Adverbios de Frecuencia</button>
       </div>
 
       <div class="card">
@@ -366,14 +447,14 @@
     <section id="certificate-page" class="page-section">
       <header class="section-header">
         <h2 class="page-title">Certificado Módulo 2</h2>
-        <p class="page-subtitle">Acredita tu superación de las unidades 4A, 4B y 4C de English File Elementary.</p>
+        <p class="page-subtitle">Acredita tu superación de las unidades 4A–4C y 5A–5C de English File Elementary.</p>
       </header>
 
       <!-- Locked Panel -->
       <div class="card" id="cert-locked-panel" style="text-align:center; padding:3rem 2rem;">
         <div style="font-size:3rem; margin-bottom:1rem;">🔒</div>
         <h2>Certificado Bloqueado</h2>
-        <p style="color:var(--text-secondary); max-width:500px; margin:0.75rem auto 1.5rem auto;">Debes alcanzar al menos el <strong>80% del progreso general</strong> en las lecciones y el Grammar Bank 4 para desbloquear tu diploma.</p>
+        <p style="color:var(--text-secondary); max-width:500px; margin:0.75rem auto 1.5rem auto;">Debes alcanzar al menos el <strong>80% del progreso general</strong> en las lecciones y los Grammar Banks 4 y 5 para desbloquear tu diploma.</p>
         <div class="progress-bar-container" style="max-width:350px; margin:0 auto 1rem auto;">
           <div class="progress-bar-fill" id="cert-progress-fill-bar" style="width:0%;"></div>
         </div>
@@ -395,12 +476,12 @@
           <div class="certificate-frame">
             <div class="cert-watermark">EF</div>
             <div class="cert-header">DIPLOMA DE FINALIZACIÓN</div>
-            <div class="cert-badge">Módulo 2 · Elementary (Units 4A - 4C)</div>
+            <div class="cert-badge">Módulo 2 · Elementary (Units 4A - 5C)</div>
             
             <p class="cert-intro">Se certifica solemnemente que el alumno(a)</p>
             <h2 class="cert-student-name" id="cert-display-name">Estudiante de Inglés</h2>
             
-            <p class="cert-description">Ha completado con éxito todas las unidades correspondientes desde el <strong>File 4A hasta el File 4C</strong> del syllabus <strong>English File Elementary 4th Edition</strong>, demostrando un dominio sobresaliente de los genitivos posesivos, preposiciones de tiempo y lugar, rutinas diarias, adverbios de frecuencia y Grammar Bank 4 con un rendimiento del 80% o superior.</p>
+            <p class="cert-description">Ha completado con éxito todas las unidades correspondientes desde el <strong>File 4A hasta el File 5C</strong> del syllabus <strong>English File Elementary 4th Edition</strong>, demostrando dominio de genitivos, preposiciones, rutinas, adverbios de frecuencia, comparativos, past simple y <em>going to</em>, con un rendimiento del 80% o superior.</p>
 
             <div class="cert-details">
               <div class="cert-col">
@@ -413,7 +494,7 @@
               </div>
               <div class="cert-col">
                 <span class="detail-label">Código de Verificación</span>
-                <strong class="detail-val" style="font-family:monospace;">EF-ELEM-MOD2-4ABC</strong>
+                <strong class="detail-val" style="font-family:monospace;">EF-ELEM-MOD2-4A5C</strong>
               </div>
             </div>
           </div>
@@ -423,6 +504,7 @@
 
   </main>
 
+  <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   English File A1 - Módulo 2 (Units 4A, 4B, 4C) - Master Stylesheet
+   English File A1 - Módulo 2 (Units 4A–4C, 5A–5C) - Master Stylesheet
    Accessibility: placeholder aria-label
    ========================================================================== */
 
@@ -1252,6 +1252,74 @@ select:focus-visible {
   font-family: 'Brush Script MT', cursive, sans-serif;
   font-size: 1.4rem;
   color: var(--color-secondary);
+}
+
+/* Progress groups (sidebar) */
+.progress-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.progress-group-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.progress-group-row strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Export / import tools */
+.progress-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.progress-tools .btn {
+  flex: 1 1 auto;
+  min-width: calc(50% - 0.2rem);
+}
+
+/* Smart review card */
+.smart-review-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, var(--color-primary-glow), transparent 70%);
+}
+
+.smart-review-body {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.smart-review-body p {
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Module switch (bank selectors) */
+.module-switch {
+  margin-bottom: 1.25rem;
+}
+
+.module-switch .tab-btn {
+  min-width: 8rem;
 }
 
 /* Responsive */
