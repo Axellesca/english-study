@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 2 (Unidades 4A, 4B y 4C). Posesivos, preposiciones de tiempo, rutina diaria, adverbios de frecuencia, Grammar Bank 4 y ejercicios.">
   <title>English File Elementary - Módulo 2 (Units 4A - 4C)</title>
+  <meta property="og:title" content="English File Elementary - Módulo 2 (Units 4A - 4C)">
+  <meta property="og:description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 2 (Unidades 4A, 4B y 4C). Posesivos, preposiciones de tiempo, rutina diaria, adverbios de frecuencia, Grammar Bank 4 y ejercicios.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../../css/shared-theme.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -39,6 +43,7 @@
     
     <!-- Nav items -->
     <nav class="nav-links">
+      <ul style="list-style:none; padding:0; margin:0;">
       <li class="nav-item active" data-target="dashboard-page" id="nav-dashboard">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
         <span>Dashboard</span>
@@ -67,6 +72,7 @@
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         <span>Certificado Módulo 2</span>
       </li>
+      </ul>
     </nav>
     
     <!-- Redirections -->
@@ -112,7 +118,7 @@
         <div class="intro-grid">
           <div class="intro-text">
             <h2>¡Bienvenido al Módulo 2! 📘✨</h2>
-            <p>Este módulo cubre a fondo las unidades **4A, 4B y 4C**, con explicaciones gramaticales, banco de vocabulario con sintetizador de voz (UK/US), fonética y el **Grammar Bank 4** completo.</p>
+            <p>Este módulo cubre a fondo las unidades <strong>4A, 4B y 4C</strong>, con explicaciones gramaticales, banco de vocabulario con sintetizador de voz (UK/US), fonética y el <strong>Grammar Bank 4</strong> completo.</p>
             <div class="intro-buttons">
               <button class="btn btn-primary" onclick="app.loadLesson('4A')">Empezar Unidad 4A</button>
               <button class="btn btn-outline" onclick="app.navigateTo('grammar-page')">Ver Grammar Bank 4</button>
@@ -193,7 +199,7 @@
           <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
           <span>Volver al Dashboard</span>
         </div>
-        <h1 class="page-title" id="active-lesson-title">Cargando Lección...</h1>
+        <h2 class="page-title" id="active-lesson-title">Cargando Lección...</h2>
       </header>
 
       <div class="tab-navigation">
@@ -227,7 +233,7 @@
     <!-- 3. GRAMMAR BANK PAGE -->
     <section id="grammar-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Grammar Bank 4</h1>
+        <h2 class="page-title">Grammar Bank 4</h2>
         <p class="page-subtitle">Práctica exhaustiva y reglas oficiales de English File para las unidades 4A, 4B y 4C.</p>
       </header>
 
@@ -259,7 +265,7 @@
     <!-- 4. VOCABULARY BANK PAGE -->
     <section id="vocabulary-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Vocabulary Bank 4</h1>
+        <h2 class="page-title">Vocabulary Bank 4</h2>
         <p class="page-subtitle">Aprende y practica vocabulario temático con pronunciación de voz interactiva y juegos de memoria.</p>
       </header>
 
@@ -323,7 +329,7 @@
     <!-- 5. PRONUNCIATION PAGE -->
     <section id="pronunciation-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Fonética y Pronunciación (Módulo 2)</h1>
+        <h2 class="page-title">Fonética y Pronunciación (Módulo 2)</h2>
         <p class="page-subtitle">Domina los sonidos consonánticos clave (/ð/, /θ/, terminaciones 's) y acentuación en rutinas.</p>
       </header>
 
@@ -337,7 +343,7 @@
     <!-- 6. EXERCISES PAGE -->
     <section id="exercises-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Banco de Ejercicios Temáticos</h1>
+        <h2 class="page-title">Banco de Ejercicios Temáticos</h2>
         <p class="page-subtitle">Práctica interactiva clasificada por categorías del Módulo 2.</p>
       </header>
 
@@ -359,7 +365,7 @@
     <!-- 7. CERTIFICATE PAGE -->
     <section id="certificate-page" class="page-section">
       <header class="section-header">
-        <h1 class="page-title">Certificado Módulo 2</h1>
+        <h2 class="page-title">Certificado Módulo 2</h2>
         <p class="page-subtitle">Acredita tu superación de las unidades 4A, 4B y 4C de English File Elementary.</p>
       </header>
 
@@ -367,7 +373,7 @@
       <div class="card" id="cert-locked-panel" style="text-align:center; padding:3rem 2rem;">
         <div style="font-size:3rem; margin-bottom:1rem;">🔒</div>
         <h2>Certificado Bloqueado</h2>
-        <p style="color:var(--text-secondary); max-width:500px; margin:0.75rem auto 1.5rem auto;">Debes alcanzar al menos el **80% del progreso general** en las lecciones y el Grammar Bank 4 para desbloquear tu diploma.</p>
+        <p style="color:var(--text-secondary); max-width:500px; margin:0.75rem auto 1.5rem auto;">Debes alcanzar al menos el <strong>80% del progreso general</strong> en las lecciones y el Grammar Bank 4 para desbloquear tu diploma.</p>
         <div class="progress-bar-container" style="max-width:350px; margin:0 auto 1rem auto;">
           <div class="progress-bar-fill" id="cert-progress-fill-bar" style="width:0%;"></div>
         </div>
@@ -392,9 +398,9 @@
             <div class="cert-badge">Módulo 2 · Elementary (Units 4A - 4C)</div>
             
             <p class="cert-intro">Se certifica solemnemente que el alumno(a)</p>
-            <h1 class="cert-student-name" id="cert-display-name">Estudiante de Inglés</h1>
+            <h2 class="cert-student-name" id="cert-display-name">Estudiante de Inglés</h2>
             
-            <p class="cert-description">Ha completado con éxito todas las unidades correspondientes desde el **File 4A hasta el File 4C** del syllabus **English File Elementary 4th Edition**, demostrando un dominio sobresaliente de los genitivos posesivos, preposiciones de tiempo y lugar, rutinas diarias, adverbios de frecuencia y Grammar Bank 4 con un rendimiento del 80% o superior.</p>
+            <p class="cert-description">Ha completado con éxito todas las unidades correspondientes desde el <strong>File 4A hasta el File 4C</strong> del syllabus <strong>English File Elementary 4th Edition</strong>, demostrando un dominio sobresaliente de los genitivos posesivos, preposiciones de tiempo y lugar, rutinas diarias, adverbios de frecuencia y Grammar Bank 4 con un rendimiento del 80% o superior.</p>
 
             <div class="cert-details">
               <div class="cert-col">

@@ -464,9 +464,17 @@ const app = {
 
   setupEventListeners() {
     document.querySelectorAll('.nav-item').forEach(item => {
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('role', 'button');
       item.addEventListener('click', () => {
         const target = item.getAttribute('data-target');
         if (target) this.navigateTo(target);
+      });
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          item.click();
+        }
       });
     });
 
