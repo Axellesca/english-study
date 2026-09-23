@@ -60,6 +60,12 @@ Agregar las lecciones 5A, 5B y 5C al Módulo 2 y aplicar las mejoras de sistema 
 - [x] T6.3 Structural check pasa
 - [x] T6.4 Smoke browser: 0 console errors, roadmap 8 cards, load 5A/5B/5C/RC5 ok, banks 4↔5 ok
 
+### T7 — Fixes post-feedback usuario
+- [x] T7.1 Portal card `index.html`: Elementary (4A-5C), 8 lecciones, Grammar Banks 4-5, desc con temas 5
+- [x] T7.2 Hub `A1/index.html`: sidebar Módulo 2 (4A-5C)
+- [x] T7.3 Lesson switcher chips 4A–5C/RC en vista Lecciones (`#lesson-switcher` + `renderLessonSelector`)
+- [x] T7.4 Verificar structural + smoke y commit fix
+
 ## Criterios de aceptación
 - Roadmap muestra 4A, 4B, 4C, 5A, 5B, 5C, RC4, RC5 (8 cards) sin cards rotas.
 - Clic en 5A/5B/5C carga teoría, vocabulario y quiz correctos.
@@ -74,7 +80,8 @@ Agregar las lecciones 5A, 5B y 5C al Módulo 2 y aplicar las mejoras de sistema 
 ## Commits (work units)
 | Commit | Unidad | Authored lines (+/-) |
 |--------|--------|----------------------|
-| (pending) | feat(modulo2): add units 5A-5C with modular data banks and progress tools | data.js ~828 new; app.js ~411/425; index.html ~118/36; style.css ~69/1; tests/structural-check + feature doc — >400 total |
+| 75273f4 | feat(modulo2): add units 5A-5C with modular data banks and progress tools | data.js ~828 new; app.js ~411/425; index.html ~118/36; style.css ~69/1; tests/structural-check + feature doc — >400 total |
+| (pending) | fix(modulo2): update portal labels to 4A-5C and add lesson switcher | index.html, A1/index.html, A1/modulo2/{index,app,style} |
 
 **Focused test:** `node tests/structural-check.js` + JS parse + HTTP 200 + browser smoke (0 console errors).
 **Runtime harness:** static site; verification = structural + smoke.

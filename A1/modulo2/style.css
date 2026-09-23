@@ -635,6 +635,44 @@ select:focus-visible {
   height: 16px;
 }
 
+/* Lesson switcher chips (4A–5C inside Lecciones view) */
+.lesson-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.lesson-chip {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.lesson-chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.lesson-chip.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+}
+
+.lesson-chip.completed:not(.active) {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
 /* Theory Tables and Formats */
 .theory-block {
   background: var(--bg-card);

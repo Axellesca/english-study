@@ -214,6 +214,7 @@ const app = {
         this.saveProgress();
         this.updateStatsUI();
         this.renderRoadmap();
+        this.renderLessonSelector();
         this.updateSmartReview();
         alert("Progreso importado correctamente. ✅");
       } catch (e) {
@@ -455,6 +456,8 @@ const app = {
     this.state.lessonQuizIndex = 0;
     this.state.lessonQuizScore = 0;
 
+    this.renderLessonSelector();
+
     const titleEl = document.getElementById('active-lesson-title');
     if (titleEl) titleEl.innerText = data.title;
 
@@ -488,6 +491,20 @@ const app = {
     this.renderCurrentLessonQuiz();
     this.navigateTo('lessons-page');
     this.switchLessonTab('lesson-theory');
+  },
+
+  renderLessonSelector() {
+    const nav = document.getElementById('lesson-switcher');
+    if (!nav) return;
+    const keys = Object.keys(LESSONS);
+    nav.innerHTML = keys.map(key => {
+      const active = key === this.state.activeLesson ? ' active' : '';
+      const done = this.state.progress[key] ? ' completed' : '';
+      return `<button type="button" class="lesson-chip${active}${done}" data-lesson="${key}" aria-pressed="${active ? 'true' : 'false'}">${key}</button>`;
+    }).join('');
+    nav.querySelectorAll('.lesson-chip').forEach(chip => {
+      chip.addEventListener('click', () => this.loadLesson(chip.getAttribute('data-lesson')));
+    });
   },
 
   switchLessonTab(tabId) {
@@ -643,6 +660,7 @@ const app = {
       this.state.userScore += 20; // completion bonus
       this.updateStatsUI();
       this.renderRoadmap();
+      this.renderLessonSelector();
       this.updateSmartReview();
 
       const quizArea = document.getElementById('lesson-quiz-area');
