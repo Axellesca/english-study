@@ -416,6 +416,65 @@ body::before {
 
 .theory-intro p { color: var(--text-secondary); font-size: 0.92rem; }
 
+/* Spanish theory block */
+.theory-es {
+  border-color: rgba(15, 118, 110, 0.35);
+  background: linear-gradient(180deg, rgba(15, 118, 110, 0.06), transparent 70%);
+}
+
+.theory-es h3 { color: var(--color-primary); }
+
+.theory-es-intro p {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.theory-es-section {
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed rgba(28, 25, 23, 0.12);
+}
+
+.theory-es-section:last-of-type { border-bottom: none; }
+
+.theory-es-section h4 {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.theory-es-section p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.theory-es-tip {
+  margin-top: 0.85rem;
+  padding: 0.7rem 0.85rem;
+  background: rgba(15, 118, 110, 0.1);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.theory-book-label {
+  padding: 0.65rem 1rem;
+  background: rgba(28, 25, 23, 0.04);
+}
+
+.theory-book-label p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
 /* Practice */
 .practice-header { margin-bottom: 0.5rem; }
 

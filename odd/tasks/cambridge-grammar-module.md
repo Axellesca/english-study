@@ -25,25 +25,37 @@ User added the Cambridge grammar PDF and wants a standalone study module (not ju
 - [x] T5: Add portal section under Books & Readers (book card + Grammar Workshop module card)
 - [x] T6: Structural check + browser smoke
 - [x] T7: Work-unit commit
+- [x] T8: Enrich exercise answer keys (parse answer-key pages fully; map more Getting started / Test yourself items)
+- [x] T9: Polish theory in Spanish (unit-level Spanish explanations alongside English examples)
 
 ## Acceptance criteria
 - Module loads at `http://127.0.0.1/ingles/Cambridge_Grammar/` with 0 console errors. ✅
 - Each unit has theory + interactive exercises with check/explanation + practice + tips. ✅ (exercises with keys; practice reveal-answer; tips tab)
 - Portal card navigates to the module. ✅ `#card-cambridge-grammar`
 - `node tests/structural-check.js` still PASS. ✅
+- T8: Higher % of practice items and exercises have usable answer keys. ✅ 99% practice (726/735), 99% exercises (733/742); U5 repaired from 0 to 15/15 practice + 29 exercises.
+- T9: Theory tab shows clear Spanish explanations for each unit. ✅ theoryEsHtml on all 17 units, rendered first under "Resumen en español".
 
 ## Route
 Direct inline (subagentes no disponibles en este runtime).
 
 ## Progress
 - 2026-09-23: T1 done — extract_cambridge.py wrote full text + outline JSON.
-- 2026-09-23: T2–T6 done — gen_datajs.py → Cambridge_Grammar/data.js (596 KB, 17 units); module scaffold; portal cards; smoke PASS (unitCount 17, theory 5, practice 14, exercises 40, tips 7, portalCard 1, errors []).
+- 2026-09-23: T2–T6 done — gen_datajs.py → Cambridge_Grammar/data.js (596 KB, 17 units); module scaffold; portal cards; smoke PASS.
+- 2026-09-23: T7 done — commit `4c5a147` pushed to origin/main after user auth.
+- 2026-09-24: T8–T9 done — theory_es.py (Spanish summaries 17 units); repair_units.py fixed U5; answer-key clean + OCR fixes; regen data.js (952 KB); renderTheory shows theoryEs first; smoke PASS 0 errors.
 
 ## Delivery forecast
-~4 files module + portal edit — single work-unit commit under ~400 line authoring heuristic for source (data.js is generated).
+T8+T9 regenerate data.js + possibly small app.js for Spanish theory block — one work-unit commit.
 
 ## Checks
-- `node --check Cambridge_Grammar/data.js` / `app.js` PASS
-- `node tests/structural-check.js` PASS (8 keys)
-- HTTP 200: portal, module, data.js, app.js, style.css, PDF
-- browser-automation smoke: 0 console errors, 0 failed requests
+- `node --check Cambridge_Grammar/data.js` / `app.js`
+- `node tests/structural-check.js`
+- HTTP 200 + browser smoke
+- Answer-key coverage metric (before/after %)
+
+## Commits
+| Commit | Message |
+|--------|---------|
+| 4c5a147 | feat(cambridge-grammar): add interactive module from Cambridge grammar book |
+| (pending) | feat(cambridge-grammar): add Spanish theory and enrich answer keys |

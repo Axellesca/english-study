@@ -210,10 +210,20 @@ function renderTheory() {
   const root = $('#tab-theory');
   if (!currentUnit) { root.innerHTML = ''; return; }
   const lessons = currentUnit.lessons || [];
+  const theoryEs = currentUnit.theoryEsHtml || '';
   root.innerHTML = `
     <div class="theory-intro card">
       <h3>${escapeHtml(currentUnit.title)}</h3>
-      <p>Teoría extraída de las lecciones de la Unidad ${currentUnit.unit} del libro Cambridge.</p>
+      <p>Unidad ${currentUnit.unit} — resumen en español y teoría original del libro Cambridge.</p>
+    </div>
+    ${theoryEs ? `
+      <article class="card theory-block theory-es" id="theory-es-unit-${currentUnit.unit}">
+        <h3>Resumen en español</h3>
+        <div class="theory-body theory-es-body">${theoryEs}</div>
+      </article>
+    ` : ''}
+    <div class="theory-book-label card">
+      <p><strong>Teoría del libro (inglés)</strong> — lecciones extraídas de ${escapeHtml(BOOK_META && BOOK_META.title ? BOOK_META.title : 'Cambridge')}</p>
     </div>
     ${lessons.map((l, i) => `
       <article class="card theory-block" id="lesson-${l.n}-${i}">
