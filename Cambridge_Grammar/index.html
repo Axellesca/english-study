@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Módulo interactivo de gramática inglesa basado en Cambridge English Grammar: Understanding the Basics — teoría, práctica, ejercicios y quick tips por unidad.">
+  <title>Cambridge Grammar — Understanding the Basics</title>
+  <meta property="og:title" content="Cambridge Grammar — Understanding the Basics">
+  <meta property="og:description" content="Módulo interactivo: teoría, práctica y ejercicios del libro Cambridge English Grammar.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../css/shared-theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">CG</div>
+      <div class="logo-text">
+        <span class="logo-title">Cambridge Grammar</span>
+        <span class="logo-subtitle">Understanding the Basics</span>
+      </div>
+    </div>
+
+    <div class="sidebar-stats">
+      <div class="stat-header">
+        <span>Progreso del módulo</span>
+        <span id="overall-progress-text">0%</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="overall-progress-fill" style="width: 0%;"></div>
+      </div>
+      <div class="progress-tools">
+        <button type="button" class="btn btn-outline btn-sm" id="btn-reset-progress">Reiniciar progreso</button>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li class="nav-item active" data-target="dashboard-page" id="nav-dashboard">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          <span>Dashboard</span>
+        </li>
+        <li class="nav-item" data-target="unit-page" id="nav-unit">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+          <span>Unidades</span>
+        </li>
+        <li class="nav-item" data-target="about-page" id="nav-about">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span>Acerca del libro</span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-home">
+      <a href="../index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
+        <span>Portal principal</span>
+      </a>
+      <a href="../A1/index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg>
+        <span>English File A1</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <!-- DASHBOARD -->
+    <section id="dashboard-page" class="page-section active">
+      <header class="section-header">
+        <h1 class="page-title">Cambridge Grammar</h1>
+        <p class="page-subtitle">English Grammar: Understanding the Basics (Altenberg &amp; Vago). 17 unidades, 3 partes: teoría, práctica Test yourself, ejercicios y Quick tips.</p>
+      </header>
+
+      <div class="card intro-card">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <h2>¡Bienvenido al módulo de gramática! 📗</h2>
+            <p>Contenido extraído del libro Cambridge: lecciones, bloques <strong>Test yourself / Getting started</strong>, ejercicios interactivos y las <strong>Quick tips</strong> del final.</p>
+            <div class="intro-buttons">
+              <button type="button" class="btn btn-primary" id="btn-start-first">Empezar U1: Nouns</button>
+              <a class="btn btn-outline" id="pdf-open" href="../book/Cambridge_English_Grammar.pdf" target="_blank" rel="noopener">Abrir PDF del libro</a>
+            </div>
+            <div class="card-meta" id="dashboard-stats"></div>
+          </div>
+          <div class="intro-visual">
+            <div class="progress-circle-widget">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path class="circle" id="circle-progress" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <text x="18" y="20.35" class="percentage" id="dashboard-percentage">0%</text>
+              </svg>
+              <span class="circle-label">Unidades vistas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="sub-section-title">Unidades del libro</h2>
+      <div class="units-grid" id="units-grid"></div>
+    </section>
+
+    <!-- UNIT -->
+    <section id="unit-page" class="page-section">
+      <header class="section-header">
+        <button type="button" class="btn btn-outline btn-sm" id="btn-back-dashboard">← Volver al dashboard</button>
+        <h1 class="page-title" id="unit-heading">Unidad</h1>
+        <p class="page-subtitle" id="unit-subtitle"></p>
+        <div class="unit-actions">
+          <a class="btn btn-outline btn-sm" id="unit-pdf-link" href="../book/Cambridge_English_Grammar.pdf" target="_blank" rel="noopener">Ver unidad en el PDF ↗</a>
+        </div>
+      </header>
+
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab-btn active" data-tab="theory" role="tab">Teoría</button>
+        <button type="button" class="tab-btn" data-tab="practice" role="tab">Práctica</button>
+        <button type="button" class="tab-btn" data-tab="exercises" role="tab">Ejercicios</button>
+        <button type="button" class="tab-btn" data-tab="tips" role="tab">Quick tips</button>
+      </div>
+
+      <div id="tab-theory" class="tab-panel active" role="tabpanel"></div>
+      <div id="tab-practice" class="tab-panel" role="tabpanel"></div>
+      <div id="tab-exercises" class="tab-panel" role="tabpanel"></div>
+      <div id="tab-tips" class="tab-panel" role="tabpanel"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about-page" class="page-section">
+      <header class="section-header">
+        <h1 class="page-title">Acerca del libro</h1>
+        <p class="page-subtitle">Fuente del módulo y cómo usarlo.</p>
+      </header>
+      <div class="card">
+        <h3>English Grammar: Understanding the Basics</h3>
+        <p>Evelyn P. Altenberg (Hofstra University) y Robert M. Vago (Queens College / CUNY). Cambridge University Press.</p>
+        <p>Guía paso a paso no técnica: partes del discurso, frases y oraciones, con <em>Test yourself</em>, <em>Getting started</em>, <em>Quick tips</em> y claves de respuesta.</p>
+        <ul class="about-list">
+          <li><strong>Part I — Kinds of words:</strong> Unidades 1–8 (Nouns, Verbs, Determiners, Adjectives, Prepositions, Conjunctions, Pronouns, Adverbs)</li>
+          <li><strong>Part II — Kinds of phrases:</strong> Unidades 9–14 (Noun, Prepositional, Verb, Auxiliary phrases, Subjects and objects, Compound phrases)</li>
+          <li><strong>Part III — Getting started with sentences:</strong> Unidades 15–17 (Functions, Combining, Related sentences)</li>
+        </ul>
+        <p class="about-note">Este módulo es un apoyo de estudio interactivo. Para ejemplos completos y More practice (con respuestas en la web del libro), abrí el PDF original.</p>
+        <a class="btn btn-primary" href="../book/Cambridge_English_Grammar.pdf" target="_blank" rel="noopener">Abrir PDF</a>
+      </div>
+    </section>
+
+    <footer class="portal-footer">
+      <p>Basado en <strong>Cambridge English Grammar: Understanding the Basics</strong> · Cambridge University Press · Portal de estudio interactivo</p>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
