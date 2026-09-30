@@ -212,276 +212,384 @@ const LESSONS = {
   },
 
   // -------------------------------------------------------------------------
-  // UNIDAD 5A — Comparatives & Superlatives
+  // UNIDAD 5A — can / can't (habilidades)
   // -------------------------------------------------------------------------
   "5A": {
-    title: "5A: Comparatives & Superlatives",
+    title: "5A: can / can't (Habilidades)",
     module: 5,
     theory: `
       <div class="theory-block">
-        <h3>1. Comparative adjectives (Más... que)</h3>
-        <p>Para comparar dos cosas usamos la forma <strong>comparativa</strong>:</p>
-        <div class="table-wrapper">
-          <table class="grammar-table">
-            <thead><tr><th>Regla</th><th>Adjetivo</th><th>Comparativo</th><th>Ejemplo</th></tr></thead>
-            <tbody>
-              <tr><td>1 sílaba → <strong>-er</strong></td><td>tall</td><td>tall<strong>er</strong></td><td>Anna is <strong>taller than</strong> Tom.</td></tr>
-              <tr><td>Consonante + vocal + consonante → dobla la final</td><td>big</td><td>big<strong>ger</strong></td><td>London is <strong>bigger than</strong> Oxford.</td></tr>
-              <tr><td>Termina en -y → -ier</td><td>happy</td><td>happ<strong>ier</strong></td><td>She is <strong>happier than</strong> yesterday.</td></tr>
-              <tr><td>2+ sílabas → <strong>more</strong></td><td>expensive</td><td><strong>more</strong> expensive</td><td>This phone is <strong>more expensive than</strong> mine.</td></tr>
-              <tr><td>Irregulares</td><td>good / bad / far</td><td><strong>better / worse / farther</strong></td><td>Today is <strong>better than</strong> yesterday.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="rule-highlight-box">
-          💡 Siempre usamos <strong>than</strong> después del comparativo: <em>bigger than, better than</em>.
-        </div>
-      </div>
-
-      <div class="theory-block">
-        <h3>2. Superlative adjectives (El más...)</h3>
-        <p>Cuando comparamos <strong>tres o más</strong> usamos el <strong>superlativo</strong> con <strong>the</strong>:</p>
-        <div class="table-wrapper">
-          <table class="grammar-table">
-            <thead><tr><th>Adjetivo</th><th>Superlativo</th><th>Ejemplo</th></tr></thead>
-            <tbody>
-              <tr><td>tall</td><td>the tall<strong>est</strong></td><td>He is <strong>the tallest</strong> boy in the class.</td></tr>
-              <tr><td>big</td><td>the big<strong>gest</strong></td><td>Russia is <strong>the biggest</strong> country.</td></tr>
-              <tr><td>happy</td><td>the happ<strong>iest</strong></td><td>She is <strong>the happiest</strong> girl I know.</td></tr>
-              <tr><td>expensive</td><td><strong>the most</strong> expensive</td><td>It is <strong>the most expensive</strong> car.</td></tr>
-              <tr><td>good / bad / far</td><td><strong>the best / worst / farthest</strong></td><td>That was <strong>the best</strong> day ever.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="rule-highlight-box warning">
-          ⚠️ No decimos <em>more taller</em> ni <em>the most tallest</em>. Solo una forma de comparación a la vez.
-        </div>
-      </div>
-
-      <div class="theory-block">
-        <h3>3. Irregular comparisons (Formas irregulares)</h3>
-        <div class="table-wrapper">
-          <table class="grammar-table">
-            <thead><tr><th>Adjetivo</th><th>Comparativo</th><th>Superlativo</th></tr></thead>
-            <tbody>
-              <tr><td>good</td><td>better</td><td>the best</td></tr>
-              <tr><td>bad</td><td>worse</td><td>the worst</td></tr>
-              <tr><td>far</td><td>farther / further</td><td>the farthest / furthest</td></tr>
-              <tr><td>little</td><td>less</td><td>the least</td></tr>
-              <tr><td>many / much</td><td>more</td><td>the most</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    `,
-    vocab: [
-      { english: "taller", translation: "más alto", phonetic: "/ˈtɔː.lər/" },
-      { english: "shorter", translation: "más bajo / más corto", phonetic: "/ˈʃɔː.tər/" },
-      { english: "older", translation: "más viejo", phonetic: "/ˈəʊ.lər/" },
-      { english: "younger", translation: "más joven", phonetic: "/ˈjʌŋ.ɡər/" },
-      { english: "bigger", translation: "más grande", phonetic: "/ˈbɪɡ.ər/" },
-      { english: "smaller", translation: "más pequeño", phonetic: "/ˈsmɔː.lər/" },
-      { english: "cheaper", translation: "más barato", phonetic: "/ˈtʃiː.pər/" },
-      { english: "more expensive", translation: "más caro", phonetic: "/mɔːr ɪkˈspen.sɪv/" },
-      { english: "better", translation: "mejor", phonetic: "/ˈbet.ər/" },
-      { english: "worse", translation: "peor", phonetic: "/wɜːs/" },
-      { english: "the best", translation: "el mejor", phonetic: "/ðə best/" },
-      { english: "the worst", translation: "el peor", phonetic: "/ðə wɜːst/" },
-      { english: "the cheapest", translation: "el más barato", phonetic: "/ðə ˈtʃiː.pɪst/" },
-      { english: "the most popular", translation: "el más popular", phonetic: "/ðə məʊst ˈpɒp.jə.lər/" }
-    ],
-    exercises: [
-      { question: "Complete the comparative: My house is ___ (big) than yours.", type: "input", answer: "bigger", placeholder: "comparative", explanation: "Big → bigger (consonant+vowel+consonante dobla la g)." },
-      { question: "Choose: This film is ___ than the last one.", options: ["good", "better", "best"], type: "choice", correct: 1, explanation: "Good es irregular: good → better (comparativo)." },
-      { question: "Complete the superlative: She is ___ (happy) student in the class.", type: "input", answer: "the happiest", placeholder: "the + superlative", explanation: "Happy → the happiest (y → i + -est, con the)." },
-      { question: "Choose: That was ___ weather I've ever seen!", options: ["the bad", "the worst", "worse"], type: "choice", correct: 1, explanation: "Bad es irregular: el superlativo es the worst." },
-      { question: "Order the words:", pool: ["is", "the", "This", "expensive", "most", "car"], correct: ["This", "is", "the", "most", "expensive", "car"], type: "scramble", explanation: "Estructura: This is the most expensive car." }
-    ]
-  },
-
-  // -------------------------------------------------------------------------
-  // UNIDAD 5B — Past Simple
-  // -------------------------------------------------------------------------
-  "5B": {
-    title: "5B: Past Simple (Regular & Irregular)",
-    module: 5,
-    theory: `
-      <div class="theory-block">
-        <h3>1. Past Simple Regular (Verbos regulares + -ed)</h3>
-        <p>Para formar el pasado de verbos regulares añadimos <strong>-ed</strong>:</p>
-        <div class="table-wrapper">
-          <table class="grammar-table">
-            <thead><tr><th>Base</th><th>Past (+ -ed)</th><th>Ejemplo</th></tr></thead>
-            <tbody>
-              <tr><td>work</td><td>work<strong>ed</strong></td><td>I <strong>worked</strong> yesterday.</td></tr>
-              <tr><td>play</td><td>play<strong>ed</strong></td><td>They <strong>played</strong> football.</td></tr>
-              <tr><td>watch</td><td>watch<strong>ed</strong></td><td>She <strong>watched</strong> TV.</td></tr>
-              <tr><td>stop (C+V+C)</td><td>st<strong>opp</strong>ed</td><td>He <strong>stopped</strong> the car.</td></tr>
-              <tr><td>study (y → ied)</td><td>stud<strong>ied</strong></td><td>We <strong>studied</strong> English.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="rule-highlight-box">
-          💡 Pronunciación de <strong>-ed</strong>: /t/ (worked), /d/ (played), /ɪd/ (wanted, needed).
-        </div>
-      </div>
-
-      <div class="theory-block">
-        <h3>2. Past Simple Irregular (Verbos irregulares)</h3>
-        <p>Muchos verbos comunes son irregulares y hay que memorizarlos:</p>
-        <div class="table-wrapper">
-          <table class="grammar-table">
-            <thead><tr><th>Base</th><th>Past</th><th>Traducción</th></tr></thead>
-            <tbody>
-              <tr><td>go</td><td><strong>went</strong></td><td>fui / fue</td></tr>
-              <tr><td>have</td><td><strong>had</strong></td><td>tuve</td></tr>
-              <tr><td>eat</td><td><strong>ate</strong></td><td>comí</td></tr>
-              <tr><td>see</td><td><strong>saw</strong></td><td>vi</td></tr>
-              <tr><td>come</td><td><strong>came</strong></td><td>vine</td></tr>
-              <tr><td>take</td><td><strong>took</strong></td><td>tomé</td></tr>
-              <tr><td>buy</td><td><strong>bought</strong></td><td>compré</td></tr>
-              <tr><td>write</td><td><strong>wrote</strong></td><td>escribí</td></tr>
-              <tr><td>read</td><td><strong>read</strong> /red/</td><td>leí</td></tr>
-              <tr><td>is / am</td><td><strong>was</strong></td><td>era / estaba</td></tr>
-              <tr><td>are</td><td><strong>were</strong></td><td>eran / estaban</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="theory-block">
-        <h3>3. Negativo y Preguntas con DID</h3>
+        <h3>1. can / can't: ability (Habilidad)</h3>
+        <p>Usamos <strong>can</strong> para hablar de lo que una persona es capaz de hacer. La estructura es siempre la misma: <strong>can + verbo en forma base</strong>.</p>
         <div class="table-wrapper">
           <table class="grammar-table">
             <thead><tr><th>Forma</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
             <tbody>
-              <tr><td>Afirmativo</td><td>Sujeto + <strong>verbo en pasado</strong></td><td>She <strong>worked</strong> late.</td></tr>
-              <tr><td>Negativo</td><td>Sujeto + <strong>didn't</strong> + base</td><td>She <strong>didn't work</strong> late.</td></tr>
-              <tr><td>Pregunta</td><td><strong>Did</strong> + sujeto + base?</td><td><strong>Did</strong> she <strong>work</strong> late?</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="rule-highlight-box warning">
-          ⚠️ Con <strong>did / didn't</strong> el verbo principal queda en <strong>forma base</strong> (NO: <em>didn't worked</em> ❌).
-        </div>
-      </div>
-
-      <div class="theory-block">
-        <h3>4. Expresiones de tiempo (Time expressions)</h3>
-        <p>El past simple suele acompañarse de expresiones como:</p>
-        <p>• <strong>yesterday</strong> (ayer) · <strong>last night / week / month</strong> (la noche/semana/mes pasada)<br>
-        • <strong>two days ago</strong> (hace dos días) · <strong>when I was young</strong> (cuando era joven)<br>
-        • <strong>this morning</strong> (esta mañana — si ya pasó)</p>
-      </div>
-    `,
-    vocab: [
-      { english: "went", translation: "fui / fue (go)", phonetic: "/went/" },
-      { english: "had", translation: "tuve / tuvo (have)", phonetic: "/hæd/" },
-      { english: "ate", translation: "comí / comió (eat)", phonetic: "/et/" },
-      { english: "saw", translation: "vi / vio (see)", phonetic: "/sɔː/" },
-      { english: "came", translation: "vine / vino (come)", phonetic: "/keɪm/" },
-      { english: "took", translation: "tomé / tomó (take)", phonetic: "/tʊk/" },
-      { english: "bought", translation: "compré / compró (buy)", phonetic: "/bɔːt/" },
-      { english: "wrote", translation: "escribí / escribió (write)", phonetic: "/rəʊt/" },
-      { english: "yesterday", translation: "ayer", phonetic: "/ˈjes.tə.deɪ/" },
-      { english: "last week", translation: "la semana pasada", phonetic: "/lɑːst wiːk/" },
-      { english: "two days ago", translation: "hace dos días", phonetic: "/tuː deɪz əˈɡəʊ/" },
-      { english: "worked", translation: "trabajé / trabajó (work)", phonetic: "/wɜːkt/" },
-      { english: "played", translation: "jugué / jugó (play)", phonetic: "/pleɪd/" },
-      { english: "didn't", translation: "no (did not)", phonetic: "/ˈdɪd.ənt/" }
-    ],
-    exercises: [
-      { question: "Complete: Yesterday I ___ (go) to the cinema.", type: "input", answer: "went", placeholder: "past form", explanation: "Go es irregular: go → went." },
-      { question: "Choose the correct form: She ___ (didn't went / didn't go) home.", options: ["didn't went", "didn't go"], type: "choice", correct: 1, explanation: "Con didn't el verbo va en base: didn't go." },
-      { question: "Make negative: They played football. → They ___ football.", type: "input", answer: "didn't play", placeholder: "didn't + base", explanation: "Negativo: didn't + forma base del verbo." },
-      { question: "Order the words:", pool: ["Did", "you", "buy", "milk", "?"], correct: ["Did", "you", "buy", "milk", "?"], type: "scramble", explanation: "Pregunta: Did + sujeto + verbo base + complemento + ?" },
-      { question: "Listening: Listen and write the past form of 'see'.", type: "listening", speakText: "saw", answer: "saw", explanation: "See es irregular: see → saw." }
-    ]
-  },
-
-  // -------------------------------------------------------------------------
-  // UNIDAD 5C — Going to (future)
-  // -------------------------------------------------------------------------
-  "5C": {
-    title: "5C: Future with Going to (Planes)",
-    module: 5,
-    theory: `
-      <div class="theory-block">
-        <h3>1. Be going to (Planes e intenciones)</h3>
-        <p>Usamos <strong>am / is / are + going to + verbo</strong> para hablar de planes o intenciones futuras y de predicciones basadas en evidencia actual:</p>
-        <div class="table-wrapper">
-          <table class="grammar-table">
-            <thead><tr><th>Sujeto</th><th>be</th><th>Ejemplo</th></tr></thead>
-            <tbody>
-              <tr><td>I</td><td><strong>am</strong></td><td>I <strong>am going to travel</strong> next summer.</td></tr>
-              <tr><td>He / She / It</td><td><strong>is</strong></td><td>She <strong>is going to study</strong> medicine.</td></tr>
-              <tr><td>You / We / They</td><td><strong>are</strong></td><td>We <strong>are going to move</strong> house.</td></tr>
+              <tr><td>Afirmativo</td><td>Sujeto + <strong>can</strong> + verbo base</td><td>She <strong>can swim</strong>.</td></tr>
+              <tr><td>Negativo</td><td>Sujeto + <strong>can't</strong> + verbo base</td><td>He <strong>can't drive</strong>.</td></tr>
+              <tr><td>Pregunta</td><td><strong>Can</strong> + sujeto + verbo base?</td><td><strong>Can</strong> you <strong>play</strong> the guitar?</td></tr>
+              <tr><td>Respuesta corta (+)</td><td>Yes, + sujeto + <strong>can</strong></td><td>Yes, I <strong>can</strong>.</td></tr>
+              <tr><td>Respuesta corta (−)</td><td>No, + sujeto + <strong>can't</strong></td><td>No, I <strong>can't</strong>.</td></tr>
             </tbody>
           </table>
         </div>
         <div class="rule-highlight-box">
-          💡 <strong>Contracciones:</strong> I'm going to · He's going to · We're going to (muy comunes en habla).
+          💡 <strong>can't</strong> es la forma corta de <strong>cannot</strong>. Las dos son correctas, pero en conversación y escritura informal se usa casi siempre <em>can't</em>.
         </div>
       </div>
 
       <div class="theory-block">
-        <h3>2. Preguntas y respuestas cortas</h3>
+        <h3>2. Una sola forma para todas las personas</h3>
+        <p>A diferencia de otros verbos, <strong>can</strong> es igual para <em>I, you, he, she, it, we</em> y <em>they</em>. No cambia nunca.</p>
         <div class="table-wrapper">
           <table class="grammar-table">
-            <thead><tr><th>Pregunta</th><th>Respuesta (+)</th><th>Respuesta (-)</th></tr></thead>
+            <thead><tr><th>Sujeto</th><th>Afirmativo</th><th>Negativo</th></tr></thead>
             <tbody>
-              <tr><td><strong>What are you going to do</strong> tomorrow?</td><td>I<strong>'m going to visit</strong> my grandma.</td><td>I<strong>'m not going to do</strong> anything.</td></tr>
-              <tr><td><strong>Is she going to come</strong> to the party?</td><td>Yes, she <strong>is</strong>.</td><td>No, she <strong>isn't</strong>.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Estructura de pregunta: <strong>Wh- + am/is/are + sujeto + going to + verbo base?</strong></p>
-      </div>
-
-      <div class="theory-block">
-        <h3>3. Going to vs. Will</h3>
-        <div class="table-wrapper">
-          <table class="grammar-table">
-            <thead><tr><th>Uso</th><th>Forma</th><th>Ejemplo</th></tr></thead>
-            <tbody>
-              <tr><td>Plan / decisión ya tomada</td><td><strong>going to</strong></td><td>I<strong>'m going to buy</strong> a new car. <em>(lo decidí)</em></td></tr>
-              <tr><td>Decisión espontánea ahora</td><td><strong>will</strong></td><td>I<strong>'ll help</strong> you! <em>(decido ahora)</em></td></tr>
-              <tr><td>Predicción con evidencia</td><td><strong>going to</strong></td><td>Look at those clouds! It<strong>'s going to rain</strong>.</td></tr>
+              <tr><td>I / you / we / they</td><td>I <strong>can</strong> type.</td><td>I <strong>can't</strong> type.</td></tr>
+              <tr><td>he / she / it</td><td>She <strong>can</strong> cook.</td><td>She <strong>can't</strong> cook.</td></tr>
             </tbody>
           </table>
         </div>
         <div class="rule-highlight-box warning">
-          ⚠️ En el futuro con <strong>going to</strong> el verbo principal siempre queda en <strong>forma base</strong>: <em>going to eat</em> (NO: <em>going to ate</em> ❌).
+          ⚠️ <strong>can</strong> <em>no se conjuga</em>: nunca <em>cans, caned, canning</em>. Y <strong>no lleva <em>to</em></strong>: <em>She can play</em> ✅ · <em>She can to play</em> ❌ · <em>She cans play</em> ❌.
         </div>
       </div>
 
       <div class="theory-block">
-        <h3>4. Expresiones de futuro (Future time expressions)</h3>
-        <p>• <strong>tomorrow</strong> (mañana) · <strong>next week / month / year</strong> (la próxima semana/mes/año)<br>
-        • <strong>this weekend</strong> (este fin de semana) · <strong>in two days</strong> (en dos días)<br>
-        • <strong>soon</strong> (pronto) · <strong>tonight</strong> (esta noche)</p>
+        <h3>3. can para pedir permiso</h3>
+        <p>Con <strong>Can I...? / Can we...?</strong> pedimos permiso. La respuesta esperada es <em>Yes, you can</em> o <em>Sorry, you can't</em>.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta</th><th>Respuesta</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Can I</strong> use your phone?</td><td>Yes, you can. / Sorry, you can't.</td><td>¿Puedo usar tu teléfono?</td></tr>
+              <tr><td><strong>Can I</strong> open the window?</td><td>Of course you can.</td><td>¿Puedo abrir la ventana?</td></tr>
+              <tr><td><strong>Can we</strong> have a break?</td><td>Sorry, you can't. We're very busy.</td><td>¿Podemos hacer una pausa?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 <strong>Can I...?</strong> = <em>¿Puedo...?</em> (petición amable) · <strong>Could I...?</strong> = <em>¿Podrías...?</em> (más educado y formal).
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Habilidad (can) vs. conocimiento y experiencia (know, live)</h3>
+        <p>No confundas <strong>can</strong> (habilidad para hacer algo) con <strong>know</strong> (tener la información) ni con <strong>live</strong> (residir):</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta</th><th>Respuesta correcta</th><th>Equivalente en español</th></tr></thead>
+            <tbody>
+              <tr><td>Do you <strong>know</strong> Japanese?</td><td>Yes, I know a little Japanese.</td><td>¿Sabes japonés? (tener el conocimiento)</td></tr>
+              <tr><td>Can you <strong>speak</strong> Japanese?</td><td>Yes, I can speak Japanese.</td><td>¿Hablas japonés? (tener la habilidad)</td></tr>
+              <tr><td>Do you <strong>live</strong> in Lima?</td><td>Yes, I live in Lima.</td><td>¿Vives en Lima? (residir)</td></tr>
+              <tr><td>Can you <strong>ride</strong> a bike?</td><td>Not at the moment.</td><td>¿Sabes andar en bicicleta? (habilidad)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ <strong>can</strong> expresa habilidad, no información ni localización: <em>She can speak five languages</em> ✅ · <em>She knows five languages</em> ❌ (usa <em>speaks</em>). Tampoco <em>I can live in Paris</em> ❌ → <em>I live in Paris</em> ✅.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>5. Pronunciación: sentence stress</h3>
+        <p>En las frases de habilidad el <strong>acento principal cae sobre el verbo</strong> (normalmente el primer elemento de contenido), no sobre el sujeto.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Frase</th><th>Silabeo</th><th>Acento</th></tr></thead>
+            <tbody>
+              <tr><td>I can <strong>swim</strong>.</td><td>› I can ˈswim</td><td>stress on <em>swim</em></td></tr>
+              <tr><td>She can <strong>play</strong> the guitar.</td><td>› She can ˈplay the guiˌtar</td><td>stress on <em>play</em></td></tr>
+              <tr><td>Can you <strong>type</strong>?</td><td>› Can you ˈtype</td><td>stress on <em>type</em></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>can</strong> (afirmativo) se pronuncia /kæn/ y <strong>can't</strong> /kɑːnt/ (la <em>a</em> se alarga y suena como la de <em>car</em>).</p>
       </div>
     `,
     vocab: [
-      { english: "going to travel", translation: "voy a viajar", phonetic: "/ˈɡəʊ.ɪŋ tuː ˈtræv.əl/" },
-      { english: "going to study", translation: "voy a estudiar", phonetic: "/ˈɡəʊ.ɪŋ tuː ˈstʌd.i/" },
-      { english: "going to work", translation: "voy a trabajar", phonetic: "/ˈɡəʊ.ɪŋ tuː wɜːk/" },
-      { english: "going to buy", translation: "voy a comprar", phonetic: "/ˈɡəʊ.ɪŋ tuː baɪ/" },
-      { english: "going to cook", translation: "voy a cocinar", phonetic: "/ˈɡəʊ.ɪŋ tuː kʊk/" },
-      { english: "going to visit", translation: "voy a visitar", phonetic: "/ˈɡəʊ.ɪŋ tuː ˈvɪz.ɪt/" },
-      { english: "tomorrow", translation: "mañana", phonetic: "/təˈmɒr.əʊ/" },
-      { english: "next week", translation: "la próxima semana", phonetic: "/nekst wiːk/" },
-      { english: "this weekend", translation: "este fin de semana", phonetic: "/ðɪs ˌwiːkˈend/" },
-      { english: "tonight", translation: "esta noche", phonetic: "/təˈnaɪt/" },
-      { english: "soon", translation: "pronto", phonetic: "/suːn/" },
-      { english: "in two days", translation: "en dos días", phonetic: "/ɪn tuː deɪz/" }
+      { english: "buy a newspaper", translation: "comprar un periódico", phonetic: "/baɪ ə ˈnjuːz.peɪ.pər/" },
+      { english: "drive a car", translation: "conducir un carro", phonetic: "/draɪv ə kɑːr/" },
+      { english: "play the guitar", translation: "tocar la guitarra", phonetic: "/pleɪ ðə ɡɪˈtɑːr/" },
+      { english: "cook", translation: "cocinar", phonetic: "/kʊk/" },
+      { english: "speak three languages", translation: "hablar tres idiomas", phonetic: "/spiːk θriː ˈlæŋ.ɡwɪ.dʒɪz/" },
+      { english: "use a computer", translation: "usar una computadora", phonetic: "/juːz ə kəmˈpjuː.tər/" },
+      { english: "swim", translation: "nadar", phonetic: "/swɪm/" },
+      { english: "ride a bike", translation: "andar en bicicleta", phonetic: "/raɪd ə baɪk/" },
+      { english: "type", translation: "escribir a máquina / teclear", phonetic: "/taɪp/" },
+      { english: "send an email", translation: "enviar un correo electrónico", phonetic: "/send ən ˈiː.meɪl/" },
+      { english: "Yes, I can.", translation: "Sí, puedo.", phonetic: "/jes aɪ kæn/" },
+      { english: "No, I can't.", translation: "No, no puedo.", phonetic: "/nəʊ aɪ kɑːnt/" },
+      { english: "Can I open the window?", translation: "¿Puedo abrir la ventana?", phonetic: "/kæn aɪ ˈəʊ.pən ðə ˈwɪn.dəʊ/" },
+      { english: "of course", translation: "por supuesto", phonetic: "/əv kɔːs/" }
     ],
     exercises: [
-      { question: "Complete: I ___ going to (be) a doctor when I grow up.", type: "input", answer: "am", placeholder: "am/is/are", explanation: "Con 'I' usamos 'am': I am going to be." },
-      { question: "Choose: ___ she going to learn Spanish?", options: ["Is", "Are", "Am"], type: "choice", correct: 0, explanation: "Con 'she' usamos 'Is': Is she going to...?" },
-      { question: "Make a question: What / you / going to / do / tomorrow → ___ ?", type: "input", answer: "What are you going to do tomorrow", placeholder: "Question...", explanation: "Estructura: Wh- + are + sujeto + going to + do + complemento?" },
-      { question: "Order the words:", pool: ["going", "We're", "to", "move", "house"], correct: ["We're", "going", "to", "move", "house"], type: "scramble", explanation: "We're going to move house." },
-      { question: "Listening: Listen and complete: I'm going to ___ (a new job).", type: "listening", speakText: "get", answer: "get", explanation: "La palabra es 'get': I'm going to get a new job." }
+      { question: "Complete: She can ___ (play) the guitar very well.", type: "input", answer: "play", placeholder: "verb", explanation: "can + verbo en forma base: can play (sin to y sin -s)." },
+      { question: "Choose the correct option: He ___ drive.", options: ["cans", "can", "can to"], type: "choice", correct: 1, explanation: "can no se conjuga y nunca lleva 'to'." },
+      { question: "Make it negative: I can swim. → I ___ swim.", type: "input", answer: "can't", placeholder: "can't", explanation: "La forma negativa de can es can't (= cannot)." },
+      { question: "Order the words to ask for permission:", pool: ["I", "the", "window", "Can", "open", "?"], correct: ["Can", "I", "open", "the", "window", "?"], type: "scramble", explanation: "Para pedir permiso: Can + sujeto + verbo base + complemento + ?" },
+      { question: "Listening: Listen and type the ability you hear.", type: "listening", speakText: "speak three languages", answer: "speak three languages", explanation: "La frase hablada es 'speak three languages' (hablar tres idiomas)." }
+    ]
+  },
+
+  // -------------------------------------------------------------------------
+  // UNIDAD 5B — Present continuous (be + verbo + -ing)
+  // -------------------------------------------------------------------------
+  "5B": {
+    title: "5B: Present Continuous (be + verbo + -ing)",
+    module: 5,
+    theory: `
+      <div class="theory-block">
+        <h3>1. ¿Cuándo usamos el present continuous?</h3>
+        <p>El <strong>present continuous</strong> describe una acción que está <strong>en este momento</strong> o que es <strong>temporal</strong> (durante un periodo corto). Nunca describe el pasado ni las rutinas permanentes.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Marcador temporal</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>now</strong> / <strong>at the moment</strong> / <strong>Look!</strong></td><td>Look! It's <strong>raining</strong>.</td></tr>
+              <tr><td><strong>this week</strong> / <strong>this morning</strong></td><td>This week I'm <strong>studying</strong> every evening.</td></tr>
+              <tr><td>Temporal / cambio de planes</td><td>I'm <strong>working</strong> from home this month.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ No lo usamos para rutinas (<em>I work in an office</em> ✅) ni para acciones ya terminadas: <em>Yesterday I worked late</em> ❌ es un tiempo verbal distinto.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. Las tres formas</h3>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Forma</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td>Afirmativo</td><td>am / is / are + verbo + <strong>-ing</strong></td><td>I <strong>am reading</strong> a magazine.</td></tr>
+              <tr><td>Negativo</td><td>am / is / are + <strong>not</strong> + verbo + <strong>-ing</strong></td><td>She <strong>isn't watching</strong> TV.</td></tr>
+              <tr><td>Pregunta</td><td>Am / Is / Are + sujeto + verbo + <strong>-ing</strong>?</td><td><strong>Are</strong> you <strong>listening</strong> to music?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 <strong>Contracciones:</strong> I'm · he's · she's · we're · they're · isn't · aren't.<br>
+          <em>I'm not cleaning the house.</em> · <em>They aren't meeting friends.</em>
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. El verbo <em>be</em> según el sujeto</h3>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Sujeto</th><th>be (+ not)</th><th>Pregunta</th></tr></thead>
+            <tbody>
+              <tr><td>I</td><td><strong>am</strong> / am not</td><td>Am I ...?</td></tr>
+              <tr><td>he / she / it</td><td><strong>is</strong> / <strong>isn't</strong></td><td>Is he ...?</td></tr>
+              <tr><td>you / we / they</td><td><strong>are</strong> / <strong>aren't</strong></td><td>Are you ...?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ El error más común: <em>He have a shower</em> ❌ → <em>He's <strong>having</strong> a shower</em> ✅. Con <em>I</em> nunca usamos <em>is</em>: <em>I <strong>am</strong> getting up</em>.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Ortografía de la forma -ing</h3>
+        <p>Hay cuatro reglas para formar el gerundio. Solo una se aplica a cada verbo:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Regla</th><th>Ejemplos</th></tr></thead>
+            <tbody>
+              <tr><td>Se añade <strong>-ing</strong> directamente</td><td>read → read<strong>ing</strong> · work → work<strong>ing</strong> · play → play<strong>ing</strong></td></tr>
+              <tr><td>Se <strong>quita la -e</strong> final</td><td>write → writ<strong>ing</strong> · make → mak<strong>ing</strong> · dance → danc<strong>ing</strong></td></tr>
+              <tr><td><strong>Dobla la consonante</strong> (C + vocal + C)</td><td>run → runn<strong>ing</strong> · swim → swimm<strong>ing</strong> · sit → sitt<strong>ing</strong></td></tr>
+              <tr><td><strong>ie → y</strong></td><td>lie → ly<strong>ing</strong> · die → dy<strong>ing</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 El patrón <strong>C + vocal + C</strong> significa que la última letra es consonante, la anterior es vocal y la de antes también es consonante. En <em>run</em> (r-u-n) y <em>swim</em> (s-wi-m) se cumple, por eso la consonante final se dobla.
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Errores frecuentes: <em>runing</em> ❌ → <em>running</em> ✅ · <em>writeing</em> ❌ → <em>writing</em> ✅ · <em>lying</em> es <em>lie</em> (mentir/estar acostado) y <em>laying</em> ❌ no existe aquí.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>5. Pronunciación: el sonido /ŋ/</h3>
+        <p>La terminación <strong>-ing</strong> se pronuncia siempre con la consonante nasal velar /ŋ/, como la de <em>sing</em> o <em>thing</em>, nunca /n/ + /g/.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Palabra</th><th>Transcripción</th><th>Al final de la palabra</th></tr></thead>
+            <tbody>
+              <tr><td>running</td><td>/ˈrʌn.ɪŋ/</td><td>Sí: /ŋ/</td></tr>
+              <tr><td>swimming</td><td>/ˈswɪm.ɪŋ/</td><td>Sí: /ŋ/</td></tr>
+              <tr><td>listening</td><td>/ˈlɪs.ən.ɪŋ/</td><td>Sí: /ŋ/</td></tr>
+              <tr><td>meeting</td><td>/ˈmiː.tɪŋ/</td><td>Sí: /ŋ/</td></tr>
+              <tr><td>English</td><td>/ˈɪŋ.ɡlɪʃ/</td><td>No: /ŋ/ + /ɡ/</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "get up", translation: "levantarse", phonetic: "/ɡet ʌp/" },
+      { english: "have a shower", translation: "ducharse", phonetic: "/hæv ə ˈʃaʊ.ər/" },
+      { english: "have breakfast", translation: "desayunar", phonetic: "/hæv ˈbrek.fəst/" },
+      { english: "watch TV", translation: "ver la televisión", phonetic: "/wɒtʃ ˌtiːˈviː/" },
+      { english: "listen to music", translation: "escuchar música", phonetic: "/ˈlɪs.ən tə ˈmjuː.zɪk/" },
+      { english: "read a magazine", translation: "leer una revista", phonetic: "/riːd ə ˌmæɡ.əˈziːn/" },
+      { english: "study English", translation: "estudiar inglés", phonetic: "/ˈstʌd.i ˈɪŋ.ɡlɪʃ/" },
+      { english: "work in an office", translation: "trabajar en una oficina", phonetic: "/wɜːk ɪn ən ˈɒf.ɪs/" },
+      { english: "meet friends", translation: "quedar con amigos", phonetic: "/miːt frendz/" },
+      { english: "clean the house", translation: "limpiar la casa", phonetic: "/kliːn ðə haʊs/" },
+      { english: "is studying", translation: "está estudiando", phonetic: "/ɪz ˈstʌd.i.ɪŋ/" },
+      { english: "are listening", translation: "están escuchando", phonetic: "/ɑː ˈlɪs.ən.ɪŋ/" },
+      { english: "I'm not working", translation: "no estoy trabajando", phonetic: "/aɪm nɒt ˈwɜː.kɪŋ/" },
+      { english: "at the moment", translation: "en este momento / ahora mismo", phonetic: "/ət ðə ˈməʊ.mənt/" }
+    ],
+    exercises: [
+      { question: "Complete: Look! It ___ (rain) at the moment.", type: "input", answer: "is raining", placeholder: "is + -ing", explanation: "Presente continuo: It is raining. No se usa el pasado 'rained'." },
+      { question: "Choose the correct option: We ___ (are meeting / are meet) friends now.", options: ["are meeting", "are meet"], type: "choice", correct: 0, explanation: "El verbo va en -ing después de 'are'." },
+      { question: "Make it negative: She is watching TV. → She ___ watching TV.", type: "input", answer: "isn't", placeholder: "isn't", explanation: "Negación con 'be': is + not se contrae en isn't." },
+      { question: "Order the words (write → writing):", pool: ["is", "He", "writing", "an", "email"], correct: ["He", "is", "writing", "an", "email"], type: "scramble", explanation: "Se quita la -e: write → writing. Orden: sujeto + is + -ing + complemento." },
+      { question: "Listening: Listen and type the action you hear.", type: "listening", speakText: "listening to music", answer: "listening to music", explanation: "La frase hablada es 'listening to music' (escuchando música)." }
+    ]
+  },
+
+  // -------------------------------------------------------------------------
+  // UNIDAD 5C — Present simple or present continuous?
+  // -------------------------------------------------------------------------
+  "5C": {
+    title: "5C: Present Simple or Present Continuous?",
+    module: 5,
+    theory: `
+      <div class="theory-block">
+        <h3>1. La decisión clave</h3>
+        <p>La pregunta que resuelve casi todo es: <strong>¿es una rutina o está pasando ahora?</strong> Si es una rutina, usamos <strong>present simple</strong>. Si está pasando en este momento o es temporal, usamos <strong>present continuous</strong>.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Uso</th><th>Present simple</th><th>Present continuous</th></tr></thead>
+            <tbody>
+              <tr><td>Rutinas y hechos</td><td>I <strong>work</strong> in an office.</td><td>—</td></tr>
+              <tr><td>Ahora mismo</td><td>—</td><td>I <strong>am working</strong> in an office.</td></tr>
+              <tr><td>Horarios</td><td>The shop <strong>opens</strong> at nine.</td><td>—</td></tr>
+              <tr><td>Esta semana (temporal)</td><td>—</td><td>This week I <strong>am working</strong> from home.</td></tr>
+              <tr><td>Opiniones y hechos generales</td><td>Water <strong>boils</strong> at 100°C.</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. Marcadores temporales: la mejor pista</h3>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Marcador</th><th>Tiempo verbal</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>usually, always, often, sometimes, never</strong></td><td>Present simple</td><td>She <strong>usually gets</strong> up at seven.</td></tr>
+              <tr><td><strong>every day, on Mondays, twice a week</strong></td><td>Present simple</td><td>They <strong>go</strong> to the gym <strong>every day</strong>.</td></tr>
+              <tr><td><strong>now, at the moment, Look!, Listen!</strong></td><td>Present continuous</td><td>Listen! The baby <strong>is crying</strong>.</td></tr>
+              <tr><td><strong>this week, this month, today</strong></td><td>Present continuous</td><td>I'm <strong>studying</strong> English <strong>this month</strong>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 Cambio de rutina o de planes: también usamos el continuous. <em>I usually cycle to work, but <strong>today I'm taking</strong> the bus.</em>
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Negaciones y preguntas: no se mezclan</h3>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Tiempo verbal</th><th>Negativo</th><th>Pregunta</th></tr></thead>
+            <tbody>
+              <tr><td>Present simple</td><td>Sujeto + <strong>doesn't</strong> + verbo base</td><td><strong>Do / Does</strong> + sujeto + verbo base?</td></tr>
+              <tr><td>Present continuous</td><td>Sujeto + <strong>isn't / aren't</strong> + verbo + <strong>-ing</strong></td><td><strong>Is / Are</strong> + sujeto + verbo + <strong>-ing</strong>?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Frase</th><th>Negativo</th><th>Pregunta</th></tr></thead>
+            <tbody>
+              <tr><td>live (routine)</td><td>He <strong>doesn't live</strong> in London.</td><td><strong>Does</strong> he <strong>live</strong> in London?</td></tr>
+              <tr><td>live (ahora)</td><td>He <strong>isn't living</strong> in London now.</td><td><strong>Is</strong> he <strong>living</strong> in London now?</td></tr>
+              <tr><td>work (rutina)</td><td>They <strong>don't work</strong> on Sundays.</td><td><strong>Do</strong> they <strong>work</strong> on Sundays?</td></tr>
+              <tr><td>work (ahora)</td><td>They <strong>aren't working</strong> today.</td><td><strong>Are</strong> they <strong>working</strong> today?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Nunca mezcles las dos estructuras: <em>He isn't lives in London</em> ❌ · <em>He doesn't living in London</em> ❌. Además, con <strong>doesn't</strong> el verbo va en <strong>forma base</strong> sin <em>-s</em>: <em>He doesn't <strong>work</strong></em> (no <em>works</em>).
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. El error típico: la rutina expresada como continuous</h3>
+        <p>El error más frecuente de esta unidad es usar el continuous para algo que es permanente. La presencia de <em>now</em> o <em>at the moment</em> es obligatoria en ese caso.</p>
+        <div class="rule-highlight-box warning">
+          ⚠️ <em>He <strong>is living</strong> in London.</em> ❌ (es su domicilio permanente) → <em>He <strong>lives</strong> in London.</em> ✅<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<em>She <strong>is working</strong> in a bank.</em> ❌ → <em>She <strong>works</strong> in a bank.</em> ✅<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;En cambio sí es correcto si hay un marcador temporal: <em>She <strong>is working</strong> in a bank <strong>this week</strong>.</em> ✅
+        </div>
+        <div class="rule-highlight-box">
+          💡 Verbos que casi siempre van en present simple: <em>live, work, study, own, belong</em> (propiedad permanente) y los verbos de estado: <em>know, like, love, want, need, believe, belong, seem</em>. Los verbos de estado <strong>no tienen forma -ing</strong>.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>5. The weather and Seasons</h3>
+        <p>Para hablar del clima usamos el verbo <strong>it</strong> y casi siempre el present continuous, porque el clima cambia en este momento:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Frase</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td>It's <strong>raining</strong>.</td><td>Está lloviendo.</td></tr>
+              <tr><td>It's <strong>snowing</strong>.</td><td>Está nevando.</td></tr>
+              <tr><td><strong>The sun is shining</strong>.</td><td>El sol brilla.</td></tr>
+              <tr><td>It's <strong>cloudy</strong> / <strong>foggy</strong>.</td><td>Está nublado / con niebla.</td></tr>
+              <tr><td>It's <strong>windy</strong> in October.</td><td> Hace viento en octubre.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Las <strong>estaciones</strong> (<em>spring, summer, autumn, winter</em>) llevan siempre preposición: <em>in spring, in summer, in autumn, in winter</em>. Se usan con el present simple.</p>
+        <div class="rule-highlight-box warning">
+          ⚠️ Nunca usamos el gerundio con las estaciones: <em>It's raining <strong>in autumn</strong></em> ✅ · <em>It's raininging in autumn</em> ❌ · <em>It's rain in autumn</em> ❌.
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "sunny", translation: "soleado", phonetic: "/ˈsʌn.i/" },
+      { english: "cloudy", translation: "nublado", phonetic: "/ˈklaʊ.di/" },
+      { english: "rainy", translation: "lluvioso", phonetic: "/ˈreɪ.ni/" },
+      { english: "windy", translation: "ventoso", phonetic: "/ˈwɪn.di/" },
+      { english: "snowy", translation: "nevado", phonetic: "/ˈsnəʊ.i/" },
+      { english: "foggy", translation: "con niebla", phonetic: "/ˈfɒɡ.i/" },
+      { english: "hot", translation: "caluroso", phonetic: "/hɒt/" },
+      { english: "cold", translation: "frío", phonetic: "/kəʊld/" },
+      { english: "warm", translation: "templado", phonetic: "/wɔːm/" },
+      { english: "cool", translation: "fresco", phonetic: "/kuːl/" },
+      { english: "wet", translation: "húmedo / mojado", phonetic: "/wet/" },
+      { english: "dry", translation: "seco", phonetic: "/draɪ/" },
+      { english: "spring", translation: "primavera", phonetic: "/sprɪŋ/" },
+      { english: "summer", translation: "verano", phonetic: "/ˈsʌm.ər/" },
+      { english: "autumn", translation: "otoño", phonetic: "/ˈɔː.təm/" },
+      { english: "winter", translation: "invierno", phonetic: "/ˈwɪn.tər/" },
+      { english: "It's raining.", translation: "Está lloviendo.", phonetic: "/ɪts ˈreɪ.nɪŋ/" },
+      { english: "The sun is shining.", translation: "El sol brilla.", phonetic: "/ðə sʌn ɪz ˈʃaɪ.nɪŋ/" },
+      { english: "the city centre", translation: "el centro de la ciudad", phonetic: "/ðə ˈsɪt.i sentər/" },
+      { english: "the river", translation: "el río", phonetic: "/ðə ˈrɪv.ər/" },
+      { english: "the park", translation: "el parque", phonetic: "/ðə pɑːk/" },
+      { english: "the station", translation: "la estación", phonetic: "/ðə ˈsteɪ.ʃən/" }
+    ],
+    exercises: [
+      { question: "Choose the correct tense: My sister ___ (live) in Madrid.", options: ["is living", "lives"], type: "choice", correct: 1, explanation: "Es un hecho permanente, sin marcador temporal: present simple (lives)." },
+      { question: "Complete: Look! It ___ (rain) again.", type: "input", answer: "is raining", placeholder: "is + -ing", explanation: "'Look!' señala que algo pasa ahora: present continuous, is raining." },
+      { question: "Make it negative: They usually work on Saturdays. → They ___ work on Saturdays.", type: "input", answer: "don't", placeholder: "don't / doesn't", explanation: "Present simple negativo con 'they' + don't + verbo base." },
+      { question: "Order the words (it's snowing):", pool: ["winter", "snowing", "It's", "in"], correct: ["It's", "snowing", "in", "winter"], type: "scramble", explanation: "The weather va con 'it' + gerundio y la estación con preposición 'in'." },
+      { question: "Listening: Listen and type the verb phrase you hear.", type: "listening", speakText: "is shining", answer: "is shining", explanation: "La frase hablada es 'is shining' (The sun is shining)." }
     ]
   },
 
@@ -527,27 +635,48 @@ const LESSONS = {
         <h3>Repaso Integral Unidades 5A, 5B, 5C</h3>
         <p>Consolidación de todo lo aprendido en el bloque 5:</p>
         <ul>
-          <li>Comparativos y superlativos (<em>bigger, the best</em>) e irregulares.</li>
-          <li>Past simple regular (+ -ed) e irregular (<em>went, saw, bought</em>).</li>
-          <li>Negativos y preguntas con <strong>did / didn't</strong>.</li>
-          <li>Futuro con <strong>be going to</strong>: planes, predicciones y preguntas.</li>
+          <li><strong>can / can't</strong> para hablar de habilidades: <em>can + verbo base</em>, sin <em>to</em> y sin conjugar.</li>
+          <li><strong>Present continuous</strong> (am/is/are + <em>-ing</em>) para el ahora y lo temporal, con las reglas de ortografía del gerundio.</li>
+          <li><strong>Present simple</strong> para rutinas, horarios y hechos, frente al <strong>continuous</strong> para lo que pasa ahora.</li>
+          <li><strong>The weather and seasons</strong> con <em>it's raining, it's snowing, the sun is shining</em>.</li>
         </ul>
+      </div>
+      <div class="theory-block">
+        <h3>Revisión de las tres estructuras</h3>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Unidad</th><th>Pregunta clave</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>5A</strong></td><td>¿Puede hacerlo?</td><td>can / can't + verbo base</td><td>He <strong>can swim</strong>. / He <strong>can't drive</strong>.</td></tr>
+              <tr><td><strong>5B</strong></td><td>¿Lo está haciendo ahora?</td><td>am/is/are + not + verbo + <strong>-ing</strong></td><td>She <strong>is reading</strong> a magazine.</td></tr>
+              <tr><td><strong>5C</strong></td><td>¿Es rutina o es ahora?</td><td>Simple: <em>work</em> · Continuous: <strong>is working</strong></td><td>He <strong>works</strong> at home. / He <strong>is working</strong> at the moment.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 <strong>No mezcles las estructuras:</strong> <em>He isn't works here</em> ❌ → <em>He <strong>doesn't work</strong> here</em> ✅ · <em>He doesn't working here</em> ❌ → <em>He <strong>isn't working</strong> here</em> ✅
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ <strong>can</strong> sin <em>to</em> y sin <em>-s</em> · <strong>continuous</strong> con <em>-ing</em> · <strong>doesn't</strong> siempre con verbo base.
+        </div>
       </div>
     `,
     vocab: [
-      { english: "better", translation: "mejor", phonetic: "/ˈbet.ər/" },
-      { english: "the worst", translation: "el peor", phonetic: "/ðə wɜːst/" },
-      { english: "went", translation: "fui (go)", phonetic: "/went/" },
-      { english: "bought", translation: "compré (buy)", phonetic: "/bɔːt/" },
-      { english: "going to", translation: "voy a...", phonetic: "/ˈɡəʊ.ɪŋ tuː/" },
-      { english: "yesterday", translation: "ayer", phonetic: "/ˈjes.tə.deɪ/" }
+      { english: "speak three languages", translation: "hablar tres idiomas", phonetic: "/spiːk θriː ˈlæŋ.ɡwɪ.dʒɪz/" },
+      { english: "play the guitar", translation: "tocar la guitarra", phonetic: "/pleɪ ðə ɡɪˈtɑːr/" },
+      { english: "Yes, I can.", translation: "Sí, puedo.", phonetic: "/jes aɪ kæn/" },
+      { english: "is listening to music", translation: "está escuchando música", phonetic: "/ɪz ˈlɪs.ən.ɪŋ tə ˈmjuː.zɪk/" },
+      { english: "are working", translation: "están trabajando", phonetic: "/ɑː ˈwɜː.kɪŋ/" },
+      { english: "at the moment", translation: "en este momento", phonetic: "/ət ðə ˈməʊ.mənt/" },
+      { english: "It's raining.", translation: "Está lloviendo.", phonetic: "/ɪts ˈreɪ.nɪŋ/" },
+      { english: "every day", translation: "todos los días", phonetic: "/ˈev.ri deɪ/" }
     ],
     exercises: [
-      { question: "Complete: This bag is ___ (expensive) than that one.", type: "input", answer: "more expensive", placeholder: "comparative", explanation: "Adjetivo de 2+ sílabas: more expensive than." },
-      { question: "Choose: Last night I ___ (went / go) to a restaurant.", options: ["went", "go"], type: "choice", correct: 0, explanation: "'Last night' indica pasado: went." },
-      { question: "Complete negative: She ___ (didn't liked / didn't like) the film.", type: "input", answer: "didn't like", placeholder: "didn't + base", explanation: "Con didn't el verbo va en base: didn't like." },
-      { question: "Select: We ___ going to paint the kitchen.", options: ["is", "are", "am"], type: "choice", correct: 1, explanation: "Con 'We' usamos 'are': We're going to..." },
-      { question: "Order: the / tallest / He / is / boy", pool: ["the", "tallest", "He", "is", "boy"], correct: ["He", "is", "the", "tallest", "boy"], type: "scramble", explanation: "Superlativo con the: He is the tallest boy." }
+      { question: "Complete: My brother ___ (play) the drums, but he can't play the piano.", type: "input", answer: "can play", placeholder: "can + base", explanation: "can + verbo en forma base: can play." },
+      { question: "Select correct: ___ your sister ___ a magazine at the moment?", options: ["Is / reading", "Is / reads", "Does / reading"], type: "choice", correct: 0, explanation: "'At the moment' pide present continuous: Is your sister reading...?" },
+      { question: "Complete negative: They ___ (not / work) in an office on Sundays.", type: "input", answer: "don't work", placeholder: "don't + base", explanation: "Rutina con 'they': don't + verbo base." },
+      { question: "Select: Look! The sun ___ (shine).", options: ["is shining", "shines", "shine"], type: "choice", correct: 0, explanation: "'Look!' + el clima: present continuous con -ing." },
+      { question: "Order the words (swim → swimming):", pool: ["is", "He", "swimming", "in", "the", "river"], correct: ["He", "is", "swimming", "in", "the", "river"], type: "scramble", explanation: "Orden correcto: He + is + swimming + in + the river (C+V+C dobla la m)." }
     ]
   }
 };
@@ -599,39 +728,43 @@ const BANKS = {
       label: "Grammar Bank 5",
       theory: `
         <div class="theory-block">
-          <h3>Grammar Bank 5A: Comparatives & Superlatives</h3>
-          <p>• 1 sílaba → <strong>-er / -est</strong>: tall → taller → the tallest.<br>
-          • C+V+C dobla la final: big → bigger → the biggest.<br>
-          • 2+ sílabas → <strong>more / the most</strong>: expensive → more expensive → the most expensive.<br>
-          • Irregulares: good → better → the best · bad → worse → the worst.<br>
-          • Comparativo usa <strong>than</strong>; superlativo usa <strong>the</strong>.</p>
+          <h3>Grammar Bank 5A: can / can't</h3>
+          <p>• Habilidad: <strong>can</strong> + verbo en <strong>forma base</strong> (can swim, can play).<br>
+          • Negativo: <strong>can't</strong> (= cannot) + forma base (can't drive).<br>
+          • Pregunta: <strong>Can</strong> + sujeto + forma base? (Can you type?).<br>
+          • Respuesta: Yes, I <strong>can</strong>. / No, I <strong>can't</strong>.<br>
+          • <strong>can</strong> es igual para todas las personas y <strong>no se conjuga</strong>; además <strong>no lleva <em>to</em></strong>.<br>
+          • <strong>Can I...?</strong> pide permiso; <strong>Can I...?</strong> es la habilidad, <strong>Do I know...?</strong> el conocimiento y <strong>Do I live...?</strong> la residencia.</p>
         </div>
         <div class="theory-block">
-          <h3>Grammar Bank 5B: Past Simple</h3>
-          <p>• Regulares: base + <strong>-ed</strong> (worked, played).<br>
-          • Irregulares: go → went, see → saw, buy → bought (memorizar).<br>
-          • Negativo: <strong>didn't</strong> + base (didn't go, NOT didn't went).<br>
-          • Pregunta: <strong>Did</strong> + sujeto + base? (Did she work?).<br>
-          • Expresiones: yesterday, last week, two days ago.</p>
+          <h3>Grammar Bank 5B: Present continuous</h3>
+          <p>• Afirmativo: <strong>am/is/are</strong> + verbo + <strong>-ing</strong> (I'm listening).<br>
+          • Negativo: am/is/are + <strong>not</strong> + verbo + <strong>-ing</strong> (She <em>isn't watching</em> TV, They <em>aren't working</em>).<br>
+          • Pregunta: <strong>Am/Is/Are</strong> + sujeto + <strong>-ing</strong>? (Are you working?).<br>
+          • Contracciones: I'm · he's · aren't · isn't.<br>
+          • Ortografía: +ing · quita la -e (write → writing) · dobla C+V+C (run → running) · ie → y (lie → lying).<br>
+          • Uso: ahora, esta semana, temporalmente. Pronunciación de <strong>-ing</strong> = /ŋ/.</p>
         </div>
         <div class="theory-block">
-          <h3>Grammar Bank 5C: Be going to</h3>
-          <p>• Planes: <strong>am/is/are + going to + base</strong> (I'm going to travel).<br>
-          • Pregunta: Wh- + am/is/are + sujeto + going to + base?<br>
-          • going to = plan / evidencia; will = decisión espontánea.<br>
-          • Contracciones: I'm, He's, We're going to...</p>
+          <h3>Grammar Bank 5C: Present simple or present continuous?</h3>
+          <p>• <strong>Simple</strong> = rutina, horario, hecho, opinión: <em>usually, every day, on Mondays</em> → I <strong>work</strong> here.<br>
+          • <strong>Continuous</strong> = ahora, esta semana, cambio: <em>now, at the moment, Look!, Listen!</em> → I <strong>am working</strong> here.<br>
+          • Negativo simple: <strong>doesn't</strong> + base (doesn't work). Negativo continuous: <strong>isn't / aren't</strong> + <strong>-ing</strong>.<br>
+          • Pregunta simple: <strong>Do/Does</strong> + base. Pregunta continuous: <strong>Is/Are</strong> + <strong>-ing</strong>.<br>
+          • Error típico: <em>He is living in London</em> ❌ → <em>He <strong>lives</strong> in London</em> ✅ (sin marcador temporal).<br>
+          • Weather: it's raining, it's snowing, the sun is shining. Seasons: in spring, in summer, in autumn, in winter.</p>
         </div>
       `,
       exercises: [
-        { question: "5A.a: Complete: This book is (good) than the other one.", type: "input", answer: "better", placeholder: "better", explanation: "good → better (comparativo irregular)." },
-        { question: "5A.b: Select: She is (the happy / the happiest) person here.", options: ["the happy", "the happiest"], type: "choice", correct: 1, explanation: "Superlativo: the happiest (y → i + -est)." },
-        { question: "5A.c: Complete: London is (big) than Oxford.", type: "input", answer: "bigger", placeholder: "bigger", explanation: "big → bigger (doble g)." },
-        { question: "5B.a: Complete: I (go) to school by bus yesterday.", type: "input", answer: "went", placeholder: "past", explanation: "go → went (irregular)." },
-        { question: "5B.b: Select: He (didn't went / didn't go) home.", options: ["didn't went", "didn't go"], type: "choice", correct: 1, explanation: "didn't + base: didn't go." },
-        { question: "5B.c: Complete: They (play) tennis last Sunday.", type: "input", answer: "played", placeholder: "past", explanation: "play → played (regular + -ed)." },
-        { question: "5C.a: Complete: We (be) going to cook dinner tonight.", type: "input", answer: "are", placeholder: "am/is/are", explanation: "Con 'We' usamos 'are'." },
-        { question: "5C.b: Select: (Is / Are) you going to come to the party?", options: ["Is", "Are"], type: "choice", correct: 1, explanation: "Con 'you' usamos 'Are'." },
-        { question: "5C.c: Complete: She is going to (study) medicine.", type: "input", answer: "study", placeholder: "base form", explanation: "going to + verbo en base: going to study." }
+        { question: "5A.a: Complete: She (can / cans) (drive / to drive) a car.", type: "input", answer: "can drive", placeholder: "can + base", explanation: "can + verbo en forma base: can drive (sin to y sin -s)." },
+        { question: "5A.b: Select: He (can't / doesn't) play the guitar.", options: ["can't", "doesn't"], type: "choice", correct: 0, explanation: "Habilidad negativa: can't + forma base." },
+        { question: "5A.c: Complete the short answer: - Do you speak French? - Yes, I ___.", type: "input", answer: "can", placeholder: "can / can't", explanation: "Respuesta corta afirmativa: Yes, I can." },
+        { question: "5B.a: Select: Look! They ___ right now. (It is 3 p.m.)", options: ["aren't working", "don't work"], type: "choice", correct: 0, explanation: "'Look!' + hora concreta pide present continuous negativo: aren't working." },
+        { question: "5B.b: Select the correct form: (runing / running / run) — He is ___ now.", options: ["runing", "running", "run"], type: "choice", correct: 1, explanation: "C+V+C (r-u-n): se dobla la n → running." },
+        { question: "5B.c: Complete: She's (write / writing / writting) an email at the moment.", type: "input", answer: "writing", placeholder: "-ing form", explanation: "Se quita la -e final: write → writing." },
+        { question: "5C.a: Complete: My parents (don't live / aren't living) in a small town.", type: "input", answer: "don't live", placeholder: "don't + base", explanation: "Hecho permanente y sin marcador: present simple con don't + base." },
+        { question: "5C.b: Select: It's cold and it's ___ (snow / snows / snowing).", options: ["snow", "snows", "snowing"], type: "choice", correct: 2, explanation: "El clima va con 'it' + gerundio: it's snowing." },
+        { question: "5C.c: Complete: Look! It ___ (snow) in the mountains.", type: "input", answer: "is snowing", placeholder: "is + -ing", explanation: "El clima va con 'it' + gerundio: it's snowing." }
       ]
     }
   },
@@ -706,56 +839,69 @@ const BANKS = {
     5: {
       label: "Vocabulary Bank 5",
       categories: [
-        { key: "describing", label: "Describing / Comparing" },
-        { key: "past", label: "Past Simple Verbs" },
-        { key: "plans", label: "Plans & Future" }
+        { key: "abilities", label: "Abilities (can / can't)" },
+        { key: "continuous", label: "Now (Present Continuous)" },
+        { key: "weather", label: "Weather & Seasons" }
       ],
       data: {
-        describing: [
-          { english: "taller", translation: "más alto", phonetic: "/ˈtɔː.lər/" },
-          { english: "shorter", translation: "más bajo", phonetic: "/ˈʃɔː.tər/" },
-          { english: "older", translation: "más viejo", phonetic: "/ˈəʊ.lər/" },
-          { english: "younger", translation: "más joven", phonetic: "/ˈjʌŋ.ɡər/" },
-          { english: "bigger", translation: "más grande", phonetic: "/ˈbɪɡ.ər/" },
-          { english: "smaller", translation: "más pequeño", phonetic: "/ˈsmɔː.lər/" },
-          { english: "cheaper", translation: "más barato", phonetic: "/ˈtʃiː.pər/" },
-          { english: "more expensive", translation: "más caro", phonetic: "/mɔːr ɪkˈspen.sɪv/" },
-          { english: "better", translation: "mejor", phonetic: "/ˈbet.ər/" },
-          { english: "worse", translation: "peor", phonetic: "/wɜːs/" },
-          { english: "the best", translation: "el mejor", phonetic: "/ðə best/" },
-          { english: "the worst", translation: "el peor", phonetic: "/ðə wɜːst/" },
-          { english: "the cheapest", translation: "el más barato", phonetic: "/ðə ˈtʃiː.pɪst/" },
-          { english: "the most popular", translation: "el más popular", phonetic: "/ðə məʊst ˈpɒp.jə.lər/" }
+        abilities: [
+          { english: "buy a newspaper", translation: "comprar un periódico", phonetic: "/baɪ ə ˈnjuːz.peɪ.pər/" },
+          { english: "drive a car", translation: "conducir un carro", phonetic: "/draɪv ə kɑːr/" },
+          { english: "play the guitar", translation: "tocar la guitarra", phonetic: "/pleɪ ðə ɡɪˈtɑːr/" },
+          { english: "cook", translation: "cocinar", phonetic: "/kʊk/" },
+          { english: "speak three languages", translation: "hablar tres idiomas", phonetic: "/spiːk θriː ˈlæŋ.ɡwɪ.dʒɪz/" },
+          { english: "use a computer", translation: "usar una computadora", phonetic: "/juːz ə kəmˈpjuː.tər/" },
+          { english: "swim", translation: "nadar", phonetic: "/swɪm/" },
+          { english: "ride a bike", translation: "andar en bicicleta", phonetic: "/raɪd ə baɪk/" },
+          { english: "type", translation: "escribir a máquina / teclear", phonetic: "/taɪp/" },
+          { english: "send an email", translation: "enviar un correo electrónico", phonetic: "/send ən ˈiː.meɪl/" },
+          { english: "Yes, I can.", translation: "Sí, puedo.", phonetic: "/jes aɪ kæn/" },
+          { english: "No, I can't.", translation: "No, no puedo.", phonetic: "/nəʊ aɪ kɑːnt/" },
+          { english: "Can I open the window?", translation: "¿Puedo abrir la ventana?", phonetic: "/kæn aɪ ˈəʊ.pən ðə ˈwɪn.dəʊ/" },
+          { english: "of course", translation: "por supuesto", phonetic: "/əv kɔːs/" }
         ],
-        past: [
-          { english: "went", translation: "fui (go)", phonetic: "/went/" },
-          { english: "had", translation: "tuve (have)", phonetic: "/hæd/" },
-          { english: "ate", translation: "comí (eat)", phonetic: "/et/" },
-          { english: "saw", translation: "vi (see)", phonetic: "/sɔː/" },
-          { english: "came", translation: "vine (come)", phonetic: "/keɪm/" },
-          { english: "took", translation: "tomé (take)", phonetic: "/tʊk/" },
-          { english: "bought", translation: "compré (buy)", phonetic: "/bɔːt/" },
-          { english: "wrote", translation: "escribí (write)", phonetic: "/rəʊt/" },
-          { english: "worked", translation: "trabajé (work)", phonetic: "/wɜːkt/" },
-          { english: "played", translation: "jugué (play)", phonetic: "/pleɪd/" },
-          { english: "studied", translation: "estudié (study)", phonetic: "/ˈstʌd.id/" },
-          { english: "didn't", translation: "no (did not)", phonetic: "/ˈdɪd.ənt/" },
-          { english: "yesterday", translation: "ayer", phonetic: "/ˈjes.tə.deɪ/" },
-          { english: "last week", translation: "la semana pasada", phonetic: "/lɑːst wiːk/" }
+        continuous: [
+          { english: "get up", translation: "levantarse", phonetic: "/ɡet ʌp/" },
+          { english: "have a shower", translation: "ducharse", phonetic: "/hæv ə ˈʃaʊ.ər/" },
+          { english: "have breakfast", translation: "desayunar", phonetic: "/hæv ˈbrek.fəst/" },
+          { english: "watch TV", translation: "ver la televisión", phonetic: "/wɒtʃ ˌtiːˈviː/" },
+          { english: "listen to music", translation: "escuchar música", phonetic: "/ˈlɪs.ən tə ˈmjuː.zɪk/" },
+          { english: "read a magazine", translation: "leer una revista", phonetic: "/riːd ə ˌmæɡ.əˈziːn/" },
+          { english: "study English", translation: "estudiar inglés", phonetic: "/ˈstʌd.i ˈɪŋ.ɡlɪʃ/" },
+          { english: "work in an office", translation: "trabajar en una oficina", phonetic: "/wɜːk ɪn ən ˈɒf.ɪs/" },
+          { english: "meet friends", translation: "quedar con amigos", phonetic: "/miːt frendz/" },
+          { english: "clean the house", translation: "limpiar la casa", phonetic: "/kliːn ðə haʊs/" },
+          { english: "is studying", translation: "está estudiando", phonetic: "/ɪz ˈstʌd.i.ɪŋ/" },
+          { english: "are working", translation: "están trabajando", phonetic: "/ɑː ˈwɜː.kɪŋ/" },
+          { english: "I'm not washing", translation: "no estoy lavando", phonetic: "/aɪm nɒt ˈwɒʃ.ɪŋ/" },
+          { english: "at the moment", translation: "en este momento / ahora mismo", phonetic: "/ət ðə ˈməʊ.mənt/" },
+          { english: "Look!", translation: "¡Mira!", phonetic: "/lʊk/" }
         ],
-        plans: [
-          { english: "going to travel", translation: "voy a viajar", phonetic: "/ˈɡəʊ.ɪŋ tuː ˈtræv.əl/" },
-          { english: "going to study", translation: "voy a estudiar", phonetic: "/ˈɡəʊ.ɪŋ tuː ˈstʌd.i/" },
-          { english: "going to work", translation: "voy a trabajar", phonetic: "/ˈɡəʊ.ɪŋ tuː wɜːk/" },
-          { english: "going to buy", translation: "voy a comprar", phonetic: "/ˈɡəʊ.ɪŋ tuː baɪ/" },
-          { english: "going to cook", translation: "voy a cocinar", phonetic: "/ˈɡəʊ.ɪŋ tuː kʊk/" },
-          { english: "going to visit", translation: "voy a visitar", phonetic: "/ˈɡəʊ.ɪŋ tuː ˈvɪz.ɪt/" },
-          { english: "tomorrow", translation: "mañana", phonetic: "/təˈmɒr.əʊ/" },
-          { english: "next week", translation: "la próxima semana", phonetic: "/nekst wiːk/" },
-          { english: "this weekend", translation: "este fin de semana", phonetic: "/ðɪs ˌwiːkˈend/" },
-          { english: "tonight", translation: "esta noche", phonetic: "/təˈnaɪt/" },
-          { english: "soon", translation: "pronto", phonetic: "/suːn/" },
-          { english: "in two days", translation: "en dos días", phonetic: "/ɪn tuː deɪz/" }
+        weather: [
+          { english: "sunny", translation: "soleado", phonetic: "/ˈsʌn.i/" },
+          { english: "cloudy", translation: "nublado", phonetic: "/ˈklaʊ.di/" },
+          { english: "rainy", translation: "lluvioso", phonetic: "/ˈreɪ.ni/" },
+          { english: "windy", translation: "ventoso", phonetic: "/ˈwɪn.di/" },
+          { english: "snowy", translation: "nevado", phonetic: "/ˈsnəʊ.i/" },
+          { english: "foggy", translation: "con niebla", phonetic: "/ˈfɒɡ.i/" },
+          { english: "hot", translation: "caluroso", phonetic: "/hɒt/" },
+          { english: "cold", translation: "frío", phonetic: "/kəʊld/" },
+          { english: "warm", translation: "templado", phonetic: "/wɔːm/" },
+          { english: "cool", translation: "fresco", phonetic: "/kuːl/" },
+          { english: "wet", translation: "húmedo / mojado", phonetic: "/wet/" },
+          { english: "dry", translation: "seco", phonetic: "/draɪ/" },
+          { english: "It's raining.", translation: "Está lloviendo.", phonetic: "/ɪts ˈreɪ.nɪŋ/" },
+          { english: "It's snowing.", translation: "Está nevando.", phonetic: "/ɪts ˈsnəʊ.ɪŋ/" },
+          { english: "The sun is shining.", translation: "El sol brilla.", phonetic: "/ðə sʌn ɪz ˈʃaɪ.nɪŋ/" },
+          { english: "spring", translation: "primavera", phonetic: "/sprɪŋ/" },
+          { english: "summer", translation: "verano", phonetic: "/ˈsʌm.ər/" },
+          { english: "autumn", translation: "otoño", phonetic: "/ˈɔː.təm/" },
+          { english: "winter", translation: "invierno", phonetic: "/ˈwɪn.tər/" },
+          { english: "it", translation: "ello (referente al clima)", phonetic: "/ɪt/" },
+          { english: "the city centre", translation: "el centro de la ciudad", phonetic: "/ðə ˈsɪt.i sen.tər/" },
+          { english: "the river", translation: "el río", phonetic: "/ðə ˈrɪv.ər/" },
+          { english: "the park", translation: "el parque", phonetic: "/ðə pɑːk/" },
+          { english: "the station", translation: "la estación", phonetic: "/ðə ˈsteɪ.ʃən/" }
         ]
       }
     }
@@ -793,28 +939,28 @@ const BANKS = {
     5: {
       label: "Banco de Ejercicios (Unidades 5)",
       categories: [
-        { key: "comparatives", label: "Comparatives & Superlatives" },
-        { key: "past", label: "Past Simple" },
-        { key: "goingto", label: "Going to (Future)" }
+        { key: "abilities", label: "Abilities (can / can't)" },
+        { key: "continuous", label: "Present Continuous" },
+        { key: "contrast", label: "Simple vs. Continuous" }
       ],
       data: {
-        comparatives: [
-          { q: "My bag is (heavy / heavier / the heaviest) than yours.", opt: ["heavy", "heavier", "the heaviest"], c: 1 },
-          { q: "She is (the good / the best) student in class.", opt: ["the good", "the best"], c: 1 },
-          { q: "This is (more cheaper / cheaper / cheap) than that one.", opt: ["more cheaper", "cheaper", "cheap"], c: 1 },
-          { q: "It was (worse / the worst / bad) day ever! (superlative)", opt: ["worse", "the worst", "bad"], c: 1 }
+        abilities: [
+          { q: "She (can / can to) ride a bike.", opt: ["can", "can to"], c: 0 },
+          { q: "He (cans / can't) cook, but he (can / cans) bake.", opt: ["cans", "can't", "can", "cans"], c: 1 },
+          { q: "Do you (know / can) speak German?", opt: ["know", "can"], c: 1 },
+          { q: "- Can you type? - Yes, I (can / do).", opt: ["can", "do"], c: 0 }
         ],
-        past: [
-          { q: "Yesterday we (go / went / gone) to the park.", opt: ["go", "went", "gone"], c: 1 },
-          { q: "He (didn't watched / didn't watch) TV last night.", opt: ["didn't watched", "didn't watch"], c: 1 },
-          { q: "(Did / Do) you buy the tickets?", opt: ["Did", "Do"], c: 0 },
-          { q: "They (played / play) football two days ago.", opt: ["played", "play"], c: 0 }
+        continuous: [
+          { q: "Look! The children (play / are playing) in the garden.", opt: ["play", "are playing"], c: 1 },
+          { q: "He is (runing / running / run) right now.", opt: ["runing", "running", "run"], c: 1 },
+          { q: "She isn't (write / writing) an email at the moment.", opt: ["write", "writing"], c: 1 },
+          { q: "(Is / Are) your friends working tonight?", opt: ["Is", "Are"], c: 1 }
         ],
-        goingto: [
-          { q: "I (am / is / are) going to cook dinner.", opt: ["am", "is", "are"], c: 0 },
-          { q: "(Is / Are) they going to travel next month?", opt: ["Is", "Are"], c: 1 },
-          { q: "She is going to (studying / study) at university.", opt: ["studying", "study"], c: 1 },
-          { q: "We (are not / isn't) going to come tomorrow.", opt: ["are not", "isn't"], c: 0 }
+        contrast: [
+          { q: "My brother (lives / is living) in Lima.", opt: ["lives", "is living"], c: 0 },
+          { q: "Listen! Someone (is calling / calls) from the hall.", opt: ["is calling", "calls"], c: 0 },
+          { q: "She (doesn't works / doesn't work) on Sundays.", opt: ["doesn't works", "doesn't work"], c: 1 },
+          { q: "It's (snows / snowing) in the mountains.", opt: ["snows", "snowing"], c: 1 }
         ]
       }
     }
