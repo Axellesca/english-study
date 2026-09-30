@@ -1,0 +1,3 @@
+# Local agent tooling cache (machine-specific: fingerprint + absolute paths).
+# The shareable index is .atl/skill-registry.md, which stays tracked.
+.atl/.skill-registry.cache.json
