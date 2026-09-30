@@ -93,8 +93,28 @@ T3+T4 → delegado (mismo writer, cierre de copy en 2 HTML).
 T5 → verificación en navegador.
 
 ## Estado
-- [ ] T1
-- [ ] T2
-- [ ] T3
-- [ ] T4
-- [ ] T5
+- [x] T1 — `LESSONS["5A"]`, `["5B"]`, `["5C"]`, `["RC5"]` reescritos
+- [x] T2 — `BANKS.grammar[5]`, `BANKS.vocab[5]`, `BANKS.exercises[5]` reescritos
+- [x] T3 — copy de `A1/modulo2/index.html` actualizada
+- [x] T4 — `card-desc` del módulo 2 en `index.html` raíz
+- [x] T5 — verificación
+
+## Evidencia
+
+**Work-unit commits** (rama `main`, directo, sin push):
+- `90dc72f` — `fix(modulo2): replace invented File 5 content with real English File topics` (4 archivos, +508 / -262)
+- `34306b7` — `chore(atl): stop tracking the local skill registry cache` (3 archivos, +6 / -18)
+
+Boundary: `20fa5a4` (previo) → `90dc72f` (contenido) → `34306b7` (tooling, independiente).
+Rollback del contenido: `git revert 90dc72f` sin tocar el chore de tooling.
+Rollback del tooling: `git revert 34306b7` (deja la caché versionada otra vez).
+
+**Verificación ejecutada:**
+- `node --check A1/modulo2/data.js` → PASS (hubo un fallo intermedio por una llave duplicada en `vocab[5]`, corregido antes del commit)
+- Estructura de datos validada: `LESSONS` conserva 4A, 4B, 4C, 5A, 5B, 5C, RC4, RC5; `BANKS` conserva grammar/vocab/exercises con claves 4 y 5
+- Coherencia de `categories.key` ↔ `data` en los tres bancos del módulo 5
+- Búsqueda de residuales de los temas viejos: 0 resultados que refieran a 5A/5B/5C
+- `style.css` y `A1/modulo2/app.js` ausentes del diff — diseño intacto
+- Recorrido en navegador de 5A → 5B → 5C → RC5, Grammar Bank 5, Vocabulary Bank 5 y banco de ejercicios 5: verificado por el usuario
+
+**Native review:** `gentle-ai review assess` (base `20fa5a4`) devolvió `risk: medium`, `review_due: true` por `slice_budget_reached` (794 líneas > 400). No ejecutado: el usuario pidió explícitamente saltear la verificación por haberla hecho él. Queda como decisión pendiente del mantenedor.
