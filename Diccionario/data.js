@@ -750,5 +750,149 @@ const DICCIONARIO_ENTRIES = [
     ],
     errorComun: "✗ “the car of my father” → mejor “my father's car”; ✗ “my parents's” → ✓ “my parents'”.",
     nivel: "A1"
+  },
+  {
+    id: "am-is-are",
+    term: "Am / Is / Are",
+    pron: "am / is / ar",
+    tipo: "VERB",
+    significado: "Ser / estar: el verbo más usado del inglés.",
+    uso: "I + am; he/she/it + is; you/we/they + are. Be se niega y pregunta solo, sin do/does.",
+    estructura: "Sujeto + am / is / are (+ adjetivo / lugar / …)",
+    ejemplos: [
+      { en: "I'm tired.", es: "Estoy cansado." },
+      { en: "She's a doctor.", es: "Ella es doctora." },
+      { en: "They're at home.", es: "Están en casa." }
+    ],
+    errorComun: "Be no usa do/does: ✗ “Do you are…? / I don't am” → ✓ “Are you…? / I'm not”. Y la edad: ✗ “I have 20 years” → ✓ “I'm 20”.",
+    nivel: "A1"
+  },
+  {
+    id: "be-questions",
+    term: "Be: ? / Short answers",
+    tipo: "VERB",
+    significado: "Preguntas y respuestas cortas con el verbo be.",
+    uso: "Invertí be y sujeto para preguntar; respondé Yes/No + pronombre + be.",
+    estructura: "Am / Is / Are + sujeto…? → Yes, + pron. + be.",
+    ejemplos: [
+      { en: "Are you ready? – Yes, I am.", es: "¿Estás listo? – Sí." },
+      { en: "Is he Spanish? – No, he isn't.", es: "¿Es español? – No." }
+    ],
+    errorComun: "La respuesta repite el mismo be: ✗ “Are you tired? – Yes, I do” → ✓ “Yes, I am”. Y el orden: ✗ “You are ready?” → ✓ “Are you ready?”.",
+    nivel: "A1"
+  },
+  {
+    id: "was-were",
+    term: "Was / Were",
+    pron: "uas / uer",
+    tipo: "VERB",
+    significado: "Pasado de be: was (I/he/she/it) y were (you/we/they).",
+    uso: "Ayer, anoche, last week; negación wasn't/weren't, pregunta invirtiendo.",
+    estructura: "Sujeto + was / were (+ lugar / adjetivo…)",
+    ejemplos: [
+      { en: "I was tired last night.", es: "Anoche estaba cansado." },
+      { en: "They were at home.", es: "Estaban en casa." }
+    ],
+    errorComun: "✗ “I were / they was” → ✓ “I was / they were”. Y el pasado no lleva -ed: “wased” no existe.",
+    nivel: "A1"
+  },
+  {
+    id: "have-got",
+    term: "Have got",
+    tipo: "VERB",
+    significado: "Tener (posesión): forma típica británica, igual que have.",
+    uso: "I've got = I have; preguntas con have (Have you got…?); negación haven't got.",
+    estructura: "Sujeto + 've / 's + got + cosa",
+    ejemplos: [
+      { en: "I've got a bike.", es: "Tengo una bici." },
+      { en: "Have you got a pen?", es: "¿Tenés una lapicera?" }
+    ],
+    errorComun: "Got no va solo: ✗ “I got a car” (eso es pasado de get) → ✓ “I've got a car”. Y ✗ “Do you have got…?” → ✓ “Have you got…? / Do you have…?”.",
+    nivel: "A1"
+  },
+  {
+    id: "like-want",
+    term: "Like + -ing / Want + to",
+    tipo: "VERB",
+    significado: "Gustar + verbo-ing; querer + to + verbo. Dos patrones fijos.",
+    uso: "like/love/hate + -ing; want + to. No se mezclan.",
+    estructura: "like / love / hate + V-ing · want + to + V",
+    ejemplos: [
+      { en: "I like swimming.", es: "Me gusta nadar." },
+      { en: "I want to travel.", es: "Quiero viajar." }
+    ],
+    errorComun: "✗ “I like to swimming / want travel” → ✓ “I like swimming / want to travel”.",
+    nivel: "A1"
+  },
+  {
+    id: "imperatives",
+    term: "Imperatives / Let's",
+    tipo: "VERB",
+    significado: "Órdenes y propuestas: verbo en base, sin sujeto.",
+    uso: "Ordená o pedí con base; prohibí con Don't; proponé con Let's (= let us).",
+    estructura: "V-base…! · Don't + V…! · Let's + V…",
+    ejemplos: [
+      { en: "Open the door.", es: "Abrí la puerta." },
+      { en: "Let's eat out.", es: "Salgamos a comer." }
+    ],
+    errorComun: "Base y sin to: ✗ “Let's to go / Don't to worry” → ✓ “Let's go / Don't worry”.",
+    nivel: "A1"
+  },
+  {
+    id: "frequency-adverbs",
+    term: "Frequency adverbs",
+    tipo: "ADV",
+    significado: "Siempre→nunca: always, usually, often, sometimes, hardly ever, never.",
+    uso: "Van ANTES del verbo principal, pero DESPUÉS de be.",
+    estructura: "Sujeto + adv + verbo · Sujeto + be + adv",
+    ejemplos: [
+      { en: "I always drink coffee.", es: "Siempre tomo café." },
+      { en: "She's usually late.", es: "Ella suele llegar tarde." }
+    ],
+    errorComun: "Posición: ✗ “I drink always coffee / She always is late” → ✓ “I always drink coffee / She is always late”. Y never ya niega: ✗ “I don't never” → ✓ “I never”.",
+    nivel: "A1"
+  },
+  {
+    id: "this-that",
+    term: "This / That / These / Those",
+    tipo: "DEM",
+    significado: "Este/ese: this/that en singular, these/those en plural.",
+    uso: "This/these = cerca; that/those = lejos. That también es “eso” en general.",
+    estructura: "This / That + singular · These / Those + plural",
+    ejemplos: [
+      { en: "This is my phone.", es: "Este es mi celu." },
+      { en: "Those are my friends.", es: "Esos son mis amigos." }
+    ],
+    errorComun: "Concordancia: ✗ “this books / that are” → ✓ “these books / that is”. Cambian los dos: this→these, that→those.",
+    nivel: "A1"
+  },
+  {
+    id: "ed-ing-adjectives",
+    term: "-ed vs -ing (bored/boring)",
+    tipo: "ADJ",
+    significado: "-ed = cómo me siento; -ing = cómo es la cosa.",
+    uso: "Persona + -ed (I'm bored); cosa o situación + -ing (It's boring).",
+    estructura: "Persona + be + -ed · Cosa + be + -ing",
+    ejemplos: [
+      { en: "I'm bored.", es: "Estoy aburrido." },
+      { en: "The film is boring.", es: "La peli es aburrida." }
+    ],
+    errorComun: "✗ “I'm boring” (¡estás diciendo que sos aburrido!) → ✓ “I'm bored”.",
+    nivel: "A1"
+  },
+  {
+    id: "too-enough",
+    term: "Too / Enough",
+    pron: "tu / ináf",
+    tipo: "QTY",
+    significado: "Too (demasiado, antes) / Enough (suficiente, después).",
+    uso: "too + adjetivo = exceso; adjetivo + enough = alcanza (muchas veces + to…).",
+    estructura: "Too + adj · Adj + enough (+ to…)",
+    ejemplos: [
+      { en: "It's too cold.", es: "Hace demasiado frío." },
+      { en: "You're old enough to drive.", es: "Tenés edad suficiente para manejar." }
+    ],
+    errorComun: "Orden: ✗ “enough old” → ✓ “old enough”. Y con adjetivo basta too: ✗ “too much expensive” → ✓ “too expensive”.",
+    nivel: "A1"
   }
 ];

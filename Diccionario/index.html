@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Diccionario de referencia rápida: WH Questions, presente simple y continuo, can, there is/are, cantidad, artículos, conectores, preposiciones, pronombres y el apóstrofe 's. Ejemplos bilingües y errores típicos.">
+  <meta name="description" content="Diccionario de referencia rápida: verbo be, presente simple y continuo, can, have got, there is/are, cantidad, adverbios, pronombres, demostrativos, adjetivos, WH Questions, artículos, conectores, preposiciones y el apóstrofe 's.">
   <title>Diccionario — Referencia rápida</title>
   <meta property="og:title" content="Diccionario — Referencia rápida">
-  <meta property="og:description" content="Referencia rápida: WH, verbos, cantidad, there is/are, artículos, conectores, preposiciones, pronombres y el 's, con ejemplos y errores típicos.">
+  <meta property="og:description" content="Referencia rápida: be, verbos, cantidad, adverbios, pronombres, demostrativos, adjetivos, WH, artículos, conectores, preposiciones, there is/are y el 's.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../css/shared-theme.css">
   <link rel="stylesheet" href="style.css">
@@ -71,6 +71,18 @@
           <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           <span>El 's</span>
         </li>
+        <li class="nav-item" data-filter-link="ADV">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <span>Adverbios</span>
+        </li>
+        <li class="nav-item" data-filter-link="DEM">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>Demostrativos</span>
+        </li>
+        <li class="nav-item" data-filter-link="ADJ">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg>
+          <span>Adjetivos</span>
+        </li>
       </ul>
     </nav>
 
@@ -89,13 +101,13 @@
   <main class="main-content">
     <header class="section-header">
       <h1 class="page-title">Diccionario</h1>
-      <p class="page-subtitle">Referencia rápida de palabras y estructuras clave: significado, uso, estructura, ejemplos bilingües y el error típico que conviene evitar. Incluye <strong>WH Questions</strong>, <strong>presente simple y continuo</strong>, <strong>can</strong>, <strong>there is/are</strong>, <strong>cantidad</strong>, <strong>artículos</strong>, <strong>conectores</strong>, <strong>preposiciones</strong>, <strong>pronombres</strong> y <strong>el apóstrofe 's</strong>.</p>
+      <p class="page-subtitle">Referencia rápida de palabras y estructuras clave: significado, uso, estructura, ejemplos bilingües y el error típico que conviene evitar. Incluye <strong>verbo be</strong>, <strong>presente simple y continuo</strong>, <strong>can</strong>, <strong>have got</strong>, <strong>there is/are</strong>, <strong>cantidad</strong>, <strong>adverbios</strong>, <strong>pronombres</strong>, <strong>demostrativos</strong>, <strong>adjetivos</strong>, <strong>WH Questions</strong>, <strong>artículos</strong>, <strong>conectores</strong>, <strong>preposiciones</strong> y <strong>el apóstrofe 's</strong>.</p>
     </header>
 
     <div class="card toolbar">
       <div class="search-wrap">
         <label class="search-label" for="search-input">Buscar en el diccionario</label>
-        <input id="search-input" type="search" placeholder="Buscá can, much, 's, running…" autocomplete="off">
+        <input id="search-input" type="search" placeholder="Buscá be, always, this, enough…" autocomplete="off">
       </div>
       <div class="chips" role="group" aria-label="Filtrar fichas por tipo">
         <button type="button" class="chip active" data-filter="Todas" aria-pressed="true">Todas</button>
@@ -109,6 +121,9 @@
         <button type="button" class="chip" data-filter="EXIST" aria-pressed="false">There is/are</button>
         <button type="button" class="chip" data-filter="QTY" aria-pressed="false">Cantidad</button>
         <button type="button" class="chip" data-filter="APOS" aria-pressed="false">El 's</button>
+        <button type="button" class="chip" data-filter="ADV" aria-pressed="false">Adverbios</button>
+        <button type="button" class="chip" data-filter="DEM" aria-pressed="false">Demostrativos</button>
+        <button type="button" class="chip" data-filter="ADJ" aria-pressed="false">Adjetivos</button>
       </div>
       <p class="results-count" id="results-count" role="status" aria-live="polite"></p>
     </div>
@@ -117,11 +132,11 @@
 
     <div class="card empty-state" id="empty-state" hidden>
       <p class="empty-title">Sin resultados para «<span id="empty-query"></span>».</p>
-      <p class="empty-hint">Probá con otra palabra, por ejemplo <em>can</em>, <em>much</em> o <em>running</em>.</p>
+      <p class="empty-hint">Probá con otra palabra, por ejemplo <em>always</em>, <em>was</em> o <em>enough</em>.</p>
     </div>
 
     <footer class="portal-footer">
-      <p>Diccionario de referencia rápida · 50 fichas: WH, verbos, cantidad, there is/are, artículos, conectores, preposiciones, pronombres y el 's; pronto más vocabulario.</p>
+      <p>Diccionario de referencia rápida · 60 fichas: be, verbos, cantidad, adverbios, pronombres, demostrativos, adjetivos, WH, artículos, conectores, preposiciones, there is/are y el 's.</p>
     </footer>
   </main>
 
