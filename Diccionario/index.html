@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Diccionario de referencia rápida: WH Questions con significado, estructura, ejemplos bilingües y errores típicos. Buscador y filtros por tipo.">
-  <title>Diccionario — WH Questions</title>
-  <meta property="og:title" content="Diccionario — WH Questions">
-  <meta property="og:description" content="Referencia rápida de WH Questions: significado, estructura, ejemplos y errores típicos.">
+  <meta name="description" content="Diccionario de referencia rápida: WH Questions, artículos y conectores con significado, estructura, ejemplos bilingües y errores típicos. Buscador y filtros por tipo.">
+  <title>Diccionario — Referencia rápida</title>
+  <meta property="og:title" content="Diccionario — Referencia rápida">
+  <meta property="og:description" content="Referencia rápida: WH Questions, artículos y conectores con significado, estructura, ejemplos y errores típicos.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../css/shared-theme.css">
   <link rel="stylesheet" href="style.css">
@@ -39,6 +39,14 @@
           <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4"/></svg>
           <span>How + …</span>
         </li>
+        <li class="nav-item" data-filter-link="ART">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
+          <span>Artículos</span>
+        </li>
+        <li class="nav-item" data-filter-link="CONN">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          <span>Conectores</span>
+        </li>
       </ul>
     </nav>
 
@@ -57,18 +65,20 @@
   <main class="main-content">
     <header class="section-header">
       <h1 class="page-title">Diccionario</h1>
-      <p class="page-subtitle">Referencia rápida de palabras y estructuras clave: significado, uso, estructura, ejemplos bilingües y el error típico que conviene evitar. Primera entrega: <strong>WH Questions</strong>.</p>
+      <p class="page-subtitle">Referencia rápida de palabras y estructuras clave: significado, uso, estructura, ejemplos bilingües y el error típico que conviene evitar. Incluye <strong>WH Questions</strong>, <strong>artículos</strong> y <strong>conectores</strong>.</p>
     </header>
 
     <div class="card toolbar">
       <div class="search-wrap">
         <label class="search-label" for="search-input">Buscar en el diccionario</label>
-        <input id="search-input" type="search" placeholder="Buscá what, where, how much…" autocomplete="off">
+        <input id="search-input" type="search" placeholder="Buscá what, the, but, because…" autocomplete="off">
       </div>
       <div class="chips" role="group" aria-label="Filtrar fichas por tipo">
         <button type="button" class="chip active" data-filter="Todas" aria-pressed="true">Todas</button>
         <button type="button" class="chip" data-filter="WH" aria-pressed="false">WH</button>
         <button type="button" class="chip" data-filter="HOW" aria-pressed="false">HOW</button>
+        <button type="button" class="chip" data-filter="ART" aria-pressed="false">Artículos</button>
+        <button type="button" class="chip" data-filter="CONN" aria-pressed="false">Conectores</button>
       </div>
       <p class="results-count" id="results-count" role="status" aria-live="polite"></p>
     </div>
@@ -77,11 +87,11 @@
 
     <div class="card empty-state" id="empty-state" hidden>
       <p class="empty-title">Sin resultados para «<span id="empty-query"></span>».</p>
-      <p class="empty-hint">Probá con otra palabra, por ejemplo <em>where</em> o <em>how many</em>.</p>
+      <p class="empty-hint">Probá con otra palabra, por ejemplo <em>where</em>, <em>because</em> o <em>the</em>.</p>
     </div>
 
     <footer class="portal-footer">
-      <p>Diccionario de referencia rápida · Módulo en crecimiento: hoy WH Questions, pronto más vocabulario y gramática.</p>
+      <p>Diccionario de referencia rápida · Módulo en crecimiento: WH Questions, artículos y conectores; pronto más vocabulario y gramática.</p>
     </footer>
   </main>
 
