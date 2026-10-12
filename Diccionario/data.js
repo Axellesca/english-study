@@ -622,5 +622,133 @@ const DICCIONARIO_ENTRIES = [
     ],
     errorComun: "✗ “I don't have some money” → ✓ “any money”. (some en pregunta es oferta: “Would you like some tea?”.)",
     nivel: "A1"
+  },
+  {
+    id: "can-cant",
+    term: "Can / Can't",
+    pron: "can / cant",
+    tipo: "VERB",
+    significado: "Poder / saber hacer: habilidad, permiso o posibilidad.",
+    uso: "Can + verbo en base para todos (I, he, they…); can't/cannot en negación; preguntas invirtiendo.",
+    estructura: "Sujeto + can / can't + verbo base",
+    ejemplos: [
+      { en: "She can swim.", es: "Ella sabe nadar." },
+      { en: "Can you help me?", es: "¿Me podés ayudar?" }
+    ],
+    errorComun: "Can no cambia ni lleva to: ✗ “He cans / can to go / doesn't can” → ✓ “He can go / can't go”.",
+    nivel: "A1"
+  },
+  {
+    id: "present-continuous",
+    term: "Present Continuous",
+    tipo: "VERB",
+    significado: "Presente continuo: acción pasando AHORA o en el período actual.",
+    uso: "am/is/are + verbo-ing; marcadores now, at the moment, today.",
+    estructura: "Am / Is / Are + verbo-ing",
+    ejemplos: [
+      { en: "I'm working now.", es: "Estoy trabajando ahora." },
+      { en: "They're playing football.", es: "Están jugando al fútbol." }
+    ],
+    errorComun: "Rutinas van en simple: ✗ “I am work every day” → ✓ “I work every day”. Y ojo: ✗ “I am agree” → ✓ “I agree” (sin -ing).",
+    nivel: "A1"
+  },
+  {
+    id: "ing-spelling",
+    term: "-ing spelling",
+    tipo: "VERB",
+    significado: "Cómo se escribe el -ing al pegarlo al verbo.",
+    uso: "Base + ing; e muda se cae, consonante final se duplica, -ie pasa a -y.",
+    estructura: "dance→dancing · run→running · lie→lying",
+    ejemplos: [
+      { en: "She's running now.", es: "Ella está corriendo ahora." },
+      { en: "He's dancing.", es: "Él está bailando." }
+    ],
+    errorComun: "✗ “writting / danceing / studyying” → ✓ “writing / dancing / studying”.",
+    nivel: "A1"
+  },
+  {
+    id: "simple-vs-continuous",
+    term: "Simple vs Continuous",
+    tipo: "VERB",
+    significado: "Simple = hábitos y hechos; Continuous = lo que pasa ahora.",
+    uso: "Marcadores: always/every day → simple; now/at the moment → continuous.",
+    estructura: "Hábito: verbo base/-s · Ahora: am/is/are + verbo-ing",
+    ejemplos: [
+      { en: "I eat toast every morning.", es: "Desayuno tostadas cada mañana." },
+      { en: "I'm eating now.", es: "Estoy comiendo ahora." }
+    ],
+    errorComun: "✗ “I'm eat now / I eating now” → ✓ “I'm eating now” (no olvides el be).",
+    nivel: "A1"
+  },
+  {
+    id: "countable-uncountable",
+    term: "Countable / Uncountable",
+    tipo: "QTY",
+    significado: "Contables (apple, chair) vs incontables (rice, money, advice): define qué palabras los acompañan.",
+    uso: "Contables: a/an, many, few y números. Incontables: much, little y sin plural.",
+    estructura: "Contable: a/an + plural -s · Incontable: sin plural",
+    ejemplos: [
+      { en: "I have two brothers.", es: "Tengo dos hermanos." },
+      { en: "I need some advice.", es: "Necesito un consejo." }
+    ],
+    errorComun: "Incontables no pluralizan: ✗ “informations / advices / a rice” → ✓ “information / advice / some rice”.",
+    nivel: "A1"
+  },
+  {
+    id: "much-many",
+    term: "Much / Many",
+    pron: "mach / méni",
+    tipo: "QTY",
+    significado: "Mucho: much + incontable, many + plural (en negación y pregunta).",
+    uso: "Negaciones y preguntas; en afirmativo suena mejor a lot of.",
+    estructura: "much + incontable · many + plural",
+    ejemplos: [
+      { en: "I don't have much time.", es: "No tengo mucho tiempo." },
+      { en: "Are there many people?", es: "¿Hay mucha gente?" }
+    ],
+    errorComun: "✗ “much people / many time” → ✓ “many people / much time”. Y en afirmativo: “I have much money” suena raro → “a lot of money”.",
+    nivel: "A1"
+  },
+  {
+    id: "alot-few-little",
+    term: "A lot of / Few / Little",
+    tipo: "QTY",
+    significado: "A lot of (mucho, en +), a few (pocos, contable +), a little (poco, incontable +).",
+    uso: "a few + plural; a little + incontable; a lot of + ambos en afirmativo.",
+    estructura: "a few + plural · a little + incontable · a lot of + ambos",
+    ejemplos: [
+      { en: "I have a few friends.", es: "Tengo algunos amigos." },
+      { en: "I have a little money.", es: "Tengo algo de plata." }
+    ],
+    errorComun: "Few = contable, little = incontable: ✗ “a little friends / a few money” → ✓ “a few friends / a little money”.",
+    nivel: "A1"
+  },
+  {
+    id: "s-contraction",
+    term: "'s = is / has",
+    tipo: "APOS",
+    significado: "El 's pegado a un nombre o pronombre es contracción: is o has.",
+    uso: "'s + verbo-ing = is; 's + participio = has. Si sigue un sustantivo, es posesivo.",
+    estructura: "'s + -ing = is · 's + participio = has · 's + sustantivo = posesión",
+    ejemplos: [
+      { en: "He's working.", es: "Él está trabajando (= is)." },
+      { en: "He's finished.", es: "Él terminó (= has)." }
+    ],
+    errorComun: "Mirá lo que sigue: “Juan's happy” = Juan is (adjetivo); “Juan's car” = el auto (sustantivo, posesivo).",
+    nivel: "A1"
+  },
+  {
+    id: "s-possessive",
+    term: "Possessive 's",
+    tipo: "APOS",
+    significado: "El 's pegado a un dueño marca posesión (el auto de Juan).",
+    uso: "Dueño + 's + cosa; dueños plurales en -s llevan solo el apóstrofe (parents').",
+    estructura: "Dueño + 's + cosa · Plural en -s + '",
+    ejemplos: [
+      { en: "This is Juan's car.", es: "Este es el auto de Juan." },
+      { en: "My parents' house is big.", es: "La casa de mis papás es grande." }
+    ],
+    errorComun: "✗ “the car of my father” → mejor “my father's car”; ✗ “my parents's” → ✓ “my parents'”.",
+    nivel: "A1"
   }
 ];
