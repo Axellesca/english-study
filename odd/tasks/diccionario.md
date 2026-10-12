@@ -33,7 +33,7 @@ El usuario pidió un apartado Diccionario (significados + gramática) y empezar 
 - [x] T7: Tanda 3 — 13 fichas PREP/PRON/VERB/EXIST + 4 chips/nav + textos portal (41 fichas)
 - [x] T8: Verificación + work-unit commit tanda 3 (`119d2e6`)
 - [x] T9: Tanda 4 — 9 fichas VERB/QTY/APOS + 2 chips/nav + textos portal (50 fichas)
-- [ ] T10: Verificación + work-unit commit tanda 4
+- [x] T10: Verificación + work-unit commit tanda 4 (`d1a7408`)
 
 ## Authorized scope
 Archivos autorizados: `Diccionario/` (nuevo), `index.html` (solo bloque tarjeta Diccionario), `odd/tasks/diccionario.md` (este doc). Nada fuera de esto.
@@ -77,3 +77,4 @@ Excepción documentada: sitio estático sin runner determinista para UI. Sin RED
 | 32d1415 | feat(diccionario): add Diccionario module with WH Questions + portal card |
 | bae5421 | feat(diccionario): add articles and connectors batch with ART/CONN filters |
 | 119d2e6 | feat(diccionario): add prepositions pronouns present-simple there-is-are batch |
+| d1a7408 | feat(diccionario): add can continuous quantity apostrophe batch |
