@@ -27,7 +27,7 @@ El usuario pidió un apartado Diccionario (significados + gramática) y empezar 
 - [ ] T4: Verificación funcional + work-unit commit en rama feature
 - [x] T4: Verificación parent + work-unit commit `32d1415` en `feature/diccionario`
 - [x] T5: Tanda 2 — 13 fichas ART/CONN + chips/nav Artículos y Conectores en `Diccionario/index.html`
-- [ ] T6: Verificación + work-unit commit tanda 2
+- [x] T6: Verificación + work-unit commit tanda 2 (`bae5421`)
 
 ## Authorized scope
 Archivos autorizados: `Diccionario/` (nuevo), `index.html` (solo bloque tarjeta Diccionario), `odd/tasks/diccionario.md` (este doc). Nada fuera de esto.
@@ -65,3 +65,4 @@ Excepción documentada: sitio estático sin runner determinista para UI. Sin RED
 | Commit | Message |
 |--------|---------|
 | 32d1415 | feat(diccionario): add Diccionario module with WH Questions + portal card |
+| bae5421 | feat(diccionario): add articles and connectors batch with ART/CONN filters |
