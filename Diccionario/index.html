@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diccionario de referencia rápida: WH Questions con significado, estructura, ejemplos bilingües y errores típicos. Buscador y filtros por tipo.">
+  <title>Diccionario — WH Questions</title>
+  <meta property="og:title" content="Diccionario — WH Questions">
+  <meta property="og:description" content="Referencia rápida de WH Questions: significado, estructura, ejemplos y errores típicos.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../css/shared-theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">DI</div>
+      <div class="logo-text">
+        <span class="logo-title">Diccionario</span>
+        <span class="logo-subtitle">Referencia rápida · A1</span>
+      </div>
+    </div>
+
+    <nav class="nav-links" aria-label="Filtrar fichas por tipo">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li class="nav-item active" data-filter-link="Todas">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+          <span>Todas las fichas</span>
+        </li>
+        <li class="nav-item" data-filter-link="WH">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17h.01"/></svg>
+          <span>WH Questions</span>
+        </li>
+        <li class="nav-item" data-filter-link="HOW">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4"/></svg>
+          <span>How + …</span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-home">
+      <a href="../index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
+        <span>Portal principal</span>
+      </a>
+      <a href="../Cambridge_Grammar/index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg>
+        <span>Cambridge Grammar</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="section-header">
+      <h1 class="page-title">Diccionario</h1>
+      <p class="page-subtitle">Referencia rápida de palabras y estructuras clave: significado, uso, estructura, ejemplos bilingües y el error típico que conviene evitar. Primera entrega: <strong>WH Questions</strong>.</p>
+    </header>
+
+    <div class="card toolbar">
+      <div class="search-wrap">
+        <label class="search-label" for="search-input">Buscar en el diccionario</label>
+        <input id="search-input" type="search" placeholder="Buscá what, where, how much…" autocomplete="off">
+      </div>
+      <div class="chips" role="group" aria-label="Filtrar fichas por tipo">
+        <button type="button" class="chip active" data-filter="Todas" aria-pressed="true">Todas</button>
+        <button type="button" class="chip" data-filter="WH" aria-pressed="false">WH</button>
+        <button type="button" class="chip" data-filter="HOW" aria-pressed="false">HOW</button>
+      </div>
+      <p class="results-count" id="results-count" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="entries-grid" id="entries-grid"></div>
+
+    <div class="card empty-state" id="empty-state" hidden>
+      <p class="empty-title">Sin resultados para «<span id="empty-query"></span>».</p>
+      <p class="empty-hint">Probá con otra palabra, por ejemplo <em>where</em> o <em>how many</em>.</p>
+    </div>
+
+    <footer class="portal-footer">
+      <p>Diccionario de referencia rápida · Módulo en crecimiento: hoy WH Questions, pronto más vocabulario y gramática.</p>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
