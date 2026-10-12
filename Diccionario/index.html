@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Diccionario de referencia rápida: WH Questions, artículos y conectores con significado, estructura, ejemplos bilingües y errores típicos. Buscador y filtros por tipo.">
+  <meta name="description" content="Diccionario de referencia rápida: WH Questions, artículos, conectores, preposiciones, pronombres, presente simple y there is/are. Significado, estructura, ejemplos bilingües y errores típicos.">
   <title>Diccionario — Referencia rápida</title>
   <meta property="og:title" content="Diccionario — Referencia rápida">
-  <meta property="og:description" content="Referencia rápida: WH Questions, artículos y conectores con significado, estructura, ejemplos y errores típicos.">
+  <meta property="og:description" content="Referencia rápida: WH, artículos, conectores, preposiciones, pronombres, presente simple y there is/are, con ejemplos y errores típicos.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="../css/shared-theme.css">
   <link rel="stylesheet" href="style.css">
@@ -47,6 +47,22 @@
           <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
           <span>Conectores</span>
         </li>
+        <li class="nav-item" data-filter-link="PREP">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Preposiciones</span>
+        </li>
+        <li class="nav-item" data-filter-link="PRON">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+          <span>Pronombres</span>
+        </li>
+        <li class="nav-item" data-filter-link="VERB">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          <span>Verbos</span>
+        </li>
+        <li class="nav-item" data-filter-link="EXIST">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+          <span>There is/are</span>
+        </li>
       </ul>
     </nav>
 
@@ -65,13 +81,13 @@
   <main class="main-content">
     <header class="section-header">
       <h1 class="page-title">Diccionario</h1>
-      <p class="page-subtitle">Referencia rápida de palabras y estructuras clave: significado, uso, estructura, ejemplos bilingües y el error típico que conviene evitar. Incluye <strong>WH Questions</strong>, <strong>artículos</strong> y <strong>conectores</strong>.</p>
+      <p class="page-subtitle">Referencia rápida de palabras y estructuras clave: significado, uso, estructura, ejemplos bilingües y el error típico que conviene evitar. Incluye <strong>WH Questions</strong>, <strong>artículos</strong>, <strong>conectores</strong>, <strong>preposiciones</strong>, <strong>pronombres</strong>, <strong>presente simple</strong> y <strong>there is/are</strong>.</p>
     </header>
 
     <div class="card toolbar">
       <div class="search-wrap">
         <label class="search-label" for="search-input">Buscar en el diccionario</label>
-        <input id="search-input" type="search" placeholder="Buscá what, the, but, because…" autocomplete="off">
+        <input id="search-input" type="search" placeholder="Buscá in, my, does, there is…" autocomplete="off">
       </div>
       <div class="chips" role="group" aria-label="Filtrar fichas por tipo">
         <button type="button" class="chip active" data-filter="Todas" aria-pressed="true">Todas</button>
@@ -79,6 +95,10 @@
         <button type="button" class="chip" data-filter="HOW" aria-pressed="false">HOW</button>
         <button type="button" class="chip" data-filter="ART" aria-pressed="false">Artículos</button>
         <button type="button" class="chip" data-filter="CONN" aria-pressed="false">Conectores</button>
+        <button type="button" class="chip" data-filter="PREP" aria-pressed="false">Preposiciones</button>
+        <button type="button" class="chip" data-filter="PRON" aria-pressed="false">Pronombres</button>
+        <button type="button" class="chip" data-filter="VERB" aria-pressed="false">Verbos</button>
+        <button type="button" class="chip" data-filter="EXIST" aria-pressed="false">There is/are</button>
       </div>
       <p class="results-count" id="results-count" role="status" aria-live="polite"></p>
     </div>
@@ -87,11 +107,11 @@
 
     <div class="card empty-state" id="empty-state" hidden>
       <p class="empty-title">Sin resultados para «<span id="empty-query"></span>».</p>
-      <p class="empty-hint">Probá con otra palabra, por ejemplo <em>where</em>, <em>because</em> o <em>the</em>.</p>
+      <p class="empty-hint">Probá con otra palabra, por ejemplo <em>in</em>, <em>does</em> o <em>there is</em>.</p>
     </div>
 
     <footer class="portal-footer">
-      <p>Diccionario de referencia rápida · Módulo en crecimiento: WH Questions, artículos y conectores; pronto más vocabulario y gramática.</p>
+      <p>Diccionario de referencia rápida · Módulo en crecimiento: WH, artículos, conectores, preposiciones, pronombres, presente simple y there is/are; pronto más vocabulario.</p>
     </footer>
   </main>
 

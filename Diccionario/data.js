@@ -432,5 +432,195 @@ const DICCIONARIO_ENTRIES = [
     ],
     errorComun: "Although pide oración, no sustantivo: ✗ “Although the rain, we went” → ✓ “Although it was raining, we went”.",
     nivel: "A1"
+  },
+  {
+    id: "in",
+    term: "In",
+    pron: "in",
+    tipo: "PREP",
+    significado: "En / dentro de: meses, años, estaciones, momentos del día, ciudades, países y espacios cerrados.",
+    uso: "Ubicá en el tiempo (meses, años, morning) y en el espacio (ciudades, habitaciones).",
+    estructura: "In + mes / año / estación / momento / ciudad / habitación",
+    ejemplos: [
+      { en: "My birthday is in May.", es: "Cumplo en mayo." },
+      { en: "I live in Córdoba.", es: "Vivo en Córdoba." },
+      { en: "The keys are in the kitchen.", es: "Las llaves están en la cocina." }
+    ],
+    errorComun: "Días van con on y la hora exacta con at: ✗ “in Monday” → ✓ “on Monday”; ✗ “in 7 o'clock” → ✓ “at 7 o'clock”.",
+    nivel: "A1"
+  },
+  {
+    id: "on",
+    term: "On",
+    pron: "on",
+    tipo: "PREP",
+    significado: "En / sobre: días, fechas, superficies y transporte público.",
+    uso: "Días de la semana, fechas, cosas apoyadas y bus, tren o avión.",
+    estructura: "On + día / fecha / superficie / transporte",
+    ejemplos: [
+      { en: "The meeting is on Friday.", es: "La reunión es el viernes." },
+      { en: "The book is on the table.", es: "El libro está sobre la mesa." }
+    ],
+    errorComun: "Transporte público va con on: ✗ “in the bus” → ✓ “on the bus”. (Pero auto y taxi: in a car / by car.)",
+    nivel: "A1"
+  },
+  {
+    id: "at",
+    term: "At",
+    pron: "at",
+    tipo: "PREP",
+    significado: "En / a las: hora exacta, night y lugares puntuales.",
+    uso: "Hora en punto (at 7), at night, y lugares vistos como un punto (at home, at school).",
+    estructura: "At + hora / night / lugar puntual",
+    ejemplos: [
+      { en: "Dinner is at eight.", es: "La cena es a las ocho." },
+      { en: "She's at work now.", es: "Ella está en el trabajo ahora." }
+    ],
+    errorComun: "Ciudades y países van con in: ✗ “at Buenos Aires” → ✓ “in Buenos Aires”. Y de noche: ✗ “in the night” → ✓ “at night”.",
+    nivel: "A1"
+  },
+  {
+    id: "subject-pronouns",
+    term: "Subject pronouns",
+    tipo: "PRON",
+    significado: "Pronombres sujeto: reemplazan a quien hace la acción (I, you, he, she, it, we, they).",
+    uso: "Van ANTES del verbo; con he/she/it el verbo lleva -s.",
+    estructura: "Sujeto + verbo (he/she/it + verbo-s)",
+    ejemplos: [
+      { en: "She works here.", es: "Ella trabaja acá." },
+      { en: "They live near me.", es: "Ellos viven cerca mío." }
+    ],
+    errorComun: "No dupliques el sujeto: ✗ “My friend he works…” → ✓ “My friend works…”. Y con otro: ✗ “Me and Juan went” → ✓ “Juan and I went”.",
+    nivel: "A1"
+  },
+  {
+    id: "object-pronouns",
+    term: "Object pronouns",
+    tipo: "PRON",
+    significado: "Pronombres objeto: reciben la acción (me, you, him, her, it, us, them).",
+    uso: "Van DESPUÉS del verbo o de una preposición.",
+    estructura: "Verbo / preposición + me · him · her · us · them",
+    ejemplos: [
+      { en: "I love you.", es: "Te quiero." },
+      { en: "Call me later.", es: "Llamame después." }
+    ],
+    errorComun: "Tras preposición va objeto: ✗ “with she / for they” → ✓ “with her / for them”.",
+    nivel: "A1"
+  },
+  {
+    id: "possessive-adjectives",
+    term: "Possessive adjectives",
+    tipo: "PRON",
+    significado: "Adjetivos posesivos (my, your, his, her, its, our, their): acompañan al sustantivo.",
+    uso: "Van ANTES del sustantivo y no cambian en plural.",
+    estructura: "My / your / his… + sustantivo",
+    ejemplos: [
+      { en: "This is my house.", es: "Esta es mi casa." },
+      { en: "They lost their keys.", es: "Ellos perdieron sus llaves." }
+    ],
+    errorComun: "No van solos: ✗ “This is mine book” → ✓ “my book” (mine va sin sustantivo detrás).",
+    nivel: "A1"
+  },
+  {
+    id: "possessive-pronouns",
+    term: "Possessive pronouns",
+    tipo: "PRON",
+    significado: "Pronombres posesivos (mine, yours, his, hers, ours, theirs): reemplazan al sustantivo.",
+    uso: "Van solos, sin sustantivo detrás; sirven para no repetir.",
+    estructura: "…is/are + mine / yours / hers…",
+    ejemplos: [
+      { en: "This book is mine.", es: "Este libro es mío." },
+      { en: "Ours is red.", es: "El nuestro es rojo." }
+    ],
+    errorComun: "Sin apóstrofe: ✗ “her's / their's” → ✓ “hers / theirs”. (It's con apóstrofe es “it is”, otra cosa.)",
+    nivel: "A1"
+  },
+  {
+    id: "do-does",
+    term: "Do / Does",
+    pron: "du / daz",
+    tipo: "VERB",
+    significado: "Auxiliares del presente: arman preguntas (y ayudan en negaciones).",
+    uso: "Do con I/you/we/they; does con he/she/it. El verbo principal va en base.",
+    estructura: "Do / Does + sujeto + verbo base…?",
+    ejemplos: [
+      { en: "Do you like pizza?", es: "¿Te gusta la pizza?" },
+      { en: "Does she work here?", es: "¿Ella trabaja acá?" }
+    ],
+    errorComun: "Con does el verbo pierde la -s: ✗ “Does he likes…?” → ✓ “Does he like…?”. Y ✗ “Do she…?” → ✓ “Does she…?”.",
+    nivel: "A1"
+  },
+  {
+    id: "dont-doesnt",
+    term: "Don't / Doesn't",
+    pron: "dont / dázent",
+    tipo: "VERB",
+    significado: "Negación del presente: verbo + not contraído.",
+    uso: "don't con I/you/we/they; doesn't con he/she/it; el verbo va en base.",
+    estructura: "Sujeto + don't / doesn't + verbo base",
+    ejemplos: [
+      { en: "I don't eat meat.", es: "No como carne." },
+      { en: "He doesn't smoke.", es: "Él no fuma." }
+    ],
+    errorComun: "✗ “He don't like it” → ✓ “He doesn't like it”; ✗ “doesn't likes” → el verbo va en base.",
+    nivel: "A1"
+  },
+  {
+    id: "third-person-s",
+    term: "-s (he, she, it)",
+    tipo: "VERB",
+    significado: "En afirmativo, he/she/it agregan -s al verbo (con cambios de spelling).",
+    uso: "Solo en afirmativo: en preguntas y negaciones la -s se muda a does/doesn't.",
+    estructura: "He / She / It + verbo-s (watch→watches, study→studies)",
+    ejemplos: [
+      { en: "He works every day.", es: "Él trabaja todos los días." },
+      { en: "She watches TV at night.", es: "Ella mira tele a la noche." }
+    ],
+    errorComun: "Spelling: ✗ “he studys” → ✓ “he studies”; ✗ “she watchs” → ✓ “she watches”. Y nunca -s con does: ✗ “Does he works?” → ✓ “Does he work?”.",
+    nivel: "A1"
+  },
+  {
+    id: "there-is-are",
+    term: "There is / There are",
+    tipo: "EXIST",
+    significado: "Hay: presenta la existencia de algo (singular o plural).",
+    uso: "There is + singular o incontable; there are + plural.",
+    estructura: "There is / are + algo (+ lugar)",
+    ejemplos: [
+      { en: "There is a bank near here.", es: "Hay un banco acá cerca." },
+      { en: "There are two cats.", es: "Hay dos gatos." }
+    ],
+    errorComun: "Haber no es tener: ✗ “There have…” o “Is a bank…” → ✓ “There is a bank…”. Y en plural: ✗ “There is two cats” → ✓ “There are…”.",
+    nivel: "A1"
+  },
+  {
+    id: "there-negative-question",
+    term: "Is there…? / There isn't",
+    tipo: "EXIST",
+    significado: "Pregunta y negación de existencia.",
+    uso: "Is/Are there…? para preguntar; there isn't/aren't para negar (y some pasa a any).",
+    estructura: "Is / Are there + …? / There isn't / aren't + …",
+    ejemplos: [
+      { en: "Is there a pharmacy here?", es: "¿Hay una farmacia acá?" },
+      { en: "There aren't any tickets.", es: "No hay entradas." }
+    ],
+    errorComun: "✗ “There isn't some milk” → ✓ “There isn't any milk” (some → any en negación y pregunta).",
+    nivel: "A1"
+  },
+  {
+    id: "some-any",
+    term: "Some / Any",
+    pron: "sam / éni",
+    tipo: "EXIST",
+    significado: "Some (algo/algunos, en afirmativo y ofrecimientos) / Any (en negación y pregunta).",
+    uso: "some en afirmativo y para ofrecer; any en negaciones y preguntas.",
+    estructura: "Afirmativo + some… / Negativo + any… / ¿…any…?",
+    ejemplos: [
+      { en: "I have some friends.", es: "Tengo algunos amigos." },
+      { en: "I don't have any money.", es: "No tengo nada de plata." },
+      { en: "Do you have any questions?", es: "¿Tienen alguna pregunta?" }
+    ],
+    errorComun: "✗ “I don't have some money” → ✓ “any money”. (some en pregunta es oferta: “Would you like some tea?”.)",
+    nivel: "A1"
   }
 ];
