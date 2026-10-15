@@ -894,5 +894,105 @@ const DICCIONARIO_ENTRIES = [
     ],
     errorComun: "Orden: ✗ “enough old” → ✓ “old enough”. Y con adjetivo basta too: ✗ “too much expensive” → ✓ “too expensive”.",
     nivel: "A1"
+  },
+  {
+    id: "first",
+    term: "First",
+    pron: "ferst",
+    tipo: "CONN",
+    significado: "Primero: abre una secuencia de pasos (first, then, finally).",
+    uso: "Empezá instrucciones o historias; first siempre abre, finally cierra.",
+    estructura: "First, + paso 1. Then… Finally…",
+    ejemplos: [
+      { en: "First, wash your hands.", es: "Primero, lavate las manos." },
+      { en: "First we ate, then we danced.", es: "Primero comimos, después bailamos." }
+    ],
+    errorComun: "First (orden) no es At first (al principio, con contraste): “At first I was scared, but then I enjoyed it”.",
+    nivel: "A1"
+  },
+  {
+    id: "after-that",
+    term: "After that",
+    pron: "áfter dat",
+    tipo: "CONN",
+    significado: "Después de eso: conecta un paso con el siguiente.",
+    uso: "Uní dos momentos; after that va solo, after necesita algo detrás.",
+    estructura: "Paso. After that, + paso siguiente.",
+    ejemplos: [
+      { en: "We had dinner. After that, we watched a film.", es: "Cenamos. Después de eso, vimos una peli." }
+    ],
+    errorComun: "After solo no conecta: ✗ “After, we went home” → ✓ “After that, we went home” o “After dinner, we went home”.",
+    nivel: "A1"
+  },
+  {
+    id: "finally",
+    term: "Finally",
+    pron: "fáinali",
+    tipo: "CONN",
+    significado: "Finalmente / por fin: cierra una secuencia o marca alivio.",
+    uso: "Cerrá historias e instrucciones; también expresa “al fin”.",
+    estructura: "…then… Finally, + último paso.",
+    ejemplos: [
+      { en: "Finally, we arrived!", es: "¡Por fin llegamos!" },
+      { en: "First cook, then serve. Finally, enjoy!", es: "Primero cociná, después serví. ¡Finalmente, a disfrutar!" }
+    ],
+    errorComun: "Finally cierra solo; con “de algo” usá at the end of: ✗ “At the end, we arrived” → ✓ “Finally, we arrived / At the end of the trip…”.",
+    nivel: "A1"
+  },
+  {
+    id: "such-as",
+    term: "Such as",
+    pron: "sach as",
+    tipo: "CONN",
+    significado: "Como por ejemplo / tales como: da ejemplos dentro de un grupo.",
+    uso: "Grupo + such as + lista. Nunca lleva oración con verbo.",
+    estructura: "Grupo + , such as + ejemplos.",
+    ejemplos: [
+      { en: "I like fruit, such as apples and bananas.", es: "Me gusta la fruta, como manzanas y bananas." }
+    ],
+    errorComun: "Such as + lista, no oración: ✗ “Such as I like apples” → ✓ “…such as apples”.",
+    nivel: "A1"
+  },
+  {
+    id: "for-example",
+    term: "For example",
+    pron: "for exampl",
+    tipo: "CONN",
+    significado: "Por ejemplo: introduce un caso concreto con oración completa.",
+    uso: "For example, + oración. Diferencia clave: such as + lista, for example + oración.",
+    estructura: "…, for example, + oración.",
+    ejemplos: [
+      { en: "Many countries are cold. For example, Canada is freezing in winter.", es: "Muchos países son fríos. Por ejemplo, Canadá se congela en invierno." }
+    ],
+    errorComun: "✗ “For example apples” → ✓ “For example, I love apples” o “…such as apples”.",
+    nivel: "A1"
+  },
+  {
+    id: "because-of",
+    term: "Because of",
+    pron: "bicos ov",
+    tipo: "CONN",
+    significado: "Por / a causa de + sustantivo: la versión corta de because.",
+    uso: "Because + oración; because of + sustantivo o frase sin verbo.",
+    estructura: "…because of + sustantivo.",
+    ejemplos: [
+      { en: "The match was cancelled because of the rain.", es: "El partido se canceló por la lluvia." }
+    ],
+    errorComun: "✗ “Because the rain, we stayed” → ✓ “Because of the rain, we stayed” o “Because it was raining, we stayed”.",
+    nivel: "A1"
+  },
+  {
+    id: "thats-why",
+    term: "That's why",
+    pron: "dats uai",
+    tipo: "CONN",
+    significado: "Por eso: presenta el resultado mirando hacia la causa.",
+    uso: "Causa. That's why + consecuencia. Muy hablado e informal.",
+    estructura: "Causa. That's why + consecuencia.",
+    ejemplos: [
+      { en: "It was late. That's why we ran.", es: "Era tarde. Por eso corrimos." }
+    ],
+    errorComun: "No lo mezcles con because: ✗ “That's why because…” → una causa, un conector: “It was late. That's why we ran”.",
+    nivel: "A1"
   }
 ];

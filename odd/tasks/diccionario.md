@@ -15,6 +15,7 @@ El usuario pidió un apartado Diccionario (significados + gramática) y empezar 
 - Tanda 3 (13 fichas): preposiciones In/On/At (PREP), pronombres sujeto/objeto/posesivos ×4 (PRON), presente simple Do-Does/Don't-Doesn't/-s (VERB), there is-are + negación/pregunta + some-any (EXIST). Chips y nav ×4; app.js sin cambios.
 - Tanda 4 (9 fichas): Can/Can't + continuo + -ing spelling + simple-vs-continuo (VERB ×4), contables + much-many + a lot-few-little (QTY ×3, filtro "Cantidad"), 's contracción + posesivo (APOS ×2, filtro "El 's"). app.js sin cambios.
 - Tanda 5 (10 fichas): be am-is-are + preguntas/respuestas + was-were + have-got + like/want + imperativos (VERB ×6), adverbios de frecuencia (ADV ×1, filtro "Adverbios"), this-that (DEM ×1, filtro "Demostrativos"), -ed/-ing (ADJ ×1, filtro "Adjetivos"), too-enough (QTY). app.js sin cambios.
+- Tanda 6 (7 fichas CONN): secuencia First/After that/Finally + ejemplificación Such as/For example + causa Because of/That's why. Then ya existía (no se duplicó). Sin filtros nuevos; solo conteos.
 - UI español rioplatense, teoría bilingüe; artefactos técnicos en inglés donde aplique.
 
 ## Constraints
@@ -37,6 +38,8 @@ El usuario pidió un apartado Diccionario (significados + gramática) y empezar 
 - [x] T10: Verificación + work-unit commit tanda 4 (`d1a7408`)
 - [x] T11: Tanda 5 — 10 fichas VERB/ADV/DEM/ADJ/QTY + 3 chips/nav + textos portal (60 fichas)
 - [x] T12: Verificación + work-unit commit tanda 5 (`bcf99a4`)
+- [x] T13: Tanda 6 — 7 fichas CONN secuencia/ejemplificación + conteos portal (67 fichas)
+- [ ] T14: Verificación + work-unit commit tanda 6
 
 ## Authorized scope
 Archivos autorizados: `Diccionario/` (nuevo), `index.html` (solo bloque tarjeta Diccionario), `odd/tasks/diccionario.md` (este doc). Nada fuera de esto.
@@ -53,6 +56,7 @@ Tanda 2 (T5): direct inline. Trigger evidence: 3 ediciones mecánicas ya compren
 Tanda 3 (T7): direct inline, misma evidencia (append 13 fichas + 4 chips/nav + textos; app.js intacto; 2 llamadas previas: cola de data.js + rama).
 Tanda 4 (T9): direct inline, misma evidencia (append 9 fichas + 2 chips/nav + textos; app.js intacto).
 Tanda 5 (T11): direct inline, misma evidencia (append 10 fichas + 3 chips/nav + textos; app.js intacto).
+Tanda 6 (T13): direct inline (append 7 fichas CONN + conteos portal/módulo; sin filtros ni app.js).
 
 ## Delivery forecast
 Nuevos archivos ~700-900 líneas authored (index ~150, style ~350, data ~200, app ~150). Supera heurístico 400 por ser módulo nuevo coherente — no se divide artificialmente. Estrategia: `single-pr` (una rama feature, un work-unit commit; push/PR decisión del usuario).
@@ -74,7 +78,8 @@ Excepción documentada: sitio estático sin runner determinista para UI. Sin RED
 - 2026-10-12: Tanda 2 implementada inline. Evidencia: `node --check Diccionario/data.js` PASS; conteo total:28 WH:9 HOW:6 ART:2 CONN:11, dupIds:0, sinCampos:0; tarjeta portal en 28 fichas. Commits `bae5421` + `d7d20ad`.
 - 2026-10-12: Tanda 3 implementada inline. Evidencia: total:41 WH:9 HOW:6 ART:2 CONN:11 PREP:3 PRON:4 VERB:3 EXIST:3, dupIds:0, sinCampos:0; 4 chips + 4 nav por grep; tarjeta portal en 41 fichas. Commits `119d2e6` + `19f1c91`.
 - 2026-10-12: Tanda 4 implementada inline (4 puntos juntos: can, continuo, cantidad, 's). Evidencia: `node --check Diccionario/data.js` PASS; total:50 VERB:7 QTY:3 APOS:2, dupIds:0, sinCampos:0; 2 chips + 2 nav verificados por grep; tarjeta portal en 50 fichas. Commits `d1a7408` + `d858d27`.
-- 2026-10-12: Tanda 5 implementada inline (be, adverbios, demostrativos, have got, imperativos, too-enough…). Evidencia: `node --check Diccionario/data.js` PASS; total:60 VERB:13 ADV:1 DEM:1 ADJ:1 QTY:4, dupIds:0, sinCampos:0; 3 chips + 3 nav por grep; tarjeta portal en 60 fichas. T12 (commit) pendiente.
+- 2026-10-12: Tanda 5 implementada inline (be, adverbios, demostrativos, have got, imperativos, too-enough…). Evidencia: `node --check Diccionario/data.js` PASS; total:60 VERB:13 ADV:1 DEM:1 ADJ:1 QTY:4, dupIds:0, sinCampos:0; 3 chips + 3 nav por grep; tarjeta portal en 60 fichas. Commits `bcf99a4` + `00023ef`.
+- 2026-10-12: Tanda 6 implementada inline (conectores de secuencia y ejemplificación). Evidencia: `node --check Diccionario/data.js` PASS; total:67 CONN:18, dupIds:0, sinCampos:0; tarjeta portal en 67 fichas. T14 (commit) pendiente.
 
 ## Commits
 | Commit | Message |
