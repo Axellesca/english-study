@@ -39,7 +39,7 @@ El usuario pidió un apartado Diccionario (significados + gramática) y empezar 
 - [x] T11: Tanda 5 — 10 fichas VERB/ADV/DEM/ADJ/QTY + 3 chips/nav + textos portal (60 fichas)
 - [x] T12: Verificación + work-unit commit tanda 5 (`bcf99a4`)
 - [x] T13: Tanda 6 — 7 fichas CONN secuencia/ejemplificación + conteos portal (67 fichas)
-- [ ] T14: Verificación + work-unit commit tanda 6
+- [x] T14: Verificación + work-unit commit tanda 6 (`92efa10`)
 
 ## Authorized scope
 Archivos autorizados: `Diccionario/` (nuevo), `index.html` (solo bloque tarjeta Diccionario), `odd/tasks/diccionario.md` (este doc). Nada fuera de esto.
@@ -89,3 +89,4 @@ Excepción documentada: sitio estático sin runner determinista para UI. Sin RED
 | 119d2e6 | feat(diccionario): add prepositions pronouns present-simple there-is-are batch |
 | d1a7408 | feat(diccionario): add can continuous quantity apostrophe batch |
 | bcf99a4 | feat(diccionario): add be adverbs demonstratives adjectives batch |
+| 92efa10 | feat(diccionario): add sequence and exemplification connectors batch |
