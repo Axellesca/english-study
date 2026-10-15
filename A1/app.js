@@ -290,16 +290,300 @@ const lessonsDatabase = {
       { question: "Listening Dictation: What is the feeling spoken?", type: "listening", speakText: "thirsty", answer: "thirsty", explanation: "La palabra pronunciada es 'thirsty' (tener sed)." }
     ]
   },
-  "RC12": {
-    title: "1 & 2 Revise and Check",
+  "3A": {
+    title: "3A: Britain: the Good and the Bad",
     theory: `
       <div class="theory-block">
-        <h3>Repaso General: Files 1 & 2</h3>
-        <p>Esta sección resume los conceptos evaluados en el examen de revisión de los módulos 1 y 2:</p>
+        <h3>1. Present Simple - Afirmativo (+)</h3>
+        <p>El <strong>present simple</strong> describe rutinas, hábitos y hechos generales. La forma cambia según la persona:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Sujeto</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td>I / you / we / they</td><td>Sujeto + verbo en <strong>forma base</strong></td><td>They <strong>live</strong> in a small town.</td></tr>
+              <tr><td>he / she / it</td><td>Sujeto + verbo + <strong>-s</strong></td><td>She <strong>works</strong> in a bank.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box">
+          💡 <strong>Marcadores de tiempo:</strong> every day, usually, always, often, sometimes, never, on Mondays, twice a week.
+          <em>I usually <strong>get up</strong> at seven.</em>
+        </p>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. La -s de la tercera persona</h3>
+        <p>Solo el sujeto <em>he / she / it</em> añade la <strong>-s</strong> al verbo en afirmativo. La ortografía tiene tres reglas:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Regla</th><th>Ejemplo</th><th>Frase completa</th></tr></thead>
+            <tbody>
+              <tr><td>Mayoría de verbos: <strong>+ s</strong></td><td>work → <strong>work<strong>s</strong></strong></td><td>He <strong>works</strong> in a hospital.</td></tr>
+              <tr><td>Termina en <strong>-ch, -sh, -s, -x, -o</strong>: <strong>+ es</strong></td><td>watch → <strong>watch<strong>es</strong></strong>, go → <strong>go<strong>es</strong></strong></td><td>She <strong>watches</strong> TV.</td></tr>
+              <tr><td>Consonante + <strong>y</strong>: <strong>-y → -ies</strong></td><td>study → <strong>stud<strong>ies</strong></strong>, fly → <strong>fl<strong>ies</strong></strong></td><td>They <strong>study</strong> English.</td></tr>
+              <tr><td>Excepción irregular</td><td>have → <strong>has</strong></td><td>He <strong>has</strong> a car.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box warning">
+          ⚠️ La <strong>-s</strong> es SOLO de la tercera persona en afirmativo. <em>She works</em> ✅ · <em>She work</em> ❌ · <em>They works</em> ❌.
+        </p>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Present Simple - Negativo (-)</h3>
+        <p>Para negar usamos <strong>don't</strong> o <strong>doesn't</strong> seguidos <em>siempre</em> del verbo en forma base:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Sujeto</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td>I / you / we / they</td><td>Sujeto + <strong>don't</strong> + verbo base</td><td>We <strong>don't eat</strong> takeaway food.</td></tr>
+              <tr><td>he / she / it</td><td>Sujeto + <strong>doesn't</strong> + verbo base</td><td>He <strong>doesn't wear</strong> a uniform.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box warning">
+          ⚠️ Con <strong>doesn't</strong> el verbo vuelve a la forma base: <em>She doesn't work</em> ✅ · <em>She doesn't works</em> ❌.
+        </p>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Pronunciación: /ɜː/ vs. /ə/</h3>
+        <p>El mismo sonido <strong>/ɜː/</strong> aparece con grafías distintas, y el sonido débil <strong>/ə/</strong> es la vocal Schwa en las sílabas átonas:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Sonido</th><th>Palabras</th><th>Transcripción</th></tr></thead>
+            <tbody>
+              <tr><td><strong>/ɜː/</strong> (vocal larga)</td><td>work, first, learn, turn</td><td>/wɜːk/, /fɜːst/, /lɜːn/, /tɜːn/</td></tr>
+              <tr><td><strong>/ə/</strong> (Schwa, átona)</td><td>about, again, teacher, family</td><td>/əˈbaʊt/, /əˈɡen/, /ˈtiː.tʃə/, /ˈfæm.əl.i/</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box">
+          💡 La <em>er</em> de <strong>worker</strong> y <strong>teacher</strong> se pronuncia Schwa /ə/, no /ɜː/: <em>a <strong>worker</strong></em> → /ˈwɜː.kə/.
+        </p>
+      </div>
+    `,
+    vocab: [
+      { english: "live", translation: "vivir / residir", phonetic: "/lɪv/" },
+      { english: "work", translation: "trabajar", phonetic: "/wɜːk/" },
+      { english: "study", translation: "estudiar", phonetic: "/ˈstʌd.i/" },
+      { english: "play", translation: "jugar", phonetic: "/pleɪ/" },
+      { english: "sleep", translation: "dormir", phonetic: "/sliːp/" },
+      { english: "cook", translation: "cocinar", phonetic: "/kʊk/" },
+      { english: "work in a bank", translation: "trabajar en un banco", phonetic: "/wɜːk ɪn ə bæŋk/" },
+      { english: "live in a small town", translation: "vivir en un pueblo pequeño", phonetic: "/lɪv ɪn ə smɔːl taʊn/" },
+      { english: "eat takeaway food", translation: "comer comida para llevar", phonetic: "/iːt ˈteɪk.ə.weɪ fuːd/" },
+      { english: "wear a uniform", translation: "llevar uniforme", phonetic: "/weər ə ˈjuː.nɪ.fɔːm/" },
+      { english: "speak English", translation: "hablar inglés", phonetic: "/spiːk ˈɪŋ.ɡlɪʃ/" },
+      { english: "watch TV", translation: "ver la televisión", phonetic: "/wɒtʃ ˌtiːˈviː/" }
+    ],
+    exercises: [
+      { question: "Complete with the correct form: My sister ___ (work) in a hospital.", type: "input", answer: "works", placeholder: "verb + s", explanation: "Sujeto 'she' (tercera persona) en afirmativo: work → works." },
+      { question: "Select the correct negative: He ___ like coffee.", options: ["doesn't likes", "doesn't like", "don't like"], type: "choice", correct: 1, explanation: "Con 'he' usamos doesn't y el verbo en forma base: doesn't like." },
+      { question: "Complete with the correct form: They ___ (study) English at school.", type: "input", answer: "study", placeholder: "verb", explanation: "El sujeto 'they' no cambia el verbo: study (sin -ies)." },
+      { question: "Order the words to make a sentence:", pool: ["works", "She", "a", "bank", "in"], correct: ["She", "works", "in", "a", "bank"], type: "scramble", explanation: "Present simple afirmativo: Sujeto + verbo con -s + complemento." },
+      { question: "Listening Dictation: Listen and write the verb you hear.", type: "listening", speakText: "studies", answer: "studies", explanation: "Study → studies (consonante + y → -ies)." }
+    ]
+  },
+  "3B": {
+    title: "3B: 9 to 5",
+    theory: `
+      <div class="theory-block">
+        <h3>1. Present Simple - Preguntas (?)</h3>
+        <p>Para preguntar en present simple usamos el auxiliar <strong>do</strong> (I/you/we/they) o <strong>does</strong> (he/she/it), seguido del verbo en <strong>forma base</strong>:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td>Sujeto I/you/we/they</td><td><strong>Do</strong> + sujeto + verbo base + ?</td><td><strong>Do</strong> you <strong>start</strong> at nine?</td></tr>
+              <tr><td>Sujeto he/she/it</td><td><strong>Does</strong> + sujeto + verbo base + ?</td><td><strong>Does</strong> she <strong>work</strong> on Fridays?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box warning">
+          ⚠️ El auxiliar <strong>ya lleva la -s</strong>: <em>Does she work?</em> ✅ · <em>Does she works?</em> ❌ · <em>Do she work?</em> ❌.
+        </p>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. Respuestas cortas</h3>
+        <p>Se responde con el mismo auxiliar de la pregunta. En la respuesta corta afirmativa <strong>no</strong> se repite el verbo principal:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta</th><th>Respuesta (+)</th><th>Respuesta (-)</th></tr></thead>
+            <tbody>
+              <tr><td>Do you live here?</td><td>Yes, I <strong>do</strong>.</td><td>No, I <strong>don't</strong>.</td></tr>
+              <tr><td>Does he drive to work?</td><td>Yes, he <strong>does</strong>.</td><td>No, he <strong>doesn't</strong>.</td></tr>
+              <tr><td>Do they start at nine?</td><td>Yes, they <strong>do</strong>.</td><td>No, they <strong>don't</strong>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box">
+          💡 <strong>Yes, he does.</strong> (no "does drive") · <strong>No, he doesn't.</strong> (sí lleva el auxiliar).
+        </p>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Preguntas con Question Words (WH-)</h3>
+        <p>Las palabras interrogativas van <strong>al principio</strong>, antes del auxiliar:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Palabra</th><th>Pregunta sobre...</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>What time</strong></td><td>¿A qué hora...?</td><td><strong>What time do you start</strong> work?</td></tr>
+              <tr><td><strong>Where</strong></td><td>¿Dónde...?</td><td><strong>Where does she work</strong>?</td></tr>
+              <tr><td><strong>Why</strong></td><td>¿Por qué...?</td><td><strong>Why do you take</strong> the bus?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box">
+          💡 Estructura: <strong>Question word + do/does + sujeto + verbo base + ?</strong>
+        </p>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Pronunciación: enlace (linking)</h3>
+        <p>En inglés hablado, la consonante final se une con la vocal siguiente: <strong>consonante + vocal = enlace</strong>.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Frase</th><th>Enlazada</th><th>Transcripción</th></tr></thead>
+            <tbody>
+              <tr><td>nine to five</td><td>nine<strong>t</strong>o five</td><td>/naɪn.təˈfaɪv/</td></tr>
+              <tr><td>an hour and a half</td><td>a<strong>n</strong> hour</td><td>/ən ˈaʊər/</td></tr>
+              <tr><td>go to work</td><td>go<strong>t</strong>o work</td><td>/ɡə.tə ˈwɜːk/</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "teacher", translation: "profesor/a", phonetic: "/ˈtiː.tʃə/" },
+      { english: "nurse", translation: "enfermero/a", phonetic: "/nɜːs/" },
+      { english: "waiter", translation: "camarero", phonetic: "/ˈweɪ.tə/" },
+      { english: "mechanic", translation: "mecánico", phonetic: "/məˈkæn.ɪk/" },
+      { english: "receptionist", translation: "recepcionista", phonetic: "/rɪˈsep.ʃən.ɪst/" },
+      { english: "shop assistant", translation: "dependiente/a", phonetic: "/ʃɒp əˈsɪs.tənt/" },
+      { english: "police officer", translation: "policía", phonetic: "/pəˈliːs ˈɒf.ɪ.sə/" },
+      { english: "hairdresser", translation: "peluquero/a", phonetic: "/ˈhea.dres.ə/" },
+      { english: "bus driver", translation: "conductor de autobús", phonetic: "/bʌs ˈdraɪ.və/" },
+      { english: "o'clock", translation: "en punto", phonetic: "/əˈklɒk/" },
+      { english: "half past", translation: "y media", phonetic: "/hɑːf pɑːst/" },
+      { english: "quarter past", translation: "y cuarto", phonetic: "/ˈkwɔː.tə pɑːst/" },
+      { english: "quarter to", translation: "menos cuarto", phonetic: "/ˈkwɔː.tə tuː/" },
+      { english: "ten past", translation: "y diez", phonetic: "/ten pɑːst/" }
+    ],
+    exercises: [
+      { question: "Complete the question: ___ you start work at nine?", type: "input", answer: "Do", placeholder: "Do/Does/Is", explanation: "Para el sujeto 'you' usamos el auxiliar 'Do'." },
+      { question: "Select the correct question: ___ your brother a mechanic?", options: ["Is", "Does", "Do"], type: "choice", correct: 1, explanation: "'your brother' es he: usamos 'Does' + verbo base." },
+      { question: "Complete the short answer: — Does she work on Sundays? — Yes, she ___.", type: "input", answer: "does", placeholder: "do/does", explanation: "La respuesta corta afirmativa repite el auxiliar: Yes, she does." },
+      { question: "Order the words to make a question:", pool: ["start", "What", "you", "time", "do", "?"], correct: ["What", "time", "do", "you", "start", "?"], type: "scramble", explanation: "Estructura: What time + do + sujeto + verbo + ?" },
+      { question: "Listening Dictation: What time is it? (es la 1:15)", type: "listening", speakText: "a quarter past one", answer: "a quarter past one", explanation: "'A quarter past one' significa la una y cuarto." }
+    ]
+  },
+  "3C": {
+    title: "3C: Love Me, Love My Dog",
+    theory: `
+      <div class="theory-block">
+        <h3>1. Orden de las palabras: ASI</h3>
+        <p>En una pregunta de sí o no, el orden es <strong>ASI</strong>: <strong>Auxiliar + Sujeto + Infinitivo</strong>. El auxiliar siempre va primero:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Tipo</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td>Pregunta</td><td><strong>Do / Does</strong> + Sujeto + verbo base + ?</td><td><strong>Do you speak</strong> Spanish?</td></tr>
+              <tr><td>Respuesta corta (+)</td><td>Yes, + Sujeto + <strong>do / does</strong></td><td>Yes, I <strong>do</strong>.</td></tr>
+              <tr><td>Respuesta corta (-)</td><td>No, + Sujeto + <strong>don't / doesn't</strong></td><td>No, I <strong>don't</strong>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. Orden de las palabras: QUASI</h3>
+        <p>Cuando la pregunta empieza con un <strong>Question Word</strong>, el orden es <strong>QUASI</strong>: <strong>Question word + Auxiliar + Sujeto + Infinitivo</strong></p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Question word</th><th>Pregunta completa</th><th>Respuesta típica</th></tr></thead>
+            <tbody>
+              <tr><td><strong>What</strong></td><td><strong>What do you do</strong> on Sundays?</td><td>I'm a teacher.</td></tr>
+              <tr><td><strong>Where</strong></td><td><strong>Where do you live</strong>?</td><td>I live in Lima.</td></tr>
+              <tr><td><strong>Who</strong></td><td><strong>Who does she work</strong> with?</td><td>She works with Ben.</td></tr>
+              <tr><td><strong>When</strong></td><td><strong>When do you start</strong> work?</td><td>At nine o'clock.</td></tr>
+              <tr><td><strong>Why</strong></td><td><strong>Why do you take</strong> the bus?</td><td>Because it's fast.</td></tr>
+              <tr><td><strong>How</strong></td><td><strong>How do you go</strong> to work?</td><td>By train.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Preguntas con el verbo be</h3>
+        <p>Con el verbo <em>to be</em> <strong>no</strong> usamos do/does: el auxiliar es el propio <em>be</em>:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta</th><th>Estructura</th><th>Respuesta</th></tr></thead>
+            <tbody>
+              <tr><td>Where is she from?</td><td>Question word + <strong>be</strong> + sujeto + ?</td><td>She's from Spain.</td></tr>
+              <tr><td>How old are you?</td><td>Question word + <strong>be</strong> + sujeto + ?</td><td>I'm thirty.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box warning">
+          ⚠️ Nunca se pone <em>do</em> con el verbo be: <em>Where is she from?</em> ✅ · <em>Where does she from?</em> ❌.
+        </p>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Errores frecuentes de orden</h3>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Incorrecto ❌</th><th>Correcto ✅</th><th>Por qué</th></tr></thead>
+            <tbody>
+              <tr><td>Where you live?</td><td>Where <strong>do you live</strong>?</td><td>Falta el auxiliar <em>do</em>.</td></tr>
+              <tr><td>What he does at work?</td><td>What <strong>does he do</strong> at work?</td><td>El auxiliar es <em>does</em>; el verbo queda en base.</td></tr>
+              <tr><td>Where she is from?</td><td>Where <strong>is she</strong> from?</td><td>Con be, el auxiliar es <em>is</em>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rule-highlight-box">
+          💡 El auxiliar siempre es <strong>do, does, is, are</strong> — nunca el verbo principal.
+        </p>
+      </div>
+    `,
+    vocab: [
+      { english: "What", translation: "¿Qué? ¿Cuál?", phonetic: "/wɒt/" },
+      { english: "Where", translation: "¿Dónde?", phonetic: "/weər/" },
+      { english: "Who", translation: "¿Quién?", phonetic: "/huː/" },
+      { english: "Whose", translation: "¿De quién?", phonetic: "/huːz/" },
+      { english: "When", translation: "¿Cuándo?", phonetic: "/wen/" },
+      { english: "Why", translation: "¿Por qué?", phonetic: "/waɪ/" },
+      { english: "How", translation: "¿Cómo?", phonetic: "/haʊ/" },
+      { english: "How much", translation: "¿Cuánto? (contables)", phonetic: "/haʊ mʌtʃ/" },
+      { english: "How many", translation: "¿Cuántos? (con contables)", phonetic: "/haʊ ˈme.ni/" },
+      { english: "What time", translation: "¿A qué hora?", phonetic: "/wɒt taɪm/" }
+    ],
+    exercises: [
+      { question: "Order the words to make a correct question:", pool: ["you", "Where", "do", "live", "?"], correct: ["Where", "do", "you", "live", "?"], type: "scramble", explanation: "Estructura QUASI: Question word + do + sujeto + verbo + ?" },
+      { question: "Select the correct question: ___ is your sister from?", options: ["Where does", "Where do", "Where is"], type: "choice", correct: 2, explanation: "Con el verbo be usamos 'is', sin do/does." },
+      { question: "Complete with the correct question word: ___ do you go to work? (¿En qué transporte?)", type: "input", answer: "How", placeholder: "What/Where/When/How", explanation: "La pregunta es sobre el modo o medio de transporte: 'How'." },
+      { question: "Order the words: '¿Cuándo empiezas el trabajo?'", pool: ["do", "When", "work", "you", "start", "?"], correct: ["When", "do", "you", "start", "work", "?"], type: "scramble", explanation: "Orden QUASI: When + do + sujeto + verbo base + ?" },
+      { question: "Listening Dictation: Listen and write the question word you hear.", type: "listening", speakText: "why", answer: "why", explanation: "La palabra pronunciada es 'why' (¿por qué?)." }
+    ]
+  },
+  "RC12": {
+    title: "1, 2 & 3 Revise and Check",
+    theory: `
+      <div class="theory-block">
+        <h3>Repaso General: Files 1, 2 & 3</h3>
+        <p>Esta sección resume los conceptos evaluados en el examen de revisión de los archivos 1, 2 y 3:</p>
         <ul>
           <li><strong>Gramática:</strong> El verbo <em>be</em> en todos sus formatos, los pronombres sujeto, adjetivos posesivos, sustantivos singulares y plurales con sus artículos, la sintaxis de los adjetivos y el uso de imperativos y sugerencias con <em>let's</em>.</li>
+          <li><strong>Gramática (File 3):</strong> El <strong>present simple</strong> en sus tres formas: afirmativo con la <strong>-s</strong> de la tercera persona, negativo con <em>don't / doesn't</em> + verbo base, y preguntas con <em>Do / Does</em> + verbo base. Incluye el orden de las palabras en preguntas (<strong>ASI</strong> y <strong>QUASI</strong>).</li>
           <li><strong>Vocabulario:</strong> Días de la semana, números 0-100, países y nacionalidades, lenguaje del salón, cosas personales y cotidianas, adjetivos calificativos y colores, así como la terminología de sentimientos.</li>
+          <li><strong>Vocabulario (File 3):</strong> <em>Verb phrases</em> para describir rutinas, profesiones (<em>mechanic, nurse, receptionist</em>) y la hora (<em>o'clock, half past, quarter past, quarter to</em>), además de las palabras interrogativas <em>what, where, who, when, why, how</em>.</li>
           <li><strong>Pronunciación:</strong> Entonación de preguntas, pronunciación de plurales (-s, -es, -ies), sonidos de vocales largas y cortas, y fonemas consonánticos básicos.</li>
+          <li><strong>Pronunciación (File 3):</strong> Contraste <strong>/ɜː/</strong> vs. <strong>/ə/</strong> (Schwa) y el <em>linking</em> entre consonante y vocal (<em>nine to five</em> → /naɪn.təˈfaɪv/).</li>
         </ul>
       </div>
     `,
@@ -319,7 +603,12 @@ const lessonsDatabase = {
       { question: "Vocabulary: Choose correct spelling:", options: ["Wensday", "Wednesday", "Wednesdey"], type: "choice", correct: 1, explanation: "La ortografía correcta es 'Wednesday'." },
       { question: "Pronunciation: Select word with a different vowel sound:", options: ["cat", "bag", "day"], type: "choice", correct: 2, explanation: "'Cat' y 'bag' tienen el sonido /æ/, mientras que 'day' tiene el diptongo /eɪ/." },
       { question: "Pronunciation: Select word with different plural sound (/ɪz/):", options: ["watches", "classes", "keys"], type: "choice", correct: 2, explanation: "'Watches' y 'classes' terminan en el sonido /ɪz/. 'Keys' termina en /z/." },
-      { question: "Listening Dictation: Spell this word.", type: "listening", speakText: "c, l, a, s, s", answer: "class", explanation: "C-L-A-S-S deletrea 'class'." }
+      { question: "Listening Dictation: Spell this word.", type: "listening", speakText: "c, l, a, s, s", answer: "class", explanation: "C-L-A-S-S deletrea 'class'." },
+      { question: "Grammar: Complete with the correct form: My brother ___ (work) in a hospital.", type: "input", answer: "works", placeholder: "verb + s", explanation: "Present simple afirmativo con 'he': work → works." },
+      { question: "Grammar: Make it negative: They like horror films. → They ___ horror films.", type: "input", answer: "don't like", placeholder: "don't + base", explanation: "Con 'they' usamos don't + verbo base: don't like. También se acepta 'do not like'." },
+      { question: "Grammar: Complete the question: ___ you live in Lima?", type: "input", answer: "Do", placeholder: "Do/Does/Is", explanation: "Para el sujeto 'you' el auxiliar es 'Do'." },
+      { question: "Vocabulary: A person who repairs and fixes cars is a ___.", type: "input", answer: "mechanic", placeholder: "job", explanation: "Quien repara y arregla coches es un mecánico ('mechanic')." },
+      { question: "Vocabulary: Choose the correct option: It's 9:15. It's ___ past nine.", options: ["a quarter", "half", "ten minutes"], type: "choice", correct: 0, explanation: "Un cuarto de hora = a quarter: 'a quarter past nine'." }
     ]
   }
 };
@@ -2895,6 +3184,34 @@ const vocabularyBankDatabase = {
     { english: "the United States", translation: "Estados Unidos", phonetic: "/ðə juːˌnaɪ.tɪd ˈsteɪts/" },
     { english: "American", translation: "estadounidense", phonetic: "/əˈmer.ɪ.kən/" }
   ],
+  "questions": [
+    { english: "What", translation: "¿Qué? ¿Cuál?", phonetic: "/wɒt/" },
+    { english: "Where", translation: "¿Dónde?", phonetic: "/weər/" },
+    { english: "Who", translation: "¿Quién?", phonetic: "/huː/" },
+    { english: "Whose", translation: "¿De quién?", phonetic: "/huːz/" },
+    { english: "When", translation: "¿Cuándo?", phonetic: "/wen/" },
+    { english: "Why", translation: "¿Por qué?", phonetic: "/waɪ/" },
+    { english: "How", translation: "¿Cómo?", phonetic: "/haʊ/" },
+    { english: "How much", translation: "¿Cuánto? (contables)", phonetic: "/haʊ mʌtʃ/" },
+    { english: "How many", translation: "¿Cuántos? (con contables)", phonetic: "/haʊ ˈme.ni/" },
+    { english: "What time", translation: "¿A qué hora?", phonetic: "/wɒt taɪm/" },
+    { english: "Do you know...?", translation: "¿Sabes...?", phonetic: "/dʒu juː nəʊ.../" },
+    { english: "Could you repeat that?", translation: "¿Podrías repetir eso?", phonetic: "/kʊd juː rɪˈpiːt ðæt/" }
+  ],
+  "time": [
+    { english: "o'clock", translation: "en punto", phonetic: "/əˈklɒk/" },
+    { english: "ten past", translation: "y diez", phonetic: "/ten pɑːst/" },
+    { english: "quarter past", translation: "y cuarto", phonetic: "/ˈkwɔː.tə pɑːst/" },
+    { english: "half past", translation: "y media", phonetic: "/hɑːf pɑːst/" },
+    { english: "twenty past", translation: "y veinte", phonetic: "/ˈtwen.ti pɑːst/" },
+    { english: "twenty-five to", translation: "veinticinco para", phonetic: "/ˈtwen.ti faɪv tuː/" },
+    { english: "quarter to", translation: "menos cuarto", phonetic: "/ˈkwɔː.tə tuː/" },
+    { english: "five to", translation: "menos cinco", phonetic: "/faɪv tuː/" },
+    { english: "It's nine o'clock.", translation: "Son las nueve en punto.", phonetic: "/ɪts naɪn əˈklɒk/" },
+    { english: "in the morning", translation: "por la mañana", phonetic: "/ɪn ðə ˈmɔː.nɪŋ/" },
+    { english: "in the afternoon", translation: "por la tarde", phonetic: "/ɪn ðiː ˌɑː.fəˈnuːn/" },
+    { english: "at night", translation: "de noche", phonetic: "/æt naɪt/" }
+  ],
   "classroom": [
     { english: "Open your books", translation: "Abran sus libros", phonetic: "/ˈəʊ.pən jɔː buːks/" },
     { english: "Close the door", translation: "Cierra la puerta", phonetic: "/kləʊz ðə dɔː/" },
@@ -3093,18 +3410,21 @@ const app = {
     lessonsCompleted: {
       "1A": false, "1B": false, "1C": false, 
       "2A": false, "2B": false, "2C": false,
+      "3A": false, "3B": false, "3C": false,
       "RC12": false
     },
     scores: {
       "1A": 0, "1B": 0, "1C": 0,
       "2A": 0, "2B": 0, "2C": 0,
+      "3A": 0, "3B": 0, "3C": 0,
       "RC12": 0,
       "GB1": 0, "GB2": 0, "GB3": 0
     },
     vocabGamesCompleted: {
       "days": false, "countries": false, "classroom": false,
       "things": false, "adjectives": false, "verbs": false,
-      "jobs": false, "family": false
+      "jobs": false, "family": false,
+      "questions": false, "time": false
     }
   },
   
@@ -3275,14 +3595,16 @@ const app = {
     let scoreSum = 0;
     let maxPossibleScore = 0;
     
-    // 7 lessons (5 questions each = 35) + 3 grammar banks (10 questions each = 30)
-    // Revise check is 10 questions.
-    // Total quiz count is: 6 * 5 = 30 + 10 = 40 (lessons). 3 * 10 = 30 (grammar). Total = 70.
+    // 9 lessons (5 questions each = 45) + 3 grammar banks (10 questions each = 30)
+    // Revise check takes its length from lessonsDatabase.RC12.exercises so it never drifts.
+    // Total quiz count is: 9 * 5 = 45 + 15 (revise check) = 60 (lessons). 3 * 10 = 30 (grammar). Total = 90.
     const keys = Object.keys(this.progress.scores);
     keys.forEach(k => {
       scoreSum += this.progress.scores[k];
-      if (k === 'RC12') maxPossibleScore += 10;
-      else if (k.startsWith('GB')) maxPossibleScore += 10;
+      if (k === 'RC12') {
+        const rcExercises = lessonsDatabase[k] ? lessonsDatabase[k].exercises : null;
+        maxPossibleScore += rcExercises ? rcExercises.length : 10;
+      } else if (k.startsWith('GB')) maxPossibleScore += 10;
       else maxPossibleScore += 5;
     });
     
