@@ -1,5 +1,5 @@
 /**
- * English File Elementary - Módulo 2 (Units 4A–4C, 5A–5C)
+ * English File Elementary - Módulo 2 (Units 4A–4C, 5A–5C, 6A–6C)
  * Lógica de UI, voz, ejercicios y progreso.
  * Contenido en data.js (LESSONS + BANKS) — cargar ANTES de este archivo.
  */
@@ -74,14 +74,16 @@ const AudioSynth = {
 // Progress groups: which lesson keys belong to which unit block
 const PROGRESS_GROUPS = {
   units4: ['4A', '4B', '4C', 'RC4', 'gb4'],
-  units5: ['5A', '5B', '5C', 'RC5', 'gb5']
+  units5: ['5A', '5B', '5C', 'RC5', 'gb5'],
+  units6: ['6A', '6B', '6C', 'RC6', 'gb6']
 };
 
 // Default flat progress for migration / reset
 function defaultProgress() {
   return {
     "4A": false, "4B": false, "4C": false, "RC4": false, "gb4": false,
-    "5A": false, "5B": false, "5C": false, "RC5": false, "gb5": false
+    "5A": false, "5B": false, "5C": false, "RC5": false, "gb5": false,
+    "6A": false, "6B": false, "6C": false, "RC6": false, "gb6": false
   };
 }
 
@@ -334,6 +336,7 @@ const app = {
     const totalPct = this.pctForKeys(allKeys);
     const units4Pct = this.pctForKeys(PROGRESS_GROUPS.units4);
     const units5Pct = this.pctForKeys(PROGRESS_GROUPS.units5);
+    const units6Pct = this.pctForKeys(PROGRESS_GROUPS.units6);
 
     const fillBar = document.getElementById('overall-progress-fill');
     if (fillBar) fillBar.style.width = totalPct + '%';
@@ -358,6 +361,8 @@ const app = {
     if (g4) g4.innerText = units4Pct + '%';
     const g5 = document.getElementById('progress-units5');
     if (g5) g5.innerText = units5Pct + '%';
+    const g6 = document.getElementById('progress-units6');
+    if (g6) g6.innerText = units6Pct + '%';
     const gT = document.getElementById('progress-total');
     if (gT) gT.innerText = totalPct + '%';
 
@@ -815,7 +820,7 @@ const app = {
       this.renderCurrentGrammarQuiz();
     } else {
       AudioSynth.playSuccess();
-      const flagKey = this.state.grammarModule === 5 ? 'gb5' : 'gb4';
+      const flagKey = this.state.grammarModule === 5 ? 'gb5' : this.state.grammarModule === 6 ? 'gb6' : 'gb4';
       this.state.progress[flagKey] = true;
       this.updateStatsUI();
 
@@ -1054,9 +1059,13 @@ const app = {
       { sym: "/s/", word: "snake / hats", type: "consonant" },
       { sym: "/z/", word: "zebra / dogs", type: "consonant" },
       { sym: "/ɪz/", word: "boxes / watches", type: "consonant" },
+      { sym: "/j/", word: "yes / year", type: "consonant" },
       { sym: "/æ/", word: "cat / family", type: "vowel" },
       { sym: "/ʌ/", word: "up / brother", type: "vowel" },
-      { sym: "/ɜː/", word: "bird / early", type: "vowel" }
+      { sym: "/ɜː/", word: "bird / early", type: "vowel" },
+      { sym: "/aɪ/", word: "like / ride", type: "vowel" },
+      { sym: "/ɪ/", word: "it / village", type: "vowel" },
+      { sym: "/iː/", word: "leave / eat", type: "vowel" }
     ];
 
     const grid = document.getElementById('phonemes-module-grid');

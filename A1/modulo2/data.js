@@ -594,6 +594,424 @@ const LESSONS = {
   },
 
   // -------------------------------------------------------------------------
+  // UNIDAD 6A — object pronouns (A North African story)
+  // -------------------------------------------------------------------------
+  "6A": {
+    title: "6A: Object Pronouns (A North African Story)",
+    module: 6,
+    theory: `
+      <div class="theory-block">
+        <h3>1. Object pronouns: los pronombres objeto</h3>
+        <p>Los <strong>object pronouns</strong> van <strong>después del verbo</strong> o después de una <strong>preposición</strong>, cuando la persona o cosa recibe la acción: <em>I love him. / Can you help me? / Look at them!</em></p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Sujeto (hace la acción)</th><th>Objeto (recibe la acción)</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>I</strong></td><td><strong>me</strong></td><td>Can you help <strong>me</strong>?</td></tr>
+              <tr><td><strong>you</strong></td><td><strong>you</strong></td><td>I love <strong>you</strong>.</td></tr>
+              <tr><td><strong>he</strong></td><td><strong>him</strong></td><td>I want to meet <strong>him</strong>.</td></tr>
+              <tr><td><strong>she</strong></td><td><strong>her</strong></td><td>I see <strong>her</strong> every day.</td></tr>
+              <tr><td><strong>it</strong></td><td><strong>it</strong></td><td>I like <strong>it</strong> a lot.</td></tr>
+              <tr><td><strong>we</strong></td><td><strong>us</strong></td><td>She helps <strong>us</strong>.</td></tr>
+              <tr><td><strong>they</strong></td><td><strong>them</strong></td><td>I can't find <strong>them</strong>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 El <strong>sujeto</strong> hace la acción y el <strong>objeto</strong> la recibe: <em>I love him</em> = yo (sujeto) amo ~ él (objeto). Es la misma idea que el genitivo <em>'s</em> del 4A, pero con personas.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. Después del verbo: verb + object pronoun</h3>
+        <p>Con verbos como <strong>like, love, want, know, find, see, meet, call, help</strong>, el pronombre objeto va justo después del verbo:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>✅ Correcto</th><th>❌ Incorrecto</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td>I love <strong>him</strong>.</td><td>I love <em>he</em>.</td><td>Lo amo.</td></tr>
+              <tr><td>She likes <strong>us</strong>.</td><td>She likes <em>we</em>.</td><td>Le caemos bien.</td></tr>
+              <tr><td>Do you remember <strong>her</strong>?</td><td>Do you remember <em>she</em>?</td><td>¿Te acuerdas de ella?</td></tr>
+              <tr><td>I can't find <strong>them</strong>.</td><td>I can't find <em>they</em>.</td><td>No los encuentro.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Error típico: usar el pronombre sujeto en posición de objeto. <em>I love he</em> ❌ → <em>I love <strong>him</strong></em> ✅ · <em>I like she</em> ❌ → <em>I like <strong>her</strong></em> ✅.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Después de preposiciones: to, at, for, with...</h3>
+        <p>Las preposiciones <strong>to, at, for, with, about, from</strong> van SIEMPRE seguidas de pronombre objeto:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Expresión</th><th>Ejemplo</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td><strong>to + objeto</strong></td><td>Write <strong>to me</strong> soon.</td><td>Escríbeme pronto.</td></tr>
+              <tr><td><strong>at + objeto</strong></td><td>Look <strong>at them</strong>!</td><td>¡Míralos!</td></tr>
+              <tr><td><strong>for + objeto</strong></td><td>It's <strong>for me</strong>.</td><td>Es para mí.</td></tr>
+              <tr><td><strong>with + objeto</strong></td><td>Come <strong>with us</strong>.</td><td>Ven con nosotros.</td></tr>
+              <tr><td><strong>about + objeto</strong></td><td>Don't talk <strong>about him</strong>.</td><td>No hables de él.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 <strong>you</strong> es igual como sujeto y como objeto, singular y plural: <em>I love you</em> (a ti / a ustedes). El plural se entiende por contexto: <em>Can I ask you something?</em>
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Respuestas rápidas con me</h3>
+        <p>En conversación, las reacciones cortas usan pronombre objeto: <strong>Me too</strong> (= yo también), <strong>Not me!</strong> (= yo no), <strong>It's me</strong> (= soy yo):</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Situación</th><th>Respuesta</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td>"I love this song."</td><td><strong>Me too</strong>!</td><td>Yo también.</td></tr>
+              <tr><td>"Who broke the cup?"</td><td><strong>Not me</strong>!</td><td>¡Yo no!</td></tr>
+              <tr><td>"Who's calling?"</td><td><strong>It's me</strong>.</td><td>Soy yo.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ En las respuestas cortas <strong>nunca</strong> decimos <em>I too</em> ❌ ni <em>Is me</em> ❌. Siempre con objeto: <strong>Me too</strong> ✅ · <strong>It's me</strong> ✅.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>5. Pronunciación: /aɪ/, /ɪ/ y /iː/</h3>
+        <p>Tres sonidos de vocal que en español se confunden y en inglés son muy distintos:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Símbolo</th><th>Suena como</th><th>Palabras del módulo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>/aɪ/</strong></td><td>"ai" (como <em>die</em>)</td><td>like /laɪk/ · arrive /əˈraɪv/ · decide /dɪˈsaɪd/ · inside /ˌɪnˈsaɪd/</td></tr>
+              <tr><td><strong>/ɪ/</strong></td><td>"i" corta y relajada</td><td>him /hɪm/ · village /ˈvɪlɪdʒ/ · it /ɪt/</td></tr>
+              <tr><td><strong>/iː/</strong></td><td>"ii" larga y tensa (como <em>see</em>)</td><td>leave /liːv/ · three /θriː/ · me /miː/</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ /ɪ/ y /iː/ distinguen palabras: <em>ship /ʃɪp/</em> (barco) ≠ <em>sheep /ʃiːp/</em> (oveja). El /iː/ es más largo y tenso: <em>leave /liːv/</em> suena "liiiv" — no lo cortes como <em>live /lɪv/</em> (vivir).
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "me", translation: "me / a mí (objeto)", phonetic: "/miː/" },
+      { english: "you (object)", translation: "te / a ti (objeto)", phonetic: "/juː/" },
+      { english: "him", translation: "lo / a él", phonetic: "/hɪm/" },
+      { english: "her", translation: "la / a ella", phonetic: "/hɜː/" },
+      { english: "it (object)", translation: "lo, la (objeto)", phonetic: "/ɪt/" },
+      { english: "us", translation: "nos / a nosotros", phonetic: "/ʌs/" },
+      { english: "them", translation: "los, las / a ellos", phonetic: "/ðem/" },
+      { english: "arrive", translation: "llegar (a un lugar)", phonetic: "/əˈraɪv/" },
+      { english: "comfortable", translation: "cómodo/a", phonetic: "/ˈkʌmftəbl/" },
+      { english: "decide", translation: "decidir", phonetic: "/dɪˈsaɪd/" },
+      { english: "desert", translation: "desierto", phonetic: "/ˈdezət/" },
+      { english: "inside", translation: "dentro (de)", phonetic: "/ˌɪnˈsaɪd/" },
+      { english: "into", translation: "dentro de / hacia dentro", phonetic: "/ˈɪntu/" },
+      { english: "leave", translation: "irse / dejar", phonetic: "/liːv/" },
+      { english: "mountain", translation: "montaña", phonetic: "/ˈmaʊntən/" },
+      { english: "palace", translation: "palacio", phonetic: "/ˈpæləs/" },
+      { english: "sell", translation: "vender", phonetic: "/sel/" },
+      { english: "strange", translation: "extraño/a", phonetic: "/streɪndʒ/" },
+      { english: "surprised", translation: "sorprendido/a", phonetic: "/səˈpraɪzd/" },
+      { english: "through", translation: "a través de", phonetic: "/θruː/" },
+      { english: "toward", translation: "hacia", phonetic: "/təˈwɔːd/" },
+      { english: "valuable", translation: "valioso/a", phonetic: "/ˈvæljuəbl/" },
+      { english: "village", translation: "pueblo / aldea", phonetic: "/ˈvɪlɪdʒ/" }
+    ],
+    exercises: [
+      { question: "Complete: I love Kate, but she doesn't love ___ (I).", type: "input", answer: "me", placeholder: "pronoun", explanation: "Verbo + pronombre objeto: love me. 'I' es sujeto, no objeto." },
+      { question: "Choose the correct option: I can't find ___ anywhere.", options: ["he", "him"], type: "choice", correct: 1, explanation: "Después del verbo find va el pronombre objeto: him." },
+      { question: "Complete with a pronoun: I like this song very much. → I like ___ very much.", type: "input", answer: "it", placeholder: "pronoun", explanation: "'this song' = it (cosa, objeto)." },
+      { question: "Order the words to ask for help:", pool: ["help", "me", "you", "Can", "?"], correct: ["Can", "you", "help", "me", "?"], type: "scramble", explanation: "Can + sujeto + verbo base + objeto + ?: Can you help me?" },
+      { question: "Listening: Listen and type the phrase you hear.", type: "listening", speakText: "Look at them", answer: "look at them", explanation: "La frase hablada es 'Look at them' (preposición + pronombre objeto)." }
+    ]
+  },
+
+  // -------------------------------------------------------------------------
+  // UNIDAD 6B — like + -ing, ordinales y fechas (The third Friday in June)
+  // -------------------------------------------------------------------------
+  "6B": {
+    title: "6B: Like + Verb -ing & Dates (The Third Friday in June)",
+    module: 6,
+    theory: `
+      <div class="theory-block">
+        <h3>1. Expresar gustos: like / love / don't mind / don't like / hate + -ing</h3>
+        <p>Para decir cuánto nos gusta hacer algo, usamos la <strong>escalera de preferencias</strong>. El segundo verbo SIEMPRE va terminado en <strong>-ing</strong>:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Nivel</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td>❤️ Encanta</td><td><strong>love</strong> + -ing</td><td>I <strong>love cooking</strong> for my family.</td></tr>
+              <tr><td>👍 Gusta</td><td><strong>like</strong> + -ing</td><td>She <strong>likes going</strong> to the cinema.</td></tr>
+              <tr><td>😐 No molesta</td><td><strong>(don't mind)</strong> + -ing</td><td>We <strong>don't mind waiting</strong>.</td></tr>
+              <tr><td>👎 No gusta</td><td><strong>don't like</strong> + -ing</td><td>I <strong>don't like shopping</strong> on Saturdays.</td></tr>
+              <tr><td>❌ Odia</td><td><strong>hate</strong> + -ing</td><td>They <strong>hate getting up</strong> early.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 El segundo verbo SIEMPRE va en -ing: <em>I love cook</em> ❌ → <em>I love <strong>cooking</strong></em> ✅. (En este nivel no usamos <em>love + to + verbo</em>.)
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. La forma -ing con todas las personas</h3>
+        <p>El <strong>-ing</strong> se forma con las reglas ortográficas del 5B (write → writing, swim → swimming, like → liking) y no cambia nunca:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Sujeto</th><th>Afirmativo</th><th>Negativo</th></tr></thead>
+            <tbody>
+              <tr><td>I</td><td>I <strong>love swimming</strong>.</td><td>I <strong>don't like running</strong>.</td></tr>
+              <tr><td>he / she / it</td><td>He <strong>likes dancing</strong>.</td><td>He <strong>doesn't like waiting</strong>.</td></tr>
+              <tr><td>you / we / they</td><td>They <strong>love singing</strong>.</td><td>We <strong>don't mind cooking</strong>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Con he/she/it negamos con <strong>doesn't</strong>: <em>He doesn't like waiting</em> ✅ · <em>He doesn't likes waiting</em> ❌ · <em>He don't like waiting</em> ❌.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Números ordinales (1° – 31°)</h3>
+        <p>Los ordinales se abrevian con las dos últimas letras del nombre: <strong>1st, 2nd, 3rd, 4th, 5th...</strong> Sirven para fechas y posiciones:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Número</th><th>Ordinal</th><th>Abreviatura</th><th>Número</th><th>Ordinal</th><th>Abreviatura</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>first</td><td>1st</td><td>12</td><td>twelfth</td><td>12th</td></tr>
+              <tr><td>2</td><td>second</td><td>2nd</td><td>20</td><td>twentieth</td><td>20th</td></tr>
+              <tr><td>3</td><td>third</td><td>3rd</td><td>21</td><td>twenty-first</td><td>21st</td></tr>
+              <tr><td>4</td><td>fourth</td><td>4th</td><td>22</td><td>twenty-second</td><td>22nd</td></tr>
+              <tr><td>5</td><td>fifth</td><td>5th</td><td>23</td><td>twenty-third</td><td>23rd</td></tr>
+              <tr><td>8</td><td>eighth</td><td>8th</td><td>30</td><td>thirtieth</td><td>30th</td></tr>
+              <tr><td>9</td><td>ninth</td><td>9th</td><td>31</td><td>thirty-first</td><td>31st</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Trampas de ortografía: <em>eight → eighth</em> (solo una "t") · <em>nine → ninth</em> (pierde la "e") · <em>five → fifth</em> y <em>twelve → twelfth</em> (terminan en <em>-fth</em>) · <em>twenty → twentieth</em> (la "y" pasa a "ieth").
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Decir y escribir fechas</h3>
+        <p>Para decir la fecha usamos <strong>the + ordinal + of + mes</strong> (o mes + the + ordinal); significan lo mismo. El título de esta unidad es un buen ejemplo: <em>the third Friday in June</em> = el tercer viernes de junio (cantidades de viernes dentro del mes, no la fecha).</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Escrito</th><th>Se dice</th><th>Significa</th></tr></thead>
+            <tbody>
+              <tr><td>17.06</td><td><strong>the</strong> seventeenth <strong>of</strong> June</td><td>el 17 de junio</td></tr>
+              <tr><td>1.10</td><td><strong>the</strong> first <strong>of</strong> October</td><td>el 1 de octubre</td></tr>
+              <tr><td>21.03</td><td><strong>the</strong> twenty-first <strong>of</strong> March</td><td>el 21 de marzo</td></tr>
+              <tr><td>1977</td><td>nineteen seventy-seven</td><td>en 1977 (años: de dos en dos)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 Los ordinales de fecha siempre llevan <strong>the</strong> delante y los meses SIEMPRE van con mayúscula: <em>June, March, October</em>.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>5. Pronunciación: /ð/ y /θ/ (decir la fecha)</h3>
+        <p>Cada fecha junta los dos sonidos "th": <strong>the</strong> se pronuncia con voz (/ð/) y los ordinales <em>third, fourth, fifth, eighth, tenth</em>... con la lengua entre los dientes PERO sin voz (/θ/):</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Símbolo</th><th>Sonido</th><th>Palabras del módulo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>/ð/</strong></td><td>con vibración (como <em>mother</em>)</td><td>the /ðə/ · this · the date /ðə deɪt/ · them /ðem/</td></tr>
+              <tr><td><strong>/θ/</strong></td><td>sin vibración (como <em>think</em>)</td><td>third /θɜːd/ · fourth /fɔːθ/ · fifth /fɪfθ/ · eighth /ˈeɪtθ/ · month /mʌnθ/</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          🔊 <em>the fifth</em> = /ðə fɪfθ/ → cambia el "motor" a la mitad: <strong>the</strong> vibra y <strong>fifth</strong> no.
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "first", translation: "primero/a (1°)", phonetic: "/fɜːst/" },
+      { english: "second", translation: "segundo (2°)", phonetic: "/ˈsekənd/" },
+      { english: "third", translation: "tercero (3°)", phonetic: "/θɜːd/" },
+      { english: "fourth", translation: "cuarto (4°)", phonetic: "/fɔːθ/" },
+      { english: "fifth", translation: "quinto (5°)", phonetic: "/fɪfθ/" },
+      { english: "sixth", translation: "sexto (6°)", phonetic: "/sɪksθ/" },
+      { english: "seventh", translation: "séptimo (7°)", phonetic: "/ˈsevnθ/" },
+      { english: "eighth", translation: "octavo (8°)", phonetic: "/ˈeɪtθ/" },
+      { english: "ninth", translation: "noveno (9°)", phonetic: "/naɪnθ/" },
+      { english: "tenth", translation: "décimo (10°)", phonetic: "/tenθ/" },
+      { english: "eleventh", translation: "undécimo (11°)", phonetic: "/ɪˈlevnθ/" },
+      { english: "twelfth", translation: "duodécimo (12°)", phonetic: "/twelfθ/" },
+      { english: "thirteenth", translation: "decimotercero (13°)", phonetic: "/ˌθɜːˈtiːnθ/" },
+      { english: "fourteenth", translation: "decimocuarto (14°)", phonetic: "/ˌfɔːˈtiːnθ/" },
+      { english: "fifteenth", translation: "decimoquinto (15°)", phonetic: "/ˌfɪfˈtiːnθ/" },
+      { english: "sixteenth", translation: "decimosexto (16°)", phonetic: "/ˌsɪksˈtiːnθ/" },
+      { english: "seventeenth", translation: "decimoséptimo (17°)", phonetic: "/ˌsevnˈtiːnθ/" },
+      { english: "eighteenth", translation: "decimoctavo (18°)", phonetic: "/ˌeɪˈtiːnθ/" },
+      { english: "nineteenth", translation: "decimonoveno (19°)", phonetic: "/ˌnaɪnˈtiːnθ/" },
+      { english: "twentieth", translation: "vigésimo (20°)", phonetic: "/ˈtwentiəθ/" },
+      { english: "twenty-first", translation: "vigesimoprimero (21°)", phonetic: "/ˌtwentiˈfɜːst/" },
+      { english: "twenty-second", translation: "vigesimosegundo (22°)", phonetic: "/ˌtwentiˈsekənd/" },
+      { english: "twenty-third", translation: "vigesimotercero (23°)", phonetic: "/ˌtwentiˈθɜːd/" },
+      { english: "twenty-fourth", translation: "vigesimocuarto (24°)", phonetic: "/ˌtwentiˈfɔːθ/" },
+      { english: "thirtieth", translation: "trigésimo (30°)", phonetic: "/ˈθɜːtiəθ/" },
+      { english: "thirty-first", translation: "trigésimo primero (31°)", phonetic: "/ˌθɜːtiˈfɜːst/" },
+      { english: "the first of October", translation: "el 1 de octubre", phonetic: "/ðə ˈfɜːst əv ɒkˈtəʊbə/" },
+      { english: "the third Friday in June", translation: "el tercer viernes de junio", phonetic: "/ðə ˈθɜːd ˈfraɪdeɪ ɪn dʒuːn/" },
+      { english: "What's the date today?", translation: "¿Qué fecha es hoy?", phonetic: "/wɒts ðə deɪt təˈdeɪ/" },
+      { english: "I love going to the cinema.", translation: "Me encanta ir al cine.", phonetic: "/aɪ ˈlʌv ˈɡəʊɪŋ tə ðə ˈsɪnəmə/" },
+      { english: "I don't mind cooking.", translation: "No me importa cocinar.", phonetic: "/aɪ dəʊnt ˈmaɪnd ˈkʊkɪŋ/" },
+      { english: "She hates shopping.", translation: "Odia ir de compras.", phonetic: "/ʃiː ˈheɪts ˈʃɒpɪŋ/" }
+    ],
+    exercises: [
+      { question: "Complete: I love ___ (cook) for my friends.", type: "input", answer: "cooking", placeholder: "verb + -ing", explanation: "like/love/hate + verbo -ing: love cooking." },
+      { question: "Choose the correct option: We don't mind ___ (wait) for the bus.", options: ["wait", "waiting", "waits"], type: "choice", correct: 1, explanation: "Después de don't mind el verbo va en -ing: don't mind waiting." },
+      { question: "Write the ordinal: My birthday is on the 4th of July → the ___ of July.", type: "input", answer: "fourth", placeholder: "ordinal", explanation: "4 = fourth (cuarto)." },
+      { question: "Order the words (a date in the title of this unit):", pool: ["third", "in", "June", "Friday", "the"], correct: ["the", "third", "Friday", "in", "June"], type: "scramble", explanation: "The third Friday in June = el tercer viernes de junio." },
+      { question: "Listening: Listen and type the sentence you hear.", type: "listening", speakText: "She loves cooking", answer: "she loves cooking", explanation: "La frase hablada es 'She loves cooking' (like + -ing)." }
+    ]
+  },
+
+  // -------------------------------------------------------------------------
+  // UNIDAD 6C — revisión be or do? + música (Making music)
+  // -------------------------------------------------------------------------
+  "6C": {
+    title: "6C: Revision — Be or Do? (Making Music)",
+    module: 6,
+    theory: `
+      <div class="theory-block">
+        <h3>1. Revisión: ¿preguntar con be o con do?</h3>
+        <p>Para hacer preguntas correctas decide si la información es un <strong>estado</strong> (be) o una <strong>acción</strong> (do/does):</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta</th><th>Respuesta</th><th>¿Por qué?</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Are</strong> you tired?</td><td>Yes, I am.</td><td>Estado (adjetivo) → be</td></tr>
+              <tr><td><strong>Do</strong> you play an instrument?</td><td>Yes, I do.</td><td>Acción con verbo → do</td></tr>
+              <tr><td><strong>Is</strong> she a musician?</td><td>Yes, she is.</td><td>Profesión con noun → be</td></tr>
+              <tr><td><strong>Does</strong> she like classical music?</td><td>Yes, she does.</td><td>Verbo principal (like) → does</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 Regla rápida: si en la afirmación dirías <em>I am / you are / he is</em>, pregunta con <em>be</em>. Si dirías <em>I play, she likes</em> (un verbo), pregunta con <em>do/does</em>.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. Preguntas con be (identidad, estado, lugar)</h3>
+        <p>Estructura: <strong>(Wh-) + am/is/are + sujeto</strong> — igual que en el Módulo 1 (1A) pero ahora con temas de música:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta con be</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Are</strong> you a musician?</td><td>¿Eres músico?</td></tr>
+              <tr><td><strong>Where</strong> <strong>are</strong> you from?</td><td>¿De dónde eres?</td></tr>
+              <tr><td><strong>What's</strong> the date today?</td><td>¿Qué fecha es hoy?</td></tr>
+              <tr><td><strong>Is</strong> the concert at nine?</td><td>¿El concierto es a las nueve?</td></tr>
+              <tr><td><strong>Who's</strong> your favourite singer?</td><td>¿Quién es tu cantante favorito?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Con be el resto puede ser <em>adjetivo</em> (tired), <em>noun</em> (a musician) o <em>lugar</em> (from New York), pero NUNCA un verbo con otra acción: <em>Do you a musician?</em> ❌ → <em>Are you a musician?</em> ✅.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Preguntas con do / does (acciones y rutinas)</h3>
+        <p>Estructura: <strong>(Wh-) + do/does + sujeto + verbo en forma base</strong> — la misma máquina del present simple (4C/5C) con temas de música:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta con do/does</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Do</strong> you sing?</td><td>¿Cantas?</td></tr>
+              <tr><td><strong>Do</strong> you like jazz?</td><td>¿Te gusta el jazz?</td></tr>
+              <tr><td><strong>Does</strong> he play the piano?</td><td>¿Toca él el piano?</td></tr>
+              <tr><td><strong>Where</strong> <strong>does</strong> she play?</td><td>¿Dónde toca ella?</td></tr>
+              <tr><td><strong>What</strong> <strong>does</strong> your brother listen to?</td><td>¿Qué escucha tu hermano?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Con he/she/it usamos <strong>does</strong> + verbo en base: <em>Does she <strong>play</strong>...?</em> ✅ · <em>Does she <strong>plays</strong>...?</em> ❌.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. Dar opiniones: What do you think of...?</h3>
+        <p>Para opinar sobre música, bandas o canciones preguntamos <strong>What do you think of...?</strong> y respondemos con <strong>I think</strong> + sujeto + <strong>is/are</strong> + <strong>adjetivo</strong>:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pregunta</th><th>Opinión</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td>What do you think of classical music?</td><td><strong>I think</strong> it<strong>'s</strong> relaxing.</td><td>Me parece relajante.</td></tr>
+              <tr><td>What do you think of that new band?</td><td><strong>I think</strong> they<strong>'re</strong> fantastic.</td><td>Me parecen fantásticos.</td></tr>
+              <tr><td>What do you think of the saxophone?</td><td>I <strong>don't</strong> like it very much.</td><td>No me gusta mucho.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 Adjetivos útiles para opiniones: <em>fantastic · great · relaxing · boring · terrible · slow · fast · loud</em>.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>5. Pronunciación: el sonido /j/ (la "y")</h3>
+        <p>Varias palabras del módulo esconden el sonido semi-vocálico <strong>/j/</strong> (como la "y" de <em>yes</em>):</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Palabra</th><th>Transcripción</th><th>Nota</th></tr></thead>
+            <tbody>
+              <tr><td>yes</td><td>/jes/</td><td>/j/ al inicio</td></tr>
+              <tr><td>you</td><td>/juː/</td><td>/j/ + vocal larga</td></tr>
+              <tr><td>year</td><td>/jɪə/</td><td>/j/ + diftongo</td></tr>
+              <tr><td>music</td><td>/ˈmjuːzɪk/</td><td><strong>mu- = /mjuː/</strong> (m + y)</td></tr>
+              <tr><td>musician</td><td>/mjuˈzɪʃn/</td><td>same /mju/-</td></tr>
+              <tr><td>beautiful</td><td>/ˈbjuːtɪfl/</td><td><strong>beau- = /bjuː/</strong> (b + y)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ <em>music</em> no se pronuncia "mu" español: di <strong>m-yu</strong> = /ˈmjuːzɪk/. Igual con <em>musician</em> y <em>beautiful</em>.
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "accordion", translation: "acordeón", phonetic: "/əˈkɔːdiən/" },
+      { english: "bass guitar", translation: "bajo (eléctrico)", phonetic: "/ˌbeɪs ɡɪˈtɑː/" },
+      { english: "drum", translation: "tambor", phonetic: "/drʌm/" },
+      { english: "instrument", translation: "instrumento", phonetic: "/ˈɪnstrəmənt/" },
+      { english: "keyboard", translation: "teclado (musical)", phonetic: "/ˈkiːbɔːd/" },
+      { english: "musician", translation: "músico/a", phonetic: "/mjuˈzɪʃn/" },
+      { english: "piano", translation: "piano", phonetic: "/piˈænəʊ/" },
+      { english: "saxophone", translation: "saxofón", phonetic: "/ˈsæksəfəʊn/" },
+      { english: "trumpet", translation: "trompeta", phonetic: "/ˈtrʌmpɪt/" },
+      { english: "violin", translation: "violín", phonetic: "/ˌvaɪəˈlɪn/" },
+      { english: "sing", translation: "cantar", phonetic: "/sɪŋ/" },
+      { english: "dance", translation: "bailar", phonetic: "/dɑːns/" },
+      { english: "song", translation: "canción", phonetic: "/sɒŋ/" },
+      { english: "band", translation: "banda / grupo", phonetic: "/bænd/" },
+      { english: "concert", translation: "concierto", phonetic: "/ˈkɒnsət/" },
+      { english: "classical music", translation: "música clásica", phonetic: "/ˌklæsɪkl ˈmjuːzɪk/" },
+      { english: "What do you think of...?", translation: "¿Qué piensas de...?", phonetic: "/wɒt duː juː ˈθɪŋk ɒv/" },
+      { english: "I think it's fantastic.", translation: "Me parece fantástico.", phonetic: "/aɪ ˈθɪŋk ɪts fænˈtæstɪk/" }
+    ],
+    exercises: [
+      { question: "Complete the question: ___ you like classical music? (be/do)", type: "input", answer: "do", placeholder: "be or do?", explanation: "like es un verbo → pregunta con Do: Do you like classical music?" },
+      { question: "Choose the correct question:", options: ["Where are you from?", "Where do you from?"], type: "choice", correct: 0, explanation: "Estado/lugar con be: Where are you from? (do necesita verbo: Where do you LIVE?)" },
+      { question: "Complete: ___ she play the piano? — Yes, she does.", type: "input", answer: "Does", placeholder: "Do / Does", explanation: "Con she usamos Does + verbo en base: Does she play...?" },
+      { question: "Order the words to ask about music:", pool: ["play", "Do", "the", "you", "piano", "?"], correct: ["Do", "you", "play", "the", "piano", "?"], type: "scramble", explanation: "Do + sujeto + verbo base + complemento + ?: Do you play the piano?" },
+      { question: "Listening: Listen and type the question you hear.", type: "listening", speakText: "Do you like jazz", answer: "do you like jazz", explanation: "La pregunta hablada es 'Do you like jazz?' (do + verbo en base)." }
+    ]
+  },
+
+  // -------------------------------------------------------------------------
   // REVIEWS
   // -------------------------------------------------------------------------
   "RC4": {
@@ -677,6 +1095,60 @@ const LESSONS = {
       { question: "Complete negative: They ___ (not / work) in an office on Sundays.", type: "input", answer: "don't work", placeholder: "don't + base", explanation: "Rutina con 'they': don't + verbo base." },
       { question: "Select: Look! The sun ___ (shine).", options: ["is shining", "shines", "shine"], type: "choice", correct: 0, explanation: "'Look!' + el clima: present continuous con -ing." },
       { question: "Order the words (swim → swimming):", pool: ["is", "He", "swimming", "in", "the", "river"], correct: ["He", "is", "swimming", "in", "the", "river"], type: "scramble", explanation: "Orden correcto: He + is + swimming + in + the river (C+V+C dobla la m)." }
+    ]
+  },
+
+  "RC6": {
+    title: "6 Revise & Check (Unidades 6A–6C)",
+    module: 6,
+    theory: `
+      <div class="theory-block">
+        <h3>Repaso Integral Unidades 6A, 6B, 6C</h3>
+        <p>Consolidación de todo lo aprendido en el bloque 6:</p>
+        <ul>
+          <li><strong>Object pronouns</strong> (6A): <em>me, you, him, her, it, us, them</em> después de verbos (I love him) y de preposiciones (Look at them!).</li>
+          <li><strong>like + verbo -ing</strong> (6B): la escalera love / like / don't mind / don't like / hate + <em>cooking</em>, <em>waiting</em>...</li>
+          <li><strong>Ordinales y fechas</strong> (6B): the first → the thirty-first; fechas con <em>the + ordinal + of + mes</em> (the seventeenth of June).</li>
+          <li><strong>Revisión: be or do?</strong> (6C): estados con <em>be</em> (Are you tired?), acciones con <em>do/does</em> (Does she play?).</li>
+          <li><strong>Dar opiniones</strong> (6C): <em>What do you think of...?</em> → <em>I think it's fantastic.</em></li>
+        </ul>
+      </div>
+      <div class="theory-block">
+        <h3>Revisión de las tres estructuras</h3>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Unidad</th><th>Pregunta clave</th><th>Estructura</th><th>Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>6A</strong></td><td>¿Quién recibe la acción?</td><td>verbo / preposición + <strong>object pronoun</strong></td><td>I love <strong>him</strong>. / It's <strong>for me</strong>.</td></tr>
+              <tr><td><strong>6B</strong></td><td>¿Te gusta hacer algo?</td><td>love / like / hate + <strong>verbo -ing</strong></td><td>She <strong>likes dancing</strong>. / They <strong>hate waiting</strong>.</td></tr>
+              <tr><td><strong>6C</strong></td><td>¿Estado o acción?</td><td>be: <strong>Is/Are</strong> she...? · do: <strong>Do/Does</strong> she...</td><td>Are you tired? / Do you sing?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 <strong>Object pronouns</strong> después del verbo · <strong>like + -ing</strong> nunca con infinitivo con to · <strong>does</strong> siempre con verbo en forma base.
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ <em>I love he</em> ❌ → <em>I love <strong>him</strong></em> ✅ · <em>He doesn't likes</em> ❌ → <em>He <strong>doesn't like</strong></em> ✅ · <em>Does she plays?</em> ❌ → <em>Does she <strong>play</strong>?</em> ✅
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "him", translation: "lo / a él (objeto)", phonetic: "/hɪm/" },
+      { english: "them", translation: "los / a ellos", phonetic: "/ðem/" },
+      { english: "I love him.", translation: "Lo amo.", phonetic: "/aɪ ˈlʌv hɪm/" },
+      { english: "I don't mind waiting.", translation: "No me importa esperar.", phonetic: "/aɪ dəʊnt ˈmaɪnd ˈweɪtɪŋ/" },
+      { english: "the seventeenth of June", translation: "el 17 de junio", phonetic: "/ðə ˌsevnˈtiːnθ əv dʒuːn/" },
+      { english: "the second", translation: "el segundo (2°)", phonetic: "/ðə ˈsekənd/" },
+      { english: "Do you play the piano?", translation: "¿Tocas el piano?", phonetic: "/duː juː ˌpleɪ ðə piˈænəʊ/" },
+      { english: "play the drums", translation: "tocar la batería", phonetic: "/pleɪ ðə drʌmz/" }
+    ],
+    exercises: [
+      { question: "Complete with an object pronoun: I like Anna, but I don't see ___ very often.", type: "input", answer: "her", placeholder: "pronoun", explanation: "Después del verbo see va el pronombre objeto: her (refiere a Anna)." },
+      { question: "Select the correct form: My friends love ___ football.", options: ["play", "playing"], type: "choice", correct: 1, explanation: "love + verbo -ing: love playing." },
+      { question: "Select: ___ your brother like classical music?", options: ["Do", "Does", "Is"], type: "choice", correct: 1, explanation: "Tercera persona + verbo (like) → Does: Does your brother like...?" },
+      { question: "Write in words: the 2nd of May = the ___ of May.", type: "input", answer: "second", placeholder: "ordinal", explanation: "2 = second (segundo)." },
+      { question: "Order the words (6B: no molesta):", pool: ["I", "waiting", "don't", "mind"], correct: ["I", "don't", "mind", "waiting"], type: "scramble", explanation: "don't mind + -ing: I don't mind waiting." }
     ]
   }
 };
@@ -765,6 +1237,46 @@ const BANKS = {
         { question: "5C.a: Complete: My parents (don't live / aren't living) in a small town.", type: "input", answer: "don't live", placeholder: "don't + base", explanation: "Hecho permanente y sin marcador: present simple con don't + base." },
         { question: "5C.b: Select: It's cold and it's ___ (snow / snows / snowing).", options: ["snow", "snows", "snowing"], type: "choice", correct: 2, explanation: "El clima va con 'it' + gerundio: it's snowing." },
         { question: "5C.c: Complete: Look! It ___ (snow) in the mountains.", type: "input", answer: "is snowing", placeholder: "is + -ing", explanation: "El clima va con 'it' + gerundio: it's snowing." }
+      ]
+    },
+    6: {
+      label: "Grammar Bank 6",
+      theory: `
+        <div class="theory-block">
+          <h3>Grammar Bank 6A: Object pronouns</h3>
+          <p>• Los <strong>object pronouns</strong> van después de un <strong>verbo</strong> o de una <strong>preposición</strong>: <em>I love him. / Can you help me? / Look at them! / It's for me.</em><br>
+          • Tabla sujeto → objeto: <strong>I → me · you → you · he → him · she → her · it → it · we → us · they → them</strong>.<br>
+          • Errores típicos: <em>I love he</em> ❌ → <em>I love <strong>him</strong></em> ✅ · <em>It's for I</em> ❌ → <em>It's for <strong>me</strong></em> ✅.<br>
+          • Reacciones cortas con objeto: <em>Me too</em> (= yo también) · <em>Not me</em> (= yo no) · <em>It's me</em> (= soy yo).</p>
+        </div>
+        <div class="theory-block">
+          <h3>Grammar Bank 6B: Like + -ing, ordinales y fechas</h3>
+          <p>• <strong>like / love / don't mind / don't like / hate</strong> + <strong>verbo -ing</strong>: <em>I love cooking. We don't mind waiting.</em><br>
+          • Con he/she/it negamos con <strong>doesn't</strong>: <em>He doesn't like waiting.</em><br>
+          • Ordinales: <em>1st first, 2nd second, 3rd third... 20th twentieth, 21st twenty-first, 31st thirty-first</em>.<br>
+          • Trampas: <em>eight → eighth</em> · <em>nine → ninth</em> · <em>five → fifth</em> · <em>twelve → twelfth</em> · <em>twenty → twentieth</em>.<br>
+          • Fechas: <em>the + ordinal + of + mes</em> o <em>mes + the + ordinal</em>: <em>the seventeenth of June = June the seventeenth</em>.<br>
+          • Años de dos en dos: <em>1977 → nineteen seventy-seven</em>.</p>
+        </div>
+        <div class="theory-block">
+          <h3>Grammar Bank 6C: Revisión — be or do?</h3>
+          <p>• <strong>be</strong> para estados, identidad y lugar: <em>Are you tired? Is she a musician? What's the date today?</em><br>
+          • <strong>do/does</strong> para acciones con verbo principal: <em>Do you sing? Does he play the piano?</em><br>
+          • <strong>does</strong> siempre con verbo en forma base: <em>Does she play...?</em> ✅ · <em>Does she plays...?</em> ❌.<br>
+          • Opiniones: <em>What do you think of...?</em> → <em>I think it's relaxing / fantastic.</em></p>
+        </div>
+      `,
+      exercises: [
+        { question: "6A.a: Complete: I love Kate, but she doesn't love ___ (I).", type: "input", answer: "me", placeholder: "pronoun", explanation: "Después del verbo love va el pronombre objeto: me." },
+        { question: "6A.b: Select: I can't find (he / him) anywhere.", options: ["he", "him"], type: "choice", correct: 1, explanation: "Verbo + object pronoun: find him." },
+        { question: "6A.c: Complete: Can you help ___ (we) with these suitcases?", type: "input", answer: "us", placeholder: "pronoun", explanation: "we (sujeto) → us (objeto) después del verbo help." },
+        { question: "6A.d: Complete: Look at ___ (they)!", type: "input", answer: "them", placeholder: "pronoun", explanation: "Después de la preposición at va el objeto: them." },
+        { question: "6B.a: Complete: I love ___ (cook) for my family.", type: "input", answer: "cooking", placeholder: "verb + -ing", explanation: "like/love/hate + verbo -ing: love cooking." },
+        { question: "6B.b: Select: She doesn't mind (wait / waiting).", options: ["wait", "waiting"], type: "choice", correct: 1, explanation: "Después de don't mind el verbo va en -ing: mind waiting." },
+        { question: "6B.c: Write the date in words: 21.03 → the twenty-first of ___.", type: "input", answer: "march", placeholder: "month", explanation: "Estructura de fecha: the + ordinal + of + mes → the twenty-first of March." },
+        { question: "6C.a: Select: (Do / Are) you like classical music?", options: ["Do", "Are"], type: "choice", correct: 0, explanation: "like es un verbo → pregunta con Do: Do you like...?" },
+        { question: "6C.b: Complete: ___ she play the piano? — Yes, she does.", type: "input", answer: "Does", placeholder: "Do / Does", explanation: "Tercera persona (she) → Does + verbo base." },
+        { question: "6C.c: Select the correct question: (Where do you live? / Where you live?)", options: ["Where do you live?", "Where you live?"], type: "choice", correct: 0, explanation: "Pregunta con do/does necesita el auxiliar: Where DO you live?" }
       ]
     }
   },
@@ -904,6 +1416,80 @@ const BANKS = {
           { english: "the station", translation: "la estación", phonetic: "/ðə ˈsteɪ.ʃən/" }
         ]
       }
+    },
+    6: {
+      label: "Vocabulary Bank 6",
+      categories: [
+        { key: "story", label: "Words in a Story (6A)" },
+        { key: "ordinals", label: "Ordinals & Dates (6B)" },
+        { key: "music", label: "Music (6C)" }
+      ],
+      data: {
+        story: [
+          { english: "arrive", translation: "llegar (a un lugar)", phonetic: "/əˈraɪv/" },
+          { english: "comfortable", translation: "cómodo/a", phonetic: "/ˈkʌmftəbl/" },
+          { english: "decide", translation: "decidir", phonetic: "/dɪˈsaɪd/" },
+          { english: "desert", translation: "desierto", phonetic: "/ˈdezət/" },
+          { english: "inside", translation: "dentro (de)", phonetic: "/ˌɪnˈsaɪd/" },
+          { english: "into", translation: "dentro de / hacia dentro", phonetic: "/ˈɪntu/" },
+          { english: "leave", translation: "irse / dejar", phonetic: "/liːv/" },
+          { english: "mountain", translation: "montaña", phonetic: "/ˈmaʊntən/" },
+          { english: "palace", translation: "palacio", phonetic: "/ˈpæləs/" },
+          { english: "sell", translation: "vender", phonetic: "/sel/" },
+          { english: "strange", translation: "extraño/a", phonetic: "/streɪndʒ/" },
+          { english: "surprised", translation: "sorprendido/a", phonetic: "/səˈpraɪzd/" },
+          { english: "through", translation: "a través de", phonetic: "/θruː/" },
+          { english: "toward", translation: "hacia", phonetic: "/təˈwɔːd/" },
+          { english: "valuable", translation: "valioso/a", phonetic: "/ˈvæljuəbl/" },
+          { english: "village", translation: "pueblo / aldea", phonetic: "/ˈvɪlɪdʒ/" }
+        ],
+        ordinals: [
+          { english: "first (1st)", translation: "primero (1°)", phonetic: "/fɜːst/" },
+          { english: "second (2nd)", translation: "segundo (2°)", phonetic: "/ˈsekənd/" },
+          { english: "third (3rd)", translation: "tercero (3°)", phonetic: "/θɜːd/" },
+          { english: "fourth (4th)", translation: "cuarto (4°)", phonetic: "/fɔːθ/" },
+          { english: "fifth (5th)", translation: "quinto (5°)", phonetic: "/fɪfθ/" },
+          { english: "sixth (6th)", translation: "sexto (6°)", phonetic: "/sɪksθ/" },
+          { english: "seventh (7th)", translation: "séptimo (7°)", phonetic: "/ˈsevnθ/" },
+          { english: "eighth (8th)", translation: "octavo (8°)", phonetic: "/ˈeɪtθ/" },
+          { english: "ninth (9th)", translation: "noveno (9°)", phonetic: "/naɪnθ/" },
+          { english: "tenth (10th)", translation: "décimo (10°)", phonetic: "/tenθ/" },
+          { english: "eleventh (11th)", translation: "undécimo (11°)", phonetic: "/ɪˈlevnθ/" },
+          { english: "twelfth (12th)", translation: "duodécimo (12°)", phonetic: "/twelfθ/" },
+          { english: "thirteenth (13th)", translation: "decimotercero (13°)", phonetic: "/ˌθɜːˈtiːnθ/" },
+          { english: "fourteenth (14th)", translation: "decimocuarto (14°)", phonetic: "/ˌfɔːˈtiːnθ/" },
+          { english: "fifteenth (15th)", translation: "decimoquinto (15°)", phonetic: "/ˌfɪfˈtiːnθ/" },
+          { english: "sixteenth (16th)", translation: "decimosexto (16°)", phonetic: "/ˌsɪksˈtiːnθ/" },
+          { english: "seventeenth (17th)", translation: "decimoséptimo (17°)", phonetic: "/ˌsevnˈtiːnθ/" },
+          { english: "eighteenth (18th)", translation: "decimoctavo (18°)", phonetic: "/ˌeɪˈtiːnθ/" },
+          { english: "nineteenth (19th)", translation: "decimonoveno (19°)", phonetic: "/ˌnaɪnˈtiːnθ/" },
+          { english: "twentieth (20th)", translation: "vigésimo (20°)", phonetic: "/ˈtwentiəθ/" },
+          { english: "twenty-first (21st)", translation: "vigesimoprimero (21°)", phonetic: "/ˌtwentiˈfɜːst/" },
+          { english: "twenty-second (22nd)", translation: "vigesimosegundo (22°)", phonetic: "/ˌtwentiˈsekənd/" },
+          { english: "twenty-third (23rd)", translation: "vigesimotercero (23°)", phonetic: "/ˌtwentiˈθɜːd/" },
+          { english: "twenty-fourth (24th)", translation: "vigesimocuarto (24°)", phonetic: "/ˌtwentiˈfɔːθ/" },
+          { english: "thirtieth (30th)", translation: "trigésimo (30°)", phonetic: "/ˈθɜːtiəθ/" },
+          { english: "thirty-first (31st)", translation: "trigésimo primero (31°)", phonetic: "/ˌθɜːtiˈfɜːst/" }
+        ],
+        music: [
+          { english: "accordion", translation: "acordeón", phonetic: "/əˈkɔːdiən/" },
+          { english: "bass guitar", translation: "bajo (eléctrico)", phonetic: "/ˌbeɪs ɡɪˈtɑː/" },
+          { english: "drum", translation: "tambor", phonetic: "/drʌm/" },
+          { english: "instrument", translation: "instrumento", phonetic: "/ˈɪnstrəmənt/" },
+          { english: "keyboard", translation: "teclado (musical)", phonetic: "/ˈkiːbɔːd/" },
+          { english: "musician", translation: "músico/a", phonetic: "/mjuˈzɪʃn/" },
+          { english: "piano", translation: "piano", phonetic: "/piˈænəʊ/" },
+          { english: "saxophone", translation: "saxofón", phonetic: "/ˈsæksəfəʊn/" },
+          { english: "trumpet", translation: "trompeta", phonetic: "/ˈtrʌmpɪt/" },
+          { english: "violin", translation: "violín", phonetic: "/ˌvaɪəˈlɪn/" },
+          { english: "sing", translation: "cantar", phonetic: "/sɪŋ/" },
+          { english: "dance", translation: "bailar", phonetic: "/dɑːns/" },
+          { english: "song", translation: "canción", phonetic: "/sɒŋ/" },
+          { english: "band", translation: "banda / grupo", phonetic: "/bænd/" },
+          { english: "concert", translation: "concierto", phonetic: "/ˈkɒnsət/" },
+          { english: "classical music", translation: "música clásica", phonetic: "/ˌklæsɪkl ˈmjuːzɪk/" }
+        ]
+      }
     }
   },
 
@@ -961,6 +1547,44 @@ const BANKS = {
           { q: "Listen! Someone (is calling / calls) from the hall.", opt: ["is calling", "calls"], c: 0 },
           { q: "She (doesn't works / doesn't work) on Sundays.", opt: ["doesn't works", "doesn't work"], c: 1 },
           { q: "It's (snows / snowing) in the mountains.", opt: ["snows", "snowing"], c: 1 }
+        ]
+      }
+    },
+    6: {
+      label: "Banco de Ejercicios (Unidades 6)",
+      categories: [
+        { key: "pronouns", label: "Pronombres Objeto (6A)" },
+        { key: "preferences", label: "Like + -ing (6B)" },
+        { key: "dates", label: "Ordinales & Fechas (6B)" },
+        { key: "beOrDo", label: "Revisión: be or do? (6C)" }
+      ],
+      data: {
+        pronouns: [
+          { q: "I love Sarah, but she doesn't love (I / me).", opt: ["I", "me"], c: 1 },
+          { q: "Look at (they / them)! They're laughing.", opt: ["they", "them"], c: 1 },
+          { q: "Where are my keys? I can't find (it / them).", opt: ["it", "them"], c: 1 },
+          { q: "This song is beautiful. Do you like (it / them)?", opt: ["it", "them"], c: 0 },
+          { q: "Our friends visit (we / us) every weekend.", opt: ["we", "us"], c: 1 }
+        ],
+        preferences: [
+          { q: "I love (cook / cooking) at the weekend.", opt: ["cook", "cooking"], c: 1 },
+          { q: "He likes (watch / watching) football on TV.", opt: ["watch", "watching"], c: 1 },
+          { q: "We don't mind (get up / getting up) early.", opt: ["get up", "getting up"], c: 1 },
+          { q: "She hates (shop / shopping) on Saturdays.", opt: ["shop", "shopping"], c: 1 },
+          { q: "They like (swim / swimming) in the sea.", opt: ["swim", "swimming"], c: 1 }
+        ],
+        dates: [
+          { q: "Write in words: 3rd → (three / third).", opt: ["three", "third"], c: 1 },
+          { q: "The correct way to say 4.2 is: (the fourth of February / the four of February).", opt: ["the fourth of February", "the four of February"], c: 0 },
+          { q: "The correct way to say 21.06 is: (the twenty-first of June / the twenty-one of June).", opt: ["the twenty-first of June", "the twenty-one of June"], c: 0 },
+          { q: "The ordinal number after 'fourth' is: (fifth / five).", opt: ["fifth", "five"], c: 0 }
+        ],
+        beOrDo: [
+          { q: "___ you like jazz? (Do / Are)", opt: ["Do", "Are"], c: 0 },
+          { q: "(Does / Is) she play the violin?", opt: ["Does", "Is"], c: 0 },
+          { q: "(Are / Do) you tired? — Yes, I am.", opt: ["Are", "Do"], c: 0 },
+          { q: "(Is / Does) your brother a musician?", opt: ["Is", "Does"], c: 0 },
+          { q: "(Do / Are) your parents live in a village?", opt: ["Do", "Are"], c: 0 }
         ]
       }
     }
