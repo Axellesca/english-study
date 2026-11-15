@@ -1,6 +1,6 @@
 /**
  * English File Elementary - Módulo 2
- * Contenido puro: lecciones (4A–4C, 5A–5C, RC4, RC5) + bancos modulares.
+ * Contenido puro: lecciones (4A–4C, 5A–5C, 6A–6C, 7A, RC4–RC6) + bancos modulares (4–7).
  * No contiene lógica de UI. Cargar ANTES de app.js.
  */
 
@@ -1012,6 +1012,175 @@ const LESSONS = {
   },
 
   // -------------------------------------------------------------------------
+  // UNIDAD 7A — Selfies (past simple of be + word formation + sentence stress)
+  // -------------------------------------------------------------------------
+  "7A": {
+    title: "7A: Selfies (Past Simple of be + Word Formation)",
+    module: 7,
+    theory: `
+      <div class="theory-block">
+        <h3>1. Pasado simple de <em>be</em>: was / were</h3>
+        <p>Para hablar del pasado usamos la forma pasada del verbo <strong>be</strong>: <strong>was</strong> con I / he / she / it y <strong>were</strong> con you / we / they. La estructura es idéntica al presente: solo cambia la forma del verbo.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pronombre</th><th>Pasado</th><th>Ejemplo</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td>I / He / She / It</td><td><strong>was</strong></td><td>Vincent van Gogh <strong>was</strong> an artist.</td><td>Van Gogh era un artista.</td></tr>
+              <tr><td>You / We / They</td><td><strong>were</strong></td><td>The Beatles <strong>were</strong> famous in the 1960s.</td><td>Los Beatles eran famosos en los años 60.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 <strong>is → was</strong> · <strong>are → were</strong>. Todo lo demás no cambia: el sujeto sigue igual y el verbo permanece en segunda posición en las preguntas.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>2. Negativos: wasn't / weren't</h3>
+        <p>Para negar en pasado usamos <strong>wasn't</strong> (= was not) y <strong>weren't</strong> (= were not), con la misma regla de concordancia:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pronombre</th><th>Negativo</th><th>Ejemplo</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td>I / He / She / It</td><td><strong>wasn't</strong></td><td>She <strong>wasn't</strong> in class yesterday.</td><td>Ella no estaba en clase ayer.</td></tr>
+              <tr><td>You / We / They</td><td><strong>weren't</strong></td><td>You <strong>weren't</strong> at home last night.</td><td>Ustedes no estaban en casa anoche.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Con <em>was / were</em> <strong>no</strong> se usa <em>didn't</em>: <em>She didn't was in class</em> ❌ → <em>She <strong>wasn't</strong> in class</em> ✅. El pasado de <em>be</em> ya lleva la marca del pasado.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>3. Preguntas y respuestas cortas</h3>
+        <p>En las preguntas de pasado, <strong>was</strong> y <strong>were</strong> van delante del sujeto, igual que <em>is</em> y <em>are</em> en el presente:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Pronombre</th><th>Pregunta</th><th>Respuesta corta</th></tr></thead>
+            <tbody>
+              <tr><td>I / He / She / It</td><td><strong>Was</strong> he Dutch or French?</td><td>Yes, he <strong>was</strong>. / No, he <strong>wasn't</strong>.</td></tr>
+              <tr><td>You / We / They</td><td><strong>Were</strong> you at the concert?</td><td>Yes, we <strong>were</strong>. / No, we <strong>weren't</strong>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 Pregunta: <em>Was / Were</em> + sujeto + resto. Respuesta: <em>Yes,</em> + sujeto + <em>was / were</em> · <em>No,</em> + sujeto + <em>wasn't / weren't</em>.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>4. was / were + expresiones de tiempo pasado</h3>
+        <p>El pasado simple casi siempre aparece con una expresión de tiempo que nos sitúa en el pasado:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Expresión</th><th>Ejemplo</th><th>Significado</th></tr></thead>
+            <tbody>
+              <tr><td><strong>yesterday</strong></td><td>I was at home <strong>yesterday</strong>.</td><td>Ayer estuve en casa.</td></tr>
+              <tr><td><strong>last night / last summer</strong></td><td>We were in Berlin <strong>last summer</strong>.</td><td>El verano pasado estuvimos en Berlín.</td></tr>
+              <tr><td><strong>... ago</strong></td><td>She was here <strong>three days ago</strong>.</td><td>Hace tres días ella estuvo aquí.</td></tr>
+              <tr><td><strong>in</strong> + año</td><td>He was a student <strong>in 2014</strong>.</td><td>En 2014 era estudiante.</td></tr>
+              <tr><td><strong>a</strong> + periodo</td><td>They were friends <strong>a long time ago</strong>.</td><td>Hace mucho tiempo eran amigos.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          🎂 <strong>be born</strong> siempre va con <em>was / were</em>: <em>I <strong>was born</strong> in Scotland</em> · <em>She <strong>was born</strong> in 1988</em>. Nunca <em>I born</em> ni <em>I was borned</em>.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>5. Formación de palabras: las profesiones</h3>
+        <p>De un verbo formamos la profesión añadiendo <strong>-er</strong> u <strong>-or</strong>, y de un sustantivo añadiendo <strong>-ian</strong> o <strong>-ist</strong>:</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Verbo base</th><th>Profesión</th><th>Sustantivo base</th><th>Profesión</th></tr></thead>
+            <tbody>
+              <tr><td>write</td><td><strong>writer</strong> (escritor/a)</td><td>art</td><td><strong>artist</strong> (artista)</td></tr>
+              <tr><td>act</td><td><strong>actor</strong> (actor/actriz)</td><td>science</td><td><strong>scientist</strong> (científico/a)</td></tr>
+              <tr><td>sing</td><td><strong>singer</strong> (cantante)</td><td>music</td><td><strong>musician</strong> (músico/a)</td></tr>
+              <tr><td>paint</td><td><strong>painter</strong> (pintor/a)</td><td>politics</td><td><strong>politician</strong> (político/a)</td></tr>
+              <tr><td>compose</td><td><strong>composer</strong> (compositor/a)</td><td>novel</td><td><strong>novelist</strong> (novelista)</td></tr>
+              <tr><td>dance</td><td><strong>dancer</strong> (bailarín/a)</td><td>piano</td><td><strong>pianist</strong> (pianista)</td></tr>
+              <tr><td>direct</td><td><strong>director</strong> (director/a)</td><td>politics</td><td><strong>politician</strong> (político/a)</td></tr>
+              <tr><td>invent</td><td><strong>inventor</strong> (inventor/a)</td><td>art</td><td><strong>artist</strong> (artista)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box">
+          💡 <strong>Regla oficial:</strong> añadimos <strong>-er</strong> o <strong>-or</strong> a un verbo (writer, actor) y <strong>-ian</strong> o <strong>-ist</strong> a un sustantivo (musician, pianist).
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ No todos los verbos siguen el mismo patrón: <em>act → actor</em> (no "acter"), <em>direct → director</em> (no "directer"). Y cuidado con los artículos: <em>a singer</em> = una cantante · <em>the singer</em> = el/la cantante.
+        </div>
+      </div>
+
+      <div class="theory-block">
+        <h3>6. Pronunciación: acento de frase (sentence stress)</h3>
+        <p>En inglés la frase lleva un acento principal: se marca en la palabra que aporta la información (el verbo o el sustantivo principal), nunca en el auxiliar.</p>
+        <div class="table-wrapper">
+          <table class="grammar-table">
+            <thead><tr><th>Patrón</th><th>Ejemplo</th><th>Dónde va el acento</th></tr></thead>
+            <tbody>
+              <tr><td><strong>+</strong> afirmativo</td><td>He was a <strong>PAINT</strong>er. I was <strong>BORN</strong> in Italy.</td><td>En el verbo o sustantivo principal.</td></tr>
+              <tr><td><strong>−</strong> negativo</td><td>He <u>wasn't</u> <strong>MARRIED</strong>.</td><td>El auxiliar pierde el acento: la carga va al verbo principal.</td></tr>
+              <tr><td><strong>?</strong> pregunta</td><td><strong>WHERE</strong> were you <strong>BORN</strong>?</td><td>En la palabra interrogativa y en la principal.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rule-highlight-box warning">
+          ⚠️ Pronunciá <em>He was a PAINTer</em> (no "He WAS a painter"): si acentuás el auxiliar, la frase suena rara y se pierde el ritmo.
+        </div>
+      </div>
+    `,
+    vocab: [
+      { english: "write", translation: "escribir", phonetic: "/raɪt/" },
+      { english: "act", translation: "actuar / trabajar como actor", phonetic: "/ækt/" },
+      { english: "sing", translation: "cantar", phonetic: "/sɪŋ/" },
+      { english: "paint", translation: "pintar", phonetic: "/peɪnt/" },
+      { english: "compose (a poem)", translation: "componer (un poema o discurso)", phonetic: "/kəmˈpəʊz/" },
+      { english: "compose (music)", translation: "componer (música)", phonetic: "/kəmˈpəʊz/" },
+      { english: "dance", translation: "bailar", phonetic: "/dɑːns/" },
+      { english: "direct", translation: "dirigir", phonetic: "/dəˈrekt/" },
+      { english: "invent", translation: "inventar", phonetic: "/ɪnˈvent/" },
+      { english: "art", translation: "arte", phonetic: "/ɑːt/" },
+      { english: "novel", translation: "novela", phonetic: "/ˈnɒvl/" },
+      { english: "politics", translation: "política", phonetic: "/ˈpɒlətɪks/" },
+      { english: "science", translation: "ciencia", phonetic: "/ˈsaɪəns/" },
+      { english: "singer", translation: "cantante", phonetic: "/ˈsɪŋə/" },
+      { english: "writer", translation: "escritor/a", phonetic: "/ˈraɪtə/" },
+      { english: "composer", translation: "compositor/a", phonetic: "/kəmˈpəʊzə/" },
+      { english: "dancer", translation: "bailarín/a", phonetic: "/ˈdɑːnsə/" },
+      { english: "director", translation: "director/a", phonetic: "/dəˈrektə/" },
+      { english: "inventor", translation: "inventor/a", phonetic: "/ɪnˈventə/" },
+      { english: "artist", translation: "artista", phonetic: "/ˈɑːtɪst/" },
+      { english: "novelist", translation: "novelista", phonetic: "/ˈnɒvəlɪst/" },
+      { english: "yesterday", translation: "ayer", phonetic: "/ˈjestədeɪ/" },
+      { english: "morning", translation: "mañana (por la mañana)", phonetic: "/ˈmɔːnɪŋ/" },
+      { english: "last", translation: "último / pasado", phonetic: "/lɑːst/" },
+      { english: "night", translation: "noche", phonetic: "/naɪt/" },
+      { english: "month", translation: "mes", phonetic: "/mʌnθ/" },
+      { english: "three", translation: "tres", phonetic: "/θriː/" },
+      { english: "day", translation: "día", phonetic: "/deɪ/" },
+      { english: "five", translation: "cinco", phonetic: "/faɪv/" },
+      { english: "minute", translation: "minuto", phonetic: "/ˈmɪnɪt/" },
+      { english: "week", translation: "semana", phonetic: "/wiːk/" },
+      { english: "summer", translation: "verano", phonetic: "/ˈsʌmə/" },
+      { english: "before", translation: "antes", phonetic: "/bɪˈfɔː/" },
+      { english: "a", translation: "un / una", phonetic: "/ə/" },
+      { english: "year", translation: "año", phonetic: "/jɪə/" },
+      { english: "in", translation: "en", phonetic: "/ɪn/" }
+    ],
+    exercises: [
+      { question: "Complete with was or were: The Beatles ___ famous in the 1960s.", type: "input", answer: "were", placeholder: "was / were", explanation: "Sujeto 'The Beatles' = they → were: The Beatles were famous in the 1960s." },
+      { question: "Choose the correct question: ___ he Dutch or French?", options: ["Was", "Were"], type: "choice", correct: 0, explanation: "Con he / she / it en pasado usamos Was: Was he Dutch or French?" },
+      { question: "Choose the correct negative: They ___ at the concert last night.", options: ["wasn't", "weren't"], type: "choice", correct: 1, explanation: "Con they usamos weren't: They weren't at the concert last night." },
+      { question: "Order the words to form a correct sentence:", pool: ["was", "born", "I", "Scotland", "in"], correct: ["I", "was", "born", "in", "Scotland"], type: "scramble", explanation: "Estructura: Sujeto + was/were + born + complemento: I was born in Scotland." },
+      { question: "Listening: Listen and type the question you hear.", type: "listening", speakText: "Where were you last night", answer: "where were you last night", explanation: "La frase hablada es 'Where were you last night?' (were + sujeto + expresión de tiempo pasado)." }
+    ]
+  },
+
+  // -------------------------------------------------------------------------
   // REVIEWS
   // -------------------------------------------------------------------------
   "RC4": {
@@ -1278,6 +1447,50 @@ const BANKS = {
         { question: "6C.b: Complete: ___ she play the piano? — Yes, she does.", type: "input", answer: "Does", placeholder: "Do / Does", explanation: "Tercera persona (she) → Does + verbo base." },
         { question: "6C.c: Select the correct question: (Where do you live? / Where you live?)", options: ["Where do you live?", "Where you live?"], type: "choice", correct: 0, explanation: "Pregunta con do/does necesita el auxiliar: Where DO you live?" }
       ]
+    },
+    7: {
+      label: "Grammar Bank 7",
+      theory: `
+        <div class="theory-block">
+          <h3>Grammar Bank 7A: past simple of be — was / were</h3>
+          <p>• <strong>Vincent van Gogh was an artist.</strong><br>
+          • <strong>Was</strong> he Dutch or French?<br>
+          • She <strong>wasn't</strong> in class yesterday.<br>
+          • The Beatles <strong>were</strong> famous in the 1960s.<br>
+          • Where <strong>were</strong> you last night? You <strong>weren't</strong> at home.</p>
+        </div>
+        <div class="theory-block">
+          <h3>Reglas de uso</h3>
+          <p>• Usamos <strong>was / were</strong> para hablar del pasado.<br>
+          • También los usamos con <strong>expresiones de tiempo pasado</strong>: yesterday, last night, in 2014, three days ago, etc.<br>
+          • Los usamos con <strong>born</strong>: <em>I <strong>was born</strong> in Scotland.</em><br>
+          • Negamos con <strong>wasn't / weren't</strong> (nunca con didn't) y preguntamos invirtiendo el orden: <em>Was / Were</em> + sujeto + resto.</p>
+        </div>
+        <div class="theory-block">
+          <h3>Tablas de referencia</h3>
+          <div class="table-wrapper">
+            <table class="grammar-table">
+              <thead><tr><th>Signo</th><th>Afirmativo</th><th>Negativo</th><th>Pregunta</th><th>Respuesta corta</th></tr></thead>
+              <tbody>
+                <tr><td><strong>+</strong> I / He / She / It</td><td>He <strong>was</strong> an artist.</td><td>He <strong>wasn't</strong> an artist.</td><td><strong>Was</strong> he an artist?</td><td>Yes, he was. / No, he wasn't.</td></tr>
+                <tr><td><strong>+</strong> You / We / They</td><td>They <strong>were</strong> famous.</td><td>They <strong>weren't</strong> famous.</td><td><strong>Were</strong> they famous?</td><td>Yes, they were. / No, they weren't.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `,
+      exercises: [
+        { question: "7A.a: Complete with was or were: Kurt Vonnegut ___ an American writer.", type: "input", answer: "was", placeholder: "was / were", explanation: "Sujeto 'he' (singular) → was: Kurt Vonnegut was an American writer." },
+        { question: "7A.b: Select: The Beatles ___ famous in the 1960s.", options: ["was", "were"], type: "choice", correct: 1, explanation: "Sujeto 'they' (plural) → were: The Beatles were famous in the 1960s." },
+        { question: "7A.c: Select the negative: She ___ in class yesterday.", options: ["wasn't", "weren't"], type: "choice", correct: 0, explanation: "Con she en pasado: wasn't. She wasn't in class yesterday." },
+        { question: "7A.d: Complete the question: ___ he Dutch or French?", type: "input", answer: "was", placeholder: "was / were", explanation: "En preguntas con he/she/it usamos Was: Was he Dutch or French?" },
+        { question: "7A.e: Select the short answer: 'Were you at the concert?' — Yes, we ___.", options: ["was", "were"], type: "choice", correct: 1, explanation: "Respuesta corta con 'we' → were: Yes, we were." },
+        { question: "7A.f: Complete: Where ___ you last night?", type: "input", answer: "were", placeholder: "was / were", explanation: "Con 'you' en pasado → were: Where were you last night?" },
+        { question: "7A.g: Select the correct negative: You ___ at home.", options: ["wasn't", "weren't"], type: "choice", correct: 1, explanation: "Con 'you' el negativo es weren't: You weren't at home." },
+        { question: "7A.h: Complete: I ___ born in Scotland.", type: "input", answer: "was", placeholder: "was / were", explanation: "be born siempre con was/were; con 'I' → was: I was born in Scotland." },
+        { question: "7A.i: Complete with was or were: He ___ a student in 2014.", type: "input", answer: "was", placeholder: "was / were", explanation: "Sujeto 'he' + expresión de tiempo pasado (in 2014) → was." },
+        { question: "7A.j: Select the short answer: 'Were they there?' — No, they ___.", options: ["wasn't", "weren't"], type: "choice", correct: 1, explanation: "Negativo corto con 'they' → weren't: No, they weren't." }
+      ]
     }
   },
 
@@ -1490,6 +1703,55 @@ const BANKS = {
           { english: "classical music", translation: "música clásica", phonetic: "/ˌklæsɪkl ˈmjuːzɪk/" }
         ]
       }
+    },
+    7: {
+      label: "Vocabulary Bank 7",
+      categories: [
+        { key: "professions", label: "Professions & Word Formation (7A)" },
+        { key: "pastTime", label: "Past Time Expressions (7A)" }
+      ],
+      data: {
+        professions: [
+          { english: "write", translation: "escribir", phonetic: "/raɪt/" },
+          { english: "act", translation: "actuar / trabajar como actor", phonetic: "/ækt/" },
+          { english: "sing", translation: "cantar", phonetic: "/sɪŋ/" },
+          { english: "paint", translation: "pintar", phonetic: "/peɪnt/" },
+          { english: "compose (a poem)", translation: "componer (un poema o discurso)", phonetic: "/kəmˈpəʊz/" },
+          { english: "compose (music)", translation: "componer (música)", phonetic: "/kəmˈpəʊz/" },
+          { english: "dance", translation: "bailar", phonetic: "/dɑːns/" },
+          { english: "direct", translation: "dirigir", phonetic: "/dəˈrekt/" },
+          { english: "invent", translation: "inventar", phonetic: "/ɪnˈvent/" },
+          { english: "art", translation: "arte", phonetic: "/ɑːt/" },
+          { english: "novel", translation: "novela", phonetic: "/ˈnɒvl/" },
+          { english: "politics", translation: "política", phonetic: "/ˈpɒlətɪks/" },
+          { english: "science", translation: "ciencia", phonetic: "/ˈsaɪəns/" },
+          { english: "singer", translation: "cantante", phonetic: "/ˈsɪŋə/" },
+          { english: "writer", translation: "escritor/a", phonetic: "/ˈraɪtə/" },
+          { english: "composer", translation: "compositor/a", phonetic: "/kəmˈpəʊzə/" },
+          { english: "dancer", translation: "bailarín/a", phonetic: "/ˈdɑːnsə/" },
+          { english: "director", translation: "director/a", phonetic: "/dəˈrektə/" },
+          { english: "inventor", translation: "inventor/a", phonetic: "/ɪnˈventə/" },
+          { english: "artist", translation: "artista", phonetic: "/ˈɑːtɪst/" },
+          { english: "novelist", translation: "novelista", phonetic: "/ˈnɒvəlɪst/" }
+        ],
+        pastTime: [
+          { english: "yesterday", translation: "ayer", phonetic: "/ˈjestədeɪ/" },
+          { english: "morning", translation: "mañana (por la mañana)", phonetic: "/ˈmɔːnɪŋ/" },
+          { english: "last", translation: "último / pasado", phonetic: "/lɑːst/" },
+          { english: "night", translation: "noche", phonetic: "/naɪt/" },
+          { english: "month", translation: "mes", phonetic: "/mʌnθ/" },
+          { english: "three", translation: "tres", phonetic: "/θriː/" },
+          { english: "day", translation: "día", phonetic: "/deɪ/" },
+          { english: "five", translation: "cinco", phonetic: "/faɪv/" },
+          { english: "minute", translation: "minuto", phonetic: "/ˈmɪnɪt/" },
+          { english: "week", translation: "semana", phonetic: "/wiːk/" },
+          { english: "summer", translation: "verano", phonetic: "/ˈsʌmə/" },
+          { english: "before", translation: "antes", phonetic: "/bɪˈfɔː/" },
+          { english: "a", translation: "un / una", phonetic: "/ə/" },
+          { english: "year", translation: "año", phonetic: "/jɪə/" },
+          { english: "in", translation: "en", phonetic: "/ɪn/" }
+        ]
+      }
     }
   },
 
@@ -1585,6 +1847,29 @@ const BANKS = {
           { q: "(Are / Do) you tired? — Yes, I am.", opt: ["Are", "Do"], c: 0 },
           { q: "(Is / Does) your brother a musician?", opt: ["Is", "Does"], c: 0 },
           { q: "(Do / Are) your parents live in a village?", opt: ["Do", "Are"], c: 0 }
+        ]
+      }
+    },
+    7: {
+      label: "Banco de Ejercicios (Unidades 7)",
+      categories: [
+        { key: "wasWere", label: "Past Simple of be (7A)" },
+        { key: "wordFormation", label: "Word Formation: Professions (7A)" }
+      ],
+      data: {
+        wasWere: [
+          { q: "Kurt Vonnegut ___ an American writer.", opt: ["was", "were"], c: 0 },
+          { q: "The Beatles ___ famous in the 1960s.", opt: ["was", "were"], c: 1 },
+          { q: "She ___ in class yesterday. (negative)", opt: ["wasn't", "weren't"], c: 0 },
+          { q: "___ you at the concert last night?", opt: ["Was", "Were"], c: 1 },
+          { q: "I ___ born in Scotland.", opt: ["was", "were"], c: 0 }
+        ],
+        wordFormation: [
+          { q: "A person who writes books is a ___.", opt: ["writer", "inventor"], c: 0 },
+          { q: "A person who sings is a ___.", opt: ["singer", "composer"], c: 0 },
+          { q: "A person who directs films is a ___.", opt: ["director", "dancer"], c: 0 },
+          { q: "A person who invents new things is an ___.", opt: ["artist", "inventor"], c: 1 },
+          { q: "Kurt Vonnegut wrote novels, so he was a ___.", opt: ["novelist", "politician"], c: 0 }
         ]
       }
     }
