@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 3 (Unidades 7B–7C). Pasado simple con verbos regulares (+ -ed), negatives y preguntas con did/didn't, expresiones de tiempo pasado, pronunciación de la terminación -ed (/d/, /t/, /ɪd/), pasado simple con verbos irregulares, orden de palabras ASI y QuASI, las frases go/have/get, can → could, acento de frase, Grammar Bank 7, vocabulario y ejercicios.">
+  <title>English File Elementary - Módulo 3 (Units 7B - 7C)</title>
+  <meta property="og:title" content="English File Elementary - Módulo 3 (Units 7B - 7C)">
+  <meta property="og:description" content="Portal interactivo de estudio para English File Elementary A1 - Módulo 3 (Unidades 7B–7C). Pasado simple con verbos regulares (+ -ed), negatives y preguntas con did/didn't, expresiones de tiempo pasado, pronunciación de la terminación -ed (/d/, /t/, /ɪd/), pasado simple con verbos irregulares, orden de palabras ASI y QuASI, las frases go/have/get, can → could, acento de frase, Grammar Bank 7, vocabulario y ejercicios.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../../css/shared-theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Sidebar -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">M3</div>
+      <div class="logo-text">
+        <span class="logo-title">English File</span>
+        <span class="logo-subtitle">Módulo 3 (Units 7B-7C)</span>
+      </div>
+    </div>
+
+    <!-- Stats in Sidebar -->
+    <div class="sidebar-stats">
+      <div class="stat-header">
+        <span>Progreso Módulo 3</span>
+        <span id="overall-progress-text">0%</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="overall-progress-fill" style="width: 0%;"></div>
+      </div>
+      <div class="stat-score">
+        <span>Puntos: <strong id="score-counter">0</strong></span>
+        <span>Aciertos: <strong id="accuracy-counter">0%</strong></span>
+      </div>
+      <div class="progress-groups" aria-label="Progreso por bloque">
+        <div class="progress-group-row"><span>Unidades 7</span><strong id="progress-units7">0%</strong></div>
+        <div class="progress-group-row"><span>Total</span><strong id="progress-total">0%</strong></div>
+      </div>
+      <div class="progress-tools">
+        <button type="button" class="btn btn-outline btn-sm" id="btn-export-progress">Exportar progreso</button>
+        <button type="button" class="btn btn-outline btn-sm" id="btn-import-progress">Importar</button>
+        <input type="file" id="import-progress-file" accept="application/json,.json" hidden>
+      </div>
+    </div>
+
+    <!-- Nav items -->
+    <nav class="nav-links">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li class="nav-item active" data-target="dashboard-page" id="nav-dashboard">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          <span>Dashboard</span>
+        </li>
+        <li class="nav-item" data-target="lessons-page" id="nav-lessons">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+          <span>Lecciones (7B - 7C)</span>
+        </li>
+        <li class="nav-item" data-target="grammar-page" id="nav-grammar">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Grammar Bank 7</span>
+        </li>
+        <li class="nav-item" data-target="vocabulary-page" id="nav-vocabulary">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          <span>Vocabulary Bank 7</span>
+        </li>
+        <li class="nav-item" data-target="pronunciation-page" id="nav-pronunciation">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          <span>Pronunciación / Sonidos</span>
+        </li>
+        <li class="nav-item" data-target="exercises-page" id="nav-exercises">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Banco de Ejercicios</span>
+        </li>
+        <li class="nav-item" data-target="certificate-page" id="nav-certificate">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <span>Certificado Módulo 3</span>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Redirections -->
+    <div class="sidebar-home">
+      <a href="../modulo2/index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
+        <span>Módulo 2 (4A - 7A)</span>
+      </a>
+      <a href="../../index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
+        <span>Inicio Principal</span>
+      </a>
+    </div>
+
+    <!-- Audio settings -->
+    <div class="sidebar-settings">
+      <div class="settings-title">Ajustes de Voz</div>
+      <div class="setting-row">
+        <span>Acento:</span>
+        <select id="voice-accent-selector" class="custom-select">
+          <option value="en-GB" selected>British (UK)</option>
+          <option value="en-US">American (US)</option>
+        </select>
+      </div>
+      <div class="setting-row">
+        <span>Velocidad:</span>
+        <input type="range" id="voice-speed-slider" min="0.5" max="1.2" step="0.1" value="0.9">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+
+    <!-- 1. DASHBOARD PAGE -->
+    <section id="dashboard-page" class="page-section active">
+      <header class="section-header">
+        <h1 class="page-title">Módulo 3: English File Elementary</h1>
+        <p class="page-subtitle">Domina el pasado simple con verbos regulares (+ -ed), los auxiliares did/didn't, las expresiones de tiempo pasado, la pronunciación de la terminación -ed, los verbos irregulares, el orden de preguntas ASI y QuASI, las frases go/have/get y can → could (Units 7B–7C) con audio y prácticas interactivas.</p>
+      </header>
+
+      <div class="card intro-card">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <h2>¡Bienvenido al Módulo 3! 📘✨</h2>
+            <p>Este módulo cierra el <strong>File 7</strong> con las unidades <strong>7B</strong> (pasado simple de verbos regulares, <em>did/didn't</em>, expresiones de tiempo pasado y la pronunciación de <em>-ed</em>) y <strong>7C</strong> (verbos irregulares, <em>go/have/get</em>, <em>can → could</em> y acento de frase), más el <strong>Revise &amp; Check 7</strong>, con teoría, vocabulario con voz (UK/US), fonética y el <strong>Grammar Bank 7</strong>.</p>
+            <div class="intro-buttons">
+              <button class="btn btn-primary" onclick="app.loadLesson('7B')">Empezar Unidad 7B</button>
+              <button class="btn btn-outline" onclick="app.navigateTo('grammar-page')">Ver Grammar Bank</button>
+            </div>
+          </div>
+          <div class="intro-visual">
+            <div class="progress-circle-widget">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path class="circle" id="circle-progress" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <text x="18" y="20.35" class="percentage" id="dashboard-percentage">0%</text>
+              </svg>
+              <span class="circle-label">Progreso Módulo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Roadmap Grid -->
+      <div class="card smart-review-card" id="smart-review-box" style="display:none;">
+        <div class="smart-review-body">
+          <span class="card-tag highlight-tag">Repaso inteligente</span>
+          <p id="smart-review-text"></p>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-smart-review">Repasar ahora</button>
+      </div>
+
+      <h2 class="sub-section-title">Mapa de Lecciones (Units 7B - 7C)</h2>
+      <div class="roadmap-grid">
+
+        <div class="card roadmap-card" data-lesson="7B" onclick="app.loadLesson('7B')">
+          <div>
+            <div class="card-tag">Unit 7B</div>
+            <h3>Wrong name, wrong place</h3>
+            <p>El pasado simple con verbos regulares: las cuatro reglas del <em>-ed</em>, negativos y preguntas con <em>did/didn't</em> + verbo base, las expresiones de tiempo pasado y la pronunciación <em>/d/, /t/, /ɪd/</em>.</p>
+          </div>
+          <div class="roadmap-footer">
+            <span class="status-indicator">Pendiente</span>
+            <button class="btn btn-sm btn-primary">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="7C" onclick="app.loadLesson('7C')">
+          <div>
+            <div class="card-tag">Unit 7C</div>
+            <h3>Happy New Year? (Irregular Verbs)</h3>
+            <p>Los verbos irregulares en pasado (<em>go → went</em>, <em>have → had</em>, <em>get → got</em>), el orden de preguntas <strong>ASI</strong> y <strong>QuASI</strong>, las frases <em>go / have / get</em>, <em>can → could</em> y el acento de frase.</p>
+          </div>
+          <div class="roadmap-footer">
+            <span class="status-indicator">Pendiente</span>
+            <button class="btn btn-sm btn-primary">Estudiar</button>
+          </div>
+        </div>
+
+        <div class="card roadmap-card" data-lesson="RC7" onclick="app.loadLesson('RC7')">
+          <div>
+            <div class="card-tag highlight-tag">Review</div>
+            <h3>7 Revise and Check</h3>
+            <p>Evaluación acumulativa del File 7: <em>was/were</em>, verbos regulares con <em>-ed</em>, verbos irregulares, <em>did/didn't</em>, expresiones de tiempo pasado y pronunciación.</p>
+          </div>
+          <div class="roadmap-footer">
+            <span class="status-indicator">Pendiente</span>
+            <button class="btn btn-sm btn-outline">Hacer Test</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. LESSONS VIEW -->
+    <section id="lessons-page" class="page-section">
+      <header class="lesson-view-header">
+        <div class="back-nav" onclick="app.navigateTo('dashboard-page')">
+          <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span>Volver al Dashboard</span>
+        </div>
+        <h2 class="page-title" id="active-lesson-title">Cargando Lección...</h2>
+      </header>
+
+      <nav class="lesson-switcher" id="lesson-switcher" aria-label="Selector de lección"></nav>
+
+      <div class="tab-navigation">
+        <button class="tab-btn active" data-tab="lesson-theory" onclick="app.switchLessonTab('lesson-theory')">Teoría y Explicaciones</button>
+        <button class="tab-btn" data-tab="lesson-vocab" onclick="app.switchLessonTab('lesson-vocab')">Vocabulario y Audios</button>
+        <button class="tab-btn" data-tab="lesson-exercises" onclick="app.switchLessonTab('lesson-exercises')">Ejercicios de la Lección</button>
+      </div>
+
+      <div class="tab-content" id="lesson-theory"></div>
+      <div class="tab-content" id="lesson-vocab" style="display:none;"></div>
+
+      <div class="tab-content" id="lesson-exercises" style="display:none;">
+        <div class="card">
+          <div class="quiz-info-container">
+            <span class="quiz-progress-indicator" id="lesson-quiz-indicator">Pregunta 1 de 5</span>
+            <span class="score-badge" id="lesson-quiz-score">Aciertos: 0</span>
+          </div>
+          <div class="quiz-content-area" id="lesson-quiz-area"></div>
+          <div class="quiz-feedback" id="lesson-quiz-feedback" style="display:none;">
+            <h4 id="lesson-feedback-title">¡Correcto!</h4>
+            <p id="lesson-feedback-text">Detalle explicativo.</p>
+          </div>
+          <div class="quiz-actions">
+            <button class="btn btn-primary" id="btn-submit-lesson-quiz" onclick="app.submitLessonQuiz()">Comprobar</button>
+            <button class="btn btn-success" id="btn-next-lesson-quiz" style="display:none;" onclick="app.nextLessonQuiz()">Siguiente</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GRAMMAR BANK PAGE -->
+    <section id="grammar-page" class="page-section">
+      <header class="section-header">
+        <h2 class="page-title" id="grammar-bank-title">Grammar Bank 7</h2>
+        <p class="page-subtitle">Reglas oficiales de English File y práctica para las unidades 7B–7C.</p>
+      </header>
+
+      <div class="module-switch tab-navigation" role="tablist" aria-label="Selector de módulo Grammar Bank">
+        <button type="button" class="tab-btn grammar-mod-btn active" data-gmod="7" onclick="app.loadGrammarBank(7)">Unidades 7</button>
+      </div>
+
+      <div class="grammar-split-container">
+        <div class="card">
+          <h2 id="grammar-theory-heading" style="margin-bottom:1.25rem;">Teoría Oficial Grammar Bank 7</h2>
+          <div id="grammar-bank-theory-content"></div>
+        </div>
+
+        <div class="card">
+          <h2 id="grammar-practice-heading" style="margin-bottom:1.25rem;">Práctica Grammar Bank 7</h2>
+          <div class="quiz-info-container">
+            <span class="quiz-progress-indicator" id="grammar-bank-indicator">Pregunta 1 de 10</span>
+            <span class="score-badge" id="grammar-bank-score">Aciertos: 0</span>
+          </div>
+          <div class="quiz-content-area" id="grammar-bank-exercise-area"></div>
+          <div class="quiz-feedback" id="grammar-bank-feedback" style="display:none;">
+            <h4 id="grammar-feedback-title">¡Bien hecho!</h4>
+            <p id="grammar-feedback-text">Explicación gramatical.</p>
+          </div>
+          <div class="quiz-actions">
+            <button class="btn btn-primary" id="btn-submit-grammar-bank" onclick="app.submitGrammarBankAnswer()">Comprobar</button>
+            <button class="btn btn-success" id="btn-next-grammar-bank" style="display:none;" onclick="app.nextGrammarBankQuestion()">Siguiente</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. VOCABULARY BANK PAGE -->
+    <section id="vocabulary-page" class="page-section">
+      <header class="section-header">
+        <h2 class="page-title" id="vocab-bank-title">Vocabulary Bank 7</h2>
+        <p class="page-subtitle">Aprende y practica vocabulario temático con voz (UK/US), flashcards y juego de emparejar.</p>
+      </header>
+
+      <div class="module-switch tab-navigation" role="tablist" aria-label="Selector de módulo Vocabulary Bank">
+        <button type="button" class="tab-btn vocab-mod-btn active" data-vmod="7" onclick="app.selectVocabularyBank(null, 7)">Unidades 7</button>
+      </div>
+
+      <div class="tab-navigation" id="vocab-category-tabs">
+        <button class="tab-btn vocab-cat-btn active" data-vocab="pastTime" data-vocab-cat onclick="app.selectVocabularyBank('pastTime', 7)">Past Time Expressions (7B)</button>
+        <button class="tab-btn vocab-cat-btn" data-vocab="regularVerbs" data-vocab-cat onclick="app.selectVocabularyBank('regularVerbs', 7)">Regular Verbs in the Past (7B)</button>
+        <button class="tab-btn vocab-cat-btn" data-vocab="goHaveGet" data-vocab-cat onclick="app.selectVocabularyBank('goHaveGet', 7)">go, have, get (7C)</button>
+      </div>
+
+      <div class="tab-navigation" style="margin-bottom:1.5rem;">
+        <button class="tab-btn mode-btn active" id="btn-vocab-mode-list" onclick="app.switchVocabMode('list')">Lista con Audio</button>
+        <button class="tab-btn mode-btn" id="btn-vocab-mode-flashcards" onclick="app.switchVocabMode('flashcards')">Flashcards</button>
+        <button class="tab-btn mode-btn" id="btn-vocab-mode-game" onclick="app.switchVocabMode('game')">Juego de Emparejar</button>
+      </div>
+
+      <!-- Mode: List -->
+      <div id="vocab-content-list" class="vocab-mode-content"></div>
+
+      <!-- Mode: Flashcards -->
+      <div id="vocab-content-flashcards" class="vocab-mode-content" style="display:none;">
+        <div class="flashcard-deck-container">
+          <div class="flashcard-card-wrapper" onclick="app.flipVocabCard()">
+            <div class="vocab-flashcard" id="vocab-flashcard-element">
+              <div class="vcard-face vcard-front">
+                <span class="card-hint">Palabra en Inglés (Toca para girar)</span>
+                <div class="card-content" id="vcard-front-text">yesterday morning</div>
+                <button class="speaker-btn card-speaker" onclick="event.stopPropagation(); app.speakVocabCard()">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                </button>
+              </div>
+              <div class="vcard-face vcard-back">
+                <span class="card-hint">Significado y Fonética</span>
+                <div class="card-content" id="vcard-back-text">ayer por la mañana</div>
+                <div class="card-phonetic" id="vcard-back-phonetic">/ˈjestədeɪ ˈmɔːnɪŋ/</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard-controls">
+            <button class="btn btn-outline" onclick="app.prevVocabCard()">Anterior</button>
+            <span id="vocab-card-counter">1 de 10</span>
+            <button class="btn btn-primary" onclick="app.nextVocabCard()">Siguiente</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mode: Game -->
+      <div id="vocab-content-game" class="vocab-mode-content" style="display:none;">
+        <div class="card">
+          <h2>Juego de Emparejar Vocabulario</h2>
+          <p style="color:var(--text-secondary); margin-bottom:1rem;">Haz clic en una palabra en inglés y luego en su significado en español:</p>
+          <div class="matching-grid" id="vocab-matching-grid-container"></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--glass-border); padding-top:1rem;">
+            <span>Intentos: <strong id="game-attempts-val">0</strong> | Errores: <strong id="game-errors-val">0</strong></span>
+            <button class="btn btn-outline btn-sm" onclick="app.resetVocabMatchingGame()">Reiniciar Juego</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRONUNCIATION PAGE -->
+    <section id="pronunciation-page" class="page-section">
+      <header class="section-header">
+        <h2 class="page-title">Fonética y Pronunciación (Módulo 3)</h2>
+        <p class="page-subtitle">Domina la pronunciación de la terminación <strong>-ed</strong> (/d/, /t/, /ɪd/) y el acento de frase en las preguntas del pasado.</p>
+      </header>
+
+      <div class="card">
+        <h3>Sonidos Fonéticos Destacados del Módulo 3</h3>
+        <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Toca cualquier tarjeta fonética para escuchar la articulación de la palabra de ejemplo:</p>
+        <div class="phoneme-grid" id="phonemes-module-grid"></div>
+      </div>
+    </section>
+
+    <!-- 6. EXERCISES PAGE -->
+    <section id="exercises-page" class="page-section">
+      <header class="section-header">
+        <h2 class="page-title" id="exercises-bank-title">Banco de Ejercicios (Unidades 7B-7C)</h2>
+        <p class="page-subtitle">Práctica interactiva clasificada por categorías de las Unidades 7B y 7C.</p>
+      </header>
+
+      <div class="module-switch tab-navigation" role="tablist" aria-label="Selector de módulo de ejercicios">
+        <button type="button" class="tab-btn ex-mod-btn active" data-exmod="7" onclick="app.selectExerciseCategory(null, 7)">Unidades 7</button>
+      </div>
+
+      <div class="tab-navigation scrollable-tabs" id="exercise-category-tabs">
+        <button class="tab-btn active" data-excat="regularVerbs" onclick="app.selectExerciseCategory('regularVerbs', 7)">Past Simple: Regular Verbs (7B)</button>
+        <button class="tab-btn" data-excat="irregularVerbs" onclick="app.selectExerciseCategory('irregularVerbs', 7)">Past Simple: Irregular Verbs (7C)</button>
+      </div>
+
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.25rem;">
+          <h2 id="ex-category-title">Ejercicios: Past Simple: Regular Verbs (7B)</h2>
+          <span class="score-badge" id="exercises-score">Total: 5</span>
+        </div>
+        <div id="exercises-dynamic-list"></div>
+      </div>
+    </section>
+
+    <!-- 7. CERTIFICATE PAGE -->
+    <section id="certificate-page" class="page-section">
+      <header class="section-header">
+        <h2 class="page-title">Certificado Módulo 3</h2>
+        <p class="page-subtitle">Acredita tu superación de las unidades 7B–7C del File 7 de English File Elementary.</p>
+      </header>
+
+      <!-- Locked Panel -->
+      <div class="card" id="cert-locked-panel" style="text-align:center; padding:3rem 2rem;">
+        <div style="font-size:3rem; margin-bottom:1rem;">🔒</div>
+        <h2>Certificado Bloqueado</h2>
+        <p style="color:var(--text-secondary); max-width:500px; margin:0.75rem auto 1.5rem auto;">Debes alcanzar al menos el <strong>80% del progreso general</strong> en las lecciones y el Grammar Bank 7 para desbloquear tu diploma.</p>
+        <div class="progress-bar-container" style="max-width:350px; margin:0 auto 1rem auto;">
+          <div class="progress-bar-fill" id="cert-progress-fill-bar" style="width:0%;"></div>
+        </div>
+        <p id="cert-progress-status-val" style="font-size:0.85rem; color:var(--text-muted);">Progreso actual: 0% / 80%</p>
+      </div>
+
+      <!-- Unlocked Panel -->
+      <div id="cert-unlocked-panel" style="display:none;">
+        <div class="card">
+          <h2>¡Enhorabuena, has desbloqueado tu Diploma del Módulo 3! 🏆🎉</h2>
+          <p style="color:var(--text-secondary); margin:0.5rem 0 1.25rem 0;">Introduce tu nombre para personalizar tu diploma oficial:</p>
+          <div style="display:flex; gap:1rem; max-width:600px;">
+            <input type="text" id="cert-name-input" class="quiz-input-field" value="Estudiante de Inglés" placeholder="Tu nombre...">
+            <button class="btn btn-success" onclick="app.printCertificate()">Imprimir / Guardar PDF</button>
+          </div>
+        </div>
+
+        <div class="certificate-printable-area">
+          <div class="certificate-frame">
+            <div class="cert-watermark">EF</div>
+            <div class="cert-header">DIPLOMA DE FINALIZACIÓN</div>
+            <div class="cert-badge">Módulo 3 · Elementary (Units 7B - 7C)</div>
+
+            <p class="cert-intro">Se certifica solemnemente que el alumno(a)</p>
+            <h2 class="cert-student-name" id="cert-display-name">Estudiante de Inglés</h2>
+
+            <p class="cert-description">Ha completado con éxito las unidades correspondientes del <strong>File 7</strong> del syllabus <strong>English File Elementary 4th Edition</strong> (desde el <strong>File 7B hasta el File 7C</strong>), demostrando dominio del pasado simple con verbos regulares y sus terminaciones <em>-ed</em>, los auxiliares <em>did / didn't</em>, las expresiones de tiempo pasado, el pasado simple con verbos irregulares, el orden de palabras en preguntas (<em>ASI</em> y <em>QuASI</em>), las frases <em>go / have / get</em>, el uso de <em>could</em> y la pronunciación de la terminación <em>-ed</em>, con un rendimiento del 80% o superior.</p>
+
+            <div class="cert-details">
+              <div class="cert-col">
+                <span class="detail-label">Fecha de Emisión</span>
+                <strong class="detail-val" id="cert-issue-date">17 de Agosto, 2026</strong>
+              </div>
+              <div class="cert-col">
+                <span class="detail-label">Firma Autorizada</span>
+                <span class="signature-line">English File Study Portal</span>
+              </div>
+              <div class="cert-col">
+                <span class="detail-label">Código de Verificación</span>
+                <strong class="detail-val" style="font-family:monospace;">EF-ELEM-MOD3-7B7C</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
