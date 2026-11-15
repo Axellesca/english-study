@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Examen interactivo de English File Elementary A1 (Módulos 1 y 2: unidades 1A a 7A). Secciones de Grammar, Listening, Writing y Speaking con corrección automática, explicaciones y respuestas modelo. Cada refresh genera un examen nuevo.">
+  <title>Examen A1 · English File Elementary (Módulos 1 y 2)</title>
+  <meta property="og:title" content="Examen A1 · English File Elementary (Módulos 1 y 2)">
+  <meta property="og:description" content="Examen interactivo de English File Elementary A1 (Módulos 1 y 2). Grammar, Listening, Writing y Speaking con corrección automática y explicaciones.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../../css/shared-theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,750&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo-container">
+      <div class="logo-icon">EX</div>
+      <div class="logo-text">
+        <span class="logo-title">English File</span>
+        <span class="logo-subtitle">Examen A1</span>
+      </div>
+    </div>
+
+    <div class="sidebar-stats">
+      <div class="stat-header">
+        <span>Intento</span>
+        <span id="exam-attempt">1</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="overall-progress-fill" style="width: 0%;"></div>
+      </div>
+      <div class="stat-score">
+        <span>Mejor total: <strong id="best-score">—</strong></span>
+        <span>Secciones: <strong id="sections-done">0/4</strong></span>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li class="nav-item active" data-target="exam-top">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Examen</span>
+        </li>
+        <li class="nav-item" data-target="history-block">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg>
+          <span>Historial</span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-home">
+      <a href="../index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
+        <span>Hub de A1</span>
+      </a>
+      <a href="../modulo2/index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+        <span>Módulo 2 (4A-7A)</span>
+      </a>
+      <a href="../../index.html" class="btn-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/><polyline points="9 21 9 12 15 12 15 21"/></svg>
+        <span>Inicio Principal</span>
+      </a>
+    </div>
+
+    <div class="sidebar-settings">
+      <div class="settings-title">Ajustes de Voz</div>
+      <div class="setting-row">
+        <span>Acento:</span>
+        <select id="voice-accent-selector" class="custom-select">
+          <option value="en-GB" selected>British (UK)</option>
+          <option value="en-US">American (US)</option>
+        </select>
+      </div>
+      <div class="setting-row">
+        <span>Velocidad:</span>
+        <input type="range" id="voice-speed-slider" min="0.5" max="1.2" step="0.1" value="0.9">
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <section id="exam-top" class="page-section active">
+      <header class="section-header exam-header">
+        <div class="exam-header-text">
+          <h1 class="page-title">Examen Final A1</h1>
+          <p class="page-subtitle">English File Elementary · <strong>Módulo 1 (1A–3C)</strong> + <strong>Módulo 2 (4A–7A)</strong> · 4 secciones con corrección y explicaciones.</p>
+        </div>
+        <div class="exam-header-actions">
+          <button type="button" class="btn btn-primary" id="btn-new-exam">🔄 Nuevo examen</button>
+          <span class="exam-refresh-hint">Cada recarga o botón genera ejercicios distintos.</span>
+        </div>
+      </header>
+
+      <div class="card exam-summary-card">
+        <div class="exam-summary" id="exam-summary"></div>
+      </div>
+
+      <div class="exam-section" id="section-grammar"></div>
+      <div class="exam-section" id="section-listening"></div>
+      <div class="exam-section" id="section-writing"></div>
+      <div class="exam-section" id="section-speaking"></div>
+
+      <div class="card exam-history-card" id="history-block">
+        <h2 class="exam-history-title">📈 Historial de intentos</h2>
+        <div id="exam-history"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
