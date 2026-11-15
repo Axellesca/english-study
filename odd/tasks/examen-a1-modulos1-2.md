@@ -1,0 +1,42 @@
+# Examen A1 — Módulos 1 y 2 (sección "Exams" del portal)
+
+**Objetivo**: Crear un examen interactivo que cubra **todo el Módulo 1 (1A–3C) y el Módulo 2 (4A–7A)** con cuatro secciones —Grammar, Listening, Writing y Speaking— con envío y corrección por sección, y que sea **dinámico**: cada recarga de la página o cada botón "Nuevo examen" trae ejercicios distintos.
+**Branch**: `main` (precedente del repo: work-unit commits en main; push solo con autorización explícita del usuario).
+**Delivery**: work-unit commits (slice-1 módulo `A1/exams/`; slice-2 portales + tema; slice-3 docs).
+**Test runner**: `node --check` + aserciones `node` (vm) scratch + browser-automation headless.
+
+## Specs
+
+- **S1**: Pedido del usuario (verbatim): "Necesito que me crees un examen que entre todo el modulo 1 y 2, debe tener Writing, Grammar, Listening, y si es posible Speaking o Preguntas con para prepararme en el Speaking, creami una seccion en el index, que diga Examenes o Exams y pon este, hazlo dinamico, asi cada vez que se refresca la pagina o yo seleccione un boton de refresh me traiga otros ejercicios para no acostumbrarme siempre a lo mismo, además debe tener sus secciones separadas y enviarlas para saber si están correctas o no, con sus correcciónes."
+- **S2**: Cobertura: **19 unidades** — Módulo 1 (1A, 1B, 1C, 2A, 2B, 2C, 3A, 3B, 3C) + Módulo 2 (4A, 4B, 4C, 5A, 5B, 5C, 6A, 6B, 6C, 7A). Cada ítem muestra su unidad de origen.
+- **S3**: Sección nueva en el index del portal (`index.html` raíz) con el rótulo **"Exams"** y la card `#card-exams` ("Examen Final A1", 4 secciones, 19 unidades) con pill/dot/hover propios en crimson.
+- **S4**: **Grammar** (10 ítems): un generador por unidad con parámetros sorteados en cada build (variantes infinitas). 4 opciones siempre, barajadas en cada generación para que la correcta no caiga siempre en el mismo lugar. Cada ítem lleva explicación de por qué la respuesta es esa.
+- **S5**: **Listening** (5 ítems): frases del curso leídas con TTS (acento UK/US + velocidad configurables); el alumno transcribe lo que oye. La comparación normaliza mayúsculas, signos y espacios. El feedback muestra la frase correcta con su traducción y permite volver a escucharla.
+- **S6**: **Writing** (3 consignas al azar de 12): se evalúan los *elementos clave* de cada respuesta (p. ej. "adverbio de frecuencia", "pasado simple", "expresión de tiempo pasado"), no la prosa. El feedback lista qué elementos faltan y muestra una respuesta modelo.
+- **S7**: **Speaking** (3 prompts al azar de 10): consigna, botón para escucharla, frases clave para usar, criterios de autoevaluación con checklist y respuesta modelo oculta hasta que se pide. Se rotula explícitamente como autoevaluación.
+- **S8**: Envío y corrección **por sección**: cada sección tiene su propio botón "Comprobar", su puntaje (X/Y) y su corrección; "↩ Corregir respuestas" reabre la sección para corregir y reenviar. Resumen global con las 4 secciones + total (media) cuando las cuatro están enviadas.
+- **S9**: Dinamismo: generación nueva en cada carga de página, botón "🔄 Nuevo examen" (todo) y "🔄 Otra versión" por sección. El historial guarda los últimos 10 intentos con fecha y puntajes por sección, y el mejor total.
+- **S10**: Módulo autocontenido en `A1/exams/` (index.html, style.css, app.js, data.js) con identidad visual propia (crimson `#be123c`), coherente con el patrón del repo; enlaces al hub de A1, al Módulo 2 y al inicio.
+- **S11**: Checks: `node --check` en data.js y app.js; aserciones vm que construyen **todos** los generadores 40 veces cada uno (forma válida: 4 opciones únicas, índice de corrección correcto, explicación presente) y verifican la variación entre generaciones; browser headless con el flujo completo (enviar, corregir, reenviar, refrescar) sin errores de consola.
+
+## Tasks
+
+| ID | S# | Route | Status | Commit |
+|----|----|-------|--------|--------|
+| T1 | S2,S4 | inline | done (28 generadores, 19 unidades) | slice-1 |
+| T2 | S5,S6,S7 | inline | done (listening 43 frases, writing 12 tareas, speaking 10 prompts) | slice-1 |
+| T3 | S8,S9 | inline | done (motor: envío, corrección, reopen, refresh, historial) | slice-1 |
+| T4 | S10 | inline | done (index.html + style.css crimson) | slice-1 |
+| T5 | S3 | inline | done (sección Exams + card en la portada + hub A1) | slice-2 |
+| T6 | S11 | inline | done (41/41 vm + browser 0 errores) | slice-1/2 |
+
+## Log
+
+- **L1** (2026-11-15): Pedido original del usuario (verbatim): "Necesito que me crees un examen que entre todo el modulo 1 y 2, debe tener Writing, Grammar, Listening, y si es posible Speaking o Preguntas con para prepararme en el Speaking, creami una seccion en el index, que diga Examenes o Exams y pon este, hazlo dinamico, asi cada vez que se refresca la pagina o yo seleccione un boton de refresh me traiga otros ejercicios para no acostumbrarme siempre a lo mismo, además debe tener sus secciones separadas y enviarlas para saber si están correctas o no, con sus correcciónes."
+- **L2** (2026-11-15) Contenido del Módulo 1 relevado por un explorador read-only sobre `A1/app.js`: 1A "Hello" (be afirmativo + pronombres), 1B "One World" (be negativo + preguntas), 1C "What's Your Email?" (adjetivos posesivos), 2A "Are You Tidy or Untidy?" (singular/plural, a/an, the), 2B "Made in the UK" (adjetivos + very/quite), 2C "Slow Down!" (imperativos + Let's), 3A "Britain: the Good and the Bad" (presente simple -s / don't-doesn't), 3B "9 to 5" (preguntas do/does + respuestas cortas + WH), 3C "Love Me, Love My Dog" (orden ASI/QuASI + preguntas con be) + RC12.
+- **L3** (2026-11-15) Contenido del Módulo 2 tomado de la sesión anterior (ya en contexto): 4A posesivos/Whose-Who's, 4B preposiciones de tiempo, 4C adverbios de frecuencia, 5A can/can't, 5B presente continuo, 5C present simple vs continuous + clima, 6A pronombres objeto, 6B like + -ing + ordinales, 6C be or do?, 7A was/were + formación de palabras.
+- **L4** (2026-11-15) Route declaration: **inline**. El módulo se arma con el patrón ya probado del repo (carpeta autocontenida). El contenido de los generadores de gramática se عرفó en paralelo con un explorador read-only (mapping trigger: 4787 líneas de `A1/app.js` excedían el presupuesto de lectura inline), sin solapar archivos con la escritura del motor.
+- **L5** (2026-11-15) Implementado: `A1/exams/data.js` (28 generadores de gramática que cubren las 19 unidades + 43 frases de listening + 12 tareas de writing + 10 prompts de speaking), `A1/exams/app.js` (motor de generación, corrección por sección, TTS, historial), `A1/exams/index.html`, `A1/exams/style.css` (crimson).
+- **L6** (2026-11-15) Verificación: `node --check` OK; aserciones vm **41/41 PASS** (los generadores construyen preguntas válidas en 40 rondas cada uno y varían entre generaciones; pools con forma completa; wiring y portales presentes). Browser headless (`http://localhost/ingles/A1/exams/index.html`): **0 errores de consola, 0 requests fallidos**. Flujo verificado: 10 preguntas de grammar con mezcla aleatoria de unidades (7B, 3A, 6B, 7A, 4B, 6A, 4A, 1B, 2A…) → corrección 10/10 tras usar "Corregir respuestas"; listening mal → "✘ No coincide" con la frase y su traducción → bien → "✔ ¡Correcto!"; writing vacío → lista de elementos faltantes + modelo → con el modelo → "✔ ¡Todo correcto!"; speaking → "Autoevaluación: 4 de 4 criterios logrados" + respuesta modelo; total, historial y "Secciones 4/4" en la sidebar; "Nuevo examen" cambia las preguntas y resetea los puntajes; "Otra versión" regenera la sección y resetea su puntaje.
+- **L7** (2026-11-15) Bugs reales encontrados y corregidos por las verificaciones (no por inspección visual): (a) tres generadores producían 3 o 5 opciones en vez de 4 → `choice()` ahora deduplica y recorta a 4, y los generadores con listas cortas se completaron; (b) el patrón "oración completa" exigía punto final y rechazaba respuestas modelo en interrogación → acepta `.` `?` `!`; (c) no había forma de reabrir una sección ya corregida → se agregó el botón "↩ Corregir respuestas" (`reopenSection`).
+- **L8** (2026-11-15) Delivery: 3 work-unit commits en `main` (slice-1 `A1/exams/`; slice-2 portales + `--accent-rose`; slice-3 este feature doc). `.atl/skill-registry.md` queda sin commit (cache local). Sin push (solo con autorización explícita del usuario).
