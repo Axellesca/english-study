@@ -33,6 +33,8 @@
 
   --accent-teal: #0f766e;
   --accent-teal-subtle: rgba(15, 118, 110, 0.1);
+  --accent-violet: #5b21b6;
+  --accent-violet-subtle: rgba(91, 33, 182, 0.1);
 
   --color-success: #15803d;
   --color-success-subtle: rgba(21, 128, 61, 0.1);
