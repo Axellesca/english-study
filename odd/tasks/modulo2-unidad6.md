@@ -21,12 +21,12 @@
 
 | ID | S# | Route | Status | Commit |
 |----|----|-------|--------|--------|
-| T1 | S2,S3 | inline | pending | — |
-| T2 | S4 | inline | pending | — |
-| T3 | S5 | inline | pending | — |
-| T4 | S6 | inline | pending | — |
-| T5 | S7 | inline | pending | — |
-| T6 | S8 | inline | pending | — |
+| T1 | S2,S3 | inline | done (RED→GREEN observado; L5) | e50e5aa |
+| T2 | S4 | inline | done (RC6 tras RC5; 5 tipos de ejercicio) | e50e5aa |
+| T3 | S5 | inline | done (grammar 10 ej; vocab 16/26/16; ex 5/5/4/5) | e50e5aa |
+| T4 | S6 | inline | done (units6, gb6, 4 phoneme cards) | e50e5aa |
+| T5 | S7 | inline | done (modulo2 + root + A1 hub) | e50e5aa, 9a97961 |
+| T6 | S8 | inline | done (structural 12/12; vm 34/34; no regrets) | 9a97961 |
 
 ## Log
 
@@ -35,3 +35,7 @@
 - **L3** (2026-10-19): webfetch sobre PDFs OUP devuelve bytes crudos (no extrae texto) → usar websearch/langeek HTML. Decisión de orden de chips: 6A-6C insertados entre 5C y RC4; RC6 después de RC5 (unidades agrupadas, reviews al final).
 - **L4** (2026-10-19): Estado de git al iniciar: main @ 11ff2be; working tree solo con `.atl/skill-registry.md` modificado (cache local, no se commitea). Estrategia delivery confirmada por precedencia del repo (commit 11ff2be etc. en main).
 - **L5** (2026-10-19) RED: `node -e` aserción `"6A" exists in LESSONS` → false (FAIL esperado); structural-check baseline PASS con 8 claves. contraste: la misma aserción da true tras implementar (GREEN).
+- **L6** (2026-10-19) Implemented: LESSONS 6A/6B/6C insertadas entre 5C y RC4; RC6 tras RC5 (asunción S9). data.js +624 líneas; detalles corregidos en vuelo (markup roto en RC6, tabla 6A "it→them", nota /ɪ/ vs /iː/ con ship/sheep, explicación 6B.c). Verificación GREEN: structural-check PASS 12 claves LESSONS + 12 cards data-lesson; `node --check` data.js y app.js sin error; script vm `unidad6-structure-assert.js` 34/34 PASS (módulos 6, conteos vocab 23/32/18/8, banks grammar 10 / vocab 16+26+16 / exercises 5+5+4+5, wiring app.js: units6, defaultProgress, units6Pct, gb6, 4 phoneme cards, html data-gmod/vmod/exmod=6, #progress-units6, карточка RC6).
+- **L7** (2026-10-19) Commits: e50e5aa `feat(a1-modulo2): add File 6 lessons (6A-6C, RC6) and Banks 6` (data.js + app.js + modulo2/index.html, +709/−24); 9a97961 `feat(portal): extend Modulo 2 card and hub labels to Units 4A-6C` (root index.html + A1 hub + feature doc, +42/−5). `.atl/skill-registry.md` queda sin commit (cache local). Sin push ni PR (solo con autorización del usuario).
+- **L8** (2026-10-19) RDD: `gentle-ai review assess` ×2 OK tras varios timeouts históricos: candidato current-changes (medium, executable_change en .atl) y slice committed base-ref 11ff2be → `review_due: false` (under_budget). El slice queda pendiente de presupuesto de review; no se inicia ceremony.
+- **L9** (2026-10-19) Cierre: feature completa (T1–T6 done). RC6 documentado como asunción S9 (patrón RC por File del portal). Follow-up posible (no pedido): integrar Practical English Episode 3. Neto: ~750 líneas añadidas en módulo + portales.
