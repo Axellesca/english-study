@@ -509,66 +509,6 @@ const EXAM_CONTENT = {
             `Complete with the profession: A person who ___s is a ___. (${it.v})`,
             `Al verbo le añadimos -er u -or para formar la profesión: ${it.v} → ${it.corr}.`);
         }
-      },
-
-      {
-        id: 'past-time', unit: '7B',
-        build() {
-          const items = [
-            { q: 'We booked a hotel ___', corr: 'last month', wrong: ['the last month', 'last months', 'in last month'] },
-            { q: 'She arrived ___', corr: 'three days ago', wrong: ['the three days ago', 'three days before', 'three days since'] },
-            { q: 'They travelled by bus ___', corr: 'in 2017', wrong: ['on 2017', 'at 2017', 'the 2017'] }
-          ];
-          const it = rand(items);
-          return choice(it.corr, it.wrong.filter(x => x !== it.corr),
-            `Complete the past time expression: ${it.q}`,
-            `Decimos "last week / last month / last year" SIN "the". Con "ago" va el número y sin "the": "three days ago".`);
-        }
-      },
-
-      {
-        id: 'did-question', unit: '7B',
-        build() {
-          const items = [
-            { v: 'play tennis', corr: 'Did you play tennis yesterday?', wrong: ['Did you played tennis yesterday?', 'Do you played tennis yesterday?', 'Did you play tennis yesterday'] },
-            { v: 'watch TV', corr: 'Did you watch TV every night?', wrong: ['Did you watched TV every night?', 'Do you watch TV every night?', 'Did you watch TV every night'] }
-          ];
-          const it = rand(items);
-          return choice(it.corr, it.wrong.filter(x => x !== it.corr),
-            `Choose the correct question:`,
-            `En pasado: "Did" + verbo en FORMA BASE. "Did you played" está mal: con did el verbo no lleva -ed ni -s.`);
-        }
-      },
-
-      {
-        id: 'irregular-past', unit: '7C',
-        build() {
-          const items = [
-            { v: 'go', corr: 'went', wrong: ['goed', 'gone', 'going'] },
-            { v: 'have', corr: 'had', wrong: ['hade', 'haved', 'having'] },
-            { v: 'get', corr: 'got', wrong: ['geted', 'gotten', 'getting'] },
-            { v: 'buy', corr: 'bought', wrong: ['buyed', 'bougth', 'buying'] },
-            { v: 'think', corr: 'thought', wrong: ['thinked', 'thougth', 'thinking'] }
-          ];
-          const it = rand(items);
-          return choice(it.corr, it.wrong.filter(x => x !== it.corr),
-            `Complete with the past simple: They ___ (${it.v}) to a party.`,
-            `Los verbos irregulares cambian de forma y hay que memorizarlos: go → went, have → had, get → got, buy → bought, think → thought.`);
-        }
-      },
-
-      {
-        id: 'could', unit: '7C',
-        build() {
-          const items = [
-            { q: 'I ___ see him.', corr: "couldn't", wrong: ["didn't can", "can't", "don't could"] },
-            { q: '___ you wear jeans when you were at school?', corr: 'Could', wrong: ['Did', 'Can', 'Would'] }
-          ];
-          const it = rand(items);
-          return choice(it.corr, it.wrong.filter(x => x !== it.corr),
-            `Complete: ${it.q}`,
-            `El pasado de "can" es "could" y el negativo es "couldn't" — nunca "didn't can".`);
-        }
       }
     ]
   },
@@ -615,11 +555,7 @@ const EXAM_CONTENT = {
       { unit: '6C', text: "Do you like classical music?", translation: '¿Te gusta la música clásica?' },
       { unit: '6C', text: "I think it's fantastic.", translation: 'Me parece fantástico.' },
       { unit: '7A', text: "Vincent van Gogh was an artist.", translation: 'Vincent van Gogh era un artista.' },
-      { unit: '7A', text: "She wasn't in class yesterday.", translation: 'Ella no estaba en clase ayer.' },
-      { unit: '7B', text: "We booked a hotel last month.", translation: 'Reservamos un hotel el mes pasado.' },
-      { unit: '7B', text: "Did you watch football on TV yesterday?", translation: '¿Viste fútbol en TV ayer?' },
-      { unit: '7C', text: "I had a fantastic New Year's Eve.", translation: 'Pasé un Año Nuevo fantástico.' },
-      { unit: '7C', text: "Where did you go last night?", translation: '¿Adónde fuiste anoche?' }
+      { unit: '7A', text: "She wasn't in class yesterday.", translation: 'Ella no estaba en clase ayer.' }
     ]
   },
 
@@ -712,27 +648,7 @@ const EXAM_CONTENT = {
         ]
       },
       {
-        id: 'w9', unit: '7B',
-        prompt: 'Escribí UNA frase en pasado simple con un verbo regular (buscá la terminación -ed) sobre algo que hiciste ayer.',
-        hint: 'Ej.: "I cooked dinner last night."',
-        model: 'I cooked dinner last night.',
-        keyPoints: [
-          { label: 'Verbo regular en pasado (con -ed)', patterns: ['\\b[a-z]+ed\\b'] },
-          { label: 'Expresión de tiempo pasado', patterns: ['last |yesterday|ago'] }
-        ]
-      },
-      {
-        id: 'w10', unit: '7C',
-        prompt: 'Escribí UNA frase en pasado con un verbo irregular (go → went, have → had, get → got) sobre tu última Noche de Año.',
-        hint: 'Ej.: "I had a good time."',
-        model: 'I went to a party and had a fantastic time.',
-        keyPoints: [
-          { label: 'Verbo irregular en pasado', patterns: ['\\b(went|had|got|came|saw|took|said|knew|felt|thought)\\b'] },
-          { label: 'Expresión de tiempo pasado', patterns: ['last |yesterday|ago|new year'] }
-        ]
-      },
-      {
-        id: 'w11', unit: '2C',
+        id: 'w9', unit: '2C',
         prompt: 'Escribí UN imperativo negativo y UN imperativo afirmativo (una instrucción que le darías a alguien).',
         hint: 'Ej.: "Don\'t smoke here. Open the window."',
         model: "Don't eat that! Open your books, please.",
@@ -742,7 +658,7 @@ const EXAM_CONTENT = {
         ]
       },
       {
-        id: 'w12', unit: '4B',
+        id: 'w10', unit: '4B',
         prompt: 'Escribí UNA frase usando la preposición de tiempo correcta (in / on / at).',
         hint: 'Ej.: "I was born in 1990." / "The class starts at nine." / "I work on Mondays."',
         model: 'The exam is on Friday at ten in the morning.',
@@ -773,8 +689,8 @@ const EXAM_CONTENT = {
       },
       {
         id: 's2', unit: '1C/2A',
-        question: 'Contá qué cosas tenés en tu casa o en tu mochila. Usá "have got / have" y "a / an".',
-        keyPhrases: ['I have got a...', 'There is a...', 'I don\'t have a...'],
+        question: 'Contá qué cosas tenés en tu casa o en tu mochila. Usá "have" y "a / an".',
+        keyPhrases: ['I have a...', 'I have got...', 'I don\'t have a...'],
         model: 'I have got a laptop, a watch and some headphones. I don\'t have an umbrella because I live near the office.',
         criteria: [
           'Uso "a / an" correctamente',
@@ -865,18 +781,6 @@ const EXAM_CONTENT = {
           'Uso "was / were" para el pasado',
           'Digo con quién estaba',
           'Describo el lugar o el día'
-        ]
-      },
-      {
-        id: 's10', unit: '7B/7C',
-        question: 'Contá un viaje que hiciste: adónde fuiste, cuándo, cómo fuiste y qué pasó.',
-        keyPhrases: ['Last... I went to...', 'We got there...', 'I booked...', 'We had...'],
-        model: 'Last summer I went to the beach with my friends. We got there by bus and we had a fantastic time. I took a lot of photos.',
-        criteria: [
-          'Uso una expresión de tiempo pasado (last summer, three days ago, in 2017)',
-          'Uso verbos irregulares en pasado (went, got, took, had)',
-          'Digo cómo fuiste (by bus, on foot, by train)',
-          'Cuento qué pasó y valoro la experiencia'
         ]
       }
     ]
